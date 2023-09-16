@@ -8,6 +8,7 @@ import { OrbitControls } from '@react-three/drei';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import Strom19inside from '../products/SlideShows/Stormbreaker19inside';
 import Strom19outside from '../products/SlideShows/Stormbreaker19outside';
+import Storm19specs from './Specsmenu/Specs19';
 
 function Stormbreaker19() {
   const containerRef = useRef(null);
@@ -81,7 +82,8 @@ function Stormbreaker19() {
                 </Canvas>
       </div>
       <div className="component" id='specs'>
-        Specs menu
+        <h1>Specs Menu</h1>
+        <Storm19specs/>
       </div>
     </div>
   )
