@@ -80,6 +80,10 @@
     max-height: 0;
     animation: accordionOut 0.75s ease-in-out both;
   }
+
+  .list{
+    text-align: left;
+  }
   
   /* Keyframes for accordion animation */
   @keyframes accordionIn {
