@@ -3,10 +3,10 @@ import "./Stormbreaker21inside.css";
 
 function Strombreaker21inside() {
   useEffect(() => {
-    var $cont = document.querySelector(".cont");
-    var $elsArr = [].slice.call(document.querySelectorAll(".el"));
+    var $cont = document.querySelector(".cont_19_i");
+    var $elsArr = [].slice.call(document.querySelectorAll(".el_19_i"));
     var $closeBtnsArr = [].slice.call(
-      document.querySelectorAll(".el__close-btn")
+      document.querySelectorAll(".el__close-btn_19_i")
     );
 
     setTimeout(function () {
@@ -37,117 +37,88 @@ function Strombreaker21inside() {
   }, []);
 
   return (
-    <div className="cont s--inactive">
-      <div className="cont__inner">
-        <div className="el">
-          <div className="el__overflow">
-            <div className="el__inner">
-              <div className="el__bg">
+    <div className="cont_19_i s--inactive">
+      <div className="cont__inner_19_i">
+        <div className="el_19_i">
+          <div className="el__overflow_19_i">
+            <div className="el__inner_19_i">
+              <div className="el__bg_19_i">
                 <img
-                  className="el__bg"
+                  className="el__bg_19_i"
                   src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-3.jpg"
                   alt="1"
                 />
               </div>
-              <div className="el__preview-cont">
-                <h2 className="el__heading">Section 1</h2>
+              <div className="el__preview-cont_19_i">
+                <h2 className="el__heading_19_i">On</h2>
               </div>
-              <div className="el__content">
-                {/* <div className="el__text">Whatever</div> */}
-                <div className="el__close-btn"></div>
+              <div className="el__content_19_i">
+                {/* <div className="el__text_19_i">Whatever</div> */}
+                <div className="el__close-btn_19_i"></div>
               </div>
             </div>
           </div>
-          {/* <div className="el__index">
-                <div className="el__index-back">1</div>
-                <div className="el__index-front">
-                  <div className="el__index-overlay" data-index="1">
+          {/* <div className="el__index_19_i">
+                <div className="el__index-back_19_i">1</div>
+                <div className="el__index-front_19_i">
+                  <div className="el__index-overlay_19_i" data-index="1">
                     1
                   </div>
                 </div>
               </div> */}
         </div>
-        <div className="el">
-          <div className="el__overflow">
-            <div className="el__inner">
-              <div className="el__bg">
+        <div className="el_19_i">
+          <div className="el__overflow_19_i">
+            <div className="el__inner_19_i">
+              <div className="el__bg_19_i">
                 <img
-                  className="el__bg"
+                  className="el__bg_19_i"
                   src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-4.jpg"
                   alt="2"
                 />
               </div>
-              <div className="el__preview-cont">
-                <h2 className="el__heading">Section 2</h2>
+              <div className="el__preview-cont_19_i">
+                <h2 className="el__heading_19_i">the</h2>
               </div>
-              <div className="el__content">
-                {/* <div className="el__text">Whatever</div> */}
-                <div className="el__close-btn"></div>
+              <div className="el__content_19_i">
+                {/* <div className="el__text_19_i">Whatever</div> */}
+                <div className="el__close-btn_19_i"></div>
               </div>
             </div>
           </div>
-          {/* <div className="el__index">
-                <div className="el__index-back">2</div>
-                <div className="el__index-front">
-                  <div className="el__index-overlay" data-index="2">
+          {/* <div className="el__index_19_i">
+                <div className="el__index-back_19_i">2</div>
+                <div className="el__index-front_19_i">
+                  <div className="el__index-overlay_19_i" data-index="2">
                     2
                   </div>
                 </div>
               </div> */}
         </div>
-        <div className="el">
-          <div className="el__overflow">
-            <div className="el__inner">
-              <div className="el__bg">
+        <div className="el_19_i">
+          <div className="el__overflow_19_i">
+            <div className="el__inner_19_i">
+              <div className="el__bg_19_i">
                 <img
-                  className="el__bg"
+                  className="el__bg_19_i"
                   src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-5.jpg"
                   alt="3"
                 />
               </div>
-              <div className="el__preview-cont">
-                <h2 className="el__heading">Section 3</h2>
+              <div className="el__preview-cont_19_i">
+                <h2 className="el__heading_19_i">Inside</h2>
               </div>
-              <div className="el__content">
-                {/* <div className="el__text">Whatever</div> */}
-                <div className="el__close-btn"></div>
+              <div className="el__content_19_i">
+                {/* <div className="el__text_19_i">Whatever</div> */}
+                <div className="el__close-btn_19_i"></div>
               </div>
             </div>
           </div>
-          {/* <div className="el__index">
-                <div className="el__index-back">3</div>
-                <div className="el__index-front">
-                  <div className="el__index-overlay" data-index="3">
+          {/* <div className="el__index_19_i">
+                <div className="el__index-back_19_i">3</div>
+                <div className="el__index-front_19_i">
+                  <div className="el__index-overlay_19_i" data-index="3">
                     3
-                  </div>
-                </div>
-              </div> */}
-        </div>
-
-        <div className="el">
-          <div className="el__overflow">
-            <div className="el__inner">
-              <div className="el__bg">
-                <img
-                  className="el__bg"
-                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-6.jpg"
-                  alt="4"
-                />
-              </div>
-              <div className="el__preview-cont">
-                <h2 className="el__heading">Section 4</h2>
-              </div>
-              <div className="el__content">
-                {/* <div className="el__text">Whatever</div> */}
-                <div className="el__close-btn"></div>
-              </div>
-            </div>
-          </div>
-          {/* <div className="el__index">
-                <div className="el__index-back">4</div>
-                <div className="el__index-front">
-                  <div className="el__index-overlay" data-index="4">
-                    4
                   </div>
                 </div>
               </div> */}
@@ -156,5 +127,4 @@ function Strombreaker21inside() {
     </div>
   );
 }
-
 export default Strombreaker21inside;
