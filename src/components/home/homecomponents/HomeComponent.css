@@ -1,0 +1,298 @@
+.component {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*border: 1px solid #ccc;    */
+  overflow: hidden;
+}
+
+/* Video Landing styling */
+.landing_page_video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.mobile-image {
+  display: none;
+}
+
+/* Gallery Landing styling */
+.gallery_landing_container {
+  text-align: center;
+}
+
+.gallery_landing_heading {
+  font-size: 70px;
+  font-weight: normal;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+}
+
+.grid_item {
+  padding: 16px;
+  text-align: center;
+}
+
+/* Add this to your existing CSS */
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.096); /* Adjust the background color and opacity as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide any overflowing text */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect for the background-color change */
+}
+
+.text-overlay-gallery {
+  position: absolute;
+  top: 970px;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.096); /* Adjust the background color and opacity as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide any overflowing text */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect for the background-color change */
+}
+
+.text-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Change the background color on hover */
+}
+
+.text-overlay h1 {
+  font-size: 75.76px; /* Adjust the font size as needed */
+  color: transparent; /* Make the text color transparent */
+  -webkit-text-stroke: 2px white; /* Add a white stroke around the text (adjust the width as needed) */
+  text-stroke: 2px white; /* Add a white stroke around the text (adjust the width as needed) */
+  transition: color 0.3s ease; /* Add a smooth transition effect for the color change */
+  letter-spacing: 3px;
+}
+
+.text-overlay-gallery h1 {
+  font-size: 56.83px; /* Adjust the font size as needed */
+  color: #fff; /* Make the text color transparent */
+  transition: color 0.3s ease; /* Add a smooth transition effect for the color change */
+  letter-spacing: 2px;
+}
+
+.text-overlay:hover h1 {
+  color: #fff;
+/* Change the text color on hover */
+}
+
+
+.image-container {
+  position: absolute;
+  top: 1450px; /* Adjust the top position as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+}
+
+.image-item {
+  text-align: center;
+  padding: 25px;
+  transition: border 0.3s ease; /* Add a transition for the border */
+  position: relative;
+  margin: 0 10px; /* Adjust the margin as needed to separate the items */
+}
+
+.image-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-item p {
+  margin-top: 8px;
+  font-size: 16px; /* Adjust the font size as needed */
+
+}
+
+.image-item.current {
+  border: 2px solid red; /* Highlight the current image */
+}
+
+
+
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+  .grid_container {
+    grid-template-columns: 1fr;
+  }
+
+  .landing_page_video {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+  .grid_container {
+    grid-template-columns: 1fr;
+  }
+
+  .landing_page_video {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/* gallery */
+
+/* HomeComponent.css */
+
+.waterfall-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: auto;
+  min-height: 100vh;/* Adjust the maximum width as needed */
+  overflow: hidden;
+}
+
+.waterfall-item {
+  flex-basis: 33.33%; /* 3 columns in a row, adjust as needed */
+  width: 40vh;
+  padding-bottom: 33.33%; /* Maintain aspect ratio, adjust as needed */
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: waterfall-animation 4s linear infinite;
+}
+
+.current {
+  border: 2px solid red; /* Highlight the current image */
+}
+
+@keyframes waterfall-animation {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+
+
+
+/* Reviews */
+/* Testimonials */
+.testimonials-container {
+  text-align: center;
+  margin-top: 1rem;
+  border-radius: 40px;
+}
+
+.testimonials-container h2 {
+  font-size: 56.83px; /* Adjust the font size as needed */
+  color: #fff; /* Make the text color transparent */
+  letter-spacing: 2px;
+}
+.slide__item {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 380px;
+  padding: 20px;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+.slide__heading {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.slide__quote {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0;
+  max-width: 600px;
+}
+
+.slide__cite {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Splide Styles */
+.splide {
+  width: 100%;
+}
+
+.splide__track {
+  display: flex;
+}
+
+.splide__slide {
+  flex: 0 0 auto;
+}
+
+/* Splide Dots */
+.splide__pagination {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.splide__pagination__page {
+  width: 12px;
+  height: 12px;
+  background-color: #878787;
+  border-radius: 50%;
+  margin: 0 4px;
+  cursor: none;
+  transition: background-color 0.3s ease;
+}
+
+.splide__pagination__page.is-active {
+  background-color: #2d2d2d;
+}
+
+.splide__pagination__page:focus {
+  outline: none;
+}

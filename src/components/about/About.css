@@ -1,0 +1,24 @@
+.context {
+    max-width: 1080px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center-align the content horizontally */
+  }
+  
+  .context p {
+    margin: 20px;
+    font-size: 20px;
+  }
+  
+  .context .subheader {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+
+  .context h1{
+    font-size: 75.76px;
+    margin: 10px;
+  }
+
+  .context h2{
+    font-size: 56.76px;
+    margin: 10px;
+  }

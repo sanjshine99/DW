@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Pro';
+  src: url('./assets/font/ITC\ Avant\ Garde\ Gothic\ Pro-Bold.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Pro';
+  src: url('./assets/font/ITC\ Avant\ Garde\ Gothic\ Pro-Book.otf') format('opentype');
+  font-weight: 400; /* Book font-weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Pro';
+  src: url('./assets/font/ITC\ Avant\ Garde\ Gothic\ Pro-Demi.otf') format('opentype');
+  font-weight: 600; /* Demi font-weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ITC Avant Garde Gothic Pro';
+  src: url('./assets/font/ITC\ Avant\ Garde\ Gothic\ Pro-Medium.otf') format('opentype');
+  font-weight: 500; /* Medium font-weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ITC Avant Gaarde Gothic Pro';
+  src: url('./assets/font/ITC\ Avant\ Garde\ Gothic\ Pro-XLt.otf') format('opentype');
+  font-weight: 100; /* XLt font-weight */
+  font-style: normal;
+}
+
+
+:root{
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar{
+  width:10px;
+}
+
+::-webkit-scrollbar-track{
+  background: #141414;
+}
+
+::-webkit-scrollbar-thumb{
+
+  background: #ffffff;
+}
+
+body {
+  font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
