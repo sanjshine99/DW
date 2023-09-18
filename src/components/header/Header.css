@@ -5,13 +5,13 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 10px 30px;
+  padding: 30px 30px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 2;
-  transition: background-color 0.5s, color 0.5s ease;
+  transition: background-color 0.3s, color 0.3s ease;
   overflow: visible; /* Show overflow content */
   height: auto; /* Auto height for the header */
 }
@@ -25,8 +25,8 @@
 /* Logo */
 .header-logo img {
   position: fixed;
-  top: 1rem;
-  left: 10rem;
+  top: 1.6rem;
+  left: auto;
 }
 
 /* Navigation menu */
@@ -37,10 +37,11 @@
 
 .header-nav .menu-item {
   margin-right: 20px;
-  padding: auto;
   position: relative;
+  justify-content: space-evenly;
   cursor: pointer;
   transition: opacity 0.3s; /* Added opacity transition */
+  margin-right: 3rem;
 }
 
 .header-nav .menu-item:hover {
@@ -69,7 +70,7 @@
   transition: opacity 0.3s, visibility 0.3s, transform 0.3s ease;
   width: 100%; /* Set width to 100% to fill the viewport */
   position: fixed;
-  top: 4rem; /* Position submenu below the menu item */
+  top: 111px; /* Position submenu below the menu item */
   left: 0;
   right: 0;
   display: flex;
@@ -82,7 +83,7 @@
 .sub-menu-item {
   opacity: 0;
   transform: translateY(-10px);
-  transition: opacity 0.3s, transform 1s ease;
+  transition: opacity 0.3s, transform 0.3s ease;
 }
 
 /* Active state for submenu */
