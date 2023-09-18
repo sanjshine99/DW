@@ -1,13 +1,12 @@
 import React from 'react';
-import './HomeComponent.css'; 
+import './HomeComponent.css';
+import { motion } from 'framer-motion'; // Import Framer Motion
 import Bespokemodels from '../../../assets/why choose us/customer-support.png';
 import Ecofriendly from '../../../assets/why choose us/ecology.png';
 import Experience from '../../../assets/why choose us/certification.png';
 import Ratings from '../../../assets/why choose us/customer-review.png';
 
 import placeholder from '../../../assets/place holder.png';
-
-
 
 class Gallery_landing extends React.Component {
   constructor(props) {
@@ -47,46 +46,52 @@ class Gallery_landing extends React.Component {
   render() {
     const { images, currentIndex } = this.state;
 
-    return (
+    const textHoverAnimation = {
+      scale: 1.1, // Scale up the text
+    };
 
+    const imageHoverAnimation = {
+      scale: 1.1, // Scale up the images
+    };
+
+    return (
       <div className="gallery_landing_container">
-      <div className="text-overlay-gallery">
-        <h1>Why Choose Us</h1>
+        <div className="text-overlay-gallery">
+          <motion.h1 whileHover={textHoverAnimation}>Why Choose Us</motion.h1>
+        </div>
+        <div className="image-container">
+          <motion.div className="image-item" whileHover={imageHoverAnimation}>
+            <img src={Bespokemodels} alt="Bespokemodels" className='galleryoverlayimage' />
+            <p>Bespokemodels</p>
+          </motion.div>
+          <motion.div className="image-item" whileHover={imageHoverAnimation}>
+            <img src={Ecofriendly} alt="Ecofriendly" className='galleryoverlayimage'/>
+            <p>Ecofriendly</p>
+          </motion.div>
+          <motion.div className="image-item" whileHover={imageHoverAnimation}>
+            <img src={Experience} alt="Experience" className='galleryoverlayimage'/>
+            <p>Experience</p>
+          </motion.div>
+          <motion.div className="image-item" whileHover={imageHoverAnimation}>
+            <img src={Ratings} alt="Ratings" className='galleryoverlayimage'/>
+            <p>Ratings</p>
+          </motion.div>
+        </div>
+        <div className="waterfall-container">
+          {images.map((imageUrl, index) => (
+            <div
+              key={index}
+              className={`waterfall-item ${index === currentIndex ? 'current' : ''}`}
+              style={{
+                backgroundImage: `url(${imageUrl})`,
+                animationDelay: `${index * 1}s`, // Adjust the delay as needed
+              }}
+            ></div>
+          ))}
+        </div>
       </div>
-      <div className="image-container">
-        <div className= 'image-item'>
-          <img src={Bespokemodels} alt="Bespokemodels" />
-          <p>Bespokemodels</p>
-        </div>
-        <div className='image-item'>
-          <img src={Ecofriendly} alt="Ecofriendly" />
-          <p>Ecofriendly</p>
-        </div>
-        <div className='image-item'>
-          <img src={Experience} alt="Experience" />
-          <p>Experience</p>
-        </div>
-        <div className='image-item'>
-          <img src={Ratings} alt="Ratings" />
-          <p>Ratings</p>
-        </div>
-      </div>
-            <div className="waterfall-container">
-              {images.map((imageUrl, index) => (
-                <div
-                  key={index}
-                  className={`waterfall-item ${index === currentIndex ? 'current' : ''}`}
-                  style={{
-                    backgroundImage: `url(${imageUrl})`,
-                    animationDelay: `${index * 1}s`, // Adjust the delay as needed
-                  }}
-                ></div>
-              ))}
-            </div>
-          </div>
-        );
-      }
-      
+    );
+  }
 }
 
 export default Gallery_landing;
