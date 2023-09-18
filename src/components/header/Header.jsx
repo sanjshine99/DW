@@ -6,21 +6,44 @@ import logo from '../../assets/Logo.png';
 import placeholder from '../../assets/place holder.png';
 
 const Header = () => {
-  const [expandedMenus, setExpandedMenus] = useState({});
+  const [activeMenu, setActiveMenu] = useState(null);
 
   const handleMenuHover = (menu) => {
-    setExpandedMenus((prevExpandedMenus) => ({
-      ...prevExpandedMenus,
-      [menu]: true,
-    }));
+    setActiveMenu(menu);
   };
 
-  const handleMenuLeave = (menu) => {
-    setExpandedMenus((prevExpandedMenus) => ({
-      ...prevExpandedMenus,
-      [menu]: false,
-    }));
+  const handleMenuLeave = () => {
+    setActiveMenu(null);
   };
+
+  const menuData = [
+    {
+      label: 'Our Range',
+      submenu: [
+        { label: <img src={placeholder} alt="Placeholder" />, link: '/stormbreaker19' },
+        { label:<img src={placeholder} alt="Placeholder" />, link: '/stormbreaker21' },
+      ],
+    },
+    {
+      label: 'Resources',
+      submenu: [
+        { label: 'About', link: '/about' },
+        { label: 'Blog', link: '/blog' },
+        { label: 'Warranty Policy', link: '/' },
+      ],
+    },
+    {
+      label: 'Discover',
+      submenu: [
+        { label: 'Social 1', link: '/' },
+        { label: 'Social 2', link: '/' },
+        { label: 'Social 3', link: '/' },
+        { label: 'Social 4', link: '/' },
+        { label: 'Social 5', link: '/' },
+        { label: 'Social 6', link: '/' },
+      ],
+    },
+  ];
 
   return (
     <header className="header">
@@ -31,85 +54,30 @@ const Header = () => {
       </div>
       <nav className="header-nav">
         <ul className="menu">
-          <li
-            className="menu-item"
-            onMouseEnter={() => handleMenuHover('ourRange')}
-            onMouseLeave={() => handleMenuLeave('ourRange')}
-          >
-            Our Range
-            {expandedMenus['ourRange'] && (
-              <div
-                className={`sub-menu ${expandedMenus['ourRange'] ? 'expanded' : ''}`}
-                onMouseEnter={() => handleMenuHover('ourRange')}
-                onMouseLeave={() => handleMenuLeave('ourRange')}
-              >
-                <div>
-                  <Link to="/stormbreaker19">
-                    <img src={placeholder} alt="" />
-                  </Link>
+          {menuData.map((menu, index) => (
+            <li
+              key={index}
+              className={`menu-item ${activeMenu === menu.label ? 'active' : ''}`}
+              onMouseEnter={() => handleMenuHover(menu.label)}
+              onMouseLeave={handleMenuLeave}
+            >
+              <button>
+                <span>{menu.label}</span>
+              </button>
+              {activeMenu === menu.label && menu.submenu && (
+                <div className="sub-menu">
+                  {menu.submenu.map((subitem, subIndex) => (
+                    <Link key={subIndex} to={subitem.link}>
+                      <div className="sub-menu-item">{subitem.label}</div>
+                    </Link>
+                  ))}
                 </div>
-                <div>
-                  <Link to="/stormbreaker21">
-                    <img src={placeholder} alt="" />
-                  </Link>
-                </div>
-              </div>
-            )}
-          </li>
-          <li
-            className="menu-item"
-            onMouseEnter={() => handleMenuHover('Resources')}
-            onMouseLeave={() => handleMenuLeave('Resources')}
-          >
-            Resources
-            {expandedMenus['Resources'] && (
-              <div
-                className={`sub-menu ${expandedMenus['Resources'] ? 'expanded' : ''}`}
-                onMouseEnter={() => handleMenuHover('Resources')}
-                onMouseLeave={() => handleMenuLeave('Resources')}
-              >
-                <div>
-                  <Link to="/about">
-                    <p>About</p>
-                  </Link>
-                </div>
-                <div>
-                  <Link to="/blog">
-                    <p>Blog</p>
-                  </Link>
-                </div>
-                <div>
-                  <Link to="/">
-                    <p>Warranty Policy</p>
-                  </Link>
-                </div>
-              </div>
-            )}
-          </li>
-          <li
-            className="menu-item"
-            onMouseEnter={() => handleMenuHover('Discover')}
-            onMouseLeave={() => handleMenuLeave('Discover')}
-          >
-            Discover
-            {expandedMenus['Discover'] && (
-              <div
-                className={`sub-menu ${expandedMenus['Discover'] ? 'expanded' : ''}`}
-                onMouseEnter={() => handleMenuHover('Discover')}
-                onMouseLeave={() => handleMenuLeave('Discover')}
-              >
-                <div>social 1</div>
-                <div>social 2</div>
-                <div>social 3</div>
-                <div>social 4</div>
-                <div>social 5</div>
-                <div>social 6</div>
-              </div>
-            )}
-          </li>
+              )}
+            </li>
+          ))}
           <li className="menu-item">
             <Link to="/contact">
-              <p>Contact</p>
+              <button>Contact</button>
             </Link>
           </li>
         </ul>
@@ -117,5 +85,6 @@ const Header = () => {
     </header>
   );
 };
+
 
 export default Header;

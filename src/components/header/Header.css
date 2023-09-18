@@ -1,7 +1,7 @@
 /* Header container */
 .header {
-  background:transparent;/* Header background color */
-  color: white; /* Header text color */
+  background: transparent;
+  color: white;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -14,16 +14,15 @@
   transition: background-color 0.5s, color 0.5s ease;
 }
 
-.header:hover{
+
+.header:hover {
   background-color: white;
   color: black;
 }
 
 /* Logo */
 .header-logo img {
-  position: fixed;
-  top: 30px;
-  left: 30px;
+
 }
 
 /* Navigation menu */
@@ -39,75 +38,54 @@
   cursor: pointer;
 }
 
-.header-nav .menu-item a {
-  text-decoration: none;
+.header-nav .menu-item button {
+  background: none;
+  border: none;
   color: inherit;
   font-weight: bold;
   font-size: 16px;
-}
-
-/* Menu toggle button */
-.menu-toggle {
-  display: none;
-  flex-direction: row;
   cursor: pointer;
-}
-
-.bar {
-  background-color: white;
-  height: 3px;
-  width: 30px;
-  margin: 3px 0;
-}
-
-/* Submenu container */
-.submenu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #1e1e1e; /* Submenu background color */
-  padding: 20px;
-  z-index: 2;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-20px);
-  transition: opacity 0.3s, visibility 0.3s, transform 1s ease;
-  display: flex;
-  justify-content: space-between; /* Distribute submenu items horizontally */
-  align-items: center; /* Center items vertically */
-  width: auto; /* Allow submenu to adjust its width based on content */
-}
-
-/* Submenu items */
-.submenu-items {
-  list-style-type: none;
-  display: flex; /* Display submenu items as a row */
-  margin: 0;
   padding: 0;
 }
 
-.submenu-items li {
+/* Submenu container */
+.sub-menu {
+  background-color: #ffffff;
+  z-index: 2;
   opacity: 0;
-  transform: translateX(-10px);
+  visibility: hidden;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s ease, height 0.3s ease; /* Add height transition */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+/* Submenu items */
+.sub-menu-item {
+  opacity: 0;
+  transform: translateY(-10px);
   transition: opacity 0.3s, transform 1s ease;
-  margin-right: 10px; /* Add some spacing between submenu items */
 }
 
 /* Active state for submenu */
-.submenu.active {
+.menu-item.active .sub-menu {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
-  transition: opacity 0.3s, visibility 1s, transform 1s ease;
+  transform: scaleY(1);
+  width: auto;
+  height: auto; /* Add height to reveal submenu smoothly */
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s ease, width 0.3s ease, height 1s ease; /* Add height transition */
 }
 
 /* Active state for submenu items */
-.submenu.active .submenu-items li {
+.menu-item.active .sub-menu-item {
   opacity: 1;
-  transform: translateX(0);
-  transition-delay: 1s ease; /* Delay the animation for each submenu item */
+  transform: translateY(0);
+  transition-delay: 0.5s ease; /* Delay the animation for each submenu item */
 }
-
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
@@ -115,20 +93,15 @@
     padding: 10px;
   }
 
-  .menu-toggle {
-    display: flex;
-  }
-
   .header-nav {
     display: none;
     position: absolute;
     top: 60px;
     right: 0;
-    background-color: #1e1e1e;
+    background-color: #ffffff;
     padding: 20px;
     flex-direction: column;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
 
   .header-nav.active {
