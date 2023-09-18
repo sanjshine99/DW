@@ -68,8 +68,8 @@
   transform-origin: top;
   transition: opacity 0.3s, visibility 0.3s, transform 0.3s ease;
   width: 100%; /* Set width to 100% to fill the viewport */
-  position: relative;
-  top: 0; /* Position submenu below the menu item */
+  position: fixed;
+  top: 4rem; /* Position submenu below the menu item */
   left: 0;
   right: 0;
   display: flex;
