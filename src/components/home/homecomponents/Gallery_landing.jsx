@@ -1,6 +1,5 @@
 import React from 'react';
 import './HomeComponent.css';
-import { motion } from 'framer-motion'; // Import Framer Motion
 import Bespokemodels from '../../../assets/why choose us/customer-support.png';
 import Ecofriendly from '../../../assets/why choose us/ecology.png';
 import Experience from '../../../assets/why choose us/certification.png';
@@ -57,25 +56,25 @@ class Gallery_landing extends React.Component {
     return (
       <div className="gallery_landing_container">
         <div className="text-overlay-gallery">
-          <motion.h1 whileHover={textHoverAnimation}>Why Choose Us</motion.h1>
+          <h1>Why Choose Us</h1>
         </div>
         <div className="image-container">
-          <motion.div className="image-item" whileHover={imageHoverAnimation}>
+          <div className="image-item">
             <img src={Bespokemodels} alt="Bespokemodels" className='galleryoverlayimage' />
             <p>Bespokemodels</p>
-          </motion.div>
-          <motion.div className="image-item" whileHover={imageHoverAnimation}>
+          </div>
+          <div className="image-item">
             <img src={Ecofriendly} alt="Ecofriendly" className='galleryoverlayimage'/>
             <p>Ecofriendly</p>
-          </motion.div>
-          <motion.div className="image-item" whileHover={imageHoverAnimation}>
+          </div>
+          <div className="image-item">
             <img src={Experience} alt="Experience" className='galleryoverlayimage'/>
             <p>Experience</p>
-          </motion.div>
-          <motion.div className="image-item" whileHover={imageHoverAnimation}>
+          </div>
+          <div className="image-item">
             <img src={Ratings} alt="Ratings" className='galleryoverlayimage'/>
             <p>Ratings</p>
-          </motion.div>
+          </div>
         </div>
         <div className="waterfall-container">
           {images.map((imageUrl, index) => (
