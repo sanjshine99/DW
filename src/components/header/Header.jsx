@@ -51,7 +51,7 @@ const Header = () => {
       initial={{ backgroundColor: 'transparent' }}
       whileHover={{ backgroundColor: 'white', color: 'black' }}
       animate={activeMenu ? { backgroundColor: 'white', color: 'black' } : { backgroundColor: 'transparent' }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.5 }}
     >
       <div className="header-logo">
         <Link to="/">
