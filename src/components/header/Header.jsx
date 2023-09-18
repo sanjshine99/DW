@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Header.css'; 
 import '../../App.css';
 import logo from '../../assets/Logo.png'
+import placeholder from '../../assets/place holder.png'
 
 const Header = () => {
   const [expandedMenus, setExpandedMenus] = useState({});
@@ -43,12 +44,12 @@ const Header = () => {
      <div className={`sub-menu ${expandedMenus['ourRange'] ? 'expanded' : ''}`} onMouseEnter={() => handleMenuHover('ourRange')} onMouseLeave={() => handleMenuLeave('ourRange')}>
      <div>
        <Link to="/stormbreaker19">
-       <p>Stormbreaker 19 image </p>
+       <img src={placeholder} alt="" />
        </Link>
      </div>
      <div>
        <Link to="/stormbreaker21">
-         <p>Stormbreaker 21 image </p>
+       <img src={placeholder} alt="" />
        </Link>
      </div>
    </div>

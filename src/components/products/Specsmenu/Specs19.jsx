@@ -68,45 +68,82 @@ class Specs19 extends Component {
             240V Weatherproof Outlet
             2 x 170-Watt Solar Panels
             3 x water Tank Level Probes
-            Reverse Camera & Display
+            Reverse Camera & Displayn
             An Antenna
             2 x 100 Amp Deep Cycle Batteries
             Side Markers with Reflector  `,
          },
           {
             title: 'APPLIANCES',
-            content:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris.',
+            content: ` Air Conditioning (Belair 3400 | slimline | Reverse-Cycle | Roof-Mounted)
+            Front Load Washing Machine
+            Hot water – 28-litre Gas/Electric Heating
+            Rangehood: 12V LED with Twin Fans
+            Oven (3 x Gas | 1 x Electric Burner and Grill)
+            Fridge and Freezer: 188-Litre 3 Way Automatic Absorption
+            25L Microwave
+            Stereo/Speaker System
+            24” TV `,
           },
           {
             title: 'PLUMBING',
-            content:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris.',
+            content: `  ABS Shower
+            Thetford Toilet
+            Premium Black Kitchen Tap
+            Black Round Basin
+            Single Bowl Black Sink
+            3-Way Tap with Water Filter
+            Gas Bayonet
+            External Shower
+            Tap on A-frame
+            2 x 95-Litre Water Tanks
+            110-Litre Grey Water Tank`,
           },
           {
             title: 'EXTERIOR',
-            content:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris.',
+            content: `17Ft Roll-Out Awning
+            Storage Compartment Hatch (Rear, Off-Side)
+            Foldable Picnic Table
+            Tunnel Boot – Front ( Dual Access )
+            2 x 9KG Gas Bottles
+            Double Pull-Out Step
+            Stone Mesh Guard
+            Large Toolbox with Dual Slide Out
+            Front Dual Bike Rack`,
           },
           {
             title: 'PROTECTION',
-            content:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris.',
+            content: `Checker Plate Front 900mm (Black)
+            Checker Plate Sides 900mm (Black)
+            Checker Plate Sides 900mm (Black)
+            Aluminium Composite Cladding
+            Mudflaps
+            12” Electric Brake System`,
           },
           {
             title: 'CHASSIS',
-            content:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris.',
+            content: `Dual Axle
+            Hitch: D035
+            A-Frame: 6″
+            Chassis: 6″ Dura-Gal
+            2” Raiser
+            Wheels: 16″ Alloy
+            Heavy-Duty Off-Road Tires
+            1 x Spare Wheel (Mounted On Rear Bumper)
+            2 x  Jerry Can Holders (Rear Bumper)
+            Jack: CNR Supports (Drop-Down)
+            A-Frame Jockey Wheel
+            Storage Mesh Plate`,
           },
           {
             title: 'OVERALL',
-            content:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris.',
+            content: `Approx Ball Weight: 160 kg
+            Approx Tare Weight: 2750 kg
+            ATM: 3500 kg`,
           },
           {
             title: 'SUSPENSION',
-            content:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu interdum diam. Donec interdum porttitor risus non bibendum. Maecenas sollicitudin eros in quam imperdiet placerat. Cras justo purus, rhoncus nec lobortis ut, iaculis vel ipsum. Donec dignissim arcu nec elit faucibus condimentum. Donec facilisis consectetur enim sit amet varius. Pellentesque justo dui, sodales quis luctus a, iaculis eget mauris.',
+            content: `FULL OFF-ROAD - INDEPENDENT – 3.5T`,
           },
       ];
       
