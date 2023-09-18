@@ -45,14 +45,6 @@ class Gallery_landing extends React.Component {
   render() {
     const { images, currentIndex } = this.state;
 
-    const textHoverAnimation = {
-      scale: 1.1, // Scale up the text
-    };
-
-    const imageHoverAnimation = {
-      scale: 1.1, // Scale up the images
-    };
-
     return (
       <div className="gallery_landing_container">
         <div className="text-overlay-gallery">

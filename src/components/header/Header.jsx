@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion'; // Import Framer Motion components
+import { motion, AnimatePresence } from 'framer-motion';
 import './Header.css';
-import '../../App.css';
 import logo from '../../assets/Logo.png';
 import placeholder from '../../assets/place holder.png';
 
@@ -67,9 +66,9 @@ const Header = () => {
               className={`menu-item ${activeMenu === menu.label ? 'active' : ''}`}
               onMouseEnter={() => handleMenuHover(menu.label)}
               onMouseLeave={handleMenuLeave}
-              initial={{ opacity: 1 }} // Initial opacity set to 1
-              animate={{ opacity: 1 }} // Opacity remains 1
-              exit={{ opacity: 0 }} // Exit opacity set to 0
+              initial={{ opacity: 1 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
             >
               <button>
                 <span>{menu.label}</span>
@@ -78,10 +77,10 @@ const Header = () => {
                 {activeMenu === menu.label && menu.submenu && (
                   <motion.div
                     className="sub-menu"
-                    initial={{ opacity: 0, scaleY: 0, transformOrigin: 'top' }} // Initial scaleY set to 0
-                    animate={{ opacity: 1, scaleY: 1 }} // ScaleY set to 1
-                    exit={{ opacity: 0, scaleY: 0 }} // Exit scaleY set to 0
-                    transition={{ duration: 0.3, delay: 0.2 }} // Adjust duration and delay as needed
+                    initial={{ opacity: 1, scaleY: 0 }}
+                    animate={{ opacity: 1, scaleY: 1 }}
+                    exit={{ opacity: 0, scaleY: 0 }}
+                    transition={{ duration: 0.3 }}
                   >
                     {menu.submenu.map((subitem, subIndex) => (
                       <Link key={subIndex} to={subitem.link}>
@@ -89,7 +88,8 @@ const Header = () => {
                           className="sub-menu-item"
                           initial={{ opacity: 0, y: -10 }}
                           animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.3, delay: 0.3 + subIndex * 0.1 }}
+                          exit={{ opacity: 0, y: -10 }}
+                          transition={{ duration: 0.3, delay: subIndex * 0.1 }}
                         >
                           {subitem.label}
                         </motion.div>

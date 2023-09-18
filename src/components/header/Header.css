@@ -12,15 +12,21 @@
   right: 0;
   z-index: 2;
   transition: background-color 0.5s, color 0.5s ease;
+  overflow: visible; /* Show overflow content */
+  height: auto; /* Auto height for the header */
 }
 
 .header:hover {
   background-color: white;
   color: black;
+  height: auto; /* Auto height on hover */
 }
 
 /* Logo */
 .header-logo img {
+  position: fixed;
+  top: 1rem;
+  left: 10rem;
 }
 
 /* Navigation menu */
@@ -49,6 +55,7 @@
   font-size: 16px;
   cursor: pointer;
   padding: 0;
+  position: relative; /* Add relative position */
 }
 
 /* Submenu container */
@@ -59,15 +66,16 @@
   visibility: hidden;
   transform: scaleY(0);
   transform-origin: top;
-  transition: opacity 0.3s, visibility 0.3s, transform 0.3s ease, height 0.3s ease; /* Add height transition */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding: 20px;
-  position: absolute;
-  top: 100%; /* Position submenu below the menu item */
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s ease;
+  width: 100%; /* Set width to 100% to fill the viewport */
+  position: relative;
+  top: 0; /* Position submenu below the menu item */
   left: 0;
   right: 0;
+  display: flex;
+  flex-wrap: wrap; /* Allow submenu items to wrap if necessary */
+  justify-content: space-evenly; /* Adjust this as needed for spacing */
+  padding: 20px;
 }
 
 /* Submenu items */
@@ -78,20 +86,18 @@
 }
 
 /* Active state for submenu */
-.menu-item.active .sub-menu {
+.menu-item:hover .sub-menu {
   opacity: 1;
   visibility: visible;
   transform: scaleY(1);
-  width: auto;
-  height: auto; /* Add height to reveal submenu smoothly */
-  transition: opacity 0.3s, visibility 0.3s, transform 0.3s ease, width 0.3s ease, height 0.3s ease; /* Add height transition */
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s ease;
 }
 
 /* Active state for submenu items */
 .menu-item.active .sub-menu-item {
   opacity: 1;
   transform: translateY(0);
-  transition-delay: 0.5s ease; /* Delay the animation for each submenu item */
+  transition-delay: 0.5s ease;
 }
 
 /* Media query for smaller screens */
@@ -117,5 +123,11 @@
 
   .header-nav .menu-item {
     margin: 10px 0;
+  }
+
+  .header-logo img {
+    position: fixed;
+    top: 1rem;
+    left: 5rem;
   }
 }
