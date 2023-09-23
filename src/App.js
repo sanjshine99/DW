@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <HashRouter>
         <Header />
-        <Suspense fallback={<div>loading</div>}>
+        <Suspense fallback={<div className="viewport-filler"></div>}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

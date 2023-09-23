@@ -5,16 +5,18 @@ import Ecofriendly from '../../../assets/why choose us/ecology.png';
 import Experience from '../../../assets/why choose us/certification.png';
 import Ratings from '../../../assets/why choose us/customer-review.png';
 
-import placeholder from '../../../assets/place holder.png';
+import img1 from '../../../assets/images/g1.jpg';
+import img2 from '../../../assets/images/g2.jpg';
+import img3 from '../../../assets/images/g3.jpg';
 
 class Gallery_landing extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       images: [
-        placeholder,
-        placeholder,
-        placeholder,
+        img1,
+        img2,
+        img3,
         // Add more image URLs here
       ],
       currentIndex: 0, // Current index of the displayed image
