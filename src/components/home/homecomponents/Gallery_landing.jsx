@@ -5,9 +5,9 @@ import Ecofriendly from '../../../assets/why choose us/ecology.png';
 import Experience from '../../../assets/why choose us/certification.png';
 import Ratings from '../../../assets/why choose us/customer-review.png';
 
-import img1 from '../../../assets/images/g1.jpg';
-import img2 from '../../../assets/images/g2.jpg';
-import img3 from '../../../assets/images/g3.jpg';
+import img1 from '../../../assets/images/g1.png';
+import img2 from '../../../assets/images/g2.png';
+import img3 from '../../../assets/images/g3.png';
 
 class Gallery_landing extends React.Component {
   constructor(props) {
