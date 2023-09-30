@@ -55,7 +55,6 @@ function Stormbreaker21() {
      <Strom21inside/>
     </div>
     <div className='slideshowcomopnent'>
-    <Strom21outside/>
     </div>
       <div className="component">
       <div class="product-container" id='layout'>

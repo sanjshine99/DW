@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import "./HomeComponent.css"; 
 import landingVideo from "../../../assets/landingVideo.mp4";
 import landingImage from "../../../assets/landingImage.jpg";
@@ -26,17 +27,23 @@ function VideoLanding() {
         <img className="mobile-image" src={landingImage} alt="Mobile_Image" />
       ) : (
         <div className="video-overlay">
-          <video
-            className="landing_page_video"
-            src={landingVideo}
-            autoPlay
-            loop
-            muted
-          ></video>
-          <div className="text-overlay">
-            <h1>DELUXE CARAVANS</h1>
-          </div>
-        </div>
+  <video
+    className="landing_page_video"
+    src={landingVideo}
+    autoPlay
+    loop
+    muted
+  ></video>
+  <div className="text-overlay">
+    <h1>DELUXE CARAVANS</h1>
+  </div>
+  <div className="link-overlay">
+    <Link to="/blog" className="btn hover-border-1">
+      What's new with us!
+    </Link>
+  </div>
+</div>
+
       )}
     </div>
   );
