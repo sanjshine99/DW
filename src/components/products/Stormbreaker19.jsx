@@ -1,4 +1,4 @@
-import React, { useRef,useState, useEffect, } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import './Products.css';
 import '../home/Home.css';
 import '../home/homecomponents/HomeComponent.css';
@@ -9,12 +9,12 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import Strom19inside from '../products/SlideShows/Stormbreaker19inside';
 import Strom19outside from '../products/SlideShows/Stormbreaker19outside';
 import Storm19specs from './Specsmenu/Specs19';
+import SB216img from '../../assets/SB216 img.png';
 
 function Stormbreaker19() {
   const containerRef = useRef(null);
 
   const scrollToSpecs = () => {
-    // Replace 'specs' with the ID of the div you want to scroll to
     const specsDiv = document.getElementById('specs');
     if (specsDiv) {
       specsDiv.scrollIntoView({ behavior: 'smooth' });
@@ -22,7 +22,6 @@ function Stormbreaker19() {
   };
 
   const scrollToLayout = () => {
-    // Replace 'layout' with the ID of the div you want to scroll to
     const layoutDiv = document.getElementById('layout');
     if (layoutDiv) {
       layoutDiv.scrollIntoView({ behavior: 'smooth' });
@@ -39,12 +38,12 @@ function Stormbreaker19() {
     });
   }, []);
 
-
-
   return (
     <div className="container">
-      <div className="component">
-        <div>
+    <div className="component">
+      <div className="background-image">
+        <img src={SB216img} alt="" />
+        <div className="image-overlay">
           <h1 className='Product-header'>Stormbreaker19</h1>
           <div className="button-container">
             <button onClick={scrollToLayout} className="btn hover-border-1">Layout</button>
@@ -52,12 +51,13 @@ function Stormbreaker19() {
           </div>
         </div>
       </div>
-     
+    </div>
+
       <div className='slideshowcomopnent'>
-       <Strom19inside/>
-      </div>
-      <div className='slideshowcomopnent'>
-      </div>
+        <Strom19inside />
+        </div>
+        <div className='slideshowcomopnent'>
+    </div>
       <div className="component">
       <div class="product-container" id='layout'>
          <div class="description">
