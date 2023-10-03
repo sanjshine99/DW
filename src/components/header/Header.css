@@ -22,6 +22,10 @@
   height: auto; /* Auto height on hover */
 }
 
+.header img{
+  max-width: 300px;
+}
+
 /* Logo */
 .header-logo img {
   position: fixed;

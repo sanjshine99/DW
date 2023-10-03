@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Header.css';
 import logo from '../../assets/Logo.png';
-import placeholder from '../../assets/place holder.png';
+import placeholder from '../../assets/test.png';
 
 const Header = () => {
   const [activeMenu, setActiveMenu] = useState(null);
