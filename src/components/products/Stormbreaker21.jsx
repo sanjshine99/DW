@@ -9,7 +9,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import Strom21inside from '../products/SlideShows/Stormbreaker21inside';
 import Strom21outside from '../products/SlideShows/Strombreaker21outside';
 import Storm21specs from './Specsmenu/Specs21';
-import SB216img from '../../assets/SB216 img.png';
+import SB216img from '../../assets/Product renders/SB216 landing.png';
 
 function Stormbreaker21() {
   const containerRef = useRef(null);
@@ -46,7 +46,7 @@ function Stormbreaker21() {
       <div className="background-image">
         <img src={SB216img} alt="" />
         <div className="image-overlay">
-          <h1 className='Product-header'>Stormbreaker21</h1>
+          <h1 className='Product-header'>Stormbreaker21`6</h1>
           <div className="button-container">
             <button onClick={scrollToLayout} className="btn hover-border-1">Layout</button>
             <button onClick={scrollToSpecs} className="btn hover-border-1">Specs</button>
