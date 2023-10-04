@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import "./Stormbreaker21inside.css";
+import SB216Ext from '../../../assets/Product renders/SB216Exterior.png';
+import SB216layout from '../../../assets/Product renders/SB216 layout.png';
 
 function Strombreaker21inside() {
   useEffect(() => {
@@ -45,12 +47,12 @@ function Strombreaker21inside() {
               <div className="el__bg_19_i">
                 <img
                   className="el__bg_19_i"
-                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-3.jpg"
+                  src={SB216Ext}
                   alt="1"
                 />
               </div>
               <div className="el__preview-cont_19_i">
-                <h2 className="el__heading_19_i">On</h2>
+                <h2 className="el__heading_19_i">Exterior</h2>
               </div>
               <div className="el__content_19_i">
                 {/* <div className="el__text_19_i">Whatever</div> */}
@@ -73,12 +75,12 @@ function Strombreaker21inside() {
               <div className="el__bg_19_i">
                 <img
                   className="el__bg_19_i"
-                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-4.jpg"
+                  src={SB216layout}
                   alt="2"
                 />
               </div>
               <div className="el__preview-cont_19_i">
-                <h2 className="el__heading_19_i">the</h2>
+                <h2 className="el__heading_19_i">Layout</h2>
               </div>
               <div className="el__content_19_i">
                 {/* <div className="el__text_19_i">Whatever</div> */}
