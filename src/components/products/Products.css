@@ -15,7 +15,7 @@
 /* Button Code */
 .button-container {
   position: absolute; /* Position the button container absolutely */
-  bottom: 430px; /* Adjust the vertical position as needed */
+  bottom: 43%; /* Adjust the vertical position as needed */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Center the buttons horizontally */
   z-index: 2; /* Place the buttons above the image */
