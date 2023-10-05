@@ -426,12 +426,12 @@
   .slide-track {
     animation: scroll 40s linear infinite;
     display: flex;
-    width: calc(250px * 9); /* Adjust the multiplier to match the animation keyframes */
+    width: calc(250px * 3); /* Adjust the multiplier to match the animation keyframes */
     transition: transform 1s linear; /* Add this line */
   }
   .slide {
     height: 40vh;
-    width: 50vw;
-    margin-right:6vw;
+    width: 35vw;
+    margin-right: 15vw;
   }
 }

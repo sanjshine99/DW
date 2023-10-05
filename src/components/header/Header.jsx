@@ -36,6 +36,7 @@ const Header = () => {
       submenu: [
         { label: 'About', link: '/about' },
         { label: 'Blog', link: '/blog' },
+        { label: 'Video', link: '/video' },
         { label: 'Warranty Policy', link: '/' },
       ],
     },

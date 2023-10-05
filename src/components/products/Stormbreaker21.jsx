@@ -9,7 +9,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import Strom21inside from '../products/SlideShows/Stormbreaker21inside';
 import { gsap } from 'gsap';
 import Storm21specs from './Specsmenu/Specs21';
-import SB216img from '../../assets/Product renders/SB216 landing.png';
+import SB216img from '../../assets/Product renders/SB216Exterior.png';
 
 function Stormbreaker21() {
   const containerRef = useRef(null);
