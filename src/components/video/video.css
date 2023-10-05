@@ -1,305 +1,37 @@
-/* Mixins */
-.width-float {
-    width: 100%;
-    float: left;
+/* VideoGallery.css */
+
+.video-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
   }
   
-  .bg-img-property {
-    background-position: center center !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px;
   }
   
-  /* Block */
-  .block {
-    width: 840px;
-    margin: 10% auto;
-    overflow: hidden;
-  }
-  
-  /* Box */
-  .box {
-    position: relative;
-    height: 130px;
-    line-height: 150px;
-    overflow: hidden;
-    background-position: center center !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-  }
-  
-  /* Shared Box Styles */
-  .box__dir {
-    position: relative;
-    width: inherit;
-    height: inherit;
+  .video-card {
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
     text-align: center;
-    line-height: inherit;
-    transition: transform 0.4s ease;
   }
   
-  /* Box Right */
-  .box__right {
-    background: var(--film-bg);
-    transform: translateX(100%);
-  }
-  
-  .box__right:before {
-    right: 100%;
-    bottom: 0;
-    transform-origin: 100% 100%;
-  }
-  
-  .box__right:hover ~ .box__center {
-    transform: translateX(-100%);
-  }
-  
-  /* Box Left */
-  .box__left {
-    background: var(--film-bg);
-    transform: translateX(-100%);
-  }
-  
-  .box__left:before {
-    left: 100%;
-    transform-origin: 0 0;
-  }
-  
-  .box__left:hover ~ .box__center {
-    transform: translateX(100%);
-  }
-  
-  /* Box Top */
-  .box__top {
-    background: var(--film-bg);
-    transform: translateY(-100%);
-  }
-  
-  .box__top:before {
-    top: 100%;
-    right: 0;
-    transform-origin: 100% 0;
-  }
-  
-  .box__top:hover ~ .box__center {
-    transform: translateY(100%);
-  }
-  
-  /* Box Bottom */
-  .box__bottom {
-    background: var(--film-bg);
-    transform: translateY(100%);
-  }
-  
-  .box__bottom:before {
-    bottom: 100%;
-    left: 0;
-    transform-origin: 0 100%;
-  }
-  
-  .box__bottom:hover ~ .box__center {
-    transform: translateY(-100%);
-  }
-  
-  /* Film Container */
-  .film-container {
+  .video-card iframe {
     width: 100%;
-    position: relative;
+    height: 169px;
+    border: none;
   }
   
-  /* Row */
-  .row {
-    height: 445px;
-    position: relative;
+  .video-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
   }
   
-  /* Single Film */
-  .single-film {
-    width: 280px;
-    height: auto;
-    float: left;
-    padding: 0px 15px;
-    position: relative;
-    z-index: 4;
-    background: var(--body-bg);
-  }
-  
-  /* Single Film Positioning */
-  .single-film:nth-child(1) {
-    top: 0%;
-    left: 0%;
-    transition: all ease 0.8s;
-  }
-  
-  .single-film:nth-child(2) {
-    top: 0%;
-    left: 33%;
-    transition: all ease 0.8s;
-  }
-  
-  .single-film:nth-child(3) {
-    top: 0%;
-    left: 66%;
-    transition: all ease 0.8s;
-  }
-  
-  .single-film:nth-child(4) {
-    top: 55%;
-    left: 0%;
-    transition: all ease 0.8s;
-  }
-  
-  .single-film:nth-child(5) {
-    top: 55%;
-    left: 33%;
-    transition: all ease 0.8s;
-  }
-  
-  .single-film:nth-child(6) {
-    top: 55%;
-    left: 66%;
-    transition: all ease 0.8s;
-  }
-  
-  /* Play Video */
-  .play-video {
-    transition: all ease 0.8s;
-    opacity: 0;
-    background: var(--body-bg);
-  }
-  
-  .play-video video {
-    width: 100%;
-    height: 100%;
-    transition: all ease 0.8s;
-  }
-  
-  /* Box Pay Icon */
-  .box-pay-icon {
-    display: block;
-    opacity: 1;
-    z-index: 9;
-  }
-  
-  /* Video Tag Close */
-  .video-tag-close {
-    transition: all ease 0.5s;
-    position: absolute;
-    top: 0px;
-    right: 9px;
-    font-size: 28px;
-    color: var(--white);
-    cursor: pointer;
-    opacity: 0;
-    background: var(--body-bg);
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    line-height: 36px;
-  }
-  
-  /* Box Styles */
-  .box {
-    width: 100%;
-    transition: all ease 0.8s;
-  }
-  
-  .box .play-movie-icon {
-    color: var(--white);
-    font-size: 45px;
-    line-height: 0;
-    font-weight: bold;
-  }
-  
-  /* Film Information */
-  .film-information {
-    width: 100%;
-    margin-top: 6%;
-    transition: all ease 0.8s;
-  }
-  
-  .film-information p {
-    width: 100%;
-    color: var(--white);
-    font-size: 13px;
+  .video-card p {
     margin: 0;
-    line-height: 17px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
   }
   
-  /* Animations */
-  .single-film.single-film-animate {
-    left: 33% !important;
-    top: 33% !important;
-    transition: all ease 0.8s;
-    bottom: 33%;
-    right: 33%;
-    transition: all ease 0.8s;
-    .film-information {
-      opacity: 0;
-      transition: all ease 0.8s;
-    }
-    .box-pay-icon {
-      transition: all ease 0.8s;
-      display: none !important;
-    }
-  }
-  
-  .single-film.single-film-active {
-    z-index: 6;
-  }
-  
-  .single-film.video-min {
-    transition: all ease 0.8s;
-    display: block;
-    opacity: 1;
-    video {
-      margin: 0 auto !important;
-      height: 0% !important;
-      width: 0% !important;
-      margin-left: 40% !important;
-      margin-top: 20% !important;
-      overflow: hidden !important;
-    }
-  }
-  
-  .single-film.single-film-in {
-    z-index: 6;
-    transition: all ease 0.8s;
-    right: 0 !important;
-    left: 0 !important;
-    top: 0 !important;
-    bottom: 0 !important;
-    height: auto !important;
-    width: 100% !important;
-    .box {
-      height: 100% !important;
-      transition: all ease 0.8s;
-      width: 100% !important;
-      overflow: visible;
-    }
-    .play-video {
-      transition: all ease 0.8s;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: 0 auto;
-      text-align: center;
-      opacity: 1 !important;
-      video {
-        transition: all ease 0.8s;
-        width: 100%;
-        height: 100%;
-      }
-    }
-    &:hover {
-      .video-tag-close {
-        transition: all ease 0.8s;
-        opacity: 1;
-      }
-    }
-  }
