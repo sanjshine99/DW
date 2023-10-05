@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import "./HomeComponent.css"; 
+import { gsap } from 'gsap';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 
@@ -32,8 +33,29 @@ const Testimonials = () => {
     }
   ];
 
+  useEffect(() => {
+    gsap.utils.toArray('.revealUp').forEach((elem) => {
+      gsap.fromTo(
+        elem,
+        { y: 100, autoAlpha: 0 },
+        {
+          duration: 1.25,
+          y: 0,
+          autoAlpha: 1,
+          ease: 'back',
+          scrollTrigger: {
+            trigger: elem,
+            start: 'top 80%',
+            end: 'bottom 20%',
+            markers: false, // Set this to true for debug markers
+          },
+        }
+      );
+    });
+  }, []);
+
   return (
-    <div className="testimonials-container">
+    <div className="testimonials-container revealUp">
       <h2>Happy Campers' Stories</h2>
       <Splide
         options={{

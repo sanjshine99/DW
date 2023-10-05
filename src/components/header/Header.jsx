@@ -3,7 +3,15 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Header.css';
 import logo from '../../assets/Logo.png';
-import placeholder from '../../assets/test.png';
+import instagram from '../../assets/icons/instagramh.png';
+import facebook from '../../assets/icons/facebookh.png';
+import twitter from '../../assets/icons/twitterh.png';
+import tiktok from '../../assets/icons/tik-tokh.png';
+import youtube from '../../assets/icons/youtubeh.png';
+import envelope from '../../assets/icons/messageh.png';
+import SB196 from '../../assets/stormbreaker196.png';
+import SB216 from '../../assets/stormbreaker216.png';
+
 
 const Header = () => {
   const [activeMenu, setActiveMenu] = useState(null);
@@ -20,8 +28,8 @@ const Header = () => {
     {
       label: 'Our Range',
       submenu: [
-        { label: <img src={placeholder} alt="Placeholder" />, link: '/stormbreaker19' },
-        { label: <img src={placeholder} alt="Placeholder" />, link: '/stormbreaker21' },
+        { label: <img src={SB196}  alt="Placeholder" />, link: '/stormbreaker19' },
+        { label: <img src={SB216} alt="Placeholder" />, link: '/stormbreaker21' },
       ],
     },
     {
@@ -35,12 +43,12 @@ const Header = () => {
     {
       label: 'Discover',
       submenu: [
-        { label: 'Social 1', link: '/' },
-        { label: 'Social 2', link: '/' },
-        { label: 'Social 3', link: '/' },
-        { label: 'Social 4', link: '/' },
-        { label: 'Social 5', link: '/' },
-        { label: 'Social 6', link: '/' },
+        { label: <img src={instagram} alt="Instagram" className='iconh' />, link: '/' },
+        { label: <img src={facebook} alt="Facebook" className='iconh' />, link: '/' },
+        { label: <img src={twitter} alt="Twitter" className='iconh' />, link: '/' },
+        { label: <img src={tiktok} alt="TikTok" className='iconh' />, link: '/' },
+        { label: <img src={youtube} alt="YouTube" className='iconh' />, link: '/' },
+        { label: <img src={envelope} alt="Email" className='iconh' />, link: '/' },
       ],
     },
   ];

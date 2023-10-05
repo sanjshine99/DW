@@ -23,7 +23,8 @@
 }
 
 .header img{
-  max-width: 300px;
+  max-width: 250px;
+  margin-right: 5vw;
 }
 
 /* Logo */
@@ -31,6 +32,7 @@
   position: fixed;
   top: 1.6rem;
   left: auto;
+
 }
 
 /* Navigation menu */
@@ -86,12 +88,12 @@
 /* Submenu container */
 .sub-menu {
   background-color: #ffffff;
-  z-index: 2;
+  z-index: 999;
   opacity: 0;
   visibility: hidden;
   transform: scaleY(0);
   transform-origin: top;
-  transition: opacity 0.3s, visibility 0.3s, transform 0.3s ease;
+  transition: opacity 0.2s, visibility 0.2s, transform 0.3s ease;
   width: 100%; /* Set width to 100% to fill the viewport */
   position: fixed;
   top: 111px; /* Position submenu below the menu item */
@@ -103,13 +105,14 @@
   align-items: center; /* Adjust this as needed for spacing */
   padding: 30px;
   text-decoration: none;
+  color: #000000 !important;
 }
 
 /* Submenu items */
 .sub-menu-item {
   opacity: 0;
   transform: translateY(-10px);
-  transition: opacity 0.3s, transform 0.3s ease;
+  transition: opacity 0.5s, transform 0.3s ease;
   margin-right: 30px;
 }
 
@@ -118,7 +121,7 @@
   opacity: 1;
   visibility: visible;
   transform: scaleY(1);
-  transition: opacity 0.3s, visibility 0.3s, transform 0.3s ease;
+  transition: opacity 0.5s, visibility 0.3s, transform 0.3s ease;
 }
 
 /* Active state for submenu items */
@@ -126,6 +129,10 @@
   opacity: 1;
   transform: translateY(0);
   transition-delay: 0.5s ease;
+}
+
+.iconh{
+  height: 27px;
 }
 
 /* Media query for smaller screens */

@@ -43,10 +43,12 @@ class Gallery_landing extends React.Component {
       };
     });
   };
+  
 
   render() {
     const { images, currentIndex } = this.state;
 
+    
     return (
       <div className="gallery_landing_container">
         <div className="text-overlay-gallery">

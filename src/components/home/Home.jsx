@@ -13,7 +13,8 @@ function Home() {
       <div className="component">
         <Reviews />
       </div>
-      <div className="component">
+      <div className="partnercomponent">
+      <h1>Our Premium Partners</h1>
         <Partners />
       </div>
     </div>

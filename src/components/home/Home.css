@@ -12,3 +12,11 @@
     height: 100vh; 
 }
   
+.partnercomponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  padding: 20px; /* Optional: Add padding to the components */
+  min-height: 50px; /* Increase the minimum height to create more spacing */
+  height: 30vh; 
+}

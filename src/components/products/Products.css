@@ -21,6 +21,10 @@
   z-index: 2; /* Place the buttons above the image */
 }
 
+.product-container{
+  display: flex;
+}
+
 .btn-holder {
   display: flex;
   flex-wrap: wrap;

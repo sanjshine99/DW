@@ -7,7 +7,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import Strom19inside from '../products/SlideShows/Stormbreaker19inside';
-import Strom19outside from '../products/SlideShows/Stormbreaker19outside';
+import { gsap } from 'gsap';
 import Storm19specs from './Specsmenu/Specs19';
 import SB196img from '../../assets/Product renders/SB196landing.png';
 
@@ -38,16 +38,37 @@ function Stormbreaker19() {
     });
   }, []);
 
+  useEffect(() => {
+    gsap.utils.toArray('.revealUp').forEach((elem) => {
+      gsap.fromTo(
+        elem,
+        { y: 100, autoAlpha: 0 },
+        {
+          duration: 1.25,
+          y: 0,
+          autoAlpha: 1,
+          ease: 'back',
+          scrollTrigger: {
+            trigger: elem,
+            start: 'top 80%',
+            end: 'bottom 20%',
+            markers: false, // Set this to true for debug markers
+          },
+        }
+      );
+    });
+  }, []);
+
   return (
     <div className="container">
     <div className="component">
       <div className="background-image">
         <img src={SB196img} alt="" />
         <div className="image-overlay">
-          <h1 className='Product-header'>Stormbreaker19`6</h1>
+          <h1 className='Product-header revealUp'>Stormbreaker19`6</h1>
           <div className="button-container">
-            <button onClick={scrollToLayout} className="btn hover-border-1">Layout</button>
-            <button onClick={scrollToSpecs} className="btn hover-border-1">Specs</button>
+            <button onClick={scrollToLayout} className="btn hover-border-1 revealUp">Layout</button>
+            <button onClick={scrollToSpecs} className="btn hover-border-1 revealUp">Specs</button>
           </div>
         </div>
       </div>

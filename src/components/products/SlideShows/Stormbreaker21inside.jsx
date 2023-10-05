@@ -55,7 +55,8 @@ function Strombreaker21inside() {
                 <h2 className="el__heading_19_i">Exterior</h2>
               </div>
               <div className="el__content_19_i">
-                {/* <div className="el__text_19_i">Whatever</div> */}
+                 <div className="el__text_19_i">With its solid, matte finish, our family caravan isn’t just a treat on the inside but is extremely easy on the eyes too. Designed to take on the diversity of Australia’s landscape and terrain, the Storm breaker possesses advanced mechanical systems including a powerful chassis and suspension system.
+                  Enjoy powerful features like our heavy-duty wheels and family-friendly add-ons like a foldable picnic table to enjoy a caravan experience you’ve only seen in movies.</div> 
                 <div className="el__close-btn_19_i"></div>
               </div>
             </div>
@@ -83,7 +84,8 @@ function Strombreaker21inside() {
                 <h2 className="el__heading_19_i">Layout</h2>
               </div>
               <div className="el__content_19_i">
-                {/* <div className="el__text_19_i">Whatever</div> */}
+                <div className="el__text_19_i">The Storm breaker provides you with all the worldly comforts you can expect when you’re on the road. With its plush and comfortable sleeping arrangements for the entire family, living quarters and fully equipped kitchen, enjoy every moment of your adventures with our world-class features.
+                We consider everything too; from your smart TV to air conditioning, water heating and angled kitchen bench, you have everything you need to take a piece of home with you on every trip.</div> 
                 <div className="el__close-btn_19_i"></div>
               </div>
             </div>

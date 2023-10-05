@@ -7,7 +7,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import Strom21inside from '../products/SlideShows/Stormbreaker21inside';
-import Strom21outside from '../products/SlideShows/Strombreaker21outside';
+import { gsap } from 'gsap';
 import Storm21specs from './Specsmenu/Specs21';
 import SB216img from '../../assets/Product renders/SB216 landing.png';
 
@@ -39,6 +39,27 @@ function Stormbreaker21() {
     });
   }, []);
 
+  
+  useEffect(() => {
+    gsap.utils.toArray('.revealUp').forEach((elem) => {
+      gsap.fromTo(
+        elem,
+        { y: 100, autoAlpha: 0 },
+        {
+          duration: 1.25,
+          y: 0,
+          autoAlpha: 1,
+          ease: 'back',
+          scrollTrigger: {
+            trigger: elem,
+            start: 'top 80%',
+            end: 'bottom 20%',
+            markers: false, // Set this to true for debug markers
+          },
+        }
+      );
+    });
+  }, []);
 
   return (
     <div className="container">
@@ -46,10 +67,10 @@ function Stormbreaker21() {
       <div className="background-image">
         <img src={SB216img} alt="" />
         <div className="image-overlay">
-          <h1 className='Product-header'>Stormbreaker21`6</h1>
+          <h1 className='Product-header revealUp'>Stormbreaker21`6</h1>
           <div className="button-container">
-            <button onClick={scrollToLayout} className="btn hover-border-1">Layout</button>
-            <button onClick={scrollToSpecs} className="btn hover-border-1">Specs</button>
+            <button onClick={scrollToLayout} className="btn hover-border-1 revealUp">Layout</button>
+            <button onClick={scrollToSpecs} className="btn hover-border-1 revealUp">Specs</button>
           </div>
         </div>
       </div>
@@ -63,8 +84,9 @@ function Stormbreaker21() {
       <div className="component">
       <div class="product-container" id='layout'>
          <div class="description">
-         Are you looking for a smaller family bunk van? Then this is model is the answer. With the Storm breaker 19’6, you get all the features of the 21’6 model. Every journey is one to remember with its world-class interior and top-notch exterior and mechanical features. When you take to the road with your favourite people, you enjoy a spacious layout with all the facilities you expect from a luxury RV experience. We don’t just stop there—we make sure your adventures don’t leave a mark on the environment. With its eco-friendly features, travel without the guilt but with all the joy you deserve.
-        </div>
+         Here at Deluxe Caravans, taking the scenic route is what we’re all about. With the Storm breaker, every journey is one to remember with its world-class interior and top-notch exterior and mechanical features.
+When you take to the road with your favourite people, you enjoy a spacious layout with all the facilities you expect from a luxury RV experience.
+We don’t just stop there—we make sure your adventures don’t leave a mark on the environment. With its eco-friendly features, travel without the guilt but with all the joy you deserve.        </div>
     <div class="image">
     <Canvas style={{ width: '1000px', height: '600px', background: '#000000' ,maxWidth: '100%',maxHeight: '100%',borderRadius: '20px' , marginBottom:'30px' }}>
               <ambientLight intensity={10} />
