@@ -8,7 +8,6 @@ import facebook from '../../assets/icons/facebookh.png';
 import twitter from '../../assets/icons/twitterh.png';
 import tiktok from '../../assets/icons/tik-tokh.png';
 import youtube from '../../assets/icons/youtubeh.png';
-import envelope from '../../assets/icons/messageh.png';
 import SB196 from '../../assets/stormbreaker196.png';
 import SB216 from '../../assets/stormbreaker216.png';
 
@@ -62,10 +61,6 @@ const Header = () => {
         {
           label: <a href="https://www.youtube.com/watch?v=a_KE1CVPT48" target="_blank" rel="noopener noreferrer"><img src={youtube} alt="YouTube" className='iconh' /></a>,
           link: 'https://www.youtube.com/watch?v=a_KE1CVPT48',
-        },
-        {
-          label: <a href="hello@infiniterv.com.au" target="_blank" rel="noopener noreferrer"><img src={envelope} alt="Email" className='iconh' /></a>,
-          link: 'hello@infiniterv.com.au',
         },
         
       ],
