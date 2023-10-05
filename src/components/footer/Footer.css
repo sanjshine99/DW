@@ -12,7 +12,7 @@
   
   .social-icons {
     display: flex;
-    gap: 30px;
+    gap: 5vw;
     margin-bottom: 20px;
   }
   
@@ -24,19 +24,18 @@
   }
 
   .icon{
-
     height: 27px;
   }
   
   .contact-details {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 70%;
     padding-top: 20px;
   }
   
   .contact-details p {
-    margin: 0;
+    margin: 2vw;
     font-size: 14px;
   }
   
