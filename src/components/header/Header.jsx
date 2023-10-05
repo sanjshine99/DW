@@ -43,12 +43,31 @@ const Header = () => {
     {
       label: 'Discover',
       submenu: [
-        { label: <img src={instagram} alt="Instagram" className='iconh' />, link: '/' },
-        { label: <img src={facebook} alt="Facebook" className='iconh' />, link: '/' },
-        { label: <img src={twitter} alt="Twitter" className='iconh' />, link: '/' },
-        { label: <img src={tiktok} alt="TikTok" className='iconh' />, link: '/' },
-        { label: <img src={youtube} alt="YouTube" className='iconh' />, link: '/' },
-        { label: <img src={envelope} alt="Email" className='iconh' />, link: '/' },
+        {
+          label: <a href="https://www.instagram.com/deluxecaravansaustralia/" target="_blank" rel="noopener noreferrer"><img src={instagram} alt="Instagram" className='iconh' /></a>,
+          link: 'https://www.instagram.com/deluxecaravansaustralia/',
+        },
+        {
+          label: <a href="https://www.facebook.com/deluxecaravansaustralia" target="_blank" rel="noopener noreferrer"><img src={facebook} alt="Facebook" className='iconh' /></a>,
+          link: 'https://www.facebook.com/deluxecaravansaustralia',
+        },
+        {
+          label: <a href="https://twitter.com/CaravansDeluxe" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="Twitter" className='iconh' /></a>,
+          link: 'https://twitter.com/CaravansDeluxe',
+        },
+        {
+          label: <a href="https://www.tiktok.com/@deluxecaravansaustralia" target="_blank" rel="noopener noreferrer"><img src={tiktok} alt="TikTok" className='iconh' /></a>,
+          link: 'https://www.tiktok.com/@deluxecaravansaustralia',
+        },
+        {
+          label: <a href="https://www.youtube.com/watch?v=a_KE1CVPT48" target="_blank" rel="noopener noreferrer"><img src={youtube} alt="YouTube" className='iconh' /></a>,
+          link: 'https://www.youtube.com/watch?v=a_KE1CVPT48',
+        },
+        {
+          label: <a href="hello@infiniterv.com.au" target="_blank" rel="noopener noreferrer"><img src={envelope} alt="Email" className='iconh' /></a>,
+          link: 'hello@infiniterv.com.au',
+        },
+        
       ],
     },
   ];
