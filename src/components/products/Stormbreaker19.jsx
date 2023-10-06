@@ -81,12 +81,11 @@ function Stormbreaker19() {
     </div>
       <div className="component">
       <div class="product-container" id='layout'>
-         <div class="description">
-         Are you looking for a smaller family bunk van? Then this is model is the answer. With the Storm breaker 19’6, you get all the features of the 21’6 model. Every journey is one to remember with its world-class interior and top-notch exterior and mechanical features. When you take to the road with your favourite people, you enjoy a spacious layout with all the facilities you expect from a luxury RV experience. We don’t just stop there—we make sure your adventures don’t leave a mark on the environment. With its eco-friendly features, travel without the guilt but with all the joy you deserve.
+      <div class="description">
+      <p>Are you looking for a smaller family bunk van? Then this is model is the answer. With the Storm breaker 19’6, you get all the features of the 21’6 model. Every journey is one to remember with its world-class interior and top-notch exterior and mechanical features. When you take to the road with your favourite people, you enjoy a spacious layout with all the facilities you expect from a luxury RV experience. We don’t just stop there—we make sure your adventures don’t leave a mark on the environment. With its eco-friendly features, travel without the guilt but with all the joy you deserve.</p>
         </div>
     <div class="image">
-    <iframe src="https://esceneyf.sirv.com/Spins/test/test.spin" width="800px" height="600px" frameborder="0" allowfullscreen></iframe>
-  </div>
+    <iframe src="https://esceneyf.sirv.com/Spins/SB196/SB196.spin" width="1000px" height="1000px" frameborder="0" allowfullscreen></iframe>  </div>
 </div>
       </div>
       <div className="component" id='specs'>
