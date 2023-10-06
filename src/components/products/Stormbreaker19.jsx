@@ -85,16 +85,7 @@ function Stormbreaker19() {
          Are you looking for a smaller family bunk van? Then this is model is the answer. With the Storm breaker 19’6, you get all the features of the 21’6 model. Every journey is one to remember with its world-class interior and top-notch exterior and mechanical features. When you take to the road with your favourite people, you enjoy a spacious layout with all the facilities you expect from a luxury RV experience. We don’t just stop there—we make sure your adventures don’t leave a mark on the environment. With its eco-friendly features, travel without the guilt but with all the joy you deserve.
         </div>
     <div class="image">
-    <Canvas style={{ width: '1000px', height: '600px', background: '#000000' ,maxWidth: '100%',maxHeight: '100%',borderRadius: '20px' , marginBottom:'30px' }}>
-              <ambientLight intensity={10} />
-              <directionalLight position={ [10, -1, 30] } intensity={100} />
-              <directionalLight position={[-3, 0, 1]} intensity={200} />
-              <directionalLight position={[1, 0, 1]} intensity={100} />
-              <directionalLight position={[0, 3, 2]} intensity={400} />
-              <directionalLight position={[0, 3, -5]} intensity={400} />
-                <OrbitControls minDistance={3} maxDistance={5} />
-                {gltf && <primitive object={gltf.scene} />}
-                </Canvas>
+    <iframe src="https://esceneyf.sirv.com/Spins/test/test.spin" width="800px" height="600px" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
       </div>
