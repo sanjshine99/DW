@@ -20,6 +20,25 @@
   height: 70vh;
 }
 
+.contact-container {
+  display: flex;
+  justify-content: space-between; /* Align children in a row with space in between */
+}
+
+.calendly__form {
+  padding-left: 2%;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* Change layout to column when screen width is 768px or less */
+  }
+  .calendly__form {
+    padding-left: 0;
+  }
+}
+
 .contact__form {
   display: grid; /* Use grid layout for the form */
   grid-template-columns: 1fr 1fr; /* Two columns */
@@ -78,7 +97,7 @@ button:hover {
 }
 
 .lineUp {
-  animation: 1s anim-lineUp ease-out ;
+  animation: 1s anim-lineUp ease-out;
 }
 @keyframes anim-lineUp {
   0% {

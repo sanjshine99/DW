@@ -14,7 +14,6 @@ function Home() {
         <Reviews />
       </div>
       <div className="partnercomponent">
-      <h1>Our Premium Partners</h1>
         <Partners />
       </div>
     </div>
