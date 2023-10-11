@@ -22,7 +22,7 @@
   height: auto; /* Auto height on hover */
 }
 
-.header img{
+.header img {
   max-width: 250px;
   margin-right: 5vw;
 }
@@ -32,7 +32,6 @@
   position: fixed;
   top: 1.6rem;
   left: auto;
-
 }
 
 /* Navigation menu */
@@ -41,7 +40,7 @@
   display: flex;
 }
 
-.header-nav .menu-item button{
+.header-nav .menu-item button {
   margin-right: 20px;
   position: relative;
   color: #ffffff;
@@ -74,15 +73,13 @@
 
 /* Font size and color for submenu items */
 .sub-menu-item {
-
-
 }
 
 /* Font size and color for active submenu items */
 .menu-item.active .sub-menu-item {
   color: #000000;
 
- /* Change the color for active submenu items as needed */
+  /* Change the color for active submenu items as needed */
 }
 
 /* Submenu container */
@@ -101,7 +98,7 @@
   right: 0;
   display: flex;
   flex-wrap: wrap; /* Allow submenu items to wrap if necessary */
-  justify-content:center;
+  justify-content: center;
   align-items: center; /* Adjust this as needed for spacing */
   padding: 30px;
   text-decoration: none;
@@ -131,7 +128,7 @@
   transition-delay: 0.5s ease;
 }
 
-.iconh{
+.iconh {
   height: 27px;
 }
 

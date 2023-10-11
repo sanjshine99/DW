@@ -46,8 +46,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.096); /* Adjust the background color and opacity as needed */
+  height: 100vh;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.096
+  ); /* Adjust the background color and opacity as needed */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,12 +62,18 @@
 
 .link-overlay {
   position: absolute;
-  bottom: 260px;
+  bottom: 20%;
   left: 0;
   width: 100%;
   text-align: center;
 }
 
+.link-overlay-revealUp-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 10%;
+}
 
 .text-overlay-gallery {
   position: absolute;
@@ -70,7 +81,12 @@
   left: 0;
   width: 100%;
   height: 80%;
-  background-color: rgba(0, 0, 0, 0.096); /* Adjust the background color and opacity as needed */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.096
+  ); /* Adjust the background color and opacity as needed */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,7 +95,12 @@
 }
 
 .text-overlay:hover {
-  background-color: rgba(0, 0, 0, 0.7); /* Change the background color on hover */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Change the background color on hover */
 }
 
 .text-overlay h1 {
@@ -100,9 +121,8 @@
 
 .text-overlay:hover h1 {
   color: #fff;
-/* Change the text color on hover */
+  /* Change the text color on hover */
 }
-
 
 .image-container {
   position: absolute;
@@ -130,16 +150,12 @@
 .image-item p {
   margin-top: 8px;
   font-size: 16px; /* Adjust the font size as needed */
-
 }
 
 .image-item.current {
   border: 2px solid red; /* Highlight the current image */
 }
 
-
-
-
 /* Media query for mobile screens */
 @media screen and (max-width: 768px) {
   .grid_container {
@@ -173,7 +189,6 @@
     height: auto;
   }
 }
-
 
 /* gallery */
 
@@ -185,7 +200,7 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: auto;
-  min-height: 100vh;/* Adjust the maximum width as needed */
+  min-height: 100vh; /* Adjust the maximum width as needed */
   overflow: hidden;
 }
 
@@ -213,9 +228,6 @@
   }
 }
 
-
-
-
 /* Reviews */
 /* Testimonials */
 .testimonials-container {
@@ -225,6 +237,13 @@
 }
 
 .testimonials-container h2 {
+  font-size: 56.83px; /* Adjust the font size as needed */
+  color: #fff; /* Make the text color transparent */
+  letter-spacing: 2px;
+}
+
+/*Our Partners*/
+.partners-heading {
   font-size: 56.83px; /* Adjust the font size as needed */
   color: #fff; /* Make the text color transparent */
   letter-spacing: 2px;
@@ -306,13 +325,13 @@
   outline: none;
 }
 
-
 /* Button Code */
-:active, :hover, :focus {
-  outline: 0!important;
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
   outline-offset: 0;
 }
-
 
 ::before,
 ::after {
@@ -389,14 +408,16 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 3)); /* Adjust the multiplier to suit your number of slides */
+    transform: translateX(
+      calc(-250px * 3)
+    ); /* Adjust the multiplier to suit your number of slides */
   }
 }
 
 .slider {
   background: white;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height:20vh;
+  height: 20vh;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -404,7 +425,11 @@
 
   &::before,
   &::after {
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
     content: "";
     height: 100px;
     position: absolute;
@@ -426,7 +451,9 @@
   .slide-track {
     animation: scroll 40s linear infinite;
     display: flex;
-    width: calc(250px * 3); /* Adjust the multiplier to match the animation keyframes */
+    width: calc(
+      250px * 3
+    ); /* Adjust the multiplier to match the animation keyframes */
     transition: transform 1s linear; /* Add this line */
   }
   .slide {

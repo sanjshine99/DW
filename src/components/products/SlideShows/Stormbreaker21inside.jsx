@@ -1,9 +1,32 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Stormbreaker21inside.css";
-import SB216Ext from '../../../assets/Product renders/SB216Exterior.png';
-import SB216layout from '../../../assets/Product renders/SB216 layout.png';
+import SB216Ext from "../../../assets/Product renders/SB216Exterior.png";
+import SB216layout from "../../../assets/Product renders/SB216 layout.png";
+
+const sections = [
+  {
+    name: "Exterior",
+    images: [SB216Ext, SB216layout],
+    description:
+      "With its solid, matte finish, our family caravan isn’t just a treat on the inside but is extremely easy on the eyes too. Designed to take on the diversity of Australia’s landscape and terrain, the Storm breaker possesses advanced mechanical systems including a powerful chassis and suspension system. Enjoy powerful features like our heavy-duty wheels and family-friendly add-ons like a foldable picnic table to enjoy a caravan experience you’ve only seen in movies.",
+  },
+  {
+    name: "Layout",
+    images: [SB216layout, SB216Ext],
+    description:
+      "The Storm breaker provides you with all the worldly comforts you can expect when you’re on the road. With its plush and comfortable sleeping arrangements for the entire family, living quarters and fully equipped kitchen, enjoy every moment of your adventures with our world-class features. We consider everything too; from your smart TV to air conditioning, water heating and angled kitchen bench, you have everything you need to take a piece of home with you on every trip.",
+  },
+  {
+    name: "Inside",
+    images: [SB216Ext], // Use imported images or URLs consistently
+    description: "Inside section description goes here.",
+  },
+];
 
 function Strombreaker21inside() {
+  const [activeSection, setActiveSection] = useState(null);
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+
   useEffect(() => {
     var $cont = document.querySelector(".cont_19_i");
     var $elsArr = [].slice.call(document.querySelectorAll(".el_19_i"));
@@ -17,12 +40,13 @@ function Strombreaker21inside() {
 
     let activeElement = null;
 
-    $elsArr.forEach(function ($el) {
+    $elsArr.forEach(function ($el, index) {
       $el.addEventListener("click", function () {
         if (this.classList.contains("s--active")) return;
         $cont.classList.add("s--el-active");
         this.classList.add("s--active");
         activeElement = this;
+        setActiveSection(index);
       });
     });
 
@@ -38,97 +62,72 @@ function Strombreaker21inside() {
     });
   }, []);
 
+  const handleNextImage = () => {
+    if (
+      activeSection !== null &&
+      sections[activeSection] &&
+      sections[activeSection].images
+    ) {
+      const maxIndex = sections[activeSection].images.length - 1;
+      setActiveImageIndex((prevIndex) =>
+        prevIndex < maxIndex ? prevIndex + 1 : 0
+      );
+    }
+    console.log(activeImageIndex);
+  };
+
+  const handlePrevImage = () => {
+    if (
+      activeSection !== null &&
+      sections[activeSection] &&
+      sections[activeSection].images
+    ) {
+      const maxIndex = sections[activeSection].images.length - 1;
+      setActiveImageIndex((prevIndex) =>
+        prevIndex > 0 ? prevIndex - 1 : maxIndex
+      );
+    }
+    console.log(activeImageIndex);
+  };
+
   return (
     <div className="cont_19_i s--inactive">
       <div className="cont__inner_19_i">
-        <div className="el_19_i">
-          <div className="el__overflow_19_i">
-            <div className="el__inner_19_i">
-              <div className="el__bg_19_i">
-                <img
-                  className="el__bg_19_i"
-                  src={SB216Ext}
-                  alt="1"
-                />
-              </div>
-              <div className="el__preview-cont_19_i">
-                <h2 className="el__heading_19_i">Exterior</h2>
-              </div>
-              <div className="el__content_19_i">
-                 <div className="el__text_19_i">With its solid, matte finish, our family caravan isn’t just a treat on the inside but is extremely easy on the eyes too. Designed to take on the diversity of Australia’s landscape and terrain, the Storm breaker possesses advanced mechanical systems including a powerful chassis and suspension system.
-                  Enjoy powerful features like our heavy-duty wheels and family-friendly add-ons like a foldable picnic table to enjoy a caravan experience you’ve only seen in movies.</div> 
-                <div className="el__close-btn_19_i"></div>
+        {sections.map((section, index) => (
+          <div
+            key={index}
+            className={`el_19_i ${activeSection === index ? "s--active" : ""}`}
+          >
+            <div className="el__overflow_19_i">
+              <div className="el__inner_19_i">
+                <div className="el__bg_19_i">
+                  <div className="mySlides active">
+                    <img
+                      src={section.images[activeImageIndex]}
+                      alt={`Image ${activeImageIndex + 1}`}
+                    />
+                  </div>
+                </div>
+                <div className="el__preview-cont_19_i">
+                  <h2 className="el__heading_19_i">{section.name}</h2>
+                </div>
+                <div className="el__content_19_i">
+                  <button className="prev" onClick={handlePrevImage}>
+                    &#10094; Previous
+                  </button>
+                  <button className="next" onClick={handleNextImage}>
+                    Next &#10095;
+                  </button>
+                  <div className="el__text_19_i">{section.description}</div>
+                  <div className="el__close-btn_19_i"></div>
+                </div>
               </div>
             </div>
           </div>
-          {/* <div className="el__index_19_i">
-                <div className="el__index-back_19_i">1</div>
-                <div className="el__index-front_19_i">
-                  <div className="el__index-overlay_19_i" data-index="1">
-                    1
-                  </div>
-                </div>
-              </div> */}
-        </div>
-        <div className="el_19_i">
-          <div className="el__overflow_19_i">
-            <div className="el__inner_19_i">
-              <div className="el__bg_19_i">
-                <img
-                  className="el__bg_19_i"
-                  src={SB216layout}
-                  alt="2"
-                />
-              </div>
-              <div className="el__preview-cont_19_i">
-                <h2 className="el__heading_19_i">Layout</h2>
-              </div>
-              <div className="el__content_19_i">
-                <div className="el__text_19_i">The Storm breaker provides you with all the worldly comforts you can expect when you’re on the road. With its plush and comfortable sleeping arrangements for the entire family, living quarters and fully equipped kitchen, enjoy every moment of your adventures with our world-class features.
-                We consider everything too; from your smart TV to air conditioning, water heating and angled kitchen bench, you have everything you need to take a piece of home with you on every trip.</div> 
-                <div className="el__close-btn_19_i"></div>
-              </div>
-            </div>
-          </div>
-          {/* <div className="el__index_19_i">
-                <div className="el__index-back_19_i">2</div>
-                <div className="el__index-front_19_i">
-                  <div className="el__index-overlay_19_i" data-index="2">
-                    2
-                  </div>
-                </div>
-              </div> */}
-        </div>
-        <div className="el_19_i">
-          <div className="el__overflow_19_i">
-            <div className="el__inner_19_i">
-              <div className="el__bg_19_i">
-                <img
-                  className="el__bg_19_i"
-                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-5.jpg"
-                  alt="3"
-                />
-              </div>
-              <div className="el__preview-cont_19_i">
-                <h2 className="el__heading_19_i">Inside</h2>
-              </div>
-              <div className="el__content_19_i">
-                {/* <div className="el__text_19_i">Whatever</div> */}
-                <div className="el__close-btn_19_i"></div>
-              </div>
-            </div>
-          </div>
-          {/* <div className="el__index_19_i">
-                <div className="el__index-back_19_i">3</div>
-                <div className="el__index-front_19_i">
-                  <div className="el__index-overlay_19_i" data-index="3">
-                    3
-                  </div>
-                </div>
-              </div> */}
-        </div>
+        ))}
       </div>
     </div>
   );
 }
+
 export default Strombreaker21inside;

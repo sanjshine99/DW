@@ -1,22 +1,26 @@
 .container {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .component {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; 
-    padding: 20px; /* Optional: Add padding to the components */
-    min-height: 50px; /* Increase the minimum height to create more spacing */
-    height: 100vh; 
+  display: flex;
+  flex-direction: column;
 }
-  
+
+.component {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px; /* Optional: Add padding to the components */
+  min-height: 50px; /* Increase the minimum height to create more spacing */
+  height: 100vh;
+}
+
 .partnercomponent {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; 
-  padding: 20px; /* Optional: Add padding to the components */
+  justify-content: flex-start;
+  /*padding: 20px; /* Optional: Add padding to the components */
   min-height: 50px; /* Increase the minimum height to create more spacing */
-  height: 30vh; 
+  height: 50vh;
+}
+
+.slider {
+  height: 35vh !important;
 }
