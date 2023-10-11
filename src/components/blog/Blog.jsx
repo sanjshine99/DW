@@ -27,7 +27,7 @@ function Blog() {
           <h1 className='blog_title'>Our Stories..</h1>
         </div>
         {/* Embed ElfSight widget */}
-        <div className="elfsight-app-527e3032-7b92-48e9-8bfb-a499a0bd1d40"></div>
+        <div className="elfsight-app-7d26f6be-2b62-44e3-a913-7a9421fc54e5"></div>
       </div>
       {/* Add the ElfSight script to the head using Helmet */}
       <Helmet>

@@ -64,9 +64,9 @@ function Contact() {
 
   return (
     <div className="contact__container revealUp">
-      <h1 className={animate ? "lineUp" : ""}>Contact</h1>
-      <h4 id="desc">Reach out us to join the Deluxe Caravan family.</h4>
+      <h1 className={animate ? "lineUp" : ""}>Contact us</h1>
       <div className="contact-container">
+       
         <form className="contact__form">
           <div className="input__group">
             <input
@@ -106,7 +106,7 @@ function Contact() {
           <div className="calendly-inline-widget">
             <InlineWidget
               url="https://calendly.com/deluxecaravans/inspection?primary_color=8b8b8b"
-              styles={{ height: "250px", width: "500px", paddingTop: "20px" }}
+              styles={{ height: "300px", width: "500px", paddingTop: "20px" }}
             />
           </div>
         </div>
