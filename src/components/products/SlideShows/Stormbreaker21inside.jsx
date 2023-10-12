@@ -1,24 +1,36 @@
 import React, { useState, useEffect } from "react";
 import "./Stormbreaker21inside.css";
+//exterior
 import SB216Ext from "../../../assets/Product renders/SB216Exterior.png";
+import ex211 from "../../../assets/21/21 ex 1.png";
+import ex212 from "../../../assets/21/21 ex 2.png";
+import ex213 from "../../../assets/21/21 ex 3.png";
+import ex214 from "../../../assets/21/21 ex 4.png";
+import ex215 from "../../../assets/21/21 ex 5.png";
+//layout
 import SB216layout from "../../../assets/Product renders/SB216 layout.png";
+//interior
+import in211 from "../../../assets/21/21 in 1.png";
+import in212 from "../../../assets/21/21 in 2.png";
+import in213 from "../../../assets/21/21 in 3.png";
+import in214 from "../../../assets/21/21 in 4.png";
+import in215 from "../../../assets/21/21 in 5.png";
+
 
 const sections = [
   {
     name: "Exterior",
-    images: [SB216Ext, SB216layout],
-    description:
-      "With its solid, matte finish, our family caravan isn’t just a treat on the inside but is extremely easy on the eyes too. Designed to take on the diversity of Australia’s landscape and terrain, the Storm breaker possesses advanced mechanical systems including a powerful chassis and suspension system. Enjoy powerful features like our heavy-duty wheels and family-friendly add-ons like a foldable picnic table to enjoy a caravan experience you’ve only seen in movies.",
+    images: [SB216Ext, ex211,ex212,ex213,ex214,ex215],
+    description: "Exterior section description goes here.",
   },
   {
     name: "Layout",
-    images: [SB216layout, SB216Ext],
-    description:
-      "The Storm breaker provides you with all the worldly comforts you can expect when you’re on the road. With its plush and comfortable sleeping arrangements for the entire family, living quarters and fully equipped kitchen, enjoy every moment of your adventures with our world-class features. We consider everything too; from your smart TV to air conditioning, water heating and angled kitchen bench, you have everything you need to take a piece of home with you on every trip.",
+    images: [SB216layout,SB216layout,SB216layout,SB216layout,SB216layout],
+    description: "Layout section description goes here.",
   },
   {
     name: "Inside",
-    images: [SB216Ext], // Use imported images or URLs consistently
+    images: [in211,in212,in213,in214,in215], 
     description: "Inside section description goes here.",
   },
 ];

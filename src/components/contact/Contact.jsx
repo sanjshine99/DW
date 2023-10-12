@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./Contact.css";
 import { gsap } from "gsap";
+import { Link } from "react-router-dom";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { InlineWidget } from "react-calendly";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -66,7 +67,6 @@ function Contact() {
     <div className="contact__container revealUp">
       <h1 className={animate ? "lineUp" : ""}>Contact us</h1>
       <div className="contact-container">
-       
         <form className="contact__form">
           <div className="input__group">
             <input
@@ -101,15 +101,10 @@ function Contact() {
           <button type="button" className="send" onClick={handleSendEmail}>
             Send
           </button>
+          <Link to="/appointment" className="book" >
+           BOOK A TOUR!
+          </Link>
         </form>
-        <div className="calendly__form">
-          <div className="calendly-inline-widget">
-            <InlineWidget
-              url="https://calendly.com/deluxecaravans/inspection?primary_color=8b8b8b"
-              styles={{ height: "300px", width: "500px", paddingTop: "20px" }}
-            />
-          </div>
-        </div>
       </div>
     </div>
   );

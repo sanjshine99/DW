@@ -40,7 +40,7 @@ const Header = () => {
 
   const menuData = [
     {
-      label: "Our Range",
+      label: "OUR RANGE",
       submenu: [
         {
           label: <img src={SB196} alt="Placeholder" />,
@@ -53,16 +53,16 @@ const Header = () => {
       ],
     },
     {
-      label: "Resources",
+      label: "RESOURCES",
       submenu: [
-        { label: "About", link: "/about" },
-        { label: "Blog", link: "/blog" },
-        { label: "Video", link: "/video" },
-        { label: "Warranty Policy", link: "/" },
+        { label: "ABOUT", link: "/about" },
+        { label: "BLOG", link: "/blog" },
+        { label: "VIDEO", link: "/video" },
+        { label: "WARRANY POLICY", link: "/" },
       ],
     },
     {
-      label: "Discover",
+      label: "DISCOVER",
       submenu: [
         {
           label: (
@@ -201,7 +201,7 @@ const Header = () => {
               ))}
               <li className="menu-item">
                 <Link to="/contact">
-                  <button>Contact</button>
+                  <button>CONTACT</button>
                 </Link>
               </li>
             </ul>

@@ -90,6 +90,27 @@ button {
   grid-column: 1 / span 2; /* Make the button span two columns */
 }
 
+.book{
+
+    padding: 10px 20px;
+    background-color: #7a0202;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    grid-column: 1 / span 2; /* Make the button span two columns */
+  
+}
+
+.book:hover {
+  background-color: #dedede;
+  color: #ffffff;
+  color: #7a0202;
+  cursor: pointer;
+}
+
+
 button:hover {
   background-color: #dedede;
   color: #141414;

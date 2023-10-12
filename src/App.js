@@ -11,6 +11,7 @@ const Video = lazy(() => import('./components/video/Video'));
 const Stormbreaker19 = lazy(() => import('./components/products/Stormbreaker19'));
 const Stormbreaker21 = lazy(() => import('./components/products/Stormbreaker21'));
 const Contact = lazy(() => import('./components/contact/Contact'));
+const Appointment = lazy(() => import('./components/bookus/Appointment'));
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/stormbreaker19" element={<Stormbreaker19 />} />
             <Route path="/stormbreaker21" element={<Stormbreaker21 />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/appointment" element={<Appointment />} />
           </Routes>
         </Suspense>
         <Footer />

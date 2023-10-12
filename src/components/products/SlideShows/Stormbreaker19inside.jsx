@@ -1,22 +1,35 @@
 import React, { useEffect, useState } from "react";
 import "./Stormbreaker19inside.css";
+//exterior
 import SB196Ext from "../../../assets/Product renders/SB196Exterior.png";
+import ex191 from "../../../assets/19/19 ex 1.png";
+import ex192 from "../../../assets/19/19 ex 2.png";
+import ex193 from "../../../assets/19/19 ex 3.png";
+import ex194 from "../../../assets/19/19 ex 4.png";
+import ex195 from "../../../assets/19/19 ex 5.png";
+import ex196 from "../../../assets/19/19 ex 6.png";
+//layout
 import SB196layout from "../../../assets/Product renders/SB196 layout.png";
+//interior
+import in191 from "../../../assets/19/19 in 1.png";
+import in192 from "../../../assets/19/19 in 2.png";
+import in193 from "../../../assets/19/19 in 3.png";
+
 
 const sections = [
   {
     name: "Exterior",
-    images: [SB196Ext, SB196layout],
+    images: [SB196Ext, ex191,ex192,ex193,ex194,ex195,ex196],
     description: "Exterior section description goes here.",
   },
   {
     name: "Layout",
-    images: [SB196layout, SB196Ext],
+    images: [SB196layout,SB196layout,SB196layout,SB196layout,SB196layout,SB196layout ],
     description: "Layout section description goes here.",
   },
   {
     name: "Inside",
-    images: [SB196Ext], // Use imported images or URLs consistently
+    images: [in191,in192,in193,in191,in192,in193], 
     description: "Inside section description goes here.",
   },
 ];

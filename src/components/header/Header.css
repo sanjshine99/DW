@@ -14,6 +14,7 @@
   transition: background-color 0.3s, color 0.3s ease;
   overflow: visible; /* Show overflow content */
   height: auto; /* Auto height for the header */
+
 }
 
 .header:hover {

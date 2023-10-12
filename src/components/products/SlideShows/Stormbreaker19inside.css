@@ -358,7 +358,7 @@
 }
 
 .image-nav button {
-  background: #333;
+
   color: #fff;
   border: none;
   padding: 5px 10px;
@@ -368,7 +368,7 @@
 }
 
 .image-nav button:hover {
-  background: #555;
+
 }
 
 .slideshow-container {
@@ -397,10 +397,11 @@
   font-size: 30px;
   font-weight: bold;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: transparent;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  border: none;
   z-index: 999;
 }
 
@@ -412,15 +413,16 @@
   font-size: 30px;
   font-weight: bold;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background:transparent;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  border: none;
   z-index: 999;
 }
 
 .prev:hover,
 .next:hover {
-  background-color: #fff;
-  color: #000;
+
+  color: #ababab;
 }
