@@ -16,20 +16,21 @@ import in192 from "../../../assets/19/19 in 2.png";
 import in193 from "../../../assets/19/19 in 3.png";
 
 
+
 const sections = [
   {
     name: "Exterior",
-    images: [SB196Ext, ex191,ex192,ex193,ex194,ex195,ex196],
+    images: [SB196Ext,ex191,ex192,ex193,ex194,ex195,ex196],
     description: "Exterior section description goes here.",
   },
   {
     name: "Layout",
-    images: [SB196layout,SB196layout,SB196layout,SB196layout,SB196layout,SB196layout ],
+    images: [SB196layout,SB196layout,SB196layout,SB196layout,SB196layout,SB196layout,SB196layout ],
     description: "Layout section description goes here.",
   },
   {
     name: "Inside",
-    images: [in191,in192,in193,in191,in192,in193], 
+    images: [in191,in192,in193,in191,in192,in193,in191], 
     description: "Inside section description goes here.",
   },
 ];

@@ -40,10 +40,6 @@
   text-transform: uppercase !important;
 }
 
-a{
-  text-transform: uppercase !important;
-}
-
 ::-webkit-scrollbar{
   width:10px;
 }

@@ -1,11 +1,7 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef,  useEffect } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
-import can from "../../assets/c.gltf";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import Strom19inside from "../products/SlideShows/Stormbreaker19inside";
 import { gsap } from "gsap";
 import Storm19specs from "./Specsmenu/Specs19";
@@ -28,15 +24,6 @@ function Stormbreaker19() {
     }
   };
 
-  const [gltf, setGltf] = useState(null);
-
-  useEffect(() => {
-    const loader = new GLTFLoader();
-
-    loader.load(can, (gltf) => {
-      setGltf(gltf);
-    });
-  }, []);
 
   useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {

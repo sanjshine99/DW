@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Stormbreaker21inside.css";
+
 //exterior
 import SB216Ext from "../../../assets/Product renders/SB216Exterior.png";
 import ex211 from "../../../assets/21/21 ex 1.png";
@@ -16,7 +17,6 @@ import in213 from "../../../assets/21/21 in 3.png";
 import in214 from "../../../assets/21/21 in 4.png";
 import in215 from "../../../assets/21/21 in 5.png";
 
-
 const sections = [
   {
     name: "Exterior",
@@ -30,7 +30,7 @@ const sections = [
   },
   {
     name: "Inside",
-    images: [in211,in212,in213,in214,in215], 
+    images: [in211,in212,in213,in214,in215,in211], 
     description: "Inside section description goes here.",
   },
 ];

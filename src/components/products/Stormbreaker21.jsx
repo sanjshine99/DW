@@ -1,11 +1,7 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
-import can from "../../assets/c.gltf";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import Strom21inside from "../products/SlideShows/Stormbreaker21inside";
 import { gsap } from "gsap";
 import Storm21specs from "./Specsmenu/Specs21";
@@ -28,16 +24,6 @@ function Stormbreaker21() {
       layoutDiv.scrollIntoView({ behavior: "smooth" });
     }
   };
-
-  const [gltf, setGltf] = useState(null);
-
-  useEffect(() => {
-    const loader = new GLTFLoader();
-
-    loader.load(can, (gltf) => {
-      setGltf(gltf);
-    });
-  }, []);
 
   useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
