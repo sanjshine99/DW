@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Header.css";
-import logo from "../../assets/Logo.png";
-import instagram from "../../assets/icons/instagramh.png";
-import facebook from "../../assets/icons/facebookh.png";
-import twitter from "../../assets/icons/twitterh.png";
-import tiktok from "../../assets/icons/tik-tokh.png";
-import youtube from "../../assets/icons/youtubeh.png";
-import SB196 from "../../assets/stormbreaker196.png";
-import SB216 from "../../assets/stormbreaker216.png";
+import logo from "../../assets/Logo.webp";
+import instagram from "../../assets/icons/instagramh.webp";
+import facebook from "../../assets/icons/facebookh.webp";
+import twitter from "../../assets/icons/twitterh.webp";
+import tiktok from "../../assets/icons/tik-tokh.webp";
+import youtube from "../../assets/icons/youtubeh.webp";
+import SB196 from "../../assets/stormbreaker196.webp";
+import SB216 from "../../assets/stormbreaker216.webp";
 import Navbar from "./mobileNavbar/Navbar";
 
 const Header = () => {
@@ -56,8 +56,8 @@ const Header = () => {
       label: "RESOURCES",
       submenu: [
         { label: "ABOUT", link: "/about" },
-        { label: "BLOG", link: "/blog" },
-        { label: "VIDEO", link: "/video" },
+        { label: "UPDATES", link: "/blog" },
+        { label: "VIDEOS", link: "/video" },
         { label: "WARRANY POLICY", link: "/" },
       ],
     },

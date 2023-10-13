@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import "./HomeComponent.css";
-import partner1 from "../../../assets/partners/2022_bmpro-logo-hp.png";
-import partner2 from "../../../assets/partners/Enerdrive-logo.png";
-import partner3 from "../../../assets/partners/logo.png";
+import partner1 from "../../../assets/partners/2022_bmpro-logo-hp.webp";
+import partner2 from "../../../assets/partners/Enerdrive-logo.webp";
+import partner3 from "../../../assets/partners/logo.webp";
 
 function Partners() {
   const sliderRef = useRef(null);

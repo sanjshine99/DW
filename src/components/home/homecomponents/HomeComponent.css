@@ -21,6 +21,7 @@
 /* Gallery Landing styling */
 .gallery_landing_container {
   text-align: center;
+  
 }
 
 .gallery_landing_heading {
@@ -77,10 +78,10 @@
 
 .text-overlay-gallery {
   position: absolute;
-  top: 970px;
+  top: 100vh;
   left: 0;
   width: 100%;
-  height: 80%;
+  height: 60vh;
   background-color: rgba(
     0,
     0,
@@ -104,6 +105,7 @@
 }
 
 .text-overlay h1 {
+
   font-size: 75.76px; /* Adjust the font size as needed */
   color: transparent; /* Make the text color transparent */
   -webkit-text-stroke: 2px white; /* Add a white stroke around the text (adjust the width as needed) */
@@ -113,6 +115,8 @@
 }
 
 .text-overlay-gallery h1 {
+    position: absolute;
+    top: 7vh;
   font-size: 56.83px; /* Adjust the font size as needed */
   color: #fff; /* Make the text color transparent */
   transition: color 0.3s ease; /* Add a smooth transition effect for the color change */
@@ -126,13 +130,16 @@
 
 .image-container {
   position: absolute;
-  top: 1450px; /* Adjust the top position as needed */
-  display: flex;
+  top: 1200px; /* Adjust the top position as needed */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Creates two evenly spaced columns */
   justify-content: center;
   align-items: center;
   left: 0;
   right: 0;
 }
+
+
 
 .image-item {
   text-align: center;
@@ -153,7 +160,7 @@
 }
 
 .image-item.current {
-  border: 2px solid red; /* Highlight the current image */
+  border: 2px solid rgb(255, 255, 255); /* Highlight the current image */
 }
 
 /* Media query for mobile screens */
@@ -215,7 +222,7 @@
 }
 
 .current {
-  border: 2px solid red; /* Highlight the current image */
+  border: 2px solid rgb(255, 255, 255); /* Highlight the current image */
 }
 
 @keyframes waterfall-animation {
@@ -231,8 +238,9 @@
 /* Reviews */
 /* Testimonials */
 .testimonials-container {
+  height: 100vh;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 1vh;
   border-radius: 40px;
 }
 
@@ -274,6 +282,7 @@
 
 .slide__quote {
   font-family: "Roboto";
+  text-transform: lowercase !important;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.4;

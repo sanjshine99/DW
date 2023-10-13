@@ -1,13 +1,22 @@
 import React from 'react';
 import './HomeComponent.css';
-import Bespokemodels from '../../../assets/why choose us/customer-support.png';
-import Ecofriendly from '../../../assets/why choose us/ecology.png';
-import Experience from '../../../assets/why choose us/certification.png';
-import Ratings from '../../../assets/why choose us/customer-review.png';
+import Bespokemodels from '../../../assets/why choose us/customer-support.webp';
+import Ecofriendly from '../../../assets/why choose us/ecology.webp';
+import Experience from '../../../assets/why choose us/certification.webp';
+import Ratings from '../../../assets/why choose us/customer-review.webp';
+import img1 from '../../../assets/images/1.webp';
+import img2 from '../../../assets/images/2.webp';
+import img5 from '../../../assets/images/5.webp';
+import img7 from '../../../assets/images/7.webp';
+import img8 from '../../../assets/images/8.webp';
+import img9 from '../../../assets/images/9.webp';
+import img10 from '../../../assets/images/10.webp';
+import img11 from '../../../assets/images/11.webp';
+import img13 from '../../../assets/images/13.webp';
+import img14 from '../../../assets/images/14.webp';
 
-import img1 from '../../../assets/images/g1.png';
-import img2 from '../../../assets/images/g2.png';
-import img3 from '../../../assets/images/g3.png';
+
+
 
 class Gallery_landing extends React.Component {
   constructor(props) {
@@ -16,8 +25,15 @@ class Gallery_landing extends React.Component {
       images: [
         img1,
         img2,
-        img3,
-        // Add more image URLs here
+        img5,
+        img7,
+        img8,
+        img9,
+        img10,
+        img11,
+        img13,
+        img14,
+   
       ],
       currentIndex: 0, // Current index of the displayed image
     };
@@ -50,26 +66,32 @@ class Gallery_landing extends React.Component {
 
     
     return (
+      <div className="container">
+    <div className="component">
       <div className="gallery_landing_container">
         <div className="text-overlay-gallery">
           <h1>Why Choose Us</h1>
         </div>
         <div className="image-container">
           <div className="image-item">
-            <img src={Bespokemodels} alt="Bespokemodels" className='galleryoverlayimage' />
+          <img src={Bespokemodels} alt="Bespokemodels" className='galleryoverlayimage' height="100px" width="100px" />
             <p>Bespokemodels</p>
           </div>
           <div className="image-item">
-            <img src={Ecofriendly} alt="Ecofriendly" className='galleryoverlayimage'/>
+            <img src={Ecofriendly} alt="Ecofriendly" className='galleryoverlayimage' height="100px" width="100px"/>
             <p>Ecofriendly</p>
           </div>
           <div className="image-item">
-            <img src={Experience} alt="Experience" className='galleryoverlayimage'/>
-            <p>Experience</p>
+            <img src={Experience} alt="Experience" className='galleryoverlayimage' height="100px" width="100px"/>
+            <p>10+ years of manufacturing Experience</p>
           </div>
           <div className="image-item">
-            <img src={Ratings} alt="Ratings" className='galleryoverlayimage'/>
+            <img src={Ratings} alt="Ratings" className='galleryoverlayimage' height="100px" width="100px"/>
             <p>Ratings</p>
+          </div>
+          <div className="image-item">
+            <img src={Ratings} alt="Ratings" className='galleryoverlayimage' height="100px" width="100px"/>
+            <p>3 year structural warranty</p>
           </div>
         </div>
         <div className="waterfall-container">
@@ -85,6 +107,7 @@ class Gallery_landing extends React.Component {
           ))}
         </div>
       </div>
+      </div></div>
     );
   }
 }

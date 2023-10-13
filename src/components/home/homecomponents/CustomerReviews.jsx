@@ -55,6 +55,8 @@ const Testimonials = () => {
   }, []);
 
   return (
+    <div className="container">
+      <div className="component">
     <div className="testimonials-container revealUp">
       <h2>Here From our clients</h2>
       <Splide
@@ -81,6 +83,7 @@ const Testimonials = () => {
         ))}
       </Splide>
     </div>
+    </div></div>
   );
 }
 

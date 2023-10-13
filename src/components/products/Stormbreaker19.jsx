@@ -5,7 +5,7 @@ import "../home/homecomponents/HomeComponent.css";
 import Strom19inside from "../products/SlideShows/Stormbreaker19inside";
 import { gsap } from "gsap";
 import Storm19specs from "./Specsmenu/Specs19";
-import SB196img from "../../assets/Product renders/SB196Exterior.png";
+import SB196img from "../../assets/Product renders/SB196Exterior.webp";
 
 function Stormbreaker19() {
   const containerRef = useRef(null);

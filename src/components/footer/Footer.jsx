@@ -1,11 +1,11 @@
 import React from 'react';
 import './Footer.css';
-import instagram from '../../assets/icons/instagram.png';
-import facebook from '../../assets/icons/facebook.png';
-import twitter from '../../assets/icons/twitter.png';
-import tiktok from '../../assets/icons/tik-tok.png';
-import youtube from '../../assets/icons/youtube.png';
-import logo from '../../assets/Logo.png'; // Replace 'logo.png' with your actual logo image
+import instagram from '../../assets/icons/instagram.webp';
+import facebook from '../../assets/icons/facebook.webp';
+import twitter from '../../assets/icons/twitter.webp';
+import tiktok from '../../assets/icons/tik-tok.webp';
+import youtube from '../../assets/icons/youtube.webp';
+import logo from '../../assets/Logo.webp'; 
 
 const Footer = () => {
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="footer-links">
       <div className="logo">
       <a href="/" className="footer-link">
-          <img src={logo} alt="Logo" className="footer-logo" /></a>
+          <img src={logo} alt="Logo" className="footer-logo" height="100px" width="120px"   /></a>
         </div>
         <div className="footer-links-column">
           <div className="footer-links-header">Caravans</div>
@@ -27,8 +27,8 @@ const Footer = () => {
           <div className="footer-links-header">Resources</div>
           <a href="/#/about" className="footer-link">About us</a>
           <a href="#" className="footer-link">Warranty policy</a>
-          <a href="/#/blog" className="footer-link">Blog</a>
-          <a href="/#/video" className="footer-link">Video</a>
+          <a href="/#/blog" className="footer-link">UPDATES</a>
+          <a href="/#/video" className="footer-link">Videos</a>
         </div>
         <div className="footer-links-column">
           <div className="footer-links-header">Contact</div>

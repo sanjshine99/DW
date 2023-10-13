@@ -76,8 +76,8 @@ function VideoLanding() {
             <Link to="/blog" className="btn hover-border-1">
               What's new with us!
             </Link>
-            <Link to="/contact" className="btn hover-border-1">
-              Contact us!
+            <Link to="/appointment" className="btn hover-border-1">
+              Schedule a visit
             </Link>
           </div>
         </div>

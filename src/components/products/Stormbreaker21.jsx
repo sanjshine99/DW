@@ -5,7 +5,7 @@ import "../home/homecomponents/HomeComponent.css";
 import Strom21inside from "../products/SlideShows/Stormbreaker21inside";
 import { gsap } from "gsap";
 import Storm21specs from "./Specsmenu/Specs21";
-import SB216img from "../../assets/Product renders/SB216Exterior.png";
+import SB216img from "../../assets/Product renders/SB216Exterior.webp";
 
 function Stormbreaker21() {
   const containerRef = useRef(null);

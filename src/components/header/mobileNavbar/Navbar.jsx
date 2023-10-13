@@ -2,13 +2,13 @@ import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./Navbar.css";
-import instagram from "../../../assets/icons/instagramh.png";
-import facebook from "../../../assets/icons/facebookh.png";
-import twitter from "../../../assets/icons/twitterh.png";
-import tiktok from "../../../assets/icons/tik-tokh.png";
-import youtube from "../../../assets/icons/youtubeh.png";
-import SB196 from "../../../assets/stormbreaker196.png";
-import SB216 from "../../../assets/stormbreaker216.png";
+import instagram from "../../../assets/icons/instagramh.webp";
+import facebook from "../../../assets/icons/facebookh.webp";
+import twitter from "../../../assets/icons/twitterh.webp";
+import tiktok from "../../../assets/icons/tik-tokh.webp";
+import youtube from "../../../assets/icons/youtubeh.webp";
+import SB196 from "../../../assets/stormbreaker196.webp";
+import SB216 from "../../../assets/stormbreaker216.webp";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

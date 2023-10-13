@@ -2,20 +2,20 @@ import React, { useState, useEffect } from "react";
 import "./Stormbreaker21inside.css";
 
 //exterior
-import SB216Ext from "../../../assets/Product renders/SB216Exterior.png";
-import ex211 from "../../../assets/21/21 ex 1.png";
-import ex212 from "../../../assets/21/21 ex 2.png";
-import ex213 from "../../../assets/21/21 ex 3.png";
-import ex214 from "../../../assets/21/21 ex 4.png";
-import ex215 from "../../../assets/21/21 ex 5.png";
+import SB216Ext from "../../../assets/Product renders/SB216Exterior.webp";
+import ex211 from "../../../assets/21/21 ex 1.webp";
+import ex212 from "../../../assets/21/21 ex 2.webp";
+import ex213 from "../../../assets/21/21 ex 3.webp";
+import ex214 from "../../../assets/21/21 ex 4.webp";
+import ex215 from "../../../assets/21/21 ex 5.webp";
 //layout
-import SB216layout from "../../../assets/Product renders/SB216 layout.png";
+import SB216layout from "../../../assets/Product renders/SB216 layout.webp";
 //interior
-import in211 from "../../../assets/21/21 in 1.png";
-import in212 from "../../../assets/21/21 in 2.png";
-import in213 from "../../../assets/21/21 in 3.png";
-import in214 from "../../../assets/21/21 in 4.png";
-import in215 from "../../../assets/21/21 in 5.png";
+import in211 from "../../../assets/21/21 in 1.webp";
+import in212 from "../../../assets/21/21 in 2.webp";
+import in213 from "../../../assets/21/21 in 3.webp";
+import in214 from "../../../assets/21/21 in 4.webp";
+import in215 from "../../../assets/21/21 in 5.webp";
 
 const sections = [
   {
