@@ -9,6 +9,7 @@
   text-align: left; /* Align the text to the left */
   margin-top: 10vh;
   margin-bottom: 10vh;
+  scroll-snap-align: start;
 }
 
 /* Logo */

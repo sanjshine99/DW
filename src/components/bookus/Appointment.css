@@ -10,6 +10,7 @@
     padding: 20px;
     min-height: 50px;
     height: auto; /* Set height to auto to allow content to determine height */
+    scroll-snap-align: start;
   }
   
   .calendly__form {

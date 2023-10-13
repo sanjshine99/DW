@@ -8,9 +8,11 @@ import Partners from "./homecomponents/Partners";
 function Home() {
   return (
     <div className="container">
+      <div className="videocomponent">
       <Video />
+      </div>
       <div className="component">
-      <Gallery />
+        <Gallery />
       </div>
       <div className="component">
         <Reviews />

@@ -1,6 +1,11 @@
 .container {
   display: flex;
   flex-direction: column;
+
+}
+
+.videocomponent{
+  scroll-snap-align: start;
 }
 
 .component {
@@ -10,6 +15,7 @@
   padding: 20px; /* Optional: Add padding to the components */
   min-height: 50px; /* Increase the minimum height to create more spacing */
   height: 100vh;
+  scroll-snap-align: start;
 }
 
 .partnercomponent {
@@ -19,6 +25,7 @@
   /*padding: 20px; /* Optional: Add padding to the components */
   min-height: 50px; /* Increase the minimum height to create more spacing */
   height: 50vh;
+  scroll-snap-align: start;
 }
 
 .slider {
