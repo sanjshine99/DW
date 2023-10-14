@@ -21,17 +21,17 @@ const sections = [
   {
     name: "Exterior",
     images: [SB216Ext, ex211,ex212,ex213,ex214,ex215],
-    description: "Exterior section description goes here.",
+    description: "With its sturdy matte finish, our family caravan is not only a delight on the interior but also visually appealing. Crafted to tackle the wide-ranging landscapes and terrains of Australia, the Storm breaker boasts state-of-the-art mechanical systems, including a robust chassis and suspension system. Experience the potency of features such as our durable wheels and family-friendly extras like a collapsible picnic table, creating a caravan adventure that resembles scenes from your favorite movies.",
   },
   {
     name: "Layout",
     images: [SB216layout,SB216layout,SB216layout,SB216layout,SB216layout],
-    description: "Layout section description goes here.",
+    description: "The layout of the 'Stormbreaker 21'6' is designed with spaciousness and a homelike environment in mind, making it the perfect haven for families on the go. This caravan offers an expansive interior that invites you to relax and unwind, whether it's during a long road trip or a peaceful camping getaway. The cleverly designed layout provides ample room for family members to move around comfortably, ensuring everyone has their own space. With cozy seating areas, well-appointed kitchen facilities, and a harmonious ambiance, it creates a homely atmosphere where cherished family moments can be enjoyed. The 'Stormbreaker 21'6' is more than just a caravan; it's a mobile sanctuary that brings the comfort and warmth of home to your adventures.",
   },
   {
     name: "Inside",
     images: [in211,in212,in213,in214,in215,in211], 
-    description: "Inside section description goes here.",
+    description: "The Storm breaker provides you with all the worldly comforts you can expect when you’re on the road. With its plush and comfortable sleeping arrangements for the entire family, living quarters and fully equipped kitchen, enjoy every moment of your adventures with our world-class features. We consider everything too; from your smart TV to air conditioning, water heating and angled kitchen bench, you have everything you need to take a piece of home with you on every trip.",
   },
 ];
 

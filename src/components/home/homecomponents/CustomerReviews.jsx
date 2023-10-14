@@ -58,7 +58,7 @@ const Testimonials = () => {
     <div className="container">
       <div className="component">
     <div className="testimonials-container revealUp">
-      <h2>Here From our clients</h2>
+      <h2>Hear Our Client Stories</h2>
       <Splide
         options={{
           type: 'slide',

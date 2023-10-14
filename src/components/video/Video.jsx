@@ -12,24 +12,24 @@ function Video() {
       videoId: "a_KE1CVPT48?si=xmPrmqL9fsyB3OIr",
     },
     {
-      title: "Video 2",
-      description: "This is the description for Video 2.",
-      videoId: "VIDEO_ID_2",
+      title: "Sustainable And Dirt Resistant Caravan Interior?",
+      description: "Have you heard about the eco-friendly features that @vanlifestraya is super excited about on their new Deluxe Caravan?",
+      videoId: "FDPZOYnzK-4?si=oXM-HGVpUKpjeqe8",
     },
     {
-      title: "Video 3",
-      description: "This is the description for Video 3.",
-      videoId: "VIDEO_ID_3",
+      title: "THE ULTIMATE BATTERY POWER FOR OFF-GRID LIVING.",
+      description: "This video by @AVanARamNoPlan , takes you through the Victron Battery Management System and how it powers off-grid living on their 23Ft Stormbreaker by Deluxe Caravans Australia. Check it out !!",
+      videoId: "3vnXmXMpJvg?si=74DDJUEOpZL4e9gC",
     },
     {
-      title: "Video 4",
-      description: "This is the description for Video 3.",
-      videoId: "VIDEO_ID_4",
+      title: "CARAVAN TOUR I 23FT Deluxe Caravans - Stormbreaker",
+      description: "This video by  @AVanARamNoPlan , takes you through a tour and features of the 23FT Stormbreaker by Deluxe Caravans Australia. Check it out !!",
+      videoId: "lYee_55yghM?si=rz-3SYc5qfeSVOFQ",
     },
     {
-      title: "Video 5",
-      description: "This is the description for Video 3.",
-      videoId: "VIDEO_ID_5",
+      title: "EXTERIOR CARAVAN TOUR I 21.6 FT Deluxe Caravans - Stormbreaker",
+      description: "Check out our Stormbreaker 21`6 caravans exterior",
+      videoId: "ICG-86pUr-g?si=dVW1psZGbV3h9KKN",
     },
   ];
 

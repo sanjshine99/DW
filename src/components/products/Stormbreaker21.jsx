@@ -80,15 +80,7 @@ function Stormbreaker21() {
         <div className="product-container" id="layout">
           <div className="description">
             <p>
-              Here at Deluxe Caravans, taking the scenic route is what we’re all
-              about. With the Storm breaker, every journey is one to remember
-              with its world-class interior and top-notch exterior and
-              mechanical features. When you take to the road with your favourite
-              people, you enjoy a spacious layout with all the facilities you
-              expect from a luxury RV experience. We don’t just stop there—we
-              make sure your adventures don’t leave a mark on the environment.
-              With its eco-friendly features, travel without the guilt but with
-              all the joy you deserve.
+            Are you in search of a more spacious family bunk van? Look no further; the Storm breaker 21'6 is the answer you've been seeking. With this model, you're granted all the remarkable features found in the 19'6 version. Each journey becomes a memorable experience, thanks to its world-class interior, top-tier exterior, and mechanical attributes. When you hit the open road with your cherished companions, you're treated to a generously spacious layout, complete with all the amenities you'd expect from a luxury RV adventure. But we don't stop there—our commitment extends to ensuring that your adventures have minimal impact on the environment. With its eco-friendly features, you can travel without guilt and bask in all the joy you rightfully deserve.
             </p>
           </div>
           <div className="image">

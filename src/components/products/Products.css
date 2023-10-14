@@ -1,44 +1,62 @@
-
 /* Title Code */
 .Product-header {
   font-size: 75.76px;
-  color: white; /* Change text color to white */
+  color: white;
   letter-spacing: 3px;
-  position: absolute; /* Position the title absolutely */
-  top: 35%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Center the title precisely */
-  z-index: 2; /* Place the title above the image */
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
   transition: color 0.3s ease;
   mix-blend-mode: screen;
 }
 
 /* Button Code */
 .button-container {
-  position: absolute; /* Position the button container absolutely */
-  bottom: 43%; /* Adjust the vertical position as needed */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center the buttons horizontally */
-  z-index: 2; /* Place the buttons above the image */
+  position: absolute;
+  bottom: 43%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
 }
 
-.product-container{
- display: flex;
- align-items: center;
- justify-content: center;
- max-width: 100vw;
- text-align: justify;
+.product-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100vw;
+  text-align: justify;
 }
-.slideshowcomopnent{
+
+.slideshowcomopnent {
   scroll-snap-align: start;
 }
 
-.image{
-
+.description {
+  width: 40vw; /* Adjust the width as needed */
+  margin-left:100px;
 }
 
-.description{
-  width: 40vw;
+.image iframe {
+  width: 60vw; /* Adjust the width as needed */
+  height:90vh; /* Set an appropriate height for the iframe */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column; /* Display description above the iframe */
+  }
+
+  .description {
+    width: 80%; /* Adjust the width as needed */
+  }
+
+  .image iframe {
+    width: 80%; /* Adjust the width as needed */
+    height: 300px; /* Set an appropriate height for smaller screens */
+  }
 }
 
 .btn-holder {
@@ -96,8 +114,7 @@
   height: 98%;
 }
 
-
-.background-image img{
-opacity: 0.9;
-max-width: 100vw;
+.background-image img {
+  opacity: 0.9;
+  max-width: 100vw;
 }

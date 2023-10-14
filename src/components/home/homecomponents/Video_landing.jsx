@@ -74,7 +74,7 @@ function VideoLanding() {
           </div>
           <div className="link-overlay revealUp">
             <Link to="/blog" className="btn hover-border-1">
-              What's new with us!
+            Latest Insights
             </Link>
             <Link to="/appointment" className="btn hover-border-1">
               Schedule a visit

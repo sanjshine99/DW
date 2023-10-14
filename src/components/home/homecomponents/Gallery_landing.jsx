@@ -4,6 +4,7 @@ import Bespokemodels from '../../../assets/why choose us/customer-support.webp';
 import Ecofriendly from '../../../assets/why choose us/ecology.webp';
 import Experience from '../../../assets/why choose us/certification.webp';
 import Ratings from '../../../assets/why choose us/customer-review.webp';
+import Warranty from '../../../assets/why choose us/warranty.webp';
 import img1 from '../../../assets/images/1.webp';
 import img2 from '../../../assets/images/2.webp';
 import img5 from '../../../assets/images/5.webp';
@@ -90,7 +91,7 @@ class Gallery_landing extends React.Component {
             <p>Ratings</p>
           </div>
           <div className="image-item">
-            <img src={Ratings} alt="Ratings" className='galleryoverlayimage' height="100px" width="100px"/>
+            <img src={Warranty} alt="Ratings" className='galleryoverlayimage' height="100px" width="100px"/>
             <p>3 year structural warranty</p>
           </div>
         </div>
