@@ -8,6 +8,7 @@ import facebook from "../../assets/icons/facebookh.webp";
 import twitter from "../../assets/icons/twitterh.webp";
 import tiktok from "../../assets/icons/tik-tokh.webp";
 import youtube from "../../assets/icons/youtubeh.webp";
+import SB186 from "../../assets/stormbreaker186.webp";
 import SB196 from "../../assets/stormbreaker196.webp";
 import SB216 from "../../assets/stormbreaker216.webp";
 import Navbar from "./mobileNavbar/Navbar";
@@ -43,7 +44,11 @@ const Header = () => {
       label: "OUR RANGE",
       submenu: [
         {
-          label: <img src={SB196} alt="Placeholder" />,
+          label: <img src={SB186} alt="Placeholder" />,
+          link: "/stormbreaker18",
+        },
+        {
+          label: <img src={SB196} alt="Placeholder"  /> ,
           link: "/stormbreaker19",
         },
         {

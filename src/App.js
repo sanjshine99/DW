@@ -10,6 +10,7 @@ const Blog = lazy(() => import('./components/blog/Blog'));
 const Video = lazy(() => import('./components/video/Video'));
 const Stormbreaker19 = lazy(() => import('./components/products/Stormbreaker19'));
 const Stormbreaker21 = lazy(() => import('./components/products/Stormbreaker21'));
+const Stormbreaker18 = lazy(() => import('./components/products/Stormbreaker18'));
 const Contact = lazy(() => import('./components/contact/Contact'));
 const Appointment = lazy(() => import('./components/bookus/Appointment'));
 
@@ -26,6 +27,7 @@ function App() {
             <Route path="/video" element={<Video />} />
             <Route path="/stormbreaker19" element={<Stormbreaker19 />} />
             <Route path="/stormbreaker21" element={<Stormbreaker21 />} />
+            <Route path="/stormbreaker18" element={<Stormbreaker18 />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/appointment" element={<Appointment />} />
           </Routes>

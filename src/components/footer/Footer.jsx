@@ -20,6 +20,7 @@ const Footer = () => {
         </div>
         <div className="footer-links-column">
           <div className="footer-links-header">Caravans</div>
+          <a href="/#/stormbreaker18" className="footer-link">Stormbreaker 18`6</a>
           <a href="/#/stormbreaker19" className="footer-link">Stormbreaker 19`6</a>
           <a href="/#/stormbreaker21" className="footer-link">Stormbreaker 21`6</a>
         </div>
