@@ -10,7 +10,7 @@ import ex184 from "../../../assets/18/18 ex 4.webp";
 
 
 //layout
-import SB216layout from "../../../assets/Product renders/SB216 layout.webp";
+import SB186layout from "../../../assets/Product renders/SB18 layout.webp";
 //interior
 import in181 from "../../../assets/18/18 in 1.webp";
 import in182 from "../../../assets/18/18 in 2.webp";
@@ -27,7 +27,7 @@ const sections = [
   },
   {
     name: "Layout",
-    images: [SB216layout,SB216layout,SB216layout,SB216layout,SB216layout],
+    images: [SB186layout,SB186layout,SB186layout,SB186layout,SB186layout],
     description: "The 'StormBreaker 18'6' offers a layout meticulously crafted to provide all the amenities you'd find in the 21'6' model but in a more space-efficient design. This caravan is tailored to meet the needs of families on the move, ensuring they don't have to compromise on comfort. Its interior design is thoughtful and inviting, encouraging you to relax and make the most of your journeys, whether it's an extended road trip or a tranquil camping retreat. Despite its compact size, the layout maximizes available space, allowing family members to move around comfortably and ensuring everyone has their designated area. With snug seating arrangements, well-equipped kitchen facilities, and a cozy atmosphere, it creates the perfect environment for crafting cherished family memories. The 'StormBreaker 18'6' is not just a caravan; it's a mobile sanctuary that brings the comfort and coziness of home to your adventures in a more compact package.",
   },
   {
