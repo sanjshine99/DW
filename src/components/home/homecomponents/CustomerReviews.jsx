@@ -8,28 +8,28 @@ const Testimonials = () => {
   const testimonialsData = [
     {
       rating: "★★★★★",
-      quote: "How lucky we were to have stumbled across the Deluxe brand! We were thrilled to take delivery of our first caravan - a Deluxe Alpha - In late 2020. The entire process from Initial price enquiry to taking delivery of the van was seemless. Our point of contact was readily avallable to answer any questions and also kept in contact with progress photos of the bulld. The Alpha layout is family friendly, the appliances are of great quality and the finishes Inside the van are luxurious. We also love the look of the body of the van, which really turns heads. We could not be happier!.",
-      author: "ANGELA AND DAN CARMICHAEL"
+      quote: "Just love our Deluxe  Stormbreaker 19.6, tows beautifully behind our Dodge Ram.We have just taken it on our long weekend away with our kids. Nothing went wrong, was very comfortable felt like home. Couldn’t of got a better can 😁 very happy family 😁",
+      author: "Jackie Dodd"
     },
     {
       rating: "★★★★★",
-      quote: "We Love our Deluxe raptor family caravan, roomy modern design features. Comfy roomy bunks, big enough for adults, especially amazing for our growing boys. A washing machine, and out door shower, amazing feature especially after a day at the beach, before retiring to the Indoor ensuite.. road tripping is amazing in our deluxe van!!! Highly recommend",
-      author: "TRACI LEANNE"
+      quote: "We built our Deluxe Stormbreaker off road van with Deluxe. It's extremely hard to put into words just how good these Caravans are. I'm a mechanical engineer with extreme OCD - this van ticks all my boxes. Style, value for money, strength, practical, attention to detail. Most importantly for me the customer service.... Lakshan and Ayali kept in contact weekly woth updates through the build with written updates and photos. Deluxe are not a cheap, bulk builder. If you want your boutique forever van this is your team to see. Happy to give 1 on 1 feedback to anyone please leave a message with email here and I'll talk through the seamless process.",
+      author: "Nathon Burton"
     },
     {
       rating: "★★★★★",
-      quote: "After a lot of research Into many Australian caravan bullders we decided to go ahead with a 21.6ft triple bunk 'Alpha' from Deluxe Caravans. From start to finish the process was made easy with their great Ideas, communication and regular updates of the bulld Including photos. They helped us customise this van to exactly what we wanted. While The standard Inclusions and colour choices ticked most items off our 'want list' we had other needs met through their optional extras. Such as the external kitchen, extra water tank capacity, extra solar, large compressor fridge, lithium batteries, dust suppression system, 4 bike rack, full off- road Independent suspension, upgraded gvm and more. Purchasing this caravan has been a great decision for our family, we use it regularly and in the near future plan to take it for a extended trip across the country.",
-      author: "LUKE & NICOLE"
+      quote: "What can I say.   We cannot be happier.  This is our 3rd van now and by far the best yet.  The build quality and finishes.  Ayali and the guys have made the entire experience an absolute dream.  From the day we first spoke with Ayali till the day of delivery we had been updated with photos of the build (never happened with any other manufacturers) time frames and any other information we needed.  I cannot speak more highly of the team at Deluxe.   Thank you guys.",
+      author: "Steve VDZ"
     },
     {
       rating: "★★★★★",
-      quote: "Set ourselves with a Deluxe Alpha Family Tourer! Fantastic company to deal with from start to finish. We added heaps of extras throughout the build and nothing was a hassle. The warranty claim was also handled exceptionally well. We will definitely be building again with Deluxe Caravans in the future.",
-      author: "MICHAEL AND AMY LONG"
+      quote: "Wow! We couldn't be happier with the entire process with Ayali and the team at Deluxe. We love our new Stormbreaker! The craftsmanship, quality and inclusions is just amazing. I loved that we got progress photo updates without asking as well. Amazing work guys!",
+      author: "Nicole Meehan"
     },
     {
       rating: "★★★★★",
-      quote: "We saw our first Deluxe Caravan whilst away in 2019 and was Instantly impressed. We then started looking for a new van, checking out all of the major brands and nothing came close to the quality and value of the Deluxe Van. Every extra that we wanted in a caravan that was an added extra with other suppliers, already came with the Deluxe and for a better price then any other caravan suppliers starting price. We got our Deluxe Alpha 12 months ago and could not be happler. Every caravan park we pull into we always have people wanting to look through and are amazed with the van. If your looking for the best quality and valued van on the market, make sure you check out Deluxe Caravans as that's what we recommend to family and friends.",
-      author: "LUCAS & BEC WHITE"
+      quote: "We went with the StormBreaker 19’6 Double Bunk. We worked with the team at Deluxe to build our van and we are so glad we found them! The whole process was effortless. Nothing is too hard for the team at Deluxe Caravans and the service they offer is second to none. From build progress photos all the way throughout the build, endless options for additional upgrades and the quality is exemplary! When the time comes for our next caravan build there will be only one stop for us straight to Deluxe! Deluxe service! Deluxe Quality! Deluxe People! Thanks Lachlan any the team for our amazing caravan. Rhys, Tori, Lincoln and Florence aka @_thesydneyswans_ (Insta)",
+      author: "Rhys Swan"
     }
   ];
 

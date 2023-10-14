@@ -7,6 +7,8 @@ import ex181 from "../../../assets/18/18 ex 1.webp";
 import ex182 from "../../../assets/18/18 ex 2.webp";
 import ex183 from "../../../assets/18/18 ex 3.webp";
 import ex184 from "../../../assets/18/18 ex 4.webp";
+
+
 //layout
 import SB216layout from "../../../assets/Product renders/SB216 layout.webp";
 //interior

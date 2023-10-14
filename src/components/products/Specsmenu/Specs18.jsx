@@ -19,29 +19,28 @@ class Specs21 extends Component {
     const data = [
       {
         title: 'INTERIOR',
-        content: `Bed - Queen Island with Lift-Up Storage 
+        content: `Bed - Queen East - West 
         Niche - Bedside - Both Sides
-        Bunks - 2 Bunks (Length: Top Bunk - 2.1m, Middle Bunk 2.1m )
+        Bunks - 2 or 3 x with Windows ( Length: Top Bunk – 1.9m, Middle Bunk 1.9m)
         Mattress - Innerspring with Pillow-Top 
-        L - Shape Lounge - with Drop Down Table with TIC Cushion
+        Straight Lounge - with Drop Down Table
         Storage - Drawers 
         Windows - Double-Glazed 
-        Door - Triple Lock with Separate Security Screen 
+        Door - Triple Lock with sep Security Screen
         Drawers - On Rollers 
         Floor Vinyl - Durable Modern Design 
         Hatch Roof - 700mm x 500mm 
         Hatch Roof - 450mm x 400mm 
         TV - Bracket 
-        Hinges - Piano 
-        Pantry - Half (Slide-Out) 
+        Hinges 
         Frame – Meranti/ CNC `,
       },
         {
           title: 'SPLASHBACK, BENCHTOP, CUPBOARD DOORS AND UPHOLSTERY',
-          content: `Bench Top - Premium Laminate 
+          content: `Bench Top - Laminate 
           Bench Top Lid - Over Stove 
           Splashback Kitchen - Full Height 
-          Cupboard Doors - Premium Laminate ( Scratch & UV Resistant ) 
+          Cupboard Doors - Premium Laminate (Scratch &amp; UV Resistant) 
           Upholstery - Faux Leather Vinyl `,
       },
         {
@@ -52,98 +51,91 @@ class Specs21 extends Component {
           TV - Co-Ax Point 
           TV - Aerial Point 
           Speakers - 2 x Internal 
-          USB Ports - 1 x in Each Bunk (2), 2 x Bedside & 1 x Lounge 
+          USB Ports - 1 x in Each Bunk (2), 2 x Bedside &amp; Lounge 
           Reading Lights 
-          Sirocco Fan – Main bed `,
+          Sirocco Fan – Main bed  `,
       },
         {
             title: 'ELECTRICAL - EXTERNAL',
-            content: `2 x LED Annexe Lights
-            1 x LED Annexe Light over Tunnel Boot
-            LED Tunnel Boot Light
-            Blue LED Door Handle Light
-            Blue LED Light Bar ( Front & Back)
-            12-Pin Car Plug
-            12V Weatherproof Cig Socket
-            240V Weatherproof Outlet
-            2 x 170-Watt Solar Panels
-            3 x water Tank Level Probes
-            Reverse Camera & Display
-            An Antenna
-            2 x 100 Amp Deep Cycle Batteries
-            Side Markers with Reflector`,
+            content: `2 x LED Annexe ( Dual ) 
+            LED Tunnel Boot ( Dual ) 
+            Light – LED Light Bar ( Front &amp; Back ) 
+            Light - Blue LED Door Handle 
+            Light - Blue LED Strip Light (Door Footwell) 
+            Plug Car - 12 Pin 
+            Power - 12V Weather Proof Cig Socket 
+            Power - 240V Weather Proof Outlet (Single) 
+            Solar - 2 x 170 watt Panel 
+            3 x Water Tank Level Probes 
+            Reverse Camera &amp; Display 
+            Antenna - (Reads Horizontal &amp; Vertical Signals) 
+            Battery - 2 x 100 amp Deep Cycle 
+            Side Markers `,
          },
           {
             title: 'APPLIANCES',
-            content: `Air Conditioning (Belair 3400 | slimline | Reverse-Cycle | Roof-Mounted)
-            Front Load Washing Machine
-            Hot water – 28-litre Gas/Electric Heating
-            Rangehood: 12V LED with Twin Fans
-            Oven (3 x Gas | 1 x Electric Burner and Grill)
-            Fridge and Freezer: 188-Litre 3 Way Automatic Absorption
-            25L Microwave
-            Stereo/Speaker System
-            24” TV`,
+            content: `Air Conditioning – Belair 3400 Slim Line Reverse Cycle Roof Mounted 
+            Mini Grill - 3 Gas / 1 Electric Burner &amp; Grill 
+            Range hood - 12v LED with Twin Fans 
+            Fridge / Freezer – 188 Ltr 3-Way Automatic Absorption (Dometic) 
+            Hot Water Service - 28ltr Gas/Electric 
+            25L Microwave 
+            Stereo CD/DVD/MP3/Radio System 
+            TV - 24&quot; Smart `,
           },
           {
             title: 'PLUMBING',
-            content: `ABS Shower
-            Thetford Toilet
-            Premium Black Kitchen Tap
-            Black Round Basin
-            Single Bowl Black Sink
-            3-Way Tap with Water Filter
-            Gas Bayonet
-            External Shower
-            Tap on A-frame
-            2 x 95-Litre Water Tanks
-            110-Litre Grey Water Tank`,
+            content: `ABS Light Weight Shower 
+            Toilet - Thetford 
+            Taps - Premium Black 
+            Black Round Basin 
+            Sink - Single Black 
+            Gas Bayonet 
+            3 Way Tap with Water Filter 
+            External Shower 
+            Tap - On A-frame 
+            Water Tanks - 2 x 95Ltr 
+            Grey Water Tank - 110Ltr `,
           },
           {
             title: 'EXTERIOR',
-            content: `17Ft Roll-Out Awning
-            Storage Compartment Hatch (Rear, Off-Side)
-            Foldable Picnic Table
-            Tunnel Boot – Front ( Dual Access )
-            2 x 9KG Gas Bottles
-            Double Pull-Out Step
-            Stone Mesh Guard
-            Large Toolbox with Dual Slide Out
-            Front Dual Bike Rack`,
+            content: `Awning - Roll-Out (Charcoal) 
+            Hatch - Storage Compartment (Rear Off-Side) 
+            Picnic Table - Fold-Out 
+            Tunnel Boot - Front (Dual Access) 
+            Gas Bottles - 2 x 9kg 
+            Step - Double (Pull-Out) 
+            Large Toolbox with Dual Slide Out 
+            Front Dual Bike Rack 
+            Stone Mesh Guard `,
           },
           {
             title: 'PROTECTION',
-            content: `Checker Plate Front 900mm (Black)
-            Checker Plate Sides 900mm (Black)
-            Checker Plate Sides 900mm (Black)
-            Aluminium Composite Cladding
-            Mudflaps
-            12” Electric Brake System`,
+            content: `Checker Plate Front 900mm (Black) 
+            Checker Plate Sides 900mm (Black) 
+            Checker Plate Sides 900mm (Black) 
+            Cladding - Aluminium Composite
+            Mudflaps 
+            Brakes – 12” Electric Brakeaway System `,
           },
           {
             title: 'CHASSIS',
-            content: `Dual Axle
-            Hitch: D035
-            A-Frame: 6″
-            Chassis: 6″ Dura-Gal
+            content: `Axle - Double 
+            Hitch - D035 
+            A-Frame - 6&quot; 
+            Chassis - 6&quot; Dura-Gal 
             2” Raiser
-            Wheels: 16″ Alloy
-            Heavy-Duty Off-Road Tires
-            1 x Spare Wheel (Mounted On Rear Bumper)
-            2 x  Jerry Can Holders (Rear Bumper)
-            Jack: CNR Supports (Drop-Down)
-            A-Frame Jockey Wheel
-            Storage Mesh Plate`,
-          },
-          {
-            title: 'OVERALL',
-            content: `Ball Weight: 200 kg
-            Tare Weight: 2850 kg
-            ATM: 3500 kg`,
+            Wheels - 16&quot; Alloy 
+            Tyres - Heavy-Duty Off-Road 
+            Spare Wheel - 1 x Mounted on (Rear Bumper) 
+            Jerry Can Holders - 2 x 20Ltr (Rear Bumper) 
+            Jack - CNR Supports (Drop Down) 
+            Jockey Wheel - A-Frame 
+            Storage Mesh Plate- A-Frame `,
           },
           {
             title: 'SUSPENSION',
-            content: `FULL OFF-ROAD - INDEPENDENT – 3.5T`,
+            content: `TuffRide - 3.0T`,
           },
       ];
       
