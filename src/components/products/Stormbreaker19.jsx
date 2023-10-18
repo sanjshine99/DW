@@ -125,7 +125,7 @@ function Stormbreaker19() {
               className="btn hover-border-1 revealUp"
               onClick={openLayoutPopupLayoutPolicy}
             >
-              Download Layout
+              Download Brochure
             </button>
             {isLayoutPopupOpen && (
               <LayoutPopUp onClose={closeLayoutPopupLayoutPolicy} />

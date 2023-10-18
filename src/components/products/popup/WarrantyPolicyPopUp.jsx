@@ -82,7 +82,7 @@ const WarrantyPolicyPopup = ({ onClose }) => {
           </div>
         </form>
         <button className="closeButton" onClick={onClose}>
-          Close
+         X
         </button>
       </div>
     </div>
