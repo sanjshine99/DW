@@ -5,7 +5,7 @@ import "../home/homecomponents/HomeComponent.css";
 import Strom18inside from "../products/SlideShows/Stormbreaker18inside";
 import { gsap } from "gsap";
 import Storm18specs from "./Specsmenu/Specs18";
-import SB216img from "../../assets/Product renders/SB216Exterior.webp";
+import SB216img from "../../assets/Product renders/SB186Exterior.webp";
 import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
 import LayoutPopUp from "./popup/LayoutPopUp";
 
@@ -134,7 +134,7 @@ function Stormbreaker18() {
           </div>
           <div className="image">
             <iframe
-              src="https://esceneyf.sirv.com/Spins/test2/test2.spin"
+              src="https://esceneyf.sirv.com/Spins/18/18.spin"
               width="1000px"
               height="1000px"
               frameborder="0"

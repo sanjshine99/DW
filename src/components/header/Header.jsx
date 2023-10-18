@@ -44,16 +44,22 @@ const Header = () => {
       label: "OUR RANGE",
       submenu: [
         {
-          label: <img src={SB186} alt="Placeholder" />,
+          label: <img src={SB186} alt="stormbreaker18" />,
           link: "/stormbreaker18",
+          text: "Stormbreaker 18`6",
+          price: "$89,900",
         },
         {
-          label: <img src={SB196} alt="Placeholder" />,
+          label: <img src={SB196} alt="stormbreaker19" />,
           link: "/stormbreaker19",
+          text: "Stormbreaker 19`6`",
+          price: "$92,900",
         },
         {
-          label: <img src={SB216} alt="Placeholder" />,
+          label: <img src={SB216} alt="stormbreaker21" />,
           link: "/stormbreaker21",
+          text: "Stormbreaker 21`6`",
+          price: "$94,900",
         },
       ],
     },
@@ -195,6 +201,8 @@ const Header = () => {
                               }}
                             >
                               {subitem.label}
+                              <h3>{subitem.text}</h3>
+                              <h5>{subitem.price}</h5>
                             </motion.div>
                           </Link>
                         ))}

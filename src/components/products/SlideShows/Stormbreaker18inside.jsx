@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Stormbreaker21inside.css";
 
 //exterior
-import SB216Ext from "../../../assets/Product renders/SB216Exterior.webp";
+import SB216Ext from "../../../assets/Product renders/SB186Exterior.webp";
 import ex181 from "../../../assets/18/18 ex 1.webp";
 import ex182 from "../../../assets/18/18 ex 2.webp";
 import ex183 from "../../../assets/18/18 ex 3.webp";

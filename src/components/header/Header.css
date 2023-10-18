@@ -24,8 +24,13 @@
 }
 
 .header img {
-  max-width: 250px;
-  margin-right: 5vw;
+  align-items: center;
+  max-width: 20vw;
+  margin-right: 4vw;
+}
+
+.header h3,h5 {
+  text-align: left;
 }
 
 /* Logo */
