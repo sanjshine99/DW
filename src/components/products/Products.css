@@ -35,12 +35,13 @@
 
 .description {
   width: 40vw; /* Adjust the width as needed */
-  margin-left:100px;
+  margin-left: 100px;
 }
 
 .image iframe {
   width: 60vw; /* Adjust the width as needed */
-  height:90vh; /* Set an appropriate height for the iframe */
+  height: 90vh; /* Set an appropriate height for the iframe */
+  padding-top: 7%;
 }
 
 /* Media query for smaller screens */

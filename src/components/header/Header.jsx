@@ -69,7 +69,6 @@ const Header = () => {
         { label: "ABOUT", link: "/about" },
         { label: "UPDATES", link: "/blog" },
         { label: "VIDEOS", link: "/video" },
-        { label: "WARRANY POLICY", link: "/" },
       ],
     },
     {
