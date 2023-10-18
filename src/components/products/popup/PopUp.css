@@ -76,3 +76,9 @@
 .field {
   margin-right: 5%;
 }
+
+.button.disabled {
+  background: #ff0000; /* Change the background color to a muted color when disabled */
+  cursor: not-allowed; /* Change the cursor style when disabled */
+  color: rgb(255, 255, 255);
+}

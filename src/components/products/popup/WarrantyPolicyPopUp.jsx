@@ -5,6 +5,7 @@ import WarrantyPdf from "../../../assets/pdfs/Warranty.pdf";
 const WarrantyPolicyPopup = ({ onClose }) => {
   const MAILCHIMP_FORM_ACTION_URL = process.env.REACT_APP_MAILCHIMP_URL;
   const [email, setEmail] = useState("");
+  const [isEmailValid, setIsEmailValid] = useState(false); // Track email validity
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
@@ -30,12 +31,15 @@ const WarrantyPolicyPopup = ({ onClose }) => {
   };
 
   const handleEmailChange = (e) => {
-    setEmail(e.target.value);
+    const emailValue = e.target.value;
+    setEmail(emailValue);
+    // Check if the input is a valid email using a simple regex pattern
+    const isValid = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(emailValue);
+    setIsEmailValid(isValid);
   };
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = WarrantyPdf;
     link.href = WarrantyPdf;
     link.download = "Warranty.pdf";
     link.click();
@@ -69,20 +73,20 @@ const WarrantyPolicyPopup = ({ onClose }) => {
                 onChange={handleEmailChange}
               />
             </div>
-            {/* Rest of your form fields */}
             <div className="download" onClick={handleDownload}>
-              <input
-                type="submit"
-                value="Download"
-                name="subscribe"
-                id="mc-embedded-subscribe"
-                className="button"
-              />
+            <input
+  type="submit"
+  value="Download"
+  name="subscribe"
+  id="mc-embedded-subscribe"
+  className={`button ${isEmailValid ? "" : "disabled"}`} // Add the "disabled" class when email is not valid
+  disabled={!isEmailValid} // Disable the button when the email is not valid
+/>
             </div>
           </div>
         </form>
         <button className="closeButton" onClick={onClose}>
-         X
+          X
         </button>
       </div>
     </div>
