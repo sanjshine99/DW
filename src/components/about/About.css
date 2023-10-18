@@ -22,3 +22,20 @@
     font-size: 56.76px;
     margin: 10px;
   }
+
+  .ourval{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Creates two evenly spaced columns */
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+   
+  }
+
+  .ourval p{
+    text-transform: lowercase !important;
+  }
+
+  

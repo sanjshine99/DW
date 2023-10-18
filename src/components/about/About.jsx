@@ -3,6 +3,13 @@ import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
 import "./About.css";
 
+import AUSTRALIANMADE from '../../assets/ourval/ausmade.webp';
+import TEAMWORK from '../../assets/ourval/teamwork.webp';
+import QUALITYINNOVATION from '../../assets/ourval/badge.webp';
+import TOPNOTCHSUPPORT from '../../assets/ourval/technical-support.webp';
+import COMMUNITY from '../../assets/ourval/community.webp';
+import ECOFRIENDLYOPTIONS from '../../assets/ourval/ecology.webp';
+
 function About() {
   return (
     <div className="container">
@@ -41,8 +48,48 @@ function About() {
           </p>
         </div>
       </div>
-      <div className="component">Our Values</div>
-    </div>
+      <div className="component">
+      <h1>Our Values</h1>
+        <div className="ourval"> 
+        <div className="image-item">
+          <img src={AUSTRALIANMADE} alt="Bespokemodels" className='galleryoverlayimage' height="100px" width="100px" />
+            <h3>AUSTRALIAN MADE</h3>
+            <p>Everything from the design process to the build of each deluxe caravan is done right here at home.</p>
+          </div>
+          <div className="image-item">
+            <img src={TEAMWORK} alt="Ecofriendly" className='galleryoverlayimage' height="100px" width="100px"/>
+            <h3>TEAMWORK</h3>
+            <p>Our customers mean the world to us; that’s why we go out of our way to provide the care they deserve.</p>
+
+          </div>
+          <div className="image-item">
+            <img src={QUALITYINNOVATION} alt="Experience" className='galleryoverlayimage' height="100px" width="100px"/>
+            <h3>QUALITY & INNOVATION</h3>
+            <p>We don’t believe in cutting corners. Our work is driven by the utmost precision, innovation and quality.</p>
+
+          </div>
+          <div className="image-item">
+            <img src={TOPNOTCHSUPPORT} alt="Ratings" className='galleryoverlayimage' height="100px" width="100px"/>
+            <h3>TOP NOTCH SUPPORT</h3>
+            <p>Our team is at the heart of our success. That’s why we give them the support they need to flourish.</p>
+
+          </div>
+          <div className="image-item">
+            <img src={COMMUNITY} alt="Ratings" className='galleryoverlayimage' height="100px" width="100px"/>
+            <h3>COMMUNITY</h3>
+            <p>We’re big believers in our local community. At Deluxe Caravans, we support businesses in our area.</p>
+
+          </div>
+          <div className="image-item">
+            <img src={ECOFRIENDLYOPTIONS} alt="Ratings" className='galleryoverlayimage' height="100px" width="100px"/>
+            <h3>ECO FRIENDLY OPTIONS</h3>
+            <p>From faux leather to composting toilets, we ensure your carbon footprint on the road is at a minimum.</p>
+
+          </div>
+        </div>
+        </div>
+      </div>
+    
   );
 }
 
