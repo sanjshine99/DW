@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./PopUp.css";
-import WarrantyPdf from "../../../assets/pdfs/Warranty.pdf";
+import WarrantyPdf from "../../../assets/pdfs/UpgradeList.pdf";
 
 const WarrantyPolicyPopup = ({ onClose }) => {
   const MAILCHIMP_FORM_ACTION_URL = process.env.REACT_APP_MAILCHIMP_URL;
@@ -22,7 +22,7 @@ const WarrantyPolicyPopup = ({ onClose }) => {
       if (response.ok) {
         const link = document.createElement("a");
         link.href = WarrantyPdf;
-        link.download = "Warranty.pdf";
+        link.download = "UpgradeList.pdf";
         link.click();
       }
     } catch (error) {
@@ -41,14 +41,14 @@ const WarrantyPolicyPopup = ({ onClose }) => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = WarrantyPdf;
-    link.download = "Warranty.pdf";
+    link.download = "UpgradeList.pdf";
     link.click();
   };
 
   return (
     <div className="popup-container">
       <div className="popup">
-        <h1>Download the Warranty Policy</h1>
+        <h1>Download Upgrade List</h1>
         <form
           onSubmit={handleFormSubmit}
           action={MAILCHIMP_FORM_ACTION_URL}

@@ -48,7 +48,7 @@ const LayoutPopUp = ({ onClose }) => {
   return (
     <div className="popup-container">
       <div className="popup">
-        <h1>Download our brochure</h1>
+        <h1>Download Our Brochure</h1>
         <form
           onSubmit={handleFormSubmit}
           action={MAILCHIMP_FORM_ACTION_URL}
