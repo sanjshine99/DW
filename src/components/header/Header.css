@@ -10,12 +10,11 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 1000;
   transition: background-color 0.3s, color 0.3s ease;
   overflow: visible; /* Show overflow content */
   height: auto; /* Auto height for the header */
   scroll-snap-align: start;
-
 }
 
 .header:hover {

@@ -1,4 +1,4 @@
-import React, { useRef,  useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
@@ -6,6 +6,8 @@ import Strom19inside from "../products/SlideShows/Stormbreaker19inside";
 import { gsap } from "gsap";
 import Storm19specs from "./Specsmenu/Specs19";
 import SB196img from "../../assets/Product renders/SB196Exterior.webp";
+import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
+import LayoutPopUp from "./popup/LayoutPopUp";
 
 function Stormbreaker19() {
   const containerRef = useRef(null);
@@ -23,7 +25,6 @@ function Stormbreaker19() {
       layoutDiv.scrollIntoView({ behavior: "smooth" });
     }
   };
-
 
   useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
@@ -45,6 +46,25 @@ function Stormbreaker19() {
       );
     });
   }, []);
+
+  const [isWarrantyPopupOpen, setWarrantyPopupOpen] = useState(false);
+  const [isLayoutPopupOpen, setLayoutPopupOpen] = useState(false);
+
+  const openWarrantyPopupWarrantyPolicy = () => {
+    setWarrantyPopupOpen(true);
+  };
+
+  const closeWarrantyPopupWarrantyPolicy = () => {
+    setWarrantyPopupOpen(false);
+  };
+
+  const openLayoutPopupLayoutPolicy = () => {
+    setLayoutPopupOpen(true);
+  };
+
+  const closeLayoutPopupLayoutPolicy = () => {
+    setLayoutPopupOpen(false);
+  };
 
   return (
     <div className="container">
@@ -91,15 +111,35 @@ function Stormbreaker19() {
               eco-friendly features, travel without the guilt but with all the
               joy you deserve.
             </p>
+            <button
+              className="btn hover-border-1 revealUp"
+              onClick={openWarrantyPopupWarrantyPolicy}
+            >
+              Warranty Policy
+            </button>
+            {isWarrantyPopupOpen && (
+              <WarrantyPolicyPopup onClose={closeWarrantyPopupWarrantyPolicy} />
+            )}
+
+            <button
+              className="btn hover-border-1 revealUp"
+              onClick={openLayoutPopupLayoutPolicy}
+            >
+              Download Layout
+            </button>
+            {isLayoutPopupOpen && (
+              <LayoutPopUp onClose={closeLayoutPopupLayoutPolicy} />
+            )}
           </div>
           <div className="image">
             <iframe
               src="https://esceneyf.sirv.com/Spins/SB196/SB196.spin"
+              title="Stormbreaker 19'6"
               width="1000px"
               height="1000px"
               frameborder="0"
               allowFullScreen
-            ></iframe>{" "}
+            ></iframe>
           </div>
         </div>
       </div>

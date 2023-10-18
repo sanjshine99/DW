@@ -1,0 +1,39 @@
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup {
+  position: relative;
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  color: black;
+  width: 500px;
+  height: 200px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.download {
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+.field {
+  margin-right: 5%;
+}

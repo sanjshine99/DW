@@ -48,7 +48,7 @@ const Header = () => {
           link: "/stormbreaker18",
         },
         {
-          label: <img src={SB196} alt="Placeholder"  /> ,
+          label: <img src={SB196} alt="Placeholder" />,
           link: "/stormbreaker19",
         },
         {
@@ -63,7 +63,6 @@ const Header = () => {
         { label: "ABOUT", link: "/about" },
         { label: "UPDATES", link: "/blog" },
         { label: "VIDEOS", link: "/video" },
-        { label: "WARRANY POLICY", link: "/" },
       ],
     },
     {
