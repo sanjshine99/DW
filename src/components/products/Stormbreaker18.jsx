@@ -102,16 +102,7 @@ function Stormbreaker18() {
         <div className="product-container" id="layout">
           <div className="description">
             <p>
-              Looking for a more compact caravan than the 18'6 model? Your quest
-              for a snug yet stylish travel companion ends here. The 18'6 model
-              offers a perfect blend of convenience and comfort, making your
-              journeys truly enjoyable. With its space-saving design and
-              well-appointed interior, you'll find everything you need for your
-              adventures. Don't compromise on quality or features; this compact
-              caravan ensures you have all you desire for memorable travels.
-              Plus, it's designed with eco-friendly elements to minimize your
-              environmental footprint, so you can explore with a clear
-              conscience.
+            Are you looking for a small compact caravan that has everything for your family caravanning adventure? Discover the ideal combination of snug comfort and stylish travel with the Deluxe Caravan 18'6 Stormbreaker. This is our smallest family bunk van and this model effortlessly combines convenience and comfort, ensuring your journeys are truly enjoyable. Its space-saving design and well-appointed interior provide everything you need for your adventures. The quality and features are uncompromised in this compact caravan, guaranteeing all you desire for memorable travels. Additionally, its thoughtfully designed with eco-friendly elements to minimize your environmental footprint, so you can explore with a clear conscience. Your next adventure awaits with the 18'6 Stormbreaker. 
             </p>
             <button
               className="btn hover-border-1 revealUp"

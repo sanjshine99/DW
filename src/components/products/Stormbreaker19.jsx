@@ -102,16 +102,7 @@ function Stormbreaker19() {
         <div className="product-container" id="layout">
           <div className="description">
             <p>
-              Are you looking for a smaller family bunk van? Then this is model
-              is the answer. With the Storm breaker 19’6, you get all the
-              features of the 21’6 model. Every journey is one to remember with
-              its world-class interior and top-notch exterior and mechanical
-              features. When you take to the road with your favourite people,
-              you enjoy a spacious layout with all the facilities you expect
-              from a luxury RV experience. We don’t just stop there—we make sure
-              your adventures don’t leave a mark on the environment. With its
-              eco-friendly features, travel without the guilt but with all the
-              joy you deserve.
+            Searching for a compact family bunk caravan? Look no further. The Stormbreaker 19'6 is the perfect solution, offering all the features of the 21'6 model. Every journey becomes a memorable experience with its premium built interior, exterior, and mechanical attributes. When you hit the open road with your loved ones, you'll enjoy a spacious layout and all the amenities you'd expect from a luxury RV. But our commitment doesn't end there- we ensure your adventures leave no environmental footprint. With eco-friendly features, you can travel without guilt and experience all the joy you deserve. 
             </p>
             <button
               className="btn hover-border-1 revealUp"

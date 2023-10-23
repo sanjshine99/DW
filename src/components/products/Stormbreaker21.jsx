@@ -103,18 +103,8 @@ function Stormbreaker21() {
         <div className="product-container" id="layout">
           <div className="description">
             <p>
-              Are you in search of a more spacious family bunk van? Look no
-              further; the Storm breaker 21'6 is the answer you've been seeking.
-              With this model, you're granted all the remarkable features found
-              in the 19'6 version. Each journey becomes a memorable experience,
-              thanks to its world-class interior, top-tier exterior, and
-              mechanical attributes. When you hit the open road with your
-              cherished companions, you're treated to a generously spacious
-              layout, complete with all the amenities you'd expect from a luxury
-              RV adventure. But we don't stop there—our commitment extends to
-              ensuring that your adventures have minimal impact on the
-              environment. With its eco-friendly features, you can travel
-              without guilt and bask in all the joy you rightfully deserve.
+            Are you on the hunt for a more spacious family bunk caravan? Your search ends here with the Stormbreaker 21'6, the solution you've been seeking. This model offers all the remarkable features found in the 19'6. Every journey transforms into an unforgettable experience, thanks to its premium built interior, exterior, and mechanical features. when you embark on the open road with your loved ones, you'll be treated to an exceptionally roomy layout, complete with all the amenities you'd expect from a luxury RV adventure. But our commitment doesn't end there- we ensure your adventures leave no environmental footprint. With eco-friendly features, you can travel without guilt and experience all the joy you deserve. 
+
             </p>
             <button
               className="btn hover-border-1 revealUp"
