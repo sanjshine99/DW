@@ -5,6 +5,7 @@ import "../home/homecomponents/HomeComponent.css";
 import Strom21inside from "../products/SlideShows/Stormbreaker21inside";
 import { gsap } from "gsap";
 import Storm21specs from "./Specsmenu/Specs21";
+import Techspec21 from "./techspecs/Techspec21";
 import SB216img from "../../assets/Product renders/SB216Exterior.webp";
 import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
 import LayoutPopUp from "./popup/LayoutPopUp";
@@ -73,8 +74,9 @@ function Stormbreaker21() {
         <div className="background-image">
           <img src={SB216img} alt="" />
           <div className="image-overlay">
-            <h1 className="Product-header revealUp">Stormbreaker21`6</h1>
+           
             <div className="button-container">
+            <h1 className="Product-header revealUp">Stormbreaker21`6</h1>
               <button
                 onClick={scrollToLayout}
                 className="btn hover-border-1 revealUp"
@@ -145,6 +147,9 @@ function Stormbreaker21() {
             ></iframe>{" "}
           </div>
         </div>
+      </div>
+      <div className="component" id="specs">
+        <Techspec21/>
       </div>
       <div className="component" id="specs">
         <h1>Specs Menu</h1>

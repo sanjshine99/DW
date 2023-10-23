@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
@@ -13,11 +13,13 @@ const Stormbreaker21 = lazy(() => import('./components/products/Stormbreaker21')
 const Stormbreaker18 = lazy(() => import('./components/products/Stormbreaker18'));
 const Contact = lazy(() => import('./components/contact/Contact'));
 const Appointment = lazy(() => import('./components/bookus/Appointment'));
+const Tour = lazy(() => import('./components/tour/Tour'));
+const Warranty = lazy(() => import('./components/warrantypolicy/WarrantyPolicy'));
 
 function App() {
   return (
     <div className="App">
-      <HashRouter>
+      <BrowserRouter basename="/"> 
         <Header />
         <Suspense fallback={<div className="viewport-filler"></div>}>
           <Routes>
@@ -30,10 +32,12 @@ function App() {
             <Route path="/stormbreaker18" element={<Stormbreaker18 />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/appointment" element={<Appointment />} />
+            <Route path="/tour" element={<Tour />} />
+            <Route path="/warranty" element={<Warranty />} />
           </Routes>
         </Suspense>
         <Footer />
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }

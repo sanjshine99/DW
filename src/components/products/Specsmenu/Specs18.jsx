@@ -40,7 +40,7 @@ class Specs21 extends Component {
           content: `Bench Top - Laminate 
           Bench Top Lid - Over Stove 
           Splashback Kitchen - Full Height 
-          Cupboard Doors - Premium Laminate (Scratch &amp; UV Resistant) 
+          Cupboard Doors - Premium Laminate (Scratch & UV Resistant) 
           Upholstery - Faux Leather Vinyl `,
       },
         {
@@ -51,7 +51,7 @@ class Specs21 extends Component {
           TV - Co-Ax Point 
           TV - Aerial Point 
           Speakers - 2 x Internal 
-          USB Ports - 1 x in Each Bunk (2), 2 x Bedside &amp; Lounge 
+          USB Ports - 1 x in Each Bunk (2), 2 x Bedside & Lounge 
           Reading Lights 
           Sirocco Fan – Main bed  `,
       },
@@ -59,7 +59,7 @@ class Specs21 extends Component {
             title: 'ELECTRICAL - EXTERNAL',
             content: `2 x LED Annexe ( Dual ) 
             LED Tunnel Boot ( Dual ) 
-            Light – LED Light Bar ( Front &amp; Back ) 
+            Light – LED Light Bar ( Front & Back ) 
             Light - Blue LED Door Handle 
             Light - Blue LED Strip Light (Door Footwell) 
             Plug Car - 12 Pin 
@@ -67,21 +67,21 @@ class Specs21 extends Component {
             Power - 240V Weather Proof Outlet (Single) 
             Solar - 2 x 170 watt Panel 
             3 x Water Tank Level Probes 
-            Reverse Camera &amp; Display 
-            Antenna - (Reads Horizontal &amp; Vertical Signals) 
+            Reverse Camera & Display 
+            Antenna - (Reads Horizontal & Vertical Signals) 
             Battery - 2 x 100 amp Deep Cycle 
             Side Markers `,
          },
           {
             title: 'APPLIANCES',
             content: `Air Conditioning – Belair 3400 Slim Line Reverse Cycle Roof Mounted 
-            Mini Grill - 3 Gas / 1 Electric Burner &amp; Grill 
+            Mini Grill - 3 Gas / 1 Electric Burner & Grill 
             Range hood - 12v LED with Twin Fans 
             Fridge / Freezer – 188 Ltr 3-Way Automatic Absorption (Dometic) 
             Hot Water Service - 28ltr Gas/Electric 
             25L Microwave 
             Stereo CD/DVD/MP3/Radio System 
-            TV - 24&quot; Smart `,
+            TV - 24" Smart `,
           },
           {
             title: 'PLUMBING',
@@ -122,10 +122,9 @@ class Specs21 extends Component {
             title: 'CHASSIS',
             content: `Axle - Double 
             Hitch - D035 
-            A-Frame - 6&quot; 
-            Chassis - 6&quot; Dura-Gal 
-            2” Raiser
-            Wheels - 16&quot; Alloy 
+            A-Frame - 6" 
+            Chassis - 6" Dura-Gal  2” Raiser
+            Wheels - 16" Alloy 
             Tyres - Heavy-Duty Off-Road 
             Spare Wheel - 1 x Mounted on (Rear Bumper) 
             Jerry Can Holders - 2 x 20Ltr (Rear Bumper) 

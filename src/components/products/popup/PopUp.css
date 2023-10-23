@@ -11,15 +11,24 @@
   z-index: 1000;
 }
 
+input {
+  width: 100%;
+}
+
+.popup-container h1{
+color: black;
+font-size:2rem;
+}
+
 .popup {
   position: relative;
-  background: white;
+  background: rgb(255, 255, 255);
   padding: 20px;
   text-align: center;
   border-radius: 8px;
   color: black;
   width: 500px;
-  height: 200px;
+  height: auto;
 }
 
 .closeButton {

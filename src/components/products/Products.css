@@ -1,6 +1,6 @@
 /* Title Code */
 .Product-header {
-  font-size: 75.76px;
+ 
   color: white;
   letter-spacing: 3px;
   position: absolute;
@@ -15,11 +15,16 @@
 /* Button Code */
 .button-container {
   position: absolute;
-  bottom: 43%;
+  bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
 }
+
+.button-container h1{
+  font-size: 68px;
+}
+
 
 .product-container {
   display: flex;

@@ -44,21 +44,21 @@ const Header = () => {
       label: "OUR RANGE",
       submenu: [
         {
-          label: <img src={SB186} alt="stormbreaker18" />,
+          label: <img src={SB186} alt="stormbreaker18" style={{ maxWidth: "33.33vw", Height: "17vh",maxHeight: "20vh" }} />,
           link: "/stormbreaker18",
           text: "Stormbreaker 18`6",
           price: "$89,900",
         },
         {
-          label: <img src={SB196} alt="stormbreaker19" />,
+          label: <img src={SB196} alt="stormbreaker19"  style={{maxWidth: "33.33vw", Height: "17vh",maxHeight: "20vh"}}/>,
           link: "/stormbreaker19",
-          text: "Stormbreaker 19`6`",
+          text: "Stormbreaker 19`6",
           price: "$92,900",
         },
         {
-          label: <img src={SB216} alt="stormbreaker21" />,
+          label: <img src={SB216} alt="stormbreaker21"  style={{ maxWidth: "33.33vw", Height: "17vh",maxHeight: "20vh"}}/>,
           link: "/stormbreaker21",
-          text: "Stormbreaker 21`6`",
+          text: "Stormbreaker 21`6",
           price: "$94,900",
         },
       ],
@@ -66,9 +66,10 @@ const Header = () => {
     {
       label: "RESOURCES",
       submenu: [
-        { label: "ABOUT", link: "/about" },
+        { label: "ABOUT US", link: "/about" },
         { label: "UPDATES", link: "/blog" },
         { label: "VIDEOS", link: "/video" },
+        { label: "WARRANTY POLICY", link: "/warranty" },
       ],
     },
     {
@@ -211,6 +212,12 @@ const Header = () => {
                   </AnimatePresence>
                 </motion.li>
               ))}
+                     
+                <li className="menu-item">
+                <Link to="/tour">
+                  <button>VIRTUAL TOUR</button>
+                </Link>
+              </li>
               <li className="menu-item">
                 <Link to="/contact">
                   <button>CONTACT</button>

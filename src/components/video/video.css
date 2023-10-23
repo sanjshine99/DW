@@ -1,5 +1,19 @@
 /* VideoGallery.css */
+.vidcontainer {
+  display: flex;
+  flex-direction: column;
+ margin-top: 10vh;
+}
 
+.vidcomponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px; /* Optional: Add padding to the components */
+  min-height: 50px; /* Increase the minimum height to create more spacing */
+  height: 100vh;
+  scroll-snap-align: start;
+}
 .video-gallery {
   display: flex;
   justify-content: center;

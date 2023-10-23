@@ -1,3 +1,11 @@
+.aboutcontainer {
+  display: flex;
+  flex-direction: column;
+background-color: black !important;
+color: white !important;
+}
+
+
 .context {
     max-width: 1080px; /* Adjust the max-width as needed */
     margin: 0 auto; /* Center-align the content horizontally */
@@ -21,6 +29,10 @@
   .context h2{
     font-size: 56.76px;
     margin: 10px;
+  }
+
+  .context ul{
+   text-align: left;
   }
 
   .ourval{

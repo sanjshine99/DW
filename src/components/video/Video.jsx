@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../home/Home.css";
 import "./video.css";
 
 function Video() {
@@ -34,8 +33,8 @@ function Video() {
   ];
 
   return (
-    <div className="container">
-      <div className="component">
+    <div className="vidcontainer">
+      <div className="vidcomponent">
         <h1>Our Videos</h1>
         <div className="video-gallery">
           <div className="video-grid">

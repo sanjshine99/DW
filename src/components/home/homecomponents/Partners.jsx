@@ -3,6 +3,8 @@ import "./HomeComponent.css";
 import partner1 from "../../../assets/partners/2022_bmpro-logo-hp.webp";
 import partner2 from "../../../assets/partners/Enerdrive-logo.webp";
 import partner3 from "../../../assets/partners/logo.webp";
+import partner4 from "../../../assets/partners/dometic.webp";
+import partner5 from "../../../assets/partners/cruisemaster.webp";
 
 function Partners() {
   const sliderRef = useRef(null);
@@ -64,6 +66,12 @@ function Partners() {
           </div>
           <div className="slide">
             <img src={partner3} width="500" height="200" alt="" />
+          </div>
+          <div className="slide">
+            <img src={partner4} width="500" height="200" alt="" />
+          </div>
+          <div className="slide">
+            <img src={partner5} width="500" height="200" alt="" />
           </div>
         </div>
       </div>

@@ -1,0 +1,44 @@
+/* WarrantyPolicy container styles */
+.warrantycontainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+
+/* WarrantyPolicy component styles */
+.warrantycomponent {
+  display: grid;
+  grid-template-columns: 1fr; /* Display components in a single column */
+  gap: 20px; /* Add spacing between components */
+  padding: 20px; /* Optional: Add padding to the components */
+  min-height: 50px; /* Increase the minimum height to create more spacing */
+  height: auto; /* Remove fixed height to allow components to expand as needed */
+  scroll-snap-align: start;
+  text-align: left;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+/* Style heading and paragraph elements within the components */
+.warrantycomponent h2 {
+  margin-top:10vh;
+  font-size: 1.5rem; /* Increase the font size for headings */
+  margin-bottom: 10px; /* Add space below headings */
+}
+
+.warrantycomponent p {
+  font-size: 1rem; /* Set a standard font size for paragraphs */
+  margin-bottom: 10px; /* Add space below paragraphs */
+}
+
+/* Style unordered lists within the components */
+.warrantycomponent ul {
+  list-style-type: disc; /* Use disc bullets for lists */
+  padding-left: 20px; /* Add left padding to lists for indentation */
+}
+
+/* Style list items within unordered lists */
+.warrantycomponent li {
+  font-size: 1rem; /* Set a font size for list items */
+  margin-bottom: 5px; /* Add space between list items */
+}

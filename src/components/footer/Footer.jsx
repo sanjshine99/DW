@@ -1,11 +1,13 @@
 import React from "react";
-import "./Footer.css";
+import { Link } from "react-router-dom";
+import "./Footer.css"; // Your local CSS
 import instagram from "../../assets/icons/instagram.webp";
 import facebook from "../../assets/icons/facebook.webp";
 import twitter from "../../assets/icons/twitter.webp";
 import tiktok from "../../assets/icons/tik-tok.webp";
 import youtube from "../../assets/icons/youtube.webp";
 import logo from "../../assets/Logo.webp";
+
 
 const Footer = () => {
   return (
@@ -15,7 +17,7 @@ const Footer = () => {
       {/* Footer Links Section */}
       <div className="footer-links">
         <div className="logo">
-          <a href="/" className="footer-link">
+          <Link to="/" className="footer-link">
             <img
               src={logo}
               alt="Logo"
@@ -23,31 +25,37 @@ const Footer = () => {
               height="100px"
               width="120px"
             />
-          </a>
+          </Link>
         </div>
         <div className="footer-links-column">
           <div className="footer-links-header">Caravans</div>
-          <a href="/#/stormbreaker18" className="footer-link">
+          <Link to="/stormbreaker18" className="footer-link">
             Stormbreaker 18`6
-          </a>
-          <a href="/#/stormbreaker19" className="footer-link">
+          </Link>
+          <Link to="/stormbreaker19" className="footer-link">
             Stormbreaker 19`6
-          </a>
-          <a href="/#/stormbreaker21" className="footer-link">
+          </Link>
+          <Link to="/stormbreaker21" className="footer-link">
             Stormbreaker 21`6
-          </a>
+          </Link>
         </div>
         <div className="footer-links-column">
           <div className="footer-links-header">Resources</div>
-          <a href="/#/about" className="footer-link">
+          <Link to="/about" className="footer-link">
             About us
-          </a>
-          <a href="/#/blog" className="footer-link">
+          </Link>
+          <Link to="/blog" className="footer-link">
             UPDATES
-          </a>
-          <a href="/#/video" className="footer-link">
+          </Link>
+          <Link to="/video" className="footer-link">
             Videos
-          </a>
+          </Link>
+          <Link to="/tour" className="footer-link">
+            Virtual tour
+          </Link>
+          <Link to="/warranty" className="footer-link">
+            Warranty policy
+          </Link>
         </div>
         <div className="footer-links-column">
           <div className="footer-links-header">Contact</div>

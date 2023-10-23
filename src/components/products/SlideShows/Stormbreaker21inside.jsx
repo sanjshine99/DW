@@ -3,6 +3,7 @@ import "./Stormbreaker21inside.css";
 
 //exterior
 import SB216Ext from "../../../assets/Product renders/SB216Exterior.webp";
+import SB216Extdes from "../../../assets/Product renders/21des.webp";
 import ex211 from "../../../assets/21/21 ex 1.webp";
 import ex212 from "../../../assets/21/21 ex 2.webp";
 import ex213 from "../../../assets/21/21 ex 3.webp";
@@ -10,6 +11,7 @@ import ex214 from "../../../assets/21/21 ex 4.webp";
 import ex215 from "../../../assets/21/21 ex 5.webp";
 //layout
 import SB216layout from "../../../assets/Product renders/SB216 layout.webp";
+import SB216layoutdes from "../../../assets/Product renders/21laydes.webp";
 //interior
 import in211 from "../../../assets/21/21 in 1.webp";
 import in212 from "../../../assets/21/21 in 2.webp";
@@ -20,18 +22,18 @@ import in215 from "../../../assets/21/21 in 5.webp";
 const sections = [
   {
     name: "Exterior",
-    images: [SB216Ext, ex211,ex212,ex213,ex214,ex215],
-    description: "With its sturdy matte finish, our family caravan is not only a delight on the interior but also visually appealing. Crafted to tackle the wide-ranging landscapes and terrains of Australia, the Storm breaker boasts state-of-the-art mechanical systems, including a robust chassis and suspension system. Experience the potency of features such as our durable wheels and family-friendly extras like a collapsible picnic table, creating a caravan adventure that resembles scenes from your favorite movies.",
+    images: [SB216Extdes, ex211,ex212,ex213,ex214,ex215],
+    description: "",
   },
   {
     name: "Layout",
-    images: [SB216layout,SB216layout,SB216layout,SB216layout,SB216layout],
-    description: "The layout of the 'Stormbreaker 21'6' is designed with spaciousness and a homelike environment in mind, making it the perfect haven for families on the go. This caravan offers an expansive interior that invites you to relax and unwind, whether it's during a long road trip or a peaceful camping getaway. The cleverly designed layout provides ample room for family members to move around comfortably, ensuring everyone has their own space. With cozy seating areas, well-appointed kitchen facilities, and a harmonious ambiance, it creates a homely atmosphere where cherished family moments can be enjoyed. The 'Stormbreaker 21'6' is more than just a caravan; it's a mobile sanctuary that brings the comfort and warmth of home to your adventures.",
+    images: [SB216layout,SB216layoutdes,SB216layout,SB216layout,SB216layout],
+    description: "",
   },
   {
     name: "Inside",
     images: [in211,in212,in213,in214,in215,in211], 
-    description: "The Storm breaker provides you with all the worldly comforts you can expect when you’re on the road. With its plush and comfortable sleeping arrangements for the entire family, living quarters and fully equipped kitchen, enjoy every moment of your adventures with our world-class features. We consider everything too; from your smart TV to air conditioning, water heating and angled kitchen bench, you have everything you need to take a piece of home with you on every trip.",
+    description: "",
   },
 ];
 

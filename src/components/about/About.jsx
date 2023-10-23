@@ -1,8 +1,9 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
 import "./About.css";
-
 import AUSTRALIANMADE from '../../assets/ourval/ausmade.webp';
 import TEAMWORK from '../../assets/ourval/teamwork.webp';
 import QUALITYINNOVATION from '../../assets/ourval/badge.webp';
@@ -11,11 +12,29 @@ import COMMUNITY from '../../assets/ourval/community.webp';
 import ECOFRIENDLYOPTIONS from '../../assets/ourval/ecology.webp';
 
 function About() {
+  const [refCaravans, inViewCaravans] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  const [refValues, inViewValues] = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
+  const imageVariants = {
+    initial: { opacity: 0, scale: 0.8 },
+    animate: { opacity: 1, scale: 1 },
+    transition: { duration: 0.5 },
+  };
+
   return (
-    <div className="container">
+    <div className="aboutcontainer">
       <div className="component">
         <div className="context">
-          <h1>About Us</h1>
+         <h1>
+            About Us
+          </h1>
           <p className="subheader">
             Discover why we do what we do & why we love it!
           </p>
@@ -32,64 +51,159 @@ function About() {
           </p>
         </div>
       </div>
-      <div className="component">
+      <div className="component" ref={refCaravans}>
         <div className="context">
-          <h2>A bit about our caravans</h2>
+          <motion.h2
+            initial={{ opacity: 0, y: -20 }}
+            animate={inViewCaravans ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5 }}
+          >
+            A bit about our caravans
+          </motion.h2>
           <p>
-            We understand the importance of building caravans that last
-            generations and can be passed on to the next generation of
-            caravanning Nomads. From OFF-ROAD to Extreme OFF-GRID capabilities
-            that will help you reach destinations unknown. We equip our caravans
-            with the latest technology so you don’t miss a beat when traveling.
-            Our vast experience in manufacturing through times of change has
-            allowed us to adapt and create the ultimate OFF-ROAD caravans
-            Australia has to offer. Our Eco-Friendly, Bespoke options give us
-            the edge in the competitive market.
+            Our caravans are built for durability with the following features to
+            set us apart from the market;
+          <ul>
+            <li>Built In House</li>
+            <li>Lightweight</li>
+            <li>Fully Insulated</li>
+            <li>Meranti Timber or Riveted Aluminium Frames</li>
+            <li>CNC Furniture to provide a Clean Finish and a Modern Design.</li>
+            <li>One Piece Composite Roof</li>
+            <li>Single Piece Flooring</li>
+          </ul>
+          We understand the importance of building caravans that last
+          generations and can be passed on to the next generation of
+          caravanning Nomads. From OFF-ROAD to Extreme OFF-GRID capabilities
+          that will help you reach destinations unknown. We equip our caravans
+          with the latest technology so you don’t miss a beat when traveling.
+          Our vast experience in manufacturing through times of change has
+          allowed us to adapt and create the ultimate OFF-ROAD caravans
+          Australia has to offer. Our Eco-Friendly, Bespoke options give us
+          the edge in the competitive market.
           </p>
         </div>
       </div>
-      <div className="component">
-      <h1>Our Values</h1>
-        <div className="ourval"> 
-        <div className="image-item">
-          <img src={AUSTRALIANMADE} alt="Bespokemodels" className='galleryoverlayimage' height="100px" width="100px" />
+      <div className="component" ref={refValues}>
+        <h1>Our Values</h1>
+        <div className="ourval">
+          <motion.div
+            className="image-item"
+            variants={imageVariants}
+            initial="initial"
+            animate={inViewValues ? "animate" : "initial"}
+          >
+            <img
+              src={AUSTRALIANMADE}
+              alt="Bespokemodels"
+              className="galleryoverlayimage"
+              height="100px"
+              width="100px"
+            />
             <h3>AUSTRALIAN MADE</h3>
-            <p>Everything from the design process to the build of each deluxe caravan is done right here at home.</p>
-          </div>
-          <div className="image-item">
-            <img src={TEAMWORK} alt="Ecofriendly" className='galleryoverlayimage' height="100px" width="100px"/>
+            <p>
+              Founded in 2011, Everything from the design to the construction of
+              each deluxe caravan is done in-house.
+            </p>
+          </motion.div>
+          <motion.div
+            className="image-item"
+            variants={imageVariants}
+            initial="initial"
+            animate={inViewValues ? "animate" : "initial"}
+          >
+            <img
+              src={TEAMWORK}
+              alt="Ecofriendly"
+              className="galleryoverlayimage"
+              height="100px"
+              width="100px"
+            />
             <h3>TEAMWORK</h3>
-            <p>Our customers mean the world to us; that’s why we go out of our way to provide the care they deserve.</p>
-
-          </div>
-          <div className="image-item">
-            <img src={QUALITYINNOVATION} alt="Experience" className='galleryoverlayimage' height="100px" width="100px"/>
+            <p>
+              Our customers mean the world to us; that’s why we go out of our way
+              to provide the care they deserve.
+            </p>
+          </motion.div>
+          <motion.div
+            className="image-item"
+            variants={imageVariants}
+            initial="initial"
+            animate={inViewValues ? "animate" : "initial"}
+          >
+            <img
+              src={QUALITYINNOVATION}
+              alt="Experience"
+              className="galleryoverlayimage"
+              height="100px"
+              width="100px"
+            />
             <h3>QUALITY & INNOVATION</h3>
-            <p>We don’t believe in cutting corners. Our work is driven by the utmost precision, innovation and quality.</p>
-
-          </div>
-          <div className="image-item">
-            <img src={TOPNOTCHSUPPORT} alt="Ratings" className='galleryoverlayimage' height="100px" width="100px"/>
+            <p>
+              We don’t believe in cutting corners. Our work is driven by the
+              utmost precision, innovation, and quality.
+            </p>
+          </motion.div>
+          <motion.div
+            className="image-item"
+            variants={imageVariants}
+            initial="initial"
+            animate={inViewValues ? "animate" : "initial"}
+          >
+            <img
+              src={TOPNOTCHSUPPORT}
+              alt="Ratings"
+              className="galleryoverlayimage"
+              height="100px"
+              width="100px"
+            />
             <h3>TOP NOTCH SUPPORT</h3>
-            <p>Our team is at the heart of our success. That’s why we give them the support they need to flourish.</p>
-
-          </div>
-          <div className="image-item">
-            <img src={COMMUNITY} alt="Ratings" className='galleryoverlayimage' height="100px" width="100px"/>
+            <p>
+              Our team is at the heart of our success. That’s why we give them
+              the support they need to flourish.
+            </p>
+          </motion.div>
+          <motion.div
+            className="image-item"
+            variants={imageVariants}
+            initial="initial"
+            animate={inViewValues ? "animate" : "initial"}
+          >
+            <img
+              src={COMMUNITY}
+              alt="Ratings"
+              className="galleryoverlayimage"
+              height="100px"
+              width="100px"
+            />
             <h3>COMMUNITY</h3>
-            <p>We’re big believers in our local community. At Deluxe Caravans, we support businesses in our area.</p>
-
-          </div>
-          <div className="image-item">
-            <img src={ECOFRIENDLYOPTIONS} alt="Ratings" className='galleryoverlayimage' height="100px" width="100px"/>
+            <p>
+              We’re big believers in our local community. At Deluxe Caravans, we
+              support businesses in our area.
+            </p>
+          </motion.div>
+          <motion.div
+            className="image-item"
+            variants={imageVariants}
+            initial="initial"
+            animate={inViewValues ? "animate" : "initial"}
+          >
+            <img
+              src={ECOFRIENDLYOPTIONS}
+              alt="Ratings"
+              className="galleryoverlayimage"
+              height="100px"
+              width="100px"
+            />
             <h3>ECO FRIENDLY OPTIONS</h3>
-            <p>From faux leather to composting toilets, we ensure your carbon footprint on the road is at a minimum.</p>
-
-          </div>
-        </div>
+            <p>
+              From faux leather to composting toilets, we ensure your carbon
+              footprint on the road is at a minimum.
+            </p>
+          </motion.div>
         </div>
       </div>
-    
+    </div>
   );
 }
 

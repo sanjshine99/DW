@@ -61,7 +61,7 @@ const LayoutPopUp = ({ onClose }) => {
           <div id="mc_embed_signup_scroll">
             <div className="mc-field-group">
               <label htmlFor="mce-EMAIL" className="field">
-                Email Address
+                please enter a valid email address
               </label>
               <input
                 type="email"
