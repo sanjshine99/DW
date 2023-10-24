@@ -70,10 +70,10 @@ function Partners() {
             <img src={partner3} width="500" height="200" alt="" />
           </div>
           <div className="slide">
-            <img src={partner4} width="500" height="200" alt="" />
+            <img src={partner4} width="500" height="auto" alt="" />
           </div>
           <div className="slide">
-            <img src={partner5} width="500" height="200" alt="" />
+            <img src={partner5} width="500" height="auto" alt="" />
           </div>
           <div className="slide">
             <img src={partner6} width="500" height="200" alt="" />
