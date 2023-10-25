@@ -69,8 +69,8 @@ function About() {
             <li>Fully Insulated</li>
             <li>Meranti Timber or Riveted Aluminium Frames</li>
             <li>CNC Furniture to provide a Clean Finish and a Modern Design.</li>
-            <li>One Piece Composite Roof</li>
-            <li>Single Piece Flooring</li>
+            <li>One Piece Composite Roof options</li>
+            <li>Single Piece Flooring options</li>
           </ul>
           We understand the importance of building caravans that last
           generations and can be passed on to the next generation of

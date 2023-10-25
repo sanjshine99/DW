@@ -11,6 +11,11 @@ function Video() {
       videoId: "a_KE1CVPT48?si=xmPrmqL9fsyB3OIr",
     },
     {
+      title: "OUR SMALLEST FAMILY BUNK CARAVAN I FULL 4K VERSION I 18.6FT Deluxe Caravan - Stormbreaker",
+      description: "18.6 FT Deluxe Caravan - Stormbreaker",
+      videoId: "SpcMnSexZ7E?si=w5l_1XhZaWJ-NuIF",
+    },
+    {
       title: "Sustainable And Dirt Resistant Caravan Interior?",
       description: "Have you heard about the eco-friendly features that @vanlifestraya is super excited about on their new Deluxe Caravan?",
       videoId: "FDPZOYnzK-4?si=oXM-HGVpUKpjeqe8",

@@ -5,6 +5,8 @@ import partner2 from "../../../assets/partners/Enerdrive-logo.webp";
 import partner3 from "../../../assets/partners/logo.webp";
 import partner4 from "../../../assets/partners/dometic.webp";
 import partner5 from "../../../assets/partners/cruisemaster.webp";
+import partner6 from "../../../assets/partners/atrv-min.webp";
+import partner7 from "../../../assets/partners/camec-min.webp";
 
 function Partners() {
   const sliderRef = useRef(null);
@@ -68,10 +70,16 @@ function Partners() {
             <img src={partner3} width="500" height="200" alt="" />
           </div>
           <div className="slide">
-            <img src={partner4} width="500" height="200" alt="" />
+            <img src={partner4} width="500" height="auto" alt="" />
           </div>
           <div className="slide">
-            <img src={partner5} width="500" height="200" alt="" />
+            <img src={partner5} width="500" height="auto" alt="" />
+          </div>
+          <div className="slide">
+            <img src={partner6} width="500" height="200" alt="" />
+          </div>
+          <div className="slide">
+            <img src={partner7} width="500" height="200" alt="" />
           </div>
         </div>
       </div>
