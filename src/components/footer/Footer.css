@@ -18,7 +18,6 @@
   margin-right: 2vw;
 }
 
-
 /* Social Icons Section */
 .social-icons {
   display: flex;
@@ -33,7 +32,7 @@
 
 .social-links {
   display: flex;
-  align-items:flex-start;
+  align-items: flex-start;
   margin-bottom: 20px;
 }
 
@@ -62,7 +61,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
 }
 
 .footer-links-header {
@@ -85,23 +83,75 @@
   white-space: nowrap; /* Prevent copyright text from wrapping */
   overflow: hidden; /* Hide any overflowing text */
   text-overflow: ellipsis; /* Display ellipsis (...) for overflow */
-  margin-right:13vw;
+  margin-right: 13vw;
 }
 
-.footer hr{
-  width:60rem;
+.footer hr {
+  width: 60rem;
 }
 
 .copyright-and-social {
   display: flex;
-  justify-content:space-evenly; /* Aligns copyright to left and social icons to right */
+  justify-content: space-evenly; /* Aligns copyright to left and social icons to right */
   align-items: center; /* Vertically center the content */
   font-size: 14px;
   margin-top: 10px; /* Add margin to separate from the horizontal line */
   max-width: 100%; /* Set maximum width to 100% of the parent container */
 }
 
-.icon{
+.icon {
   width: 18px;
   height: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 10px;
+  }
+
+  .footer-logo {
+    width: 60px; /* Decrease logo size for smaller screens */
+    margin-right: 0; /* Remove margin for smaller screens */
+  }
+
+  .footer-links {
+    flex-direction: column; /* Stack footer links vertically on smaller screens */
+    align-items: center; /* Center align footer links on smaller screens */
+    text-align: center; /* Center align text within footer links on smaller screens */
+    gap: 10px; /* Adjust gap between links on smaller screens */
+  }
+
+  .footer-links-column {
+    margin-bottom: 20px; /* Add margin between columns on smaller screens */
+    align-items: center;
+  }
+
+  .footer hr {
+    width: 100%; /* Make horizontal line span the full width on smaller screens */
+    margin: 10px 0; /* Adjust margin for smaller screens */
+  }
+
+  .social-icons {
+    flex-direction: column; /* Stack social icons vertically on smaller screens */
+    align-items: center; /* Center align social icons on smaller screens */
+    margin-top: 10px; /* Add margin between social icons and copyright text on smaller screens */
+  }
+
+  .icon {
+    width: 24px; /* Increase icon size for smaller screens */
+    height: 24px;
+    margin-right: 0; /* Remove margin between icons for smaller screens */
+  }
+
+  .copyright {
+    margin-right: 0; /* Remove margin for copyright text on smaller screens */
+  }
+
+  .copyright-and-social {
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-links a {
+    padding-inline: 10px;
+  }
 }

@@ -140,7 +140,7 @@
   max-width: 50vw;
   color: #fff;
 }
-.el__close-btn_19_i {
+/* .el__close-btn_19_i {
   z-index: -1;
   position: absolute;
   right: 70px;
@@ -188,7 +188,7 @@
 .el_19_i.s--active .el__close-btn_19_i:after {
   transition: all 0.3s 1.55s cubic-bezier(0.72, 0.09, 0.32, 1.57);
   transform: rotate(-45deg) translateX(0);
-}
+} */
 .el__index_19_i {
   overflow: hidden;
   position: absolute;
@@ -358,7 +358,6 @@
 }
 
 .image-nav button {
-
   color: #fff;
   border: none;
   padding: 5px 10px;
@@ -368,7 +367,6 @@
 }
 
 .image-nav button:hover {
-
 }
 
 .slideshow-container {
@@ -413,7 +411,7 @@
   font-size: 30px;
   font-weight: bold;
   padding: 10px;
-  background:transparent;
+  background: transparent;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
@@ -423,6 +421,5 @@
 
 .prev:hover,
 .next:hover {
-
   color: #ababab;
 }

@@ -12,7 +12,6 @@ import ex185 from "../../../assets/18/18 ex 5.webp";
 import ex186 from "../../../assets/18/18 ex 6.webp";
 import ex187 from "../../../assets/18/18 ex 7.webp";
 
-
 //layout
 import SB186layout from "../../../assets/Product renders/SB18 layout.webp";
 import SB186layoutdes from "../../../assets/Product renders/18laydes.webp";
@@ -27,17 +26,24 @@ import in216 from "../../../assets/18/18 in 6.webp";
 const sections = [
   {
     name: "Exterior",
-    images: [SB216Extdes, ex181,ex182,ex183,ex184,ex185,ex186,ex187],
+    images: [SB216Extdes, ex181, ex182, ex183, ex184, ex185, ex186, ex187],
     description: "",
   },
   {
     name: "Layout",
-    images: [SB186layout,SB186layoutdes,SB186layout,SB186layout,SB186layout,SB186layout],
+    images: [
+      SB186layout,
+      SB186layoutdes,
+      SB186layout,
+      SB186layout,
+      SB186layout,
+      SB186layout,
+    ],
     description: "",
   },
   {
     name: "Inside",
-    images: [in181,in182,in183,in184,in185,in216], 
+    images: [in181, in182, in183, in184, in185, in216],
     description: "",
   },
 ];
@@ -138,7 +144,9 @@ function Strombreaker21inside() {
                     Next &#10095;
                   </button>
                   <div className="el__text_19_i">{section.description}</div>
-                  <div className="el__close-btn_19_i"></div>
+                  <div className="el__close-btn_19_i">
+                    <h3>Close</h3>
+                  </div>
                 </div>
               </div>
             </div>
