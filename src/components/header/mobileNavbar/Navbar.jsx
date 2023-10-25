@@ -6,6 +6,7 @@ import facebook from "../../../assets/icons/facebookh.webp";
 import twitter from "../../../assets/icons/twitterh.webp";
 import tiktok from "../../../assets/icons/tik-tokh.webp";
 import youtube from "../../../assets/icons/youtubeh.webp";
+import logo from "../../../assets/Logo.webp";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,6 +39,11 @@ const Navbar = () => {
         <>
           <div ref={navbarRef}>
             <ul className="navbar-nav">
+              <li className="nav-item" onClick={toggleMenu}>
+                <Link to="/" className="nav-link">
+                  <img src={logo} alt="" height={50} />
+                </Link>
+              </li>
               <li className="nav-item">
                 <p className="social" onClick={toggleOurRange}>
                   OUR RANGE
@@ -136,12 +142,12 @@ const Navbar = () => {
                   </ul>
                 )}
               </li>
-              <li className="nav-item">
+              <li className="nav-item" onClick={toggleMenu}>
                 <Link to="/tour" className="nav-link">
                   VIRTUAL TOUR
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item" onClick={toggleMenu}>
                 <Link to="/contact" className="nav-link">
                   CONTACT
                 </Link>

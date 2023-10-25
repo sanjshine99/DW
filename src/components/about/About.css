@@ -1,53 +1,78 @@
 .aboutcontainer {
   display: flex;
   flex-direction: column;
-background-color: black !important;
-color: white !important;
+  background-color: black !important;
+  color: white !important;
 }
 
-
 .context {
-    max-width: 1080px; /* Adjust the max-width as needed */
-    margin: 0 auto; /* Center-align the content horizontally */
+  max-width: 1080px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center-align the content horizontally */
+}
+
+.context p {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.context .subheader {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.context h1 {
+  font-size: 75.76px;
+  margin: 10px;
+}
+
+.context h2 {
+  font-size: 56.76px;
+  margin: 10px;
+}
+
+.context ul {
+  text-align: left;
+}
+
+.ourval {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Creates two evenly spaced columns */
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+}
+.component3 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid #ccc; */
+  overflow: hidden;
+}
+
+.ourval p {
+  text-transform: lowercase !important;
+}
+
+@media (max-width: 768px) {
+  .context h1 {
+    font-size: 30px;
+    margin-top: 20%;
   }
-  
-  .context p {
-    margin: 20px;
+  .context h2 {
     font-size: 20px;
   }
-  
-  .context .subheader {
-    margin-bottom: 30px;
-    font-size: 16px;
-  }
-
-  .context h1{
-    font-size: 75.76px;
+  .context p {
     margin: 10px;
+    font-size: 10px;
   }
-
-  .context h2{
-    font-size: 56.76px;
-    margin: 10px;
+  .image-item h3 {
+    font-size: 15px;
   }
-
-  .context ul{
-   text-align: left;
+  .component3 {
+    min-height: 60vh;
+    display: table-column;
   }
-
-  .ourval{
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Creates two evenly spaced columns */
-    justify-content: center;
-    align-items: center;
-    left: 0;
-    right: 0;
-   
-  }
-
-  .ourval p{
-    text-transform: lowercase !important;
-  }
-
-  
+}

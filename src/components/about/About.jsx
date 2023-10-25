@@ -4,12 +4,12 @@ import { useInView } from "react-intersection-observer";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
 import "./About.css";
-import AUSTRALIANMADE from '../../assets/ourval/ausmade.webp';
-import TEAMWORK from '../../assets/ourval/teamwork.webp';
-import QUALITYINNOVATION from '../../assets/ourval/badge.webp';
-import TOPNOTCHSUPPORT from '../../assets/ourval/technical-support.webp';
-import COMMUNITY from '../../assets/ourval/community.webp';
-import ECOFRIENDLYOPTIONS from '../../assets/ourval/ecology.webp';
+import AUSTRALIANMADE from "../../assets/ourval/ausmade.webp";
+import TEAMWORK from "../../assets/ourval/teamwork.webp";
+import QUALITYINNOVATION from "../../assets/ourval/badge.webp";
+import TOPNOTCHSUPPORT from "../../assets/ourval/technical-support.webp";
+import COMMUNITY from "../../assets/ourval/community.webp";
+import ECOFRIENDLYOPTIONS from "../../assets/ourval/ecology.webp";
 
 function About() {
   const [refCaravans, inViewCaravans] = useInView({
@@ -32,9 +32,7 @@ function About() {
     <div className="aboutcontainer">
       <div className="component">
         <div className="context">
-         <h1>
-            About Us
-          </h1>
+          <h1>About Us</h1>
           <p className="subheader">
             Discover why we do what we do & why we love it!
           </p>
@@ -63,30 +61,32 @@ function About() {
           <p>
             Our caravans are built for durability with the following features to
             set us apart from the market;
-          <ul>
-            <li>Built In House</li>
-            <li>Lightweight</li>
-            <li>Fully Insulated</li>
-            <li>Meranti Timber or Riveted Aluminium Frames</li>
-            <li>CNC Furniture to provide a Clean Finish and a Modern Design.</li>
-            <li>One Piece Composite Roof options</li>
-            <li>Single Piece Flooring options</li>
-          </ul>
-          We understand the importance of building caravans that last
-          generations and can be passed on to the next generation of
-          caravanning Nomads. From OFF-ROAD to Extreme OFF-GRID capabilities
-          that will help you reach destinations unknown. We equip our caravans
-          with the latest technology so you don’t miss a beat when traveling.
-          Our vast experience in manufacturing through times of change has
-          allowed us to adapt and create the ultimate OFF-ROAD caravans
-          Australia has to offer. Our Eco-Friendly, Bespoke options give us
-          the edge in the competitive market.
+            <ul>
+              <li>Built In House</li>
+              <li>Lightweight</li>
+              <li>Fully Insulated</li>
+              <li>Meranti Timber or Riveted Aluminium Frames</li>
+              <li>
+                CNC Furniture to provide a Clean Finish and a Modern Design.
+              </li>
+              <li>One Piece Composite Roof options</li>
+              <li>Single Piece Flooring options</li>
+            </ul>
+            We understand the importance of building caravans that last
+            generations and can be passed on to the next generation of
+            caravanning Nomads. From OFF-ROAD to Extreme OFF-GRID capabilities
+            that will help you reach destinations unknown. We equip our caravans
+            with the latest technology so you don’t miss a beat when traveling.
+            Our vast experience in manufacturing through times of change has
+            allowed us to adapt and create the ultimate OFF-ROAD caravans
+            Australia has to offer. Our Eco-Friendly, Bespoke options give us
+            the edge in the competitive market.
           </p>
         </div>
       </div>
-      <div className="component" ref={refValues}>
+      <div className="component3" ref={refValues}>
         <h1>Our Values</h1>
-        <div className="ourval">
+        <div className="image-container">
           <motion.div
             className="image-item"
             variants={imageVariants}
@@ -121,8 +121,8 @@ function About() {
             />
             <h3>TEAMWORK</h3>
             <p>
-              Our customers mean the world to us; that’s why we go out of our way
-              to provide the care they deserve.
+              Our customers mean the world to us; that’s why we go out of our
+              way to provide the care they deserve.
             </p>
           </motion.div>
           <motion.div
