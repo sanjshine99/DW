@@ -1,6 +1,5 @@
 /* Title Code */
 .Product-header {
- 
   color: white;
   letter-spacing: 3px;
   position: absolute;
@@ -21,10 +20,9 @@
   z-index: 2;
 }
 
-.button-container h1{
+.button-container h1 {
   font-size: 68px;
 }
-
 
 .product-container {
   display: flex;
@@ -123,4 +121,10 @@
 .background-image img {
   opacity: 0.9;
   max-width: 100vw;
+}
+@media screen and (max-width: 768px) {
+  .btn {
+    margin: 0px 25px 15px;
+    font-size: 15px;
+  }
 }

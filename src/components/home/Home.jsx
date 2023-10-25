@@ -10,7 +10,7 @@ function Home() {
   return (
     <div className="container">
       <div className="videocomponent">
-      <Video />
+        <Video />
       </div>
       <div className="component">
         <HomeDesc />
@@ -18,9 +18,7 @@ function Home() {
       <div className="component">
         <Gallery />
       </div>
-      <div className="component">
-        <Reviews />
-      </div>
+      <Reviews />
       <div className="partnercomponent">
         <Partners />
       </div>

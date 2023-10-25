@@ -8,13 +8,9 @@ import tiktok from "../../assets/icons/tik-tok.webp";
 import youtube from "../../assets/icons/youtube.webp";
 import logo from "../../assets/Logo.webp";
 
-
 const Footer = () => {
   return (
     <footer className="footer">
-      {/* Social Icons Section */}
-
-      {/* Footer Links Section */}
       <div className="footer-links">
         <div className="logo">
           <Link to="/" className="footer-link">
@@ -76,7 +72,6 @@ const Footer = () => {
 
       <hr className="footer-hr" />
 
-      {/* Copyright and Social Icons Section */}
       <div className="copyright-and-social">
         <div className="copyright">
           © {new Date().getFullYear()} Copyright: Deluxe Caravans
