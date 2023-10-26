@@ -8,10 +8,12 @@
 }
 
 .component2 {
+  margin-top: 30vh;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  scroll-snap-align: start;
 }
 
 .desccomponent {
@@ -128,7 +130,7 @@
   /* Change the text color on hover */
 }
 
-.image-container {
+.image-container_landing {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* Creates two evenly spaced columns */
@@ -192,12 +194,13 @@
     font-size: 15px !important;
   }
   .component h1 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .desccomponent p {
-    font-size: 10px;
+    font-size: 16px;
     width: 45vh;
   }
+
   .mobile_landing_Page_video_container {
     height: 50vh;
   }
@@ -212,20 +215,27 @@
   }
   .component {
     min-height: auto;
-    height: 50vh;
+    height: fit-content;
     justify-content: normal;
   }
   .image-item img {
-    max-width: 20%;
+    max-width: 30%;
   }
   .image-item p {
-    font-size: 10px;
+    font-size: 16px;
   }
   .image-item {
     padding: 10px;
   }
-  .image-container {
-    grid-template-columns: 1fr 1fr;
+  
+  .gallerycomponent{
+  margin-bottom: 200px;
+  }
+
+  .image-container_landing {
+    grid-template-columns: 1fr;
+    height: 100vh;
+    margin-bottom: 20vh;
   }
   .doswOh {
     font-size: 20px !important;
@@ -543,5 +553,20 @@
 @media screen and (max-width: 480px) {
   .link-overlay {
     margin-top: 55%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .component2 {
+    scroll-snap-align: none !important; 
+
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .component2{
+    scroll-snap-align: none !important; 
   }
 }

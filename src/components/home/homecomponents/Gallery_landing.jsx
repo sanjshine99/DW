@@ -12,7 +12,7 @@ class Gallery_landing extends React.Component {
     return (
       <div className="container">
         <h1>Why Choose Us</h1>
-        <div className="image-container">
+        <div className="image-container_landing">
           <div className="image-item">
             <img
               src={Bespokemodels}

@@ -49,3 +49,19 @@
     margin-top: 1vh;
   }
 }
+
+
+
+@media (max-width: 768px) {
+  .virtualcomponent  {
+    scroll-snap-align: none !important; 
+
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .virtualcomponent {
+    scroll-snap-align: none !important; 
+  }
+}

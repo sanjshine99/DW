@@ -84,7 +84,7 @@ function About() {
           </p>
         </div>
       </div>
-      <div className="component3" ref={refValues}>
+      <div className="component" ref={refValues}>
         <h1>Our Values</h1>
         <div className="image-container">
           <motion.div

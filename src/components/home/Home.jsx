@@ -18,7 +18,9 @@ function Home() {
       <div className="component">
         <Gallery />
       </div>
+      <div className="component">
       <Reviews />
+      </div>
       <div className="partnercomponent">
         <Partners />
       </div>

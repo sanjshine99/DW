@@ -36,6 +36,7 @@
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column; /* Change layout to column when screen width is 768px or less */
+    width: fit-content;
   }
   .calendly__form {
     padding-left: 0;
@@ -138,5 +139,22 @@ button:hover {
   100% {
     opacity: 1;
     transform: translateY(0%);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .contact__container {
+    scroll-snap-align: none !important; 
+  }
+  .contact__form {
+    width: auto;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .contact__container {
+    scroll-snap-align: none !important; 
   }
 }

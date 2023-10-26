@@ -96,7 +96,6 @@ const Navbar = () => {
                         rel="noopener noreferrer"
                       >
                         <img src={instagram} alt="Instagram" />
-                        Instagram
                       </a>
                     </li>
                     <li>
@@ -106,7 +105,6 @@ const Navbar = () => {
                         rel="noopener noreferrer"
                       >
                         <img src={facebook} alt="Facebook" />
-                        Facebook
                       </a>
                     </li>
                     <li>
@@ -116,7 +114,6 @@ const Navbar = () => {
                         rel="noopener noreferrer"
                       >
                         <img src={twitter} alt="Twitter" />
-                        Twitter
                       </a>
                     </li>
                     <li>
@@ -126,7 +123,6 @@ const Navbar = () => {
                         rel="noopener noreferrer"
                       >
                         <img src={tiktok} alt="TikTok" />
-                        TikTok
                       </a>
                     </li>
                     <li>
@@ -136,7 +132,6 @@ const Navbar = () => {
                         rel="noopener noreferrer"
                       >
                         <img src={youtube} alt="YouTube" />
-                        YouTube
                       </a>
                     </li>
                   </ul>

@@ -62,3 +62,18 @@
 .video-card p {
   margin: 0;
 }
+
+
+@media (max-width: 768px) {
+  .vidcomponent  {
+    scroll-snap-align: none !important; 
+
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .vidcomponent{
+    scroll-snap-align: none !important; 
+  }
+}

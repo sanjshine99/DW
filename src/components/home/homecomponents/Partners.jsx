@@ -57,7 +57,7 @@ function Partners() {
 
   return (
     <>
-      <h2 className="partners-heading">Our Premium Partners</h2>
+      <h1 className="partners-heading">Our Premium Partners</h1>
       <div className="slider">
         <div className="slide-track">
           <div className="slide">

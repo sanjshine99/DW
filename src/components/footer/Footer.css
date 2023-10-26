@@ -107,10 +107,11 @@
 @media screen and (max-width: 768px) {
   .footer {
     padding: 10px;
+    scroll-snap-align: none !important; 
   }
 
   .footer-logo {
-    width: 60px; /* Decrease logo size for smaller screens */
+    width: auto; /* Decrease logo size for smaller screens */
     margin-right: 0; /* Remove margin for smaller screens */
   }
 

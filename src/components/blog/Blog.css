@@ -12,3 +12,16 @@
     scroll-snap-align: start;
 }
   
+@media (max-width: 768px) {
+  .blog_component {
+    scroll-snap-align: none !important; 
+
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .blog_component {
+    scroll-snap-align: none !important; 
+  }
+}

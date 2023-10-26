@@ -53,3 +53,30 @@
     }
   
     
+@media (max-width: 768px) {
+  .ourval{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two evenly spaced columns */
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .ourval{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    font-size: 16px;
+   
+  }
+}

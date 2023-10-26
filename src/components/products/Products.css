@@ -47,21 +47,7 @@
   padding-top: 7%;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .product-container {
-    flex-direction: column; /* Display description above the iframe */
-  }
 
-  .description {
-    width: 80%; /* Adjust the width as needed */
-  }
-
-  .image iframe {
-    width: 80%; /* Adjust the width as needed */
-    height: 300px; /* Set an appropriate height for smaller screens */
-  }
-}
 
 .btn-holder {
   display: flex;
@@ -122,9 +108,78 @@
   opacity: 0.9;
   max-width: 100vw;
 }
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column; 
+    
+  }
+  
+  .button-container {
+    position: absolute;
+    bottom: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+  }
+
+  .button-container h1{
+    font-size: 30px;
+    display: flex;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+    width:70vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin-left: 1px;
+    text-align: center;
+  }
+  .description p{
+    margin-bottom: 5vh;
+    
+  }
+
+  .image iframe {
+    width: 100vw; /* Adjust the width as needed */
+    height: 300px; /* Set an appropriate height for smaller screens */
+  }
+}
+
 @media screen and (max-width: 768px) {
   .btn {
     margin: 0px 25px 15px;
     font-size: 15px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .slideshowcomopnent {
+    scroll-snap-align: none !important; 
+
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .slideshowcomopnent{
+    scroll-snap-align: none !important; 
   }
 }

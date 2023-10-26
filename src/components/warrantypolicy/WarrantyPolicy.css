@@ -42,3 +42,18 @@
   font-size: 1rem; /* Set a font size for list items */
   margin-bottom: 5px; /* Add space between list items */
 }
+
+
+@media (max-width: 768px) {
+  .warrantycomponent  {
+    scroll-snap-align: none !important; 
+
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .warrantycomponent {
+    scroll-snap-align: none !important; 
+  }
+}

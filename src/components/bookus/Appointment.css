@@ -23,3 +23,17 @@
   .title{
     margin-top: 10vh;
   }
+
+  @media (max-width: 768px) {
+    .calendly_component  {
+      scroll-snap-align: none !important; 
+  
+    }
+  }
+  
+  
+  @media (min-width: 769px) and (max-width: 1200px) {
+    .calendly_component  {
+      scroll-snap-align: none !important; 
+    }
+  }

@@ -19,15 +19,24 @@
 }
 
 .partnercomponent {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  /*padding: 20px; /* Optional: Add padding to the components */
-  min-height: 50px; /* Increase the minimum height to create more spacing */
-  height: 50vh;
-  scroll-snap-align: start;
+margin-top: auto;
 }
 
 .slider {
   height: 35vh !important;
+}
+
+
+@media (max-width: 768px) {
+  .component,.gallerycomponent, .videocomponent, .partnercomponent {
+    scroll-snap-align: none !important; 
+    
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .component,.gallerycomponent, .videocomponent, .partnercomponent {
+    scroll-snap-align: none !important; 
+  }
 }
