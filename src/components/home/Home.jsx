@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Home.css";
 import Video from "./homecomponents/Video_landing";
 import Gallery from "./homecomponents/Gallery_landing";
@@ -8,7 +8,19 @@ import HomeDesc from "./homecomponents/HomeDescription";
 import Model from "../popup-ad/model";
 
 function Home() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const lastShownTimestamp = localStorage.getItem("adLastShownTimestamp");
+    const currentTime = Date.now();
+    const ONE_MINUTE = 300 * 1000;
+
+    if (!lastShownTimestamp || currentTime - lastShownTimestamp >= ONE_MINUTE) {
+      setIsOpen(true);
+      localStorage.setItem("adLastShownTimestamp", currentTime);
+    }
+  }, []);
+
   const handleCloseModal = () => {
     setIsOpen(false);
   };
