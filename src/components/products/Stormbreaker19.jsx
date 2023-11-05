@@ -112,11 +112,7 @@ function Stormbreaker19() {
               eco-friendly features, you can travel without guilt and experience
               all the joy you deserve.
             </p>
-            <p>
-              <button className="virtual-btn">
-                <a href="/tour">Have a look at StromBreaker 18</a>
-              </button>
-            </p>
+
             <button
               className="btn hover-border-1 revealUp"
               onClick={openWarrantyPopupWarrantyPolicy}

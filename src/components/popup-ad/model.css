@@ -19,13 +19,14 @@
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   text-align: center;
   width: 35vw;
+  color: black;
 }
 
-.model-title h2,
+/* .model .model-title h2,
 p {
   color: black;
   list-style: none;
-}
+} */
 
 .model-title h1 {
   color: black;
