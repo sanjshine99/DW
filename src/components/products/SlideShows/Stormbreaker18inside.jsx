@@ -48,7 +48,7 @@ const sections = [
   },
 ];
 
-function Strombreaker21inside() {
+function Strombreaker18inside() {
   const [activeSection, setActiveSection] = useState(null);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
@@ -157,4 +157,4 @@ function Strombreaker21inside() {
   );
 }
 
-export default Strombreaker21inside;
+export default Strombreaker18inside;

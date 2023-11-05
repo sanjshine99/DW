@@ -64,7 +64,7 @@ const Navbar = () => {
                     <button onClick={hideOurRange} className="back-button">
                       <img src={lesser} alt="" className="lessericon" /> Back
                     </button>
-                    <ul className="social-media-list">
+                    <ul className="range-list">
                       <li>
                         <a href="/stormbreaker18">STORMBREAKER 18`6</a>
                       </li>
@@ -91,7 +91,7 @@ const Navbar = () => {
                     <button onClick={hideResources} className="back-button">
                       <img src={lesser} alt="" className="lessericon" /> Back
                     </button>
-                    <ul className="social-media-list">
+                    <ul className="resources-list">
                       <li>
                         <a href="/about">ABOUT US</a>
                       </li>
@@ -108,70 +108,6 @@ const Navbar = () => {
                   </div>
                 )}
               </li>
-              {/* <li className="nav-item">
-                <p className="social" onClick={showSocialMedia}>
-                  SOCIAL MEDIA &gt;
-                </p>
-                {socialMediaVisible && (
-                  <div
-                    className={`social-media-container ${
-                      socialMediaVisible ? "show" : ""
-                    }`}
-                  >
-                    <button onClick={hideSocialMedia} className="back-button">
-                       <img src={lesser} alt="" className="icon" /> Back
-                    </button>
-
-                    <ul className="social-media-list">
-                      <li>
-                        <a
-                          href="https://www.instagram.com/deluxecaravansaustralia/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img src={instagram} alt="Instagram" />
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.facebook.com/deluxecaravansaustralia"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img src={facebook} alt="Facebook" />
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://twitter.com/CaravansDeluxe"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img src={twitter} alt="Twitter" />
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.tiktok.com/@deluxecaravansaustralia"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img src={tiktok} alt="TikTok" />
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.youtube.com/watch?v=a_KE1CVPT48"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img src={youtube} alt="YouTube" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                )}
-              </li> */}
               <li className="nav-item" onClick={toggleMenu}>
                 <p className="social">
                   <Link to="/tour" className="nav-link">
@@ -185,6 +121,55 @@ const Navbar = () => {
                     CONTACT
                   </Link>
                 </p>
+              </li>
+              <li className="nav-item" onClick={toggleMenu}>
+                <ul className="social-media-list">
+                  <li>
+                    <a
+                      href="https://www.instagram.com/deluxecaravansaustralia/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={instagram} alt="Instagram" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/deluxecaravansaustralia"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={facebook} alt="Facebook" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://twitter.com/CaravansDeluxe"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={twitter} alt="Twitter" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.tiktok.com/@deluxecaravansaustralia"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={tiktok} alt="TikTok" />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/watch?v=a_KE1CVPT48"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={youtube} alt="YouTube" />
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>

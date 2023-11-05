@@ -59,11 +59,12 @@
 
 .dropdown-menu .social-media-list {
   list-style: none;
-  padding-left: 20px;
+  display: flex;
 }
 
 .dropdown-menu .social-media-list li {
-  margin-bottom: 10px;
+  margin-bottom: 0;
+  flex: 1;
 }
 
 .dropdown-menu .social-media-list a {

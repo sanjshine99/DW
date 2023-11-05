@@ -219,7 +219,7 @@
   width: 100%;
 }
 .el__index-back_19_i {
-  color: #2f3840;
+  /* color: #2f3840; */
   opacity: 0;
   transition: opacity 0.25s 0.25s;
 }
@@ -358,7 +358,6 @@
 }
 
 .image-nav button {
-
   color: #fff;
   border: none;
   padding: 5px 10px;
@@ -368,7 +367,6 @@
 }
 
 .image-nav button:hover {
-
 }
 
 .slideshow-container {
@@ -413,7 +411,7 @@
   font-size: 30px;
   font-weight: bold;
   padding: 10px;
-  background:transparent;
+  background: transparent;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
@@ -423,6 +421,5 @@
 
 .prev:hover,
 .next:hover {
-
   color: #ababab;
 }
