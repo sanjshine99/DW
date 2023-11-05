@@ -19,9 +19,9 @@ class Specs19 extends Component {
     const data = [
       {
         title: 'INTERIOR',
-        content: `Bed - Queen Island with Lift-Up Storage
-           Niche - Bedside - Both Sides
-           Bunks - 2 Bunks (Length: Top Bunk - 2.1m, Middle Bunk 2.1m)
+        content: `Bed - Queen East - West
+         Niche - Bedside - Both Sides
+         Bunks - 2 or 3 x with Windows ( Length: Top Bunk – 1.9m,, Middle Bunk 2.1m)
            Mattress - Innerspring with Pillow-Top
            L - Shape Lounge - with Drop Down Table with TIC Cushion
            Storage - Drawers
@@ -138,7 +138,7 @@ class Specs19 extends Component {
           {
             title: 'OVERALL',
             content: `Approx Ball Weight: 160 kg
-            Approx Tare Weight: 2750 kg
+            Approx Tare Weight: 2700 kg
             ATM: 3500 kg`,
           },
           {
