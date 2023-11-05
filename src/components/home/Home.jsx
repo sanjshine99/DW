@@ -13,7 +13,7 @@ function Home() {
   useEffect(() => {
     const lastShownTimestamp = localStorage.getItem("adLastShownTimestamp");
     const currentTime = Date.now();
-    const ONE_MINUTE = 30 * 1000;
+    const ONE_MINUTE = 60 * 1000;
 
     if (!lastShownTimestamp || currentTime - lastShownTimestamp >= ONE_MINUTE) {
       setIsOpen(true);
