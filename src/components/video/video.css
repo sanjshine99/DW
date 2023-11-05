@@ -11,7 +11,7 @@
   justify-content: flex-start;
   padding: 20px; /* Optional: Add padding to the components */
   min-height: 50px; /* Increase the minimum height to create more spacing */
-  height: 100vh;
+  height: auto;
   scroll-snap-align: start;
 }
 .video-gallery {
