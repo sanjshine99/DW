@@ -1,4 +1,12 @@
 /* Gallery */
+.desktop-div {
+  display: block;
+}
+
+.mobile-div {
+  display: none;
+}
+
 .cont_19_i {
   position: relative;
   overflow: hidden;
@@ -422,4 +430,13 @@
 .prev:hover,
 .next:hover {
   color: #ababab;
+}
+@media only screen and (max-width: 768px) {
+  .desktop-div {
+    display: none;
+  }
+
+  .mobile-div {
+    display: block;
+  }
 }
