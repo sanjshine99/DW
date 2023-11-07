@@ -117,7 +117,7 @@ function Stormbreaker21() {
             </p>
             <p>
               <button className="virtual-btn">
-                <a href="/tour">Have a look at StromBreaker 18</a>
+                <a href="/tour">Have a look at StromBreaker 21</a>
               </button>
             </p>
             <button

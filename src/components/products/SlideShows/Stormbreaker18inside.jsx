@@ -23,6 +23,8 @@ import in184 from "../../../assets/18/18 in 4.webp";
 import in185 from "../../../assets/18/18 in 5.webp";
 import in216 from "../../../assets/18/18 in 6.webp";
 
+import Strombreaker18insidecarousel from "../mobile-carousels/Strombreaker18insidecarousel";
+
 const sections = [
   {
     name: "Exterior",
@@ -116,44 +118,53 @@ function Strombreaker18inside() {
   };
 
   return (
-    <div className="cont_19_i s--inactive">
-      <div className="cont__inner_19_i">
-        {sections.map((section, index) => (
-          <div
-            key={index}
-            className={`el_19_i ${activeSection === index ? "s--active" : ""}`}
-          >
-            <div className="el__overflow_19_i">
-              <div className="el__inner_19_i">
-                <div className="el__bg_19_i">
-                  <div className="mySlides active">
-                    <img
-                      src={section.images[activeImageIndex]}
-                      alt={`Image ${activeImageIndex + 1}`}
-                    />
-                  </div>
-                </div>
-                <div className="el__preview-cont_19_i">
-                  <h2 className="el__heading_19_i">{section.name}</h2>
-                </div>
-                <div className="el__content_19_i">
-                  <button className="prev" onClick={handlePrevImage}>
-                    &#10094; Previous
-                  </button>
-                  <button className="next" onClick={handleNextImage}>
-                    Next &#10095;
-                  </button>
-                  <div className="el__text_19_i">{section.description}</div>
-                  <div className="el__close-btn_19_i">
-                    <h3>Close</h3>
+    <>
+      <div className="desktop-div">
+        <div className="cont_19_i s--inactive">
+          <div className="cont__inner_19_i">
+            {sections.map((section, index) => (
+              <div
+                key={index}
+                className={`el_19_i ${
+                  activeSection === index ? "s--active" : ""
+                }`}
+              >
+                <div className="el__overflow_19_i">
+                  <div className="el__inner_19_i">
+                    <div className="el__bg_19_i">
+                      <div className="mySlides active">
+                        <img
+                          src={section.images[activeImageIndex]}
+                          alt={`Image ${activeImageIndex + 1}`}
+                        />
+                      </div>
+                    </div>
+                    <div className="el__preview-cont_19_i">
+                      <h2 className="el__heading_19_i">{section.name}</h2>
+                    </div>
+                    <div className="el__content_19_i">
+                      <button className="prev" onClick={handlePrevImage}>
+                        &#10094; Previous
+                      </button>
+                      <button className="next" onClick={handleNextImage}>
+                        Next &#10095;
+                      </button>
+                      <div className="el__text_19_i">{section.description}</div>
+                      <div className="el__close-btn_19_i">
+                        <h3>Close</h3>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
-    </div>
+      <div className="mobile-div">
+        <Strombreaker18insidecarousel />
+      </div>
+    </>
   );
 }
 
