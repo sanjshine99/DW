@@ -75,7 +75,7 @@ function Stormbreaker18() {
           <img src={SB216img} alt="" />
           <div className="image-overlay">
             <div className="button-container">
-            <h1 className="Product-header revealUp">Stormbreaker18`6</h1>
+              <h1 className="Product-header revealUp">Stormbreaker18`6</h1>
               <button
                 onClick={scrollToLayout}
                 className="btn hover-border-1 revealUp"
@@ -102,7 +102,24 @@ function Stormbreaker18() {
         <div className="product-container" id="layout">
           <div className="description">
             <p>
-            Are you looking for a small compact caravan that has everything for your family caravanning adventure? Discover the ideal combination of snug comfort and stylish travel with the Deluxe Caravan 18'6 Stormbreaker. This is our smallest family bunk van and this model effortlessly combines convenience and comfort, ensuring your journeys are truly enjoyable. Its space-saving design and well-appointed interior provide everything you need for your adventures. The quality and features are uncompromised in this compact caravan, guaranteeing all you desire for memorable travels. Additionally, its thoughtfully designed with eco-friendly elements to minimize your environmental footprint, so you can explore with a clear conscience. Your next adventure awaits with the 18'6 Stormbreaker. 
+              Are you looking for a small compact caravan that has everything
+              for your family caravanning adventure? Discover the ideal
+              combination of snug comfort and stylish travel with the Deluxe
+              Caravan 18'6 Stormbreaker. This is our smallest family bunk van
+              and this model effortlessly combines convenience and comfort,
+              ensuring your journeys are truly enjoyable. Its space-saving
+              design and well-appointed interior provide everything you need for
+              your adventures. The quality and features are uncompromised in
+              this compact caravan, guaranteeing all you desire for memorable
+              travels. Additionally, its thoughtfully designed with eco-friendly
+              elements to minimize your environmental footprint, so you can
+              explore with a clear conscience. Your next adventure awaits with
+              the 18'6 Stormbreaker.
+            </p>
+            <p>
+              <button className="virtual-btn">
+                <a href="/tour">Have a look at StromBreaker 18</a>
+              </button>
             </p>
             <button
               className="btn hover-border-1 revealUp"
@@ -137,8 +154,7 @@ function Stormbreaker18() {
         </div>
       </div>
       <div className="component" id="specs">
-
-        <Techspec18/>
+        <Techspec18 />
       </div>
       <div className="component" id="specs">
         <h1>Specs Menu</h1>

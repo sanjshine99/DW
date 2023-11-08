@@ -74,9 +74,8 @@ function Stormbreaker21() {
         <div className="background-image">
           <img src={SB216img} alt="" />
           <div className="image-overlay">
-           
             <div className="button-container">
-            <h1 className="Product-header revealUp">Stormbreaker21`6</h1>
+              <h1 className="Product-header revealUp">Stormbreaker21`6</h1>
               <button
                 onClick={scrollToLayout}
                 className="btn hover-border-1 revealUp"
@@ -103,8 +102,23 @@ function Stormbreaker21() {
         <div className="product-container" id="layout">
           <div className="description">
             <p>
-            Are you on the hunt for a more spacious family bunk caravan? Your search ends here with the Stormbreaker 21'6, the solution you've been seeking. This model offers all the remarkable features found in the 19'6. Every journey transforms into an unforgettable experience, thanks to its premium built interior, exterior, and mechanical features. when you embark on the open road with your loved ones, you'll be treated to an exceptionally roomy layout, complete with all the amenities you'd expect from a luxury RV adventure. But our commitment doesn't end there- we ensure your adventures leave no environmental footprint. With eco-friendly features, you can travel without guilt and experience all the joy you deserve. 
-
+              Are you on the hunt for a more spacious family bunk caravan? Your
+              search ends here with the Stormbreaker 21'6, the solution you've
+              been seeking. This model offers all the remarkable features found
+              in the 19'6. Every journey transforms into an unforgettable
+              experience, thanks to its premium built interior, exterior, and
+              mechanical features. when you embark on the open road with your
+              loved ones, you'll be treated to an exceptionally roomy layout,
+              complete with all the amenities you'd expect from a luxury RV
+              adventure. But our commitment doesn't end there- we ensure your
+              adventures leave no environmental footprint. With eco-friendly
+              features, you can travel without guilt and experience all the joy
+              you deserve.
+            </p>
+            <p>
+              <button className="virtual-btn">
+                <a href="/tour">Have a look at StromBreaker 21</a>
+              </button>
             </p>
             <button
               className="btn hover-border-1 revealUp"
@@ -139,7 +153,7 @@ function Stormbreaker21() {
         </div>
       </div>
       <div className="component" id="specs">
-        <Techspec21/>
+        <Techspec21 />
       </div>
       <div className="component" id="specs">
         <h1>Specs Menu</h1>

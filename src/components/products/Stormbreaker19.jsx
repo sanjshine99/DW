@@ -73,9 +73,8 @@ function Stormbreaker19() {
         <div className="background-image">
           <img src={SB196img} alt="" />
           <div className="image-overlay">
-            
             <div className="button-container">
-            <h1 className="Product-header revealUp">Stormbreaker19`6</h1>
+              <h1 className="Product-header revealUp">Stormbreaker19`6</h1>
               <button
                 onClick={scrollToLayout}
                 className="btn hover-border-1 revealUp"
@@ -102,8 +101,18 @@ function Stormbreaker19() {
         <div className="product-container" id="layout">
           <div className="description">
             <p>
-            Searching for a compact family bunk caravan? Look no further. The Stormbreaker 19'6 is the perfect solution, offering all the features of the 21'6 model. Every journey becomes a memorable experience with its premium built interior, exterior, and mechanical attributes. When you hit the open road with your loved ones, you'll enjoy a spacious layout and all the amenities you'd expect from a luxury RV. But our commitment doesn't end there- we ensure your adventures leave no environmental footprint. With eco-friendly features, you can travel without guilt and experience all the joy you deserve. 
+              Searching for a compact family bunk caravan? Look no further. The
+              Stormbreaker 19'6 is the perfect solution, offering all the
+              features of the 21'6 model. Every journey becomes a memorable
+              experience with its premium built interior, exterior, and
+              mechanical attributes. When you hit the open road with your loved
+              ones, you'll enjoy a spacious layout and all the amenities you'd
+              expect from a luxury RV. But our commitment doesn't end there- we
+              ensure your adventures leave no environmental footprint. With
+              eco-friendly features, you can travel without guilt and experience
+              all the joy you deserve.
             </p>
+
             <button
               className="btn hover-border-1 revealUp"
               onClick={openWarrantyPopupWarrantyPolicy}
@@ -137,7 +146,7 @@ function Stormbreaker19() {
         </div>
       </div>
       <div className="component" id="specs">
-        <Techspec19/>
+        <Techspec19 />
       </div>
       <div className="component" id="specs">
         <h1>Specs Menu</h1>
