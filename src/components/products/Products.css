@@ -122,6 +122,12 @@
   max-width: 100vw;
 }
 
+.package-details {
+  border: 1px solid white;
+  box-shadow: 0 0 10px rgba(230, 62, 62, 0.5);
+  padding: 20px;
+}
+
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .product-container {

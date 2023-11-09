@@ -4,7 +4,6 @@ import { gsap } from "gsap";
 import { Link } from "react-router-dom";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 function Contact() {
@@ -54,7 +53,7 @@ function Contact() {
   const handleSendEmail = () => {
     const { name, email, message } = formData;
     const subject = "Contact Form Submission";
-    const mailtoLink = `mailto:xyz@xyz?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:hello@infiniterv.com.au?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
@@ -101,8 +100,8 @@ function Contact() {
           <button type="button" className="send" onClick={handleSendEmail}>
             Send
           </button>
-          <Link to="/appointment" className="book" >
-           BOOK A TOUR!
+          <Link to="/appointment" className="book">
+            BOOK A TOUR!
           </Link>
         </form>
       </div>
