@@ -52,7 +52,7 @@ function Contact() {
 
   const handleSendEmail = () => {
     const { name, email, message } = formData;
-    const subject = "Contact Form Submission";
+    const subject = "Requesting Inquiry";
     const mailtoLink = `mailto:hello@infiniterv.com.au?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(
