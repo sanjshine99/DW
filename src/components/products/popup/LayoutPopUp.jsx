@@ -20,10 +20,7 @@ const LayoutPopUp = ({ onClose }) => {
       });
 
       if (response.ok) {
-        const link = document.createElement("a");
-        link.href = Layout;
-        link.download = "Layout.pdf";
-        link.click();
+        console.log("Form submitted successfully");
       }
     } catch (error) {
       console.error(error);
@@ -34,15 +31,22 @@ const LayoutPopUp = ({ onClose }) => {
     const emailValue = e.target.value;
     setEmail(emailValue);
     // Check if the input is a valid email using a simple regex pattern
-    const isValid = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(emailValue);
+    const isValid = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(
+      emailValue
+    );
     setIsEmailValid(isValid);
   };
 
+  const alertElement = document.querySelector(".alert");
+  const download = document.querySelector(".download");
+  const requiredEmail = document.querySelector(".required-email");
+  const field = document.querySelector(".field");
+
   const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = Layout;
-    link.download = "Layout.pdf";
-    link.click();
+    alertElement.classList.add("show");
+    download.style.display = "none";
+    requiredEmail.style.display = "none";
+    field.style.display = "none";
   };
 
   return (
@@ -61,12 +65,12 @@ const LayoutPopUp = ({ onClose }) => {
           <div id="mc_embed_signup_scroll">
             <div className="mc-field-group">
               <label htmlFor="mce-EMAIL" className="field">
-                please enter a valid email address
+                Please enter your email here!
               </label>
               <input
                 type="email"
                 name="EMAIL"
-                className="required email"
+                className="required-email"
                 id="mce-EMAIL"
                 required=""
                 value={email}
@@ -83,6 +87,9 @@ const LayoutPopUp = ({ onClose }) => {
                 className={`button ${isEmailValid ? "" : "disabled"}`} // Conditionally enable the button
                 disabled={!isEmailValid} // Disable the button when the email is not valid
               />
+            </div>
+            <div class="alert">
+              A team member will email the brochure shortly.
             </div>
           </div>
         </form>

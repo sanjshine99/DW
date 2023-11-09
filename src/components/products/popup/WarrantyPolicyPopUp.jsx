@@ -19,7 +19,6 @@ const WarrantyPolicyPopup = ({ onClose }) => {
       });
 
       if (response.ok) {
-        // The form submission was successful
         console.log("Form submitted successfully");
       }
     } catch (error) {
@@ -88,7 +87,7 @@ const WarrantyPolicyPopup = ({ onClose }) => {
               />
             </div>
             <div class="alert">
-              A team member will email Upgrades list shortly.
+              A team member will email the upgrade list shortly.
             </div>
           </div>
         </form>
