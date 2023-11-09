@@ -115,9 +115,20 @@ function Stormbreaker21() {
               features, you can travel without guilt and experience all the joy
               you deserve.
             </p>
+            <div className="package-details">
+              <p>
+                <b>NOW WITH ALL 2024 ORDERS, OFF-GRID PACKAGE INCLUSIONS: </b>
+              </p>
+              <p>
+                <p>DOMETIC FRESH JETAIRCON</p>
+                <p>188L DOMETIC COMPRESSOR FRIDGE</p>
+                <p>3 X 170W SOLAR PANELS</p>
+                <p>2 X 100AH LITHIUM BATTERIES</p>
+              </p>
+            </div>
             <p>
               <button className="virtual-btn">
-                <a href="/tour">Have a look at StromBreaker 21</a>
+                <a href="/tour">Have a look at STORMBREAKER 21`6</a>
               </button>
             </p>
             <button

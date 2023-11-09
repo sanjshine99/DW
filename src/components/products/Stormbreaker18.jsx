@@ -116,9 +116,20 @@ function Stormbreaker18() {
               explore with a clear conscience. Your next adventure awaits with
               the 18'6 Stormbreaker.
             </p>
+            <div className="package-details">
+              <p>
+                <b>NOW WITH ALL 2024 ORDERS, OFF-GRID PACKAGE INCLUSIONS: </b>
+              </p>
+              <p>
+                <p>DOMETIC FRESH JETAIRCON</p>
+                <p>188L DOMETIC COMPRESSOR FRIDGE</p>
+                <p>3 X 170W SOLAR PANELS</p>
+                <p>2 X 100AH LITHIUM BATTERIES</p>
+              </p>
+            </div>
             <p>
               <button className="virtual-btn">
-                <a href="/tour">Have a look at StromBreaker 18</a>
+                <a href="/tour">Have a look at STORMBREAKER 18`6</a>
               </button>
             </p>
             <button

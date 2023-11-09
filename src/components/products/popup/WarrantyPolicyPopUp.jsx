@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./PopUp.css";
-import WarrantyPdf from "../../../assets/pdfs/UpgradeList.pdf";
 
 const WarrantyPolicyPopup = ({ onClose }) => {
   const MAILCHIMP_FORM_ACTION_URL = process.env.REACT_APP_MAILCHIMP_URL;
@@ -20,10 +19,8 @@ const WarrantyPolicyPopup = ({ onClose }) => {
       });
 
       if (response.ok) {
-        const link = document.createElement("a");
-        link.href = WarrantyPdf;
-        link.download = "UpgradeList.pdf";
-        link.click();
+        // The form submission was successful
+        console.log("Form submitted successfully");
       }
     } catch (error) {
       console.error(error);
@@ -34,15 +31,22 @@ const WarrantyPolicyPopup = ({ onClose }) => {
     const emailValue = e.target.value;
     setEmail(emailValue);
     // Check if the input is a valid email using a simple regex pattern
-    const isValid = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(emailValue);
+    const isValid = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(
+      emailValue
+    );
     setIsEmailValid(isValid);
   };
 
+  const alertElement = document.querySelector(".alert");
+  const download = document.querySelector(".download");
+  const requiredEmail = document.querySelector(".required-email");
+  const field = document.querySelector(".field");
+
   const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = WarrantyPdf;
-    link.download = "UpgradeList.pdf";
-    link.click();
+    alertElement.classList.add("show");
+    download.style.display = "none";
+    requiredEmail.style.display = "none";
+    field.style.display = "none";
   };
 
   return (
@@ -61,12 +65,12 @@ const WarrantyPolicyPopup = ({ onClose }) => {
           <div id="mc_embed_signup_scroll">
             <div className="mc-field-group">
               <label htmlFor="mce-EMAIL" className="field">
-              please enter a valid email address
+                Please enter your email here!
               </label>
               <input
                 type="email"
                 name="EMAIL"
-                className="required email"
+                className="required-email"
                 id="mce-EMAIL"
                 required=""
                 value={email}
@@ -74,14 +78,19 @@ const WarrantyPolicyPopup = ({ onClose }) => {
               />
             </div>
             <div className="download" onClick={handleDownload}>
-            <input
-  type="submit"
-  value="Download"
-  name="subscribe"
-  id="mc-embedded-subscribe"
-  className={`button ${isEmailValid ? "" : "disabled"}`} // Add the "disabled" class when email is not valid
-  disabled={!isEmailValid} // Disable the button when the email is not valid
-/>
+              <input
+                type="submit"
+                value="Download"
+                name="subscribe"
+                id="mc-embedded-subscribe"
+                className={`button ${isEmailValid ? "" : "disabled"}`} // Add the "disabled" class when email is not valid
+                disabled={!isEmailValid} // Disable the button when the email is not valid
+              />
+            </div>
+            <div class="alert">
+              A team member will email Upgrades list shortly.
+              <br />
+              You can close the pop-up now!
             </div>
           </div>
         </form>
