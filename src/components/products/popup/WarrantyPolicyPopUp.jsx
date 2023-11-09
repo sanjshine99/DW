@@ -89,8 +89,6 @@ const WarrantyPolicyPopup = ({ onClose }) => {
             </div>
             <div class="alert">
               A team member will email Upgrades list shortly.
-              <br />
-              You can close the pop-up now!
             </div>
           </div>
         </form>
