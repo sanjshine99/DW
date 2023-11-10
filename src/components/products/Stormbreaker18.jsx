@@ -118,17 +118,18 @@ function Stormbreaker18() {
             </p>
             <div className="package-details">
               <p>
-                <b>NOW WITH ALL 2024 ORDERS, OFF-GRID PACKAGE INCLUSIONS: </b>
+                <h2>NOW WITH ALL 2024 ORDERS, OFF-GRID PACKAGE INCLUSIONS: </h2>
               </p>
               <p>
-                <b>WORTH $5000 !</b>
+                <h3>WORTH $5000 !</h3>
               </p>
-              <p>
-                <p>DOMETIC FRESH JETAIRCON</p>
-                <p>188L DOMETIC COMPRESSOR FRIDGE</p>
-                <p>3 X 170W SOLAR PANELS</p>
-                <p>2 X 100AH LITHIUM BATTERIES</p>
-              </p>
+              <ul>
+  <li>DOMETIC FRESH JETAIRCON</li>
+  <li>188L DOMETIC COMPRESSOR FRIDGE</li>
+  <li>3 X 170W SOLAR PANELS</li>
+  <li>2 X 100AH LITHIUM BATTERIES</li>
+</ul>
+
             </div>
             <p>
               <button className="virtual-btn">
