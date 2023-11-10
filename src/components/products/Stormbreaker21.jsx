@@ -116,8 +116,11 @@ function Stormbreaker21() {
               you deserve.
             </p>
             <div className="package-details">
-              <p>
+            <p>
                 <b>NOW WITH ALL 2024 ORDERS, OFF-GRID PACKAGE INCLUSIONS: </b>
+              </p>
+              <p>
+                <b>WORTH $5000 !</b>
               </p>
               <p>
                 <p>DOMETIC FRESH JETAIRCON</p>

@@ -62,7 +62,7 @@ const Model = ({ isOpen, onClose }) => {
                 <b>3 X SOLAR PANELS</b>
               </p>
               <p className="model-disc3">
-                <b>DOMESTIC FRESHJET AIRCON</b>
+                <b>DOMETIC FRESHJET AIRCON</b>
               </p>
             </div>
             <button className="model-button model-inqurie">

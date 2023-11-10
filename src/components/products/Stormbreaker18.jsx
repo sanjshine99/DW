@@ -121,6 +121,9 @@ function Stormbreaker18() {
                 <b>NOW WITH ALL 2024 ORDERS, OFF-GRID PACKAGE INCLUSIONS: </b>
               </p>
               <p>
+                <b>WORTH $5000 !</b>
+              </p>
+              <p>
                 <p>DOMETIC FRESH JETAIRCON</p>
                 <p>188L DOMETIC COMPRESSOR FRIDGE</p>
                 <p>3 X 170W SOLAR PANELS</p>
