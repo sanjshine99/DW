@@ -108,3 +108,13 @@
     }
   }
   
+
+
+  @media screen and (max-width: 767px) {
+    /* Adjust list item alignment for smaller screens */
+    .accordionItem {
+      margin-left: auto;
+      padding: 0em; /* Adjust padding as needed */
+      font-size: 14px;
+    }
+  }

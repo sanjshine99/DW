@@ -13,6 +13,8 @@ import ex196 from "../../../assets/19/19 ex 6.webp";
 //layout
 import SB196layout from "../../../assets/Product renders/SB196 layout.webp";
 import SB196layoutdes from "../../../assets/Product renders/19laydes.webp";
+import SB196layout2 from "../../../assets/Product renders/19lay2.webp";
+
 //interior
 import in191 from "../../../assets/19/19 in 1.webp";
 import in192 from "../../../assets/19/19 in 2.webp";
@@ -29,11 +31,11 @@ const sections = [
     images: [
       SB196layout,
       SB196layoutdes,
+      SB196layout2,
       SB196layout,
+      SB196layout2,
       SB196layout,
-      SB196layout,
-      SB196layout,
-      SB196layout,
+      SB196layout2,
     ],
     description: "",
   },
