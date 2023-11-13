@@ -32,6 +32,12 @@
   padding-left: 2%;
 }
 
+
+.popup p{
+
+  font-size: 30px;
+}
+
 /* Media query for screens with a maximum width of 768px */
 @media (max-width: 768px) {
   .contact-container {

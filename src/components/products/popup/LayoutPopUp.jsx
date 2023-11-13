@@ -1,22 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./PopUp.css";
 import Layout from "../../../assets/pdfs/Layout.pdf";
 
-const LayoutPopUp = ({ onClose }) => {
+const LayoutPopUp = ({ onClose, popupIdentifier }) => {
   const MAILCHIMP_FORM_ACTION_URL = process.env.REACT_APP_MAILCHIMP_URL;
   const [email, setEmail] = useState("");
-  const [isEmailValid, setIsEmailValid] = useState(false); // Track email validity
+  const [isEmailValid, setIsEmailValid] = useState(false);
+  const alertRef = useRef(null);
+  const downloadRef = useRef(null);
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
     try {
+      const formData = new FormData(e.target);
+
+      // Add a hidden input field with the popup identifier
+      formData.append("POPUP_IDENTIFIER", popupIdentifier);
+
       const response = await fetch(MAILCHIMP_FORM_ACTION_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
         },
-        body: new URLSearchParams(new FormData(e.target)),
+        body: new URLSearchParams(formData),
       });
 
       if (response.ok) {
@@ -30,23 +37,14 @@ const LayoutPopUp = ({ onClose }) => {
   const handleEmailChange = (e) => {
     const emailValue = e.target.value;
     setEmail(emailValue);
-    // Check if the input is a valid email using a simple regex pattern
-    const isValid = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(
-      emailValue
-    );
+    const isValid = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(emailValue);
     setIsEmailValid(isValid);
   };
 
-  const alertElement = document.querySelector(".alert");
-  const download = document.querySelector(".download");
-  const requiredEmail = document.querySelector(".required-email");
-  const field = document.querySelector(".field");
-
   const handleDownload = () => {
-    alertElement.classList.add("show");
-    download.style.display = "none";
-    requiredEmail.style.display = "none";
-    field.style.display = "none";
+    // Use React state or refs to manage visibility instead of direct DOM manipulation
+    if (alertRef.current) alertRef.current.classList.add("show");
+    if (downloadRef.current) downloadRef.current.style.display = "none";
   };
 
   return (
@@ -77,18 +75,17 @@ const LayoutPopUp = ({ onClose }) => {
                 onChange={handleEmailChange}
               />
             </div>
-            {/* Rest of your form fields */}
-            <div className="download" onClick={handleDownload}>
+            <div className="download" onClick={handleDownload} ref={downloadRef}>
               <input
                 type="submit"
                 value="Download"
                 name="subscribe"
                 id="mc-embedded-subscribe"
-                className={`button ${isEmailValid ? "" : "disabled"}`} // Conditionally enable the button
-                disabled={!isEmailValid} // Disable the button when the email is not valid
+                className={`button ${isEmailValid ? "" : "disabled"}`}
+                disabled={!isEmailValid}
               />
             </div>
-            <div class="alert">
+            <div className="alert" ref={alertRef}>
               A team member will email the brochure shortly.
             </div>
           </div>

@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
+import GoToTop from "../functions/GoToTop";
 import Strom18inside from "../products/SlideShows/Stormbreaker18inside";
 import { gsap } from "gsap";
 import Storm18specs from "./Specsmenu/Specs18";
@@ -124,7 +125,7 @@ function Stormbreaker18() {
                 <h3>WORTH $5000 !</h3>
               </p>
               <ul>
-  <li>DOMETIC FRESH JETAIRCON</li>
+  <li>DOMETIC FRESH JET AIRCON</li>
   <li>188L DOMETIC COMPRESSOR FRIDGE</li>
   <li>3 X 170W SOLAR PANELS</li>
   <li>2 X 100AH LITHIUM BATTERIES</li>
@@ -153,7 +154,7 @@ function Stormbreaker18() {
               Download Brochure
             </button>
             {isLayoutPopupOpen && (
-              <LayoutPopUp onClose={closeLayoutPopupLayoutPolicy} />
+              <LayoutPopUp onClose={closeLayoutPopupLayoutPolicy} popupIdentifier="yourUniqueIdentifier" />
             )}
           </div>
           <div className="image">
@@ -175,6 +176,7 @@ function Stormbreaker18() {
         <h1>Specs Menu</h1>
         <Storm18specs />
       </div>
+      <GoToTop/>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../home/Home.css';
 import './Tour.css';
+import GoToTop from "../functions/GoToTop";
 
 function Tour() {
   return (
@@ -26,6 +27,7 @@ function Tour() {
           title="Virtual Tour 2"
         ></iframe>
       </div>
+      <GoToTop/>
     </div>
   );
 }

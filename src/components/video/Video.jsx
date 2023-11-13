@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./video.css";
+import GoToTop from "../functions/GoToTop";
 
 function Video() {
   // Sample video data (replace with your own data)
@@ -60,6 +61,7 @@ function Video() {
           </div>
         </div>
       </div>
+      <GoToTop/>
     </div>
   );
 }

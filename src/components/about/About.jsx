@@ -4,6 +4,7 @@ import { useInView } from "react-intersection-observer";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
 import "./About.css";
+import GoToTop from "../functions/GoToTop";
 import AUSTRALIANMADE from "../../assets/ourval/ausmade.webp";
 import TEAMWORK from "../../assets/ourval/teamwork.webp";
 import QUALITYINNOVATION from "../../assets/ourval/badge.webp";
@@ -203,7 +204,9 @@ function About() {
           </motion.div>
         </div>
       </div>
+      <GoToTop/>
     </div>
+
   );
 }
 

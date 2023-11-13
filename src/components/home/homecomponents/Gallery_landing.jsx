@@ -10,7 +10,7 @@ import Support from "../../../assets/why choose us/technical-support.webp";
 class Gallery_landing extends React.Component {
   render() {
     return (
-      <div className="container">
+      <div className="wcontainer">
         <h1>Why Choose Us</h1>
         <div className="image-container_landing">
           <div className="image-item">

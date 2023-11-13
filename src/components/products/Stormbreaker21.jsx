@@ -4,6 +4,7 @@ import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
 import Strom21inside from "../products/SlideShows/Stormbreaker21inside";
 import { gsap } from "gsap";
+import GoToTop from "../functions/GoToTop";
 import Storm21specs from "./Specsmenu/Specs21";
 import Techspec21 from "./techspecs/Techspec21";
 import SB216img from "../../assets/Product renders/SB216Exterior.webp";
@@ -123,7 +124,7 @@ function Stormbreaker21() {
               <h3>WORTH $5000 !</h3>
               </p>
               <ul>
-  <li>DOMETIC FRESH JETAIRCON</li>
+  <li>DOMETIC FRESH JET AIRCON</li>
   <li>188L DOMETIC COMPRESSOR FRIDGE</li>
   <li>3 X 170W SOLAR PANELS</li>
   <li>2 X 100AH LITHIUM BATTERIES</li>
@@ -174,6 +175,7 @@ function Stormbreaker21() {
         <h1>Specs Menu</h1>
         <Storm21specs />
       </div>
+      <GoToTop/>
     </div>
   );
 }

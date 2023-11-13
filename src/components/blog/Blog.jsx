@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import '../home/Home.css';
 import './Blog.css';
+import GoToTop from "../functions/GoToTop";
 import { Helmet } from 'react-helmet';
 
 function Blog() {
@@ -33,6 +34,7 @@ function Blog() {
       <Helmet>
         <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer />
       </Helmet>
+      <GoToTop/>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import "./WarrantyPolicy.css";
+import GoToTop from "../functions/GoToTop";
 
 function WarrantyPolicy() {
   return (
@@ -78,6 +79,7 @@ function WarrantyPolicy() {
         <p>Once we receive a claim, the claim will be accessed through photos/videos or in-person inspection if required to review the validity of the claim.</p>
         <p>If the claim is valid, we will request a few quotations from a service center for further inspection or for the repair to be carried out after authorization is given by Deluxe Caravans to cover the costs.</p>
         </div>
+        <GoToTop/>
       </div>
   )
 }

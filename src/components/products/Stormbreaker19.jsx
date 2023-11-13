@@ -3,6 +3,7 @@ import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
 import Strom19inside from "../products/SlideShows/Stormbreaker19inside";
+import GoToTop from "../functions/GoToTop";
 import { gsap } from "gsap";
 import Storm19specs from "./Specsmenu/Specs19";
 import Techspec19 from "./techspecs/Techspec19";
@@ -120,7 +121,7 @@ function Stormbreaker19() {
               <h3>WORTH $5000 !</h3>
               </p>
               <ul>
-  <li>DOMETIC FRESH JETAIRCON</li>
+  <li>DOMETIC FRESH JET AIRCON</li>
   <li>188L DOMETIC COMPRESSOR FRIDGE</li>
   <li>3 X 170W SOLAR PANELS</li>
   <li>2 X 100AH LITHIUM BATTERIES</li>
@@ -171,6 +172,7 @@ function Stormbreaker19() {
         <h1>Specs Menu</h1>
         <Storm19specs />
       </div>
+      <GoToTop/>
     </div>
   );
 }

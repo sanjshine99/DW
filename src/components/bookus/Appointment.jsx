@@ -1,5 +1,6 @@
 import React from 'react';
 import { InlineWidget } from "react-calendly";
+import GoToTop from "../functions/GoToTop";
 import './Appointment.css';
 function Appointment() {
   return (
@@ -15,6 +16,7 @@ function Appointment() {
           </div>
         </div>
     </div>
+    <GoToTop/>
     </div>
   )
 }
