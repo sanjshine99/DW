@@ -167,6 +167,7 @@
 @media screen and (max-width: 375px) {
   .wcontainer{
    margin-bottom: 20vh;
+
   }
 }
 @media screen and (max-width: 768px) {
@@ -244,6 +245,10 @@
     height: 100vh;
     margin-bottom: 20vh;
   }
+  .wcontainer{
+    margin-bottom: 20vh;
+   }
+  
   .doswOh {
     font-size: 20px !important;
   }
