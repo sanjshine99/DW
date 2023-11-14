@@ -141,21 +141,13 @@ function Stormbreaker18() {
               className="btn hover-border-1 revealUp"
               onClick={openWarrantyPopupWarrantyPolicy}
             >
-              Upgrade List
+              Download Our Upgrade List
             </button>
             {isWarrantyPopupOpen && (
               <WarrantyPolicyPopup onClose={closeWarrantyPopupWarrantyPolicy} />
             )}
 
-            <button
-              className="btn hover-border-1 revealUp"
-              onClick={openLayoutPopupLayoutPolicy}
-            >
-              Download Brochure
-            </button>
-            {isLayoutPopupOpen && (
-              <LayoutPopUp onClose={closeLayoutPopupLayoutPolicy} popupIdentifier="yourUniqueIdentifier" />
-            )}
+       
           </div>
           <div className="image">
             <iframe
