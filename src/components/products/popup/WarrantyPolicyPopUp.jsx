@@ -51,7 +51,7 @@ const WarrantyPolicyPopup = ({ onClose }) => {
   return (
     <div className="popup-container">
       <div className="popup">
-        <h1>Download Upgrade List</h1>
+        <h1>Download Our Brochure and Upgrade List</h1>
         <form
           onSubmit={handleFormSubmit}
           action={MAILCHIMP_FORM_ACTION_URL}
