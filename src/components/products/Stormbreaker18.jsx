@@ -141,7 +141,7 @@ function Stormbreaker18() {
               className="btn hover-border-1 revealUp"
               onClick={openWarrantyPopupWarrantyPolicy}
             >
-              Download Our Upgrade List
+              Download Our Brochure and Upgrade List
             </button>
             {isWarrantyPopupOpen && (
               <WarrantyPolicyPopup onClose={closeWarrantyPopupWarrantyPolicy} />
