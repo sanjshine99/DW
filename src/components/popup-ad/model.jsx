@@ -75,4 +75,4 @@ const Model = ({ isOpen, onClose }) => {
   );
 };
 
-export default Model;
+export default React.memo(Model);

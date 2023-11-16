@@ -47,7 +47,7 @@ function About() {
             parts of the country and an active part of the caravan industry, we
             know what it takes to create top-of-the-line, bespoke caravans that
             meet your every expectation.
-          </p>
+            </p>
         </div>
       </div>
       <div className="component" ref={refCaravans}>
@@ -82,7 +82,7 @@ function About() {
             allowed us to adapt and create the ultimate OFF-ROAD caravans
             Australia has to offer. Our Eco-Friendly, Bespoke options give us
             the edge in the competitive market.
-          </p>
+            </p>
         </div>
       </div>
       <div className="component" ref={refValues}>
@@ -203,11 +203,10 @@ function About() {
             </p>
           </motion.div>
         </div>
-      </div>
-      <GoToTop/>
+        </div>
+      <GoToTop />
     </div>
-
   );
 }
 
-export default About;
+export default React.memo(About);

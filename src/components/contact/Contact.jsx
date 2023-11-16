@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import "./Contact.css";
 import GoToTop from "../functions/GoToTop";
 import { gsap } from "gsap";
@@ -8,7 +8,7 @@ import emailjs from "@emailjs/browser";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function Contact() {
+const Contact = () => {
   const [animate, setAnimate] = useState(false);
   const [emailStatus, setEmailStatus] = useState(null);
 
@@ -40,16 +40,14 @@ function Contact() {
   }, []);
 
   useEffect(() => {
-    // Add the EmailJS initialization script with your public key
     const emailJsScript = document.createElement("script");
     emailJsScript.type = "text/javascript";
-    emailJsScript.src =
-      "https://cdn.emailjs.com/dist/email.min.js";
+    emailJsScript.src = "https://cdn.emailjs.com/dist/email.min.js";
     emailJsScript.async = true;
     document.head.appendChild(emailJsScript);
 
     emailJsScript.onload = () => {
-      emailjs.init("Q_lgPEotr4R0YVRpv"); // Replace with your EmailJS public key
+      emailjs.init("Q_lgPEotr4R0YVRpv");
     };
 
     return () => {
@@ -64,18 +62,17 @@ function Contact() {
     message: "",
   });
 
-  const handleChange = (event) => {
+  const handleChange = useCallback((event) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
-  };
+  }, []);
 
-  const handleSendEmail = () => {
+  const handleSendEmail = useCallback(() => {
     const { name, email, mobile, message } = formData;
 
-    // Use the 'emailjs' library to send the email
     emailjs
       .send("hello@infiniterv.com.au", "template_l57kshl", {
         to_email: "hello@infiniterv.com.au",
@@ -85,21 +82,16 @@ function Contact() {
         message: message,
       })
       .then((response) => {
-        console.log("Email sent successfully:", response);
-        // You can add any additional logic here, such as showing a success message.
         setEmailStatus("success");
       })
       .catch((error) => {
-        console.error("Error sending email:", error);
-        // Handle errors here, such as showing an error message.
         setEmailStatus("error");
       });
-  };
+  }, [formData]);
 
-  const resetEmailStatus = () => {
+  const resetEmailStatus = useCallback(() => {
     setEmailStatus(null);
-  };
-
+  }, []);
   return (
     <div className="contact__container revealUp">
       <h1 className={animate ? "lineUp" : ""}>Contact us</h1>
@@ -170,4 +162,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default React.memo(Contact);

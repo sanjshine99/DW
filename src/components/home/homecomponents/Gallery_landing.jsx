@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import "./HomeComponent.css";
 import Bespokemodels from "../../../assets/why choose us/customer-support.webp";
 import Ecofriendly from "../../../assets/why choose us/ecology.webp";
@@ -7,22 +7,25 @@ import Ratings from "../../../assets/why choose us/customer-review.webp";
 import Warranty from "../../../assets/why choose us/warranty.webp";
 import Support from "../../../assets/why choose us/technical-support.webp";
 
-class Gallery_landing extends React.Component {
-  render() {
-    return (
-      <div className="wcontainer">
-        <h1>Why Choose Us</h1>
-        <div className="image-container_landing">
-          <div className="image-item">
-            <img
-              src={Bespokemodels}
-              alt="Bespokemodels"
-              className="galleryoverlayimage"
-              height="100px"
-              width="100px"
-            />
-            <p>Bespokemodels</p>
-          </div>
+const Gallery_landing = () => {
+  const handleImageClick = useCallback((message) => {
+    alert(message); // Placeholder alert for demonstration
+  }, []);
+
+  return (
+    <div className="wcontainer">
+      <h1>Why Choose Us</h1>
+      <div className="image-container_landing">
+        <div className="image-item" onClick={() => handleImageClick("Bespoke Models")}>
+          <img
+            src={Bespokemodels}
+            alt="Bespokemodels"
+            className="galleryoverlayimage"
+            height="100px"
+            width="100px"
+          />
+          <p>Bespokemodels</p>
+        </div>
           <div className="image-item">
             <img
               src={Ecofriendly}
@@ -73,10 +76,10 @@ class Gallery_landing extends React.Component {
             />
             <p>Top Notch Support</p>
           </div>
-        </div>
-      </div>
-    );
-  }
-}
+          </div>
+    </div>
+  );
+};
 
-export default Gallery_landing;
+
+export default React.memo(Gallery_landing);

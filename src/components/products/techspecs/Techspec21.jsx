@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import '../../home/Home.css';
@@ -11,115 +11,56 @@ import weight from '../../../assets/techspec/kilogram.webp';
 import length from '../../../assets/techspec/length.webp';
 import eheight from '../../../assets/techspec/exheight.webp';
 
-function Techspec21() {
+const imageVariants = {
+  initial: { opacity: 0, scale: 0.8 },
+  animate: { opacity: 1, scale: 1 },
+  transition: { duration: 0.5 },
+};
+
+const Techspec21 = () => {
   const [refTechSpec, inViewTechSpec] = useInView({
     triggerOnce: true,
     threshold: 0.2,
   });
 
-  const imageVariants = {
-    initial: { opacity: 0, scale: 0.8 },
-    animate: { opacity: 1, scale: 1 },
-    transition: { duration: 0.5 },
-  };
+  const animatedImage = useCallback(
+    (src, alt, text) => (
+      <motion.div
+        className="image-item"
+        variants={imageVariants}
+        initial="initial"
+        animate={inViewTechSpec ? 'animate' : 'initial'}
+      >
+        <img
+          src={src}
+          alt={alt}
+          className="galleryoverlayimage"
+          height="100px"
+          width="100px"
+        />
+        <h3>{text}</h3>
+      </motion.div>
+    ),
+    [inViewTechSpec]
+  );
+
+  const images = useMemo(() => {
+    return [
+      animatedImage(weight, 'Bespokemodels', 'Tare Approx: 2850kg'),
+      animatedImage(Chain, 'Ecofriendly', 'ATM: 3500kg'),
+      animatedImage(height, 'Experience', 'Internal Height: 2000mm'),
+      animatedImage(length, 'Ratings', 'External Length: 9150mm'),
+      animatedImage(aim, 'Ratings', 'Ball Approx: 220kg'),
+      animatedImage(eheight, 'Ratings', 'External Height: 3200mm'),
+    ];
+  }, [animatedImage]);
 
   return (
     <div className="component" ref={refTechSpec}>
       <h1>TECHNICAL SPECS</h1>
-      <div className="ourval">
-        <motion.div
-          className="image-item"
-          variants={imageVariants}
-          initial="initial"
-          animate={inViewTechSpec ? "animate" : "initial"}
-        >
-          <img
-            src={weight}
-            alt="Bespokemodels"
-            className="galleryoverlayimage"
-            height="100px"
-            width="100px"
-          />
-          <h3>Tare Approx: 2850kg</h3>
-        </motion.div>
-        <motion.div
-          className="image-item"
-          variants={imageVariants}
-          initial="initial"
-          animate={inViewTechSpec ? "animate" : "initial"}
-        >
-          <img
-            src={Chain}
-            alt="Ecofriendly"
-            className="galleryoverlayimage"
-            height="100px"
-            width="100px"
-          />
-          <h3>ATM: 3500kg</h3>
-        </motion.div>
-        <motion.div
-          className="image-item"
-          variants={imageVariants}
-          initial="initial"
-          animate={inViewTechSpec ? "animate" : "initial"}
-        >
-          <img
-            src={height}
-            alt="Experience"
-            className="galleryoverlayimage"
-            height="100px"
-            width="100px"
-          />
-          <h3>Internal Height: 2000mm</h3>
-        </motion.div>
-        <motion.div
-          className="image-item"
-          variants={imageVariants}
-          initial="initial"
-          animate={inViewTechSpec ? "animate" : "initial"}
-        >
-          <img
-            src={length}
-            alt="Ratings"
-            className="galleryoverlayimage"
-            height="100px"
-            width="100px"
-          />
-          <h3>External Length: 9150mm</h3>
-        </motion.div>
-        <motion.div
-          className="image-item"
-          variants={imageVariants}
-          initial="initial"
-          animate={inViewTechSpec ? "animate" : "initial"}
-        >
-          <img
-            src={aim}
-            alt="Ratings"
-            className="galleryoverlayimage"
-            height="100px"
-            width="100px"
-          />
-          <h3>Ball Approx: 220kg</h3>
-        </motion.div>
-        <motion.div
-          className="image-item"
-          variants={imageVariants}
-          initial="initial"
-          animate={inViewTechSpec ? "animate" : "initial"}
-        >
-          <img
-            src={eheight}
-            alt="Ratings"
-            className="galleryoverlayimage"
-            height="100px"
-            width="100px"
-          />
-          <h3>External Height: 3200mm</h3>
-        </motion.div>
-      </div>
+      <div className="ourval">{images}</div>
     </div>
   );
-}
+};
 
-export default Techspec21;
+export default React.memo(Techspec21);

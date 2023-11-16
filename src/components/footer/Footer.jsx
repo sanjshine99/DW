@@ -8,7 +8,7 @@ import tiktok from "../../assets/icons/tik-tok.webp";
 import youtube from "../../assets/icons/youtube.webp";
 import logo from "../../assets/Logo.webp";
 
-const Footer = () => {
+const Footer = React.memo(() => {
   return (
     <footer className="footer">
       <div className="footer-links">
@@ -117,7 +117,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
+ );
+});
 
 export default Footer;

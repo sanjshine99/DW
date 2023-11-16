@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useCallback } from "react";
 import "./HomeComponent.css";
 import partner1 from "../../../assets/partners/2022_bmpro-logo-hp.webp";
 import partner2 from "../../../assets/partners/Enerdrive-logo.webp";
@@ -8,10 +8,10 @@ import partner5 from "../../../assets/partners/cruisemaster.webp";
 import partner6 from "../../../assets/partners/atrv-min.webp";
 import partner7 from "../../../assets/partners/camec-min.webp";
 
-function Partners() {
+const Partners = () => {
   const sliderRef = useRef(null);
 
-  useEffect(() => {
+  const animateSlider = useCallback(() => {
     if (sliderRef.current) {
       const slideTrack = sliderRef.current.querySelector(".slide-track");
       const slides = sliderRef.current.querySelectorAll(".slide");
@@ -29,7 +29,7 @@ function Partners() {
         slideTrack.removeChild(lastSlide);
       };
 
-      const animateSlider = () => {
+      const interval = setInterval(() => {
         currentIndex++;
         const translateX = -currentIndex * slideWidth;
         slideTrack.style.transition = "transform 1s linear";
@@ -44,22 +44,22 @@ function Partners() {
             cloneFirstSlide();
           }, 1000);
         }
-      };
+      }, 2000);
 
-      cloneFirstSlide();
-      const animationInterval = setInterval(animateSlider, 2000);
-
-      return () => {
-        clearInterval(animationInterval);
-      };
+      return () => clearInterval(interval);
     }
   }, []);
+
+  useEffect(() => {
+    animateSlider();
+  }, [animateSlider]);
 
   return (
     <>
       <h1 className="partners-heading">Our Premium Partners</h1>
-      <div className="slider">
+      <div className="slider" ref={sliderRef}>
         <div className="slide-track">
+          {/* Your slide items */}
           <div className="slide">
             <img src={partner1} width="500" height="200" alt="" />
           </div>
@@ -85,6 +85,6 @@ function Partners() {
       </div>
     </>
   );
-}
+};
 
-export default Partners;
+export default React.memo(Partners);

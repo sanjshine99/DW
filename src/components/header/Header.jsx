@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import _ from "lodash"; // Import lodash for debounce
 import "./Header.css";
 import logo from "../../assets/Logo.webp";
 import instagram from "../../assets/icons/instagramh.webp";
@@ -15,48 +16,51 @@ import Navbar from "./mobileNavbar/Navbar";
 
 const Header = () => {
   const [activeMenu, setActiveMenu] = useState(null);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(useMemo(() => window.innerWidth <= 768, []));
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  const handleResize = () => {
-    const newWidth = window.innerWidth;
-    setWindowWidth(newWidth);
-    setIsMobile(newWidth <= 768);
-  };
+  const handleResize = useCallback(
+    _.debounce(() => {
+      const newWidth = window.innerWidth;
+      setWindowWidth(newWidth);
+      setIsMobile(newWidth <= 768);
+    }, 200),
+    []
+  );
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
+  }, [handleResize]);
+
+  const handleMenuHover = useCallback((menu) => {
+    setActiveMenu(menu);
   }, []);
 
-  const handleMenuHover = (menu) => {
-    setActiveMenu(menu);
-  };
-
-  const handleMenuLeave = () => {
+  const handleMenuLeave = useCallback(() => {
     setActiveMenu(null);
-  };
+  }, []);
 
-  const menuData = [
+  const menuData = useMemo(() => [
     {
       label: "OUR RANGE",
       submenu: [
         {
-          label: <img src={SB186} alt="stormbreaker18" style={{ maxWidth: "33.33vw", Height: "17vh",maxHeight: "20vh" }} />,
+          label: <img src={SB186} alt="stormbreaker18" />,
           link: "/stormbreaker18",
           text: "Stormbreaker 18`6",
           price: "FULL OFF-ROAD: $89,900",
         },
         {
-          label: <img src={SB196} alt="stormbreaker19"  style={{maxWidth: "33.33vw", Height: "17vh",maxHeight: "20vh"}}/>,
+          label: <img src={SB196} alt="stormbreaker19" />,
           link: "/stormbreaker19",
           text: "Stormbreaker 19`6",
           price: "FULL OFF-ROAD: $92,900",
         },
         {
-          label: <img src={SB216} alt="stormbreaker21"  style={{ maxWidth: "33.33vw", Height: "17vh",maxHeight: "20vh"}}/>,
+          label: <img src={SB216} alt="stormbreaker21" />,
           link: "/stormbreaker21",
           text: "Stormbreaker 21`6",
           price: "FULL OFF-ROAD: $94,900",
@@ -137,15 +141,12 @@ const Header = () => {
         },
       ],
     },
-  ];
+  ], []);
 
   return (
     <div>
       {isMobile ? (
-        <>
-          {" "}
-          <Navbar />
-        </>
+        <Navbar />
       ) : (
         <motion.header
           className="header"
@@ -168,9 +169,7 @@ const Header = () => {
               {menuData.map((menu, index) => (
                 <motion.li
                   key={index}
-                  className={`menu-item ${
-                    activeMenu === menu.label ? "active" : ""
-                  }`}
+                  className={`menu-item ${activeMenu === menu.label ? "active" : ""}`}
                   onMouseEnter={() => handleMenuHover(menu.label)}
                   onMouseLeave={handleMenuLeave}
                   initial={{ opacity: 1 }}
@@ -212,8 +211,7 @@ const Header = () => {
                   </AnimatePresence>
                 </motion.li>
               ))}
-                     
-                <li className="menu-item">
+              <li className="menu-item">
                 <Link to="/tour">
                   <button>VIRTUAL TOUR</button>
                 </Link>
@@ -231,4 +229,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default React.memo(Header);

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useCallback } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
@@ -9,24 +9,23 @@ import Storm19specs from "./Specsmenu/Specs19";
 import Techspec19 from "./techspecs/Techspec19";
 import SB196img from "../../assets/Product renders/SB196Exterior.webp";
 import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
-import LayoutPopUp from "./popup/LayoutPopUp";
 
-function Stormbreaker19() {
+const scrollToSpecs = () => {
+  const specsDiv = document.getElementById("specs");
+  if (specsDiv) {
+    specsDiv.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
+const scrollToLayout = () => {
+  const layoutDiv = document.getElementById("layout");
+  if (layoutDiv) {
+    layoutDiv.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
+const Stormbreaker19 = () => {
   const containerRef = useRef(null);
-
-  const scrollToSpecs = () => {
-    const specsDiv = document.getElementById("specs");
-    if (specsDiv) {
-      specsDiv.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const scrollToLayout = () => {
-    const layoutDiv = document.getElementById("layout");
-    if (layoutDiv) {
-      layoutDiv.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
@@ -42,7 +41,7 @@ function Stormbreaker19() {
             trigger: elem,
             start: "top 80%",
             end: "bottom 20%",
-            markers: false, // Set this to true for debug markers
+            markers: false,
           },
         }
       );
@@ -50,23 +49,14 @@ function Stormbreaker19() {
   }, []);
 
   const [isWarrantyPopupOpen, setWarrantyPopupOpen] = useState(false);
-  const [isLayoutPopupOpen, setLayoutPopupOpen] = useState(false);
 
-  const openWarrantyPopupWarrantyPolicy = () => {
+  const openWarrantyPopupWarrantyPolicy = useCallback(() => {
     setWarrantyPopupOpen(true);
-  };
+  }, []);
 
-  const closeWarrantyPopupWarrantyPolicy = () => {
+  const closeWarrantyPopupWarrantyPolicy = useCallback(() => {
     setWarrantyPopupOpen(false);
-  };
-
-  const openLayoutPopupLayoutPolicy = () => {
-    setLayoutPopupOpen(true);
-  };
-
-  const closeLayoutPopupLayoutPolicy = () => {
-    setLayoutPopupOpen(false);
-  };
+  }, []);
 
   return (
     <div className="container">
@@ -167,6 +157,6 @@ function Stormbreaker19() {
       <GoToTop/>
     </div>
   );
-}
+};
 
-export default Stormbreaker19;
+export default React.memo(Stormbreaker19);

@@ -1,30 +1,36 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
 import "./HomeComponent.css";
 import { gsap } from "gsap";
 import landingVideo from "../../../assets/landingVideo.mp4";
 
 function VideoLanding() {
-  useEffect(() => {
-    gsap.utils.toArray(".revealUp").forEach((elem) => {
-      gsap.fromTo(
-        elem,
-        { y: 100, autoAlpha: 0 },
-        {
-          duration: 1.25,
-          y: 0,
-          autoAlpha: 1,
-          ease: "back",
-          scrollTrigger: {
-            trigger: elem,
-            start: "top 80%",
-            end: "bottom 20%",
-            markers: false, // Set this to true for debug markers
-          },
-        }
-      );
-    });
+  const revealUpAnimation = useMemo(() => {
+    return () => {
+      gsap.utils.toArray(".revealUp").forEach((elem) => {
+        gsap.fromTo(
+          elem,
+          { y: 100, autoAlpha: 0 },
+          {
+            duration: 1.25,
+            y: 0,
+            autoAlpha: 1,
+            ease: "back",
+            scrollTrigger: {
+              trigger: elem,
+              start: "top 80%",
+              end: "bottom 20%",
+              markers: false, // Set this to true for debug markers
+            },
+          }
+        );
+      });
+    };
   }, []);
+
+  useEffect(() => {
+    revealUpAnimation();
+  }, [revealUpAnimation]);
 
   return (
     <div className="landing_Page_video_container">

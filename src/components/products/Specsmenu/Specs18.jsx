@@ -1,21 +1,15 @@
-import React, { Component } from 'react';
+import React, { useState, useCallback } from 'react';
 import './Specsmenu.css';
 
-class Specs21 extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      activeIndex: null,
-    };
-  }
+const Specs21 = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
 
-  toggleAccordion(index) {
-    this.setState((prevState) => ({
-      activeIndex: prevState.activeIndex === index ? null : index,
-    }));
-  }
-
-  render() {
+  const toggleAccordion = useCallback(
+    (index) => {
+      setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+    },
+    [setActiveIndex]
+  );
     const data = [
       {
         title: 'INTERIOR',
@@ -147,26 +141,22 @@ class Specs21 extends Component {
                 <React.Fragment key={index}>
                   <dt>
                     <button
-                      className={
-                        'accordionTitle' +
-                        (this.state.activeIndex === index
-                          ? ' accordionTitleActive'
-                          : '')
-                      }
-                      onClick={() => this.toggleAccordion(index)}
+                      className={`accordionTitle ${
+                        activeIndex === index ? 'accordionTitleActive' : ''
+                      }`}
+                      onClick={() => toggleAccordion(index)}
                     >
                       {item.title}
                     </button>
                   </dt>
                   <dd
-                    className={
-                      'accordionItem' +
-                      (this.state.activeIndex === index
-                        ? ' animateIn'
-                        : ' accordionItemCollapsed animateOut')
-                    }
+                    className={`accordionItem ${
+                      activeIndex === index
+                        ? 'animateIn'
+                        : 'accordionItemCollapsed animateOut'
+                    }`}
                   >
-                    <ul className='list'>
+                    <ul className="list">
                       {item.content.split('\n').map((listItem, subIndex) => (
                         <li key={subIndex}>{listItem.trim()}</li>
                       ))}
@@ -178,7 +168,6 @@ class Specs21 extends Component {
           </div>
         </div>
       );
-    }
-  }
-  
-  export default Specs21;
+    };
+    
+    export default React.memo(Specs21);

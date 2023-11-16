@@ -2,13 +2,13 @@ import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import './HomeComponent.css';
 
-function HomeDescription() {
-  const stagger = 0.5; // Adjust this value to control the delay between paragraphs.
+const HomeDescription = () => {
+  const stagger = 0.5;
 
   const [ref, inView] = useInView({
-    triggerOnce: true, // Trigger the animation only once when the component comes into view.
-    threshold: 0.2, // Adjust this threshold as needed.
-    rootMargin: '0px 0px -200px 0px', // Adjust the rootMargin as needed.
+    triggerOnce: true,
+    threshold: 0.2,
+    rootMargin: '0px 0px -200px 0px',
   });
 
   return (
@@ -38,4 +38,4 @@ function HomeDescription() {
   );
 }
 
-export default HomeDescription;
+export default React.memo(HomeDescription);
