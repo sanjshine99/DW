@@ -4,12 +4,6 @@ import { useInView } from 'react-intersection-observer';
 import '../../home/Home.css';
 import '../../home/homecomponents/HomeComponent.css';
 import './Techspec.css';
-import aim from '../../../assets/techspec/aim (1).webp';
-import Chain from '../../../assets/techspec/chain.webp';
-import height from '../../../assets/techspec/height.webp';
-import weight from '../../../assets/techspec/kilogram.webp';
-import length from '../../../assets/techspec/length.webp';
-import eheight from '../../../assets/techspec/exheight.webp';
 
 const imageVariants = {
   initial: { opacity: 0, scale: 0.8 },
@@ -46,12 +40,12 @@ const Techspec21 = () => {
 
   const images = useMemo(() => {
     return [
-      animatedImage(weight, 'Bespokemodels', 'Tare Approx: 2850kg'),
-      animatedImage(Chain, 'Ecofriendly', 'ATM: 3500kg'),
-      animatedImage(height, 'Experience', 'Internal Height: 2000mm'),
-      animatedImage(length, 'Ratings', 'External Length: 9150mm'),
-      animatedImage(aim, 'Ratings', 'Ball Approx: 220kg'),
-      animatedImage(eheight, 'Ratings', 'External Height: 3200mm'),
+      animatedImage("https://d2k5m0tntfs5ke.cloudfront.net/techspec/kilogram.webp", 'Bespokemodels', 'Tare Approx: 2850kg'),
+      animatedImage("https://d2k5m0tntfs5ke.cloudfront.net/techspec/chain.webp", 'Ecofriendly', 'ATM: 3500kg'),
+      animatedImage("https://d2k5m0tntfs5ke.cloudfront.net/techspec/height.webp", 'Experience', 'Internal Height: 2000mm'),
+      animatedImage("https://d2k5m0tntfs5ke.cloudfront.net/techspec/length.webp", 'Ratings', 'External Length: 9150mm'),
+      animatedImage("https://d2k5m0tntfs5ke.cloudfront.net/techspec/aim (1).webp", 'Ratings', 'Ball Approx: 220kg'),
+      animatedImage("https://d2k5m0tntfs5ke.cloudfront.net/techspec/exheight.webp", 'Ratings', 'External Height: 3200mm'),
     ];
   }, [animatedImage]);
 

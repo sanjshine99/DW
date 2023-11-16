@@ -1,11 +1,5 @@
 import React, { useCallback } from "react";
 import "./HomeComponent.css";
-import Bespokemodels from "../../../assets/why choose us/customer-support.webp";
-import Ecofriendly from "../../../assets/why choose us/ecology.webp";
-import Experience from "../../../assets/why choose us/certification.webp";
-import Ratings from "../../../assets/why choose us/customer-review.webp";
-import Warranty from "../../../assets/why choose us/warranty.webp";
-import Support from "../../../assets/why choose us/technical-support.webp";
 
 const Gallery_landing = () => {
   const handleImageClick = useCallback((message) => {
@@ -18,7 +12,7 @@ const Gallery_landing = () => {
       <div className="image-container_landing">
         <div className="image-item" onClick={() => handleImageClick("Bespoke Models")}>
           <img
-            src={Bespokemodels}
+            src="https://d2k5m0tntfs5ke.cloudfront.net/whychooseus/customer-support.webp"
             alt="Bespokemodels"
             className="galleryoverlayimage"
             height="100px"
@@ -28,7 +22,7 @@ const Gallery_landing = () => {
         </div>
           <div className="image-item">
             <img
-              src={Ecofriendly}
+              src="https://d2k5m0tntfs5ke.cloudfront.net/whychooseus/ecology.webp"
               alt="Ecofriendly"
               className="galleryoverlayimage"
               height="100px"
@@ -38,7 +32,7 @@ const Gallery_landing = () => {
           </div>
           <div className="image-item">
             <img
-              src={Experience}
+              src="https://d2k5m0tntfs5ke.cloudfront.net/whychooseus/certification.webp"
               alt="Experience"
               className="galleryoverlayimage"
               height="100px"
@@ -48,7 +42,7 @@ const Gallery_landing = () => {
           </div>
           <div className="image-item">
             <img
-              src={Ratings}
+              src="https://d2k5m0tntfs5ke.cloudfront.net/whychooseus/customer-review.webp"
               alt="Ratings"
               className="galleryoverlayimage"
               height="100px"
@@ -58,7 +52,7 @@ const Gallery_landing = () => {
           </div>
           <div className="image-item">
             <img
-              src={Warranty}
+              src="https://d2k5m0tntfs5ke.cloudfront.net/whychooseus/warranty.webp"
               alt="Ratings"
               className="galleryoverlayimage"
               height="100px"
@@ -68,7 +62,7 @@ const Gallery_landing = () => {
           </div>
           <div className="image-item">
             <img
-              src={Support}
+              src="https://d2k5m0tntfs5ke.cloudfront.net/whychooseus/technical-support.webp"
               alt="Ratings"
               className="galleryoverlayimage"
               height="100px"

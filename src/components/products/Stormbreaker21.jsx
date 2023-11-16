@@ -7,7 +7,6 @@ import { gsap } from "gsap";
 import GoToTop from "../functions/GoToTop";
 import Storm21specs from "./Specsmenu/Specs21";
 import Techspec21 from "./techspecs/Techspec21";
-import SB216img from "../../assets/Product renders/SB216Exterior.webp";
 import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
 
 const scrollToSpecs = () => {
@@ -62,7 +61,7 @@ const Stormbreaker21 = () => {
     <div className="container">
       <div className="component">
         <div className="background-image">
-          <img src={SB216img} alt="" />
+          <img src="https://d2k5m0tntfs5ke.cloudfront.net/productrenders/SB216Exterior.webp" alt="" />
           <div className="image-overlay">
             <div className="button-container">
               <h1 className="Product-header revealUp">Stormbreaker21`6</h1>

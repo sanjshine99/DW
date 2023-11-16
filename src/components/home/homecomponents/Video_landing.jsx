@@ -2,7 +2,6 @@ import React, { useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
 import "./HomeComponent.css";
 import { gsap } from "gsap";
-import landingVideo from "../../../assets/landingVideo.mp4";
 
 function VideoLanding() {
   const revealUpAnimation = useMemo(() => {
@@ -35,13 +34,24 @@ function VideoLanding() {
   return (
     <div className="landing_Page_video_container">
       <div className="video-overlay">
-        <video
-          className="landing_page_video"
-          src={landingVideo}
-          autoPlay
-          loop
-          muted
-        ></video>
+        <div style={{ position: "relative", width: "100%", height: "100vh", overflow: "hidden" }}>
+          <iframe
+            src="https://player.vimeo.com/video/885177288?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479&autoplay=1&controls=0&loop=1&title=0&byline=0&portrait=0"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              width: "100vw",
+              height: "auto",
+              minHeight: "100%",
+            }}
+            title="landingVideo"
+          ></iframe>
+        </div>
         <div className="text-overlay">
           <h1 className="revealUp">DELUXE CARAVANS</h1>
           <div className="link-overlay revealUp">

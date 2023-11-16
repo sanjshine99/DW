@@ -7,7 +7,6 @@ import Strom18inside from "../products/SlideShows/Stormbreaker18inside";
 import { gsap } from "gsap";
 import Storm18specs from "./Specsmenu/Specs18";
 import Techspec18 from "./techspecs/Techspec18";
-import SB216img from "../../assets/Product renders/SB186Exterior.webp";
 import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
 import LayoutPopUp from "./popup/LayoutPopUp";
 
@@ -63,7 +62,7 @@ const Stormbreaker18 = () => {
     <div className="container">
       <div className="component">
         <div className="background-image">
-          <img src={SB216img} alt="" />
+          <img src="https://d2k5m0tntfs5ke.cloudfront.net/productrenders/SB186Exterior.webp"alt="" />
           <div className="image-overlay">
             <div className="button-container">
               <h1 className="Product-header revealUp">Stormbreaker18`6</h1>

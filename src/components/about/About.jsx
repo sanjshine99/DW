@@ -5,12 +5,7 @@ import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
 import "./About.css";
 import GoToTop from "../functions/GoToTop";
-import AUSTRALIANMADE from "../../assets/ourval/ausmade.webp";
-import TEAMWORK from "../../assets/ourval/teamwork.webp";
-import QUALITYINNOVATION from "../../assets/ourval/badge.webp";
-import TOPNOTCHSUPPORT from "../../assets/ourval/technical-support.webp";
-import COMMUNITY from "../../assets/ourval/community.webp";
-import ECOFRIENDLYOPTIONS from "../../assets/ourval/ecology.webp";
+
 
 function About() {
   const [refCaravans, inViewCaravans] = useInView({
@@ -95,7 +90,7 @@ function About() {
             animate={inViewValues ? "animate" : "initial"}
           >
             <img
-              src={AUSTRALIANMADE}
+              src="https://d2k5m0tntfs5ke.cloudfront.net/ourvalues/ausmade.webp"
               alt="Bespokemodels"
               className="galleryoverlayimage"
               height="100px"
@@ -114,7 +109,7 @@ function About() {
             animate={inViewValues ? "animate" : "initial"}
           >
             <img
-              src={TEAMWORK}
+              src="https://d2k5m0tntfs5ke.cloudfront.net/ourvalues/teamwork.webp"
               alt="Ecofriendly"
               className="galleryoverlayimage"
               height="100px"
@@ -133,7 +128,7 @@ function About() {
             animate={inViewValues ? "animate" : "initial"}
           >
             <img
-              src={QUALITYINNOVATION}
+              src="https://d2k5m0tntfs5ke.cloudfront.net/ourvalues/badge.webp"
               alt="Experience"
               className="galleryoverlayimage"
               height="100px"
@@ -152,7 +147,7 @@ function About() {
             animate={inViewValues ? "animate" : "initial"}
           >
             <img
-              src={TOPNOTCHSUPPORT}
+              src="https://d2k5m0tntfs5ke.cloudfront.net/ourvalues/technical-support.webp"
               alt="Ratings"
               className="galleryoverlayimage"
               height="100px"
@@ -171,7 +166,7 @@ function About() {
             animate={inViewValues ? "animate" : "initial"}
           >
             <img
-              src={COMMUNITY}
+              src="https://d2k5m0tntfs5ke.cloudfront.net/ourvalues/community.webp"
               alt="Ratings"
               className="galleryoverlayimage"
               height="100px"
@@ -190,7 +185,7 @@ function About() {
             animate={inViewValues ? "animate" : "initial"}
           >
             <img
-              src={ECOFRIENDLYOPTIONS}
+              src="https://d2k5m0tntfs5ke.cloudfront.net/ourvalues/ecology.webp"
               alt="Ratings"
               className="galleryoverlayimage"
               height="100px"

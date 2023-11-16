@@ -3,15 +3,6 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import _ from "lodash"; // Import lodash for debounce
 import "./Header.css";
-import logo from "../../assets/Logo.webp";
-import instagram from "../../assets/icons/instagramh.webp";
-import facebook from "../../assets/icons/facebookh.webp";
-import twitter from "../../assets/icons/twitterh.webp";
-import tiktok from "../../assets/icons/tik-tokh.webp";
-import youtube from "../../assets/icons/youtubeh.webp";
-import SB186 from "../../assets/stormbreaker186.webp";
-import SB196 from "../../assets/stormbreaker196.webp";
-import SB216 from "../../assets/stormbreaker216.webp";
 import Navbar from "./mobileNavbar/Navbar";
 
 const Header = () => {
@@ -48,19 +39,19 @@ const Header = () => {
       label: "OUR RANGE",
       submenu: [
         {
-          label: <img src={SB186} alt="stormbreaker18" />,
+          label: <img src="https://d2k5m0tntfs5ke.cloudfront.net/stormbreaker186.webp" alt="stormbreaker18" />,
           link: "/stormbreaker18",
           text: "Stormbreaker 18`6",
           price: "FULL OFF-ROAD: $89,900",
         },
         {
-          label: <img src={SB196} alt="stormbreaker19" />,
+          label: <img src="https://d2k5m0tntfs5ke.cloudfront.net/stormbreaker196.webp" alt="stormbreaker19" />,
           link: "/stormbreaker19",
           text: "Stormbreaker 19`6",
           price: "FULL OFF-ROAD: $92,900",
         },
         {
-          label: <img src={SB216} alt="stormbreaker21" />,
+          label: <img src="https://d2k5m0tntfs5ke.cloudfront.net/stormbreaker216.webp" alt="stormbreaker21" />,
           link: "/stormbreaker21",
           text: "Stormbreaker 21`6",
           price: "FULL OFF-ROAD: $94,900",
@@ -86,7 +77,7 @@ const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={instagram} alt="Instagram" className="iconh" />
+              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/instagramh.webp" alt="Instagram" className="iconh" />
             </a>
           ),
           link: "https://www.instagram.com/deluxecaravansaustralia/",
@@ -98,7 +89,7 @@ const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={facebook} alt="Facebook" className="iconh" />
+              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/facebookh.webp" alt="Facebook" className="iconh" />
             </a>
           ),
           link: "https://www.facebook.com/deluxecaravansaustralia",
@@ -110,7 +101,7 @@ const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={twitter} alt="Twitter" className="iconh" />
+              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/twitterh.webp" alt="Twitter" className="iconh" />
             </a>
           ),
           link: "https://twitter.com/CaravansDeluxe",
@@ -122,7 +113,7 @@ const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={tiktok} alt="TikTok" className="iconh" />
+              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/tik-tokh.webp" alt="TikTok" className="iconh" />
             </a>
           ),
           link: "https://www.tiktok.com/@deluxecaravansaustralia",
@@ -134,7 +125,7 @@ const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={youtube} alt="YouTube" className="iconh" />
+              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/youtubeh.webp" alt="YouTube" className="iconh" />
             </a>
           ),
           link: "https://www.youtube.com/watch?v=a_KE1CVPT48",
@@ -161,7 +152,7 @@ const Header = () => {
         >
           <div className="header-logo">
             <Link to="/">
-              <img src={logo} alt="" height={50} />
+              <img src="https://d2k5m0tntfs5ke.cloudfront.net/Logo.webp" alt="" height={50} />
             </Link>
           </div>
           <nav className="header-nav">
