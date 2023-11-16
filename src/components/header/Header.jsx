@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Header.css";
@@ -15,21 +15,6 @@ import Navbar from "./mobileNavbar/Navbar";
 
 const Header = () => {
   const [activeMenu, setActiveMenu] = useState(null);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  const handleResize = () => {
-    const newWidth = window.innerWidth;
-    setWindowWidth(newWidth);
-    setIsMobile(newWidth <= 768);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   const handleMenuHover = (menu) => {
     setActiveMenu(menu);
@@ -44,19 +29,37 @@ const Header = () => {
       label: "OUR RANGE",
       submenu: [
         {
-          label: <img src={SB186} alt="stormbreaker18" style={{ maxWidth: "33.33vw", Height: "17vh",maxHeight: "20vh" }} />,
+          label: (
+            <img
+              src={SB186}
+              alt="stormbreaker18"
+              style={{ maxWidth: "33.33vw", Height: "17vh", maxHeight: "20vh" }}
+            />
+          ),
           link: "/stormbreaker18",
           text: "Stormbreaker 18`6",
           price: "FULL OFF-ROAD: $89,900",
         },
         {
-          label: <img src={SB196} alt="stormbreaker19"  style={{maxWidth: "33.33vw", Height: "17vh",maxHeight: "20vh"}}/>,
+          label: (
+            <img
+              src={SB196}
+              alt="stormbreaker19"
+              style={{ maxWidth: "33.33vw", Height: "17vh", maxHeight: "20vh" }}
+            />
+          ),
           link: "/stormbreaker19",
           text: "Stormbreaker 19`6",
           price: "FULL OFF-ROAD: $92,900",
         },
         {
-          label: <img src={SB216} alt="stormbreaker21"  style={{ maxWidth: "33.33vw", Height: "17vh",maxHeight: "20vh"}}/>,
+          label: (
+            <img
+              src={SB216}
+              alt="stormbreaker21"
+              style={{ maxWidth: "33.33vw", Height: "17vh", maxHeight: "20vh" }}
+            />
+          ),
           link: "/stormbreaker21",
           text: "Stormbreaker 21`6",
           price: "FULL OFF-ROAD: $94,900",
@@ -141,12 +144,11 @@ const Header = () => {
 
   return (
     <div>
-      {isMobile ? (
-        <>
-          {" "}
-          <Navbar />
-        </>
-      ) : (
+      <div className="mobile-nav-bar">
+        <Navbar />
+      </div>
+
+      <div className="desktop-nav-bar">
         <motion.header
           className="header"
           initial={{ backgroundColor: "transparent" }}
@@ -212,8 +214,8 @@ const Header = () => {
                   </AnimatePresence>
                 </motion.li>
               ))}
-                     
-                <li className="menu-item">
+
+              <li className="menu-item">
                 <Link to="/tour">
                   <button>VIRTUAL TOUR</button>
                 </Link>
@@ -226,7 +228,7 @@ const Header = () => {
             </ul>
           </nav>
         </motion.header>
-      )}
+      </div>
     </div>
   );
 };

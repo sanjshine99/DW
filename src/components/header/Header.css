@@ -1,4 +1,13 @@
 /* Header container */
+
+.desktop-nav-bar {
+  display: block;
+}
+
+.mobile-nav-bar {
+  display: none;
+}
+
 .header {
   background: transparent;
   color: white;
@@ -29,7 +38,8 @@
   margin-right: 4vw;
 }
 
-.header h3,h5 {
+.header h3,
+h5 {
   text-align: left;
 }
 
@@ -140,9 +150,16 @@
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
+  .desktop-nav-bar {
+    display: none;
+  }
+
+  .mobile-nav-bar {
+    display: block;
+  }
   .header {
     padding: 10px;
-    scroll-snap-align: none !important; 
+    scroll-snap-align: none !important;
   }
 
   .header-nav {
