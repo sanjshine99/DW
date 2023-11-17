@@ -53,6 +53,8 @@
     ]
   },
   "devDependencies": {
-    "@types/react-mailchimp-subscribe": "^2.1.2"
+    "@types/react-mailchimp-subscribe": "^2.1.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   }
 }
