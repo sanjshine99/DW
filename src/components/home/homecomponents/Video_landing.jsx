@@ -34,23 +34,25 @@ function VideoLanding() {
   return (
     <div className="landing_Page_video_container">
       <div className="video-overlay">
-        <div style={{ position: "relative", width: "100%", height: "100vh", overflow: "hidden" }}>
-          <iframe
-            src="https://player.vimeo.com/video/885177288?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479&autoplay=1&controls=0&loop=1&title=0&byline=0&portrait=0"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowfullscreen
+        <div className="video-container">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="landing-video"
             style={{
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              width: "100vw",
+              width: "100%",
               height: "auto",
-              minHeight: "100%",
+              minHeight: "100vh",
             }}
-            title="landingVideo"
-          ></iframe>
+          >
+            <source
+              src="https://d2k5m0tntfs5ke.cloudfront.net/landingVideo.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div className="text-overlay">
           <h1 className="revealUp">DELUXE CARAVANS</h1>
