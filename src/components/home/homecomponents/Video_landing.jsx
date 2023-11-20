@@ -40,12 +40,8 @@ function VideoLanding() {
             muted
             loop
             playsInline
-            className="landing-video"
-            style={{
-              width: "100%",
-              height: "auto",
-              minHeight: "100vh",
-            }}
+            className="landing_page_video"
+            
           >
             <source
               src="https://d2k5m0tntfs5ke.cloudfront.net/landingVideo.mp4"
