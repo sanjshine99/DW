@@ -16,6 +16,7 @@ const Navbar = () => {
   const navbarRef = useRef();
 
   const [ourRangeVisible, setOurRangeVisible] = useState(false);
+  const [ourRangeCouplesVisible, setOurRangeCouplesVisible] = useState(false);
   const [resourcesVisible, setResourcesVisible] = useState(false);
 
   const showResources = () => {
@@ -32,6 +33,14 @@ const Navbar = () => {
 
   const hideOurRange = () => {
     setOurRangeVisible(false);
+  };
+
+  const showOurRangeCouples = () => {
+    setOurRangeCouplesVisible(true);
+  };
+
+  const hideOurRangeCouples = () => {
+    setOurRangeCouplesVisible(false);
   };
 
   const toggleMenu = () => {
@@ -62,7 +71,7 @@ const Navbar = () => {
                   </li>
                   <li className="nav-item">
                     <p className="social" onClick={showOurRange}>
-                      OUR RANGE{" "}
+                      FAMILY{" "}
                       <img src={greater} alt="" className="greatericon" />
                     </p>
                     <AnimatePresence>
@@ -132,6 +141,71 @@ const Navbar = () => {
                                   }}
                                 >
                                   ( FULL OFF-ROAD: $94,900 )
+                                </p>
+                              </li>
+                            </ul>
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </li>
+                  <li className="nav-item">
+                    <p className="social" onClick={showOurRangeCouples}>
+                      COUPLES{" "}
+                      <img src={greater} alt="" className="greatericon" />
+                    </p>
+                    <AnimatePresence>
+                      {ourRangeCouplesVisible && (
+                        <motion.div
+                          className={`social-media-container ${
+                            ourRangeVisible ? "show" : ""
+                          }`}
+                          initial={{ opacity: 0, y: -20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -20 }}
+                          transition={{ duration: 0.2 }}
+                        >
+                          <div
+                            className={`social-media-container ${
+                              ourRangeCouplesVisible ? "show" : ""
+                            }`}
+                          >
+                            <button
+                              onClick={hideOurRangeCouples}
+                              className="back-button"
+                            >
+                              <img src={lesser} alt="" className="lessericon" />{" "}
+                              Back
+                            </button>
+                            <ul className="range-list">
+                              <li
+                                style={{
+                                  marginBottom: "0px",
+                                }}
+                              >
+                                <a href="/stormbreaker18">ECLIPSE - 21`6FT</a>
+                                <p
+                                  style={{
+                                    color: "black",
+                                    fontSize: "15px",
+                                  }}
+                                >
+                                  ( COMING SOON )
+                                </p>
+                              </li>
+                              <li
+                                style={{
+                                  marginBottom: "0px",
+                                }}
+                              >
+                                <a href="/stormbreaker19">ECLIPSE - 22FT</a>
+                                <p
+                                  style={{
+                                    color: "black",
+                                    fontSize: "15px",
+                                  }}
+                                >
+                                  ( COMING SOON )
                                 </p>
                               </li>
                             </ul>

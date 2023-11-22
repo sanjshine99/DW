@@ -7,7 +7,9 @@ import Navbar from "./mobileNavbar/Navbar";
 
 const Header = () => {
   const [activeMenu, setActiveMenu] = useState(null);
-  const [isMobile, setIsMobile] = useState(useMemo(() => window.innerWidth <= 768, []));
+  const [isMobile, setIsMobile] = useState(
+    useMemo(() => window.innerWidth <= 768, [])
+  );
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleResize = useCallback(
@@ -34,105 +36,171 @@ const Header = () => {
     setActiveMenu(null);
   }, []);
 
-  const menuData = useMemo(() => [
-    {
-      label: "OUR RANGE",
-      submenu: [
-        {
-          label: <img src="https://d2k5m0tntfs5ke.cloudfront.net/stormbreaker186.webp" alt="stormbreaker18" />,
-          link: "/stormbreaker18",
-          text: "Stormbreaker 18`6",
-          price: "FULL OFF-ROAD: $89,900",
-        },
-        {
-          label: <img src="https://d2k5m0tntfs5ke.cloudfront.net/stormbreaker196.webp" alt="stormbreaker19" />,
-          link: "/stormbreaker19",
-          text: "Stormbreaker 19`6",
-          price: "FULL OFF-ROAD: $92,900",
-        },
-        {
-          label: <img src="https://d2k5m0tntfs5ke.cloudfront.net/stormbreaker216.webp" alt="stormbreaker21" />,
-          link: "/stormbreaker21",
-          text: "Stormbreaker 21`6",
-          price: "FULL OFF-ROAD: $94,900",
-        },
-      ],
-    },
-    {
-      label: "RESOURCES",
-      submenu: [
-        { label: "ABOUT US", link: "/about" },
-        { label: "UPDATES", link: "/blog" },
-        { label: "VIDEOS", link: "/video" },
-        { label: "WARRANTY POLICY", link: "/warranty" },
-      ],
-    },
-    {
-      label: "DISCOVER",
-      submenu: [
-        {
-          label: (
-            <a
-              href="https://www.instagram.com/deluxecaravansaustralia/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/instagramh.webp" alt="Instagram" className="iconh" />
-            </a>
-          ),
-          link: "https://www.instagram.com/deluxecaravansaustralia/",
-        },
-        {
-          label: (
-            <a
-              href="https://www.facebook.com/deluxecaravansaustralia"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/facebookh.webp" alt="Facebook" className="iconh" />
-            </a>
-          ),
-          link: "https://www.facebook.com/deluxecaravansaustralia",
-        },
-        {
-          label: (
-            <a
-              href="https://twitter.com/CaravansDeluxe"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/twitterh.webp" alt="Twitter" className="iconh" />
-            </a>
-          ),
-          link: "https://twitter.com/CaravansDeluxe",
-        },
-        {
-          label: (
-            <a
-              href="https://www.tiktok.com/@deluxecaravansaustralia"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/tik-tokh.webp" alt="TikTok" className="iconh" />
-            </a>
-          ),
-          link: "https://www.tiktok.com/@deluxecaravansaustralia",
-        },
-        {
-          label: (
-            <a
-              href="https://www.youtube.com/watch?v=a_KE1CVPT48"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/youtubeh.webp" alt="YouTube" className="iconh" />
-            </a>
-          ),
-          link: "https://www.youtube.com/watch?v=a_KE1CVPT48",
-        },
-      ],
-    },
-  ], []);
+  const menuData = useMemo(
+    () => [
+      {
+        label: "FAMILY",
+        submenu: [
+          {
+            label: (
+              <img
+                src="https://d2k5m0tntfs5ke.cloudfront.net/stormbreaker186.webp"
+                alt="stormbreaker18"
+              />
+            ),
+            link: "/stormbreaker18",
+            text: "Stormbreaker 18`6",
+            price: "FULL OFF-ROAD: $89,900",
+          },
+          {
+            label: (
+              <img
+                src="https://d2k5m0tntfs5ke.cloudfront.net/stormbreaker196.webp"
+                alt="stormbreaker19"
+              />
+            ),
+            link: "/stormbreaker19",
+            text: "Stormbreaker 19`6",
+            price: "FULL OFF-ROAD: $92,900",
+          },
+          {
+            label: (
+              <img
+                src="https://d2k5m0tntfs5ke.cloudfront.net/stormbreaker216.webp"
+                alt="stormbreaker21"
+              />
+            ),
+            link: "/stormbreaker21",
+            text: "Stormbreaker 21`6",
+            price: "FULL OFF-ROAD: $94,900",
+          },
+        ],
+      },
+      {
+        label: "COUPLES",
+        submenu: [
+          {
+            // label: (
+            //   <img
+            //     src="https://d2k5m0tntfs5ke.cloudfront.net/stormbreaker186.webp"
+            //     alt="stormbreaker18"
+            //   />
+            // ),
+            //link: "/stormbreaker18",
+            text: "ECLIPSE - 21`6FT",
+            price: "( COMING SOON )",
+          },
+
+          {
+            // label: (
+            //   <img
+            //     src="https://d2k5m0tntfs5ke.cloudfront.net/stormbreaker216.webp"
+            //     alt="stormbreaker21"
+            //   />
+            // ),
+            //link: "/stormbreaker21",
+            text: "ECLIPSE - 22FT",
+            price: "( COMING SOON )",
+          },
+        ],
+      },
+      {
+        label: "RESOURCES",
+        submenu: [
+          { label: "ABOUT US", link: "/about" },
+          { label: "UPDATES", link: "/blog" },
+          { label: "VIDEOS", link: "/video" },
+          { label: "WARRANTY POLICY", link: "/warranty" },
+        ],
+      },
+      {
+        label: "DISCOVER",
+        submenu: [
+          {
+            label: (
+              <a
+                href="https://www.instagram.com/deluxecaravansaustralia/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://d2k5m0tntfs5ke.cloudfront.net/icons/instagramh.webp"
+                  alt="Instagram"
+                  className="iconh"
+                />
+              </a>
+            ),
+            link: "https://www.instagram.com/deluxecaravansaustralia/",
+          },
+          {
+            label: (
+              <a
+                href="https://www.facebook.com/deluxecaravansaustralia"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://d2k5m0tntfs5ke.cloudfront.net/icons/facebookh.webp"
+                  alt="Facebook"
+                  className="iconh"
+                />
+              </a>
+            ),
+            link: "https://www.facebook.com/deluxecaravansaustralia",
+          },
+          {
+            label: (
+              <a
+                href="https://twitter.com/CaravansDeluxe"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://d2k5m0tntfs5ke.cloudfront.net/icons/twitterh.webp"
+                  alt="Twitter"
+                  className="iconh"
+                />
+              </a>
+            ),
+            link: "https://twitter.com/CaravansDeluxe",
+          },
+          {
+            label: (
+              <a
+                href="https://www.tiktok.com/@deluxecaravansaustralia"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://d2k5m0tntfs5ke.cloudfront.net/icons/tik-tokh.webp"
+                  alt="TikTok"
+                  className="iconh"
+                />
+              </a>
+            ),
+            link: "https://www.tiktok.com/@deluxecaravansaustralia",
+          },
+          {
+            label: (
+              <a
+                href="https://www.youtube.com/watch?v=a_KE1CVPT48"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://d2k5m0tntfs5ke.cloudfront.net/icons/youtubeh.webp"
+                  alt="YouTube"
+                  className="iconh"
+                />
+              </a>
+            ),
+            link: "https://www.youtube.com/watch?v=a_KE1CVPT48",
+          },
+        ],
+      },
+    ],
+    []
+  );
 
   return (
     <div>
@@ -152,7 +220,11 @@ const Header = () => {
         >
           <div className="header-logo">
             <Link to="/">
-              <img src="https://d2k5m0tntfs5ke.cloudfront.net/Logo.webp" alt="" height={50} />
+              <img
+                src="https://d2k5m0tntfs5ke.cloudfront.net/Logo.webp"
+                alt=""
+                height={50}
+              />
             </Link>
           </div>
           <nav className="header-nav">
@@ -160,7 +232,9 @@ const Header = () => {
               {menuData.map((menu, index) => (
                 <motion.li
                   key={index}
-                  className={`menu-item ${activeMenu === menu.label ? "active" : ""}`}
+                  className={`menu-item ${
+                    activeMenu === menu.label ? "active" : ""
+                  }`}
                   onMouseEnter={() => handleMenuHover(menu.label)}
                   onMouseLeave={handleMenuLeave}
                   initial={{ opacity: 1 }}
