@@ -176,7 +176,7 @@ const Navbar = () => {
                                   marginBottom: "0px",
                                 }}
                               >
-                                <a href="/stormbreaker18">ECLIPSE - 21`6FT</a>
+                                <a href="/">ECLIPSE - 21`6FT</a>
                                 <p
                                   style={{
                                     color: "black",
@@ -191,7 +191,7 @@ const Navbar = () => {
                                   marginBottom: "0px",
                                 }}
                               >
-                                <a href="/stormbreaker19">ECLIPSE - 22FT</a>
+                                <a href="/">ECLIPSE - 22FT</a>
                                 <p
                                   style={{
                                     color: "black",
