@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import "./video.css";
-import GoToTop from "../functions/GoToTop";
+import React from 'react';
+import './video.css';
+import GoToTop from '../functions/GoToTop';
 
-function Video() {
-  // Sample video data (replace with your own data)
+const Video = React.memo(() => {
   const videos = [
     {
       title: "We Built A $120,000 CARAVAN - Storm breaker.. Launch Video!!",
@@ -61,9 +60,9 @@ function Video() {
           </div>
         </div>
       </div>
-      <GoToTop/>
+      <GoToTop />
     </div>
   );
-}
+});
 
 export default Video;

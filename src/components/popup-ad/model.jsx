@@ -40,7 +40,7 @@ const Model = ({ isOpen, onClose }) => {
               </button>
             </div>
             <div className="model-title">
-              <h1>IN STOCK IN 5 WEEKS!</h1>
+              <h1>IN STOCK IN 4 to 5 WEEKS!</h1>
               <p className="model-disc2">
                 OUR CHRISTMAS GIFT TO YOU <b>19'6</b> AND{" "}
                 <b>21'6 STORMBREAKER</b>
@@ -75,4 +75,4 @@ const Model = ({ isOpen, onClose }) => {
   );
 };
 
-export default Model;
+export default React.memo(Model);

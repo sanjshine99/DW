@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useEffect, useRef, useState, useCallback } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
@@ -7,27 +7,25 @@ import Strom18inside from "../products/SlideShows/Stormbreaker18inside";
 import { gsap } from "gsap";
 import Storm18specs from "./Specsmenu/Specs18";
 import Techspec18 from "./techspecs/Techspec18";
-import SB216img from "../../assets/Product renders/SB186Exterior.webp";
 import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
 import LayoutPopUp from "./popup/LayoutPopUp";
 
-function Stormbreaker18() {
-  const containerRef = useRef(null);
-  const scrollToSpecs = () => {
-    // Replace 'specs' with the ID of the div you want to scroll to
-    const specsDiv = document.getElementById("specs");
-    if (specsDiv) {
-      specsDiv.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+const scrollToSpecs = () => {
+  const specsDiv = document.getElementById("specs");
+  if (specsDiv) {
+    specsDiv.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
-  const scrollToLayout = () => {
-    // Replace 'layout' with the ID of the div you want to scroll to
-    const layoutDiv = document.getElementById("layout");
-    if (layoutDiv) {
-      layoutDiv.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+const scrollToLayout = () => {
+  const layoutDiv = document.getElementById("layout");
+  if (layoutDiv) {
+    layoutDiv.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
+const Stormbreaker18 = () => {
+  const containerRef = useRef(null);
 
   useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
@@ -43,7 +41,7 @@ function Stormbreaker18() {
             trigger: elem,
             start: "top 80%",
             end: "bottom 20%",
-            markers: false, // Set this to true for debug markers
+            markers: false,
           },
         }
       );
@@ -51,29 +49,20 @@ function Stormbreaker18() {
   }, []);
 
   const [isWarrantyPopupOpen, setWarrantyPopupOpen] = useState(false);
-  const [isLayoutPopupOpen, setLayoutPopupOpen] = useState(false);
 
-  const openWarrantyPopupWarrantyPolicy = () => {
+  const openWarrantyPopupWarrantyPolicy = useCallback(() => {
     setWarrantyPopupOpen(true);
-  };
+  }, []);
 
-  const closeWarrantyPopupWarrantyPolicy = () => {
+  const closeWarrantyPopupWarrantyPolicy = useCallback(() => {
     setWarrantyPopupOpen(false);
-  };
-
-  const openLayoutPopupLayoutPolicy = () => {
-    setLayoutPopupOpen(true);
-  };
-
-  const closeLayoutPopupLayoutPolicy = () => {
-    setLayoutPopupOpen(false);
-  };
+  }, []);
 
   return (
     <div className="container">
       <div className="component">
         <div className="background-image">
-          <img src={SB216img} alt="" />
+          <img src="https://d2k5m0tntfs5ke.cloudfront.net/productrenders/SB186Exterior.webp"alt="" />
           <div className="image-overlay">
             <div className="button-container">
               <h1 className="Product-header revealUp">Stormbreaker18`6</h1>
@@ -171,6 +160,6 @@ function Stormbreaker18() {
       <GoToTop/>
     </div>
   );
-}
+};
 
-export default Stormbreaker18;
+export default React.memo(Stormbreaker18);

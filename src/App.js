@@ -16,11 +16,14 @@ const Appointment = lazy(() => import('./components/bookus/Appointment'));
 const Tour = lazy(() => import('./components/tour/Tour'));
 const Warranty = lazy(() => import('./components/warrantypolicy/WarrantyPolicy'));
 
+const MemoizedHeader = React.memo(Header);
+const MemoizedFooter = React.memo(Footer);
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter basename="/"> 
-        <Header />
+        <MemoizedHeader />
         <Suspense fallback={<div className="viewport-filler"></div>}>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -36,7 +39,7 @@ function App() {
             <Route path="/warranty" element={<Warranty />} />
           </Routes>
         </Suspense>
-        <Footer />
+        <MemoizedFooter />
       </BrowserRouter>
     </div>
   );

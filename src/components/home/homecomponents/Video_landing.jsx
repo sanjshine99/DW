@@ -1,41 +1,55 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
 import { Link } from "react-router-dom";
 import "./HomeComponent.css";
 import { gsap } from "gsap";
-import landingVideo from "../../../assets/landingVideo.mp4";
 
 function VideoLanding() {
-  useEffect(() => {
-    gsap.utils.toArray(".revealUp").forEach((elem) => {
-      gsap.fromTo(
-        elem,
-        { y: 100, autoAlpha: 0 },
-        {
-          duration: 1.25,
-          y: 0,
-          autoAlpha: 1,
-          ease: "back",
-          scrollTrigger: {
-            trigger: elem,
-            start: "top 80%",
-            end: "bottom 20%",
-            markers: false, // Set this to true for debug markers
-          },
-        }
-      );
-    });
+  const revealUpAnimation = useMemo(() => {
+    return () => {
+      gsap.utils.toArray(".revealUp").forEach((elem) => {
+        gsap.fromTo(
+          elem,
+          { y: 100, autoAlpha: 0 },
+          {
+            duration: 1.25,
+            y: 0,
+            autoAlpha: 1,
+            ease: "back",
+            scrollTrigger: {
+              trigger: elem,
+              start: "top 80%",
+              end: "bottom 20%",
+              markers: false, // Set this to true for debug markers
+            },
+          }
+        );
+      });
+    };
   }, []);
+
+  useEffect(() => {
+    revealUpAnimation();
+  }, [revealUpAnimation]);
 
   return (
     <div className="landing_Page_video_container">
       <div className="video-overlay">
-        <video
-          className="landing_page_video"
-          src={landingVideo}
-          autoPlay
-          loop
-          muted
-        ></video>
+        <div className="video-container">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="landing_page_video"
+            
+          >
+            <source
+              src="https://d2k5m0tntfs5ke.cloudfront.net/landingVideo.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <div className="text-overlay">
           <h1 className="revealUp">DELUXE CARAVANS</h1>
           <div className="link-overlay revealUp">
