@@ -2,14 +2,7 @@ import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { motion, AnimatePresence } from "framer-motion";
-import instagram from "../../../assets/icons/instagramh.webp";
-import facebook from "../../../assets/icons/facebookh.webp";
-import twitter from "../../../assets/icons/twitterh.webp";
-import tiktok from "../../../assets/icons/tik-tokh.webp";
-import youtube from "../../../assets/icons/youtubeh.webp";
-import greater from "../../../assets/icons/greater.webp";
-import lesser from "../../../assets/icons/lesser.webp";
-import logo from "../../../assets/Logo.webp";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -66,13 +59,13 @@ const Navbar = () => {
                 <ul className="navbar-nav">
                   <li className="nav-item" onClick={toggleMenu}>
                     <Link to="/" className="nav-link">
-                      <img src={logo} alt="" height={50} />
+                      <img src="https://d2k5m0tntfs5ke.cloudfront.net/Logo.webp" alt="" height={50} />
                     </Link>
                   </li>
                   <li className="nav-item">
                     <p className="social" onClick={showOurRange}>
                       FAMILY{" "}
-                      <img src={greater} alt="" className="greatericon" />
+                      <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/greater.webp" alt="" className="greatericon" />
                     </p>
                     <AnimatePresence>
                       {ourRangeVisible && (
@@ -94,7 +87,7 @@ const Navbar = () => {
                               onClick={hideOurRange}
                               className="back-button"
                             >
-                              <img src={lesser} alt="" className="lessericon" />{" "}
+                              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/lesser.webp" alt="" className="lessericon" />{" "}
                               Back
                             </button>
                             <ul className="range-list">
@@ -152,7 +145,7 @@ const Navbar = () => {
                   <li className="nav-item">
                     <p className="social" onClick={showOurRangeCouples}>
                       COUPLES{" "}
-                      <img src={greater} alt="" className="greatericon" />
+                      <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/greater.webp" alt="" className="greatericon" />
                     </p>
                     <AnimatePresence>
                       {ourRangeCouplesVisible && (
@@ -174,7 +167,7 @@ const Navbar = () => {
                               onClick={hideOurRangeCouples}
                               className="back-button"
                             >
-                              <img src={lesser} alt="" className="lessericon" />{" "}
+                              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/lesser.webp" alt="" className="lessericon" />{" "}
                               Back
                             </button>
                             <ul className="range-list">
@@ -217,7 +210,7 @@ const Navbar = () => {
                   <li className="nav-item">
                     <p className="social" onClick={showResources}>
                       RESOURCES{" "}
-                      <img src={greater} alt="" className="greatericon" />
+                      <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/greater.webp" alt="" className="greatericon" />
                     </p>
                     <AnimatePresence>
                       {resourcesVisible && (
@@ -234,7 +227,7 @@ const Navbar = () => {
                             onClick={hideResources}
                             className="back-button"
                           >
-                            <img src={lesser} alt="" className="lessericon" />{" "}
+                            <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/lesser.webp" alt="" className="lessericon" />{" "}
                             Back
                           </button>
                           <ul className="resources-list">
@@ -277,7 +270,7 @@ const Navbar = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <img src={instagram} alt="Instagram" />
+                          <img  src="https://d2k5m0tntfs5ke.cloudfront.net/icons/instagramh.webp" alt="Instagram" />
                         </a>
                       </li>
                       <li>
@@ -286,7 +279,7 @@ const Navbar = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <img src={facebook} alt="Facebook" />
+                          <img  src="https://d2k5m0tntfs5ke.cloudfront.net/icons/facebookh.webp" alt="Facebook" />
                         </a>
                       </li>
                       <li>
@@ -295,7 +288,7 @@ const Navbar = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <img src={twitter} alt="Twitter" />
+                          <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/twitterh.webp" alt="Twitter" />
                         </a>
                       </li>
                       <li>
@@ -304,7 +297,7 @@ const Navbar = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <img src={tiktok} alt="TikTok" />
+                          <img  src="https://d2k5m0tntfs5ke.cloudfront.net/icons/tik-tokh.webp" alt="TikTok" />
                         </a>
                       </li>
                       <li>
@@ -313,7 +306,7 @@ const Navbar = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <img src={youtube} alt="YouTube" />
+                          <img   src="https://d2k5m0tntfs5ke.cloudfront.net/icons/youtubeh.webp" alt="YouTube" />
                         </a>
                       </li>
                     </ul>
