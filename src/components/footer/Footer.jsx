@@ -1,15 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css"; // Your local CSS
+import instagram from "../../assets/icons/instagram.webp";
+import facebook from "../../assets/icons/facebook.webp";
+import twitter from "../../assets/icons/twitter.webp";
+import tiktok from "../../assets/icons/tik-tok.webp";
+import youtube from "../../assets/icons/youtube.webp";
+import logo from "../../assets/Logo.webp";
 
-const Footer = React.memo(() => {
+const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-links">
         <div className="logo">
           <Link to="/" className="footer-link">
             <img
-              src="https://d2k5m0tntfs5ke.cloudfront.net/Logo.webp"
+              src={logo}
               alt="Logo"
               className="footer-logo"
               height="100px"
@@ -77,41 +83,41 @@ const Footer = React.memo(() => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/instagram.webp" alt="Instagram" className="icon" />
+              <img src={instagram} alt="Instagram" className="icon" />
             </a>
             <a
               href="https://www.facebook.com/deluxecaravansaustralia"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/facebook.webp" alt="Facebook" className="icon" />
+              <img src={facebook} alt="Facebook" className="icon" />
             </a>
             <a
               href="https://twitter.com/CaravansDeluxe"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/twitter.webp" alt="Twitter" className="icon" />
+              <img src={twitter} alt="Twitter" className="icon" />
             </a>
             <a
               href="https://www.tiktok.com/@deluxecaravansaustralia"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/tik-tok.webp" alt="TikTok" className="icon" />
+              <img src={tiktok} alt="TikTok" className="icon" />
             </a>
             <a
               href="https://www.youtube.com/watch?v=a_KE1CVPT48"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/youtube.webp" alt="YouTube" className="icon" />
+              <img src={youtube} alt="YouTube" className="icon" />
             </a>
           </div>
         </div>
       </div>
     </footer>
- );
-});
+  );
+};
 
 export default Footer;

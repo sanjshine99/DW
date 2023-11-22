@@ -20,11 +20,10 @@ const Testimonials = () => {
     };
 
     setSplideHeight();
-    const handleResize = () => setSplideHeight();
-    window.addEventListener('resize', handleResize);
+    window.addEventListener('resize', setSplideHeight);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('resize', setSplideHeight);
     };
   }, []);
 
@@ -166,4 +165,4 @@ const Testimonials = () => {
   );
 };
 
-export default React.memo(Testimonials);
+export default Testimonials;

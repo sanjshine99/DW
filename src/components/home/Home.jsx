@@ -12,18 +12,14 @@ function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const showAdIfNecessary = () => {
-      const lastShownTimestamp = localStorage.getItem("adLastShownTimestamp");
-      const currentTime = Date.now();
-      const ONE_MINUTE = 60 * 1000;
+    const lastShownTimestamp = localStorage.getItem("adLastShownTimestamp");
+    const currentTime = Date.now();
+    const ONE_MINUTE = 60 * 1000;
 
-      if (!lastShownTimestamp || currentTime - lastShownTimestamp >= ONE_MINUTE) {
-        setIsOpen(true);
-        localStorage.setItem("adLastShownTimestamp", currentTime);
-      }
-    };
-
-    showAdIfNecessary();
+    if (!lastShownTimestamp || currentTime - lastShownTimestamp >= ONE_MINUTE) {
+      setIsOpen(true);
+      localStorage.setItem("adLastShownTimestamp", currentTime);
+    }
   }, []);
 
   const handleCloseModal = () => {
@@ -32,11 +28,9 @@ function Home() {
 
   return (
     <div className="container">
-      {isOpen && (
-        <div className="ad-model">
-          <Model isOpen={isOpen} onClose={handleCloseModal} />
-        </div>
-      )}
+      <div className="ad-model">
+        <Model isOpen={isOpen} onClose={handleCloseModal} />
+      </div>
       <div className="videocomponent">
         <Video />
       </div>
@@ -52,7 +46,7 @@ function Home() {
       <div className="partnercomponent">
         <Partners />
       </div>
-      <GoToTop />
+      <GoToTop/>
     </div>
   );
 }

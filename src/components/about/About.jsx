@@ -5,7 +5,12 @@ import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
 import "./About.css";
 import GoToTop from "../functions/GoToTop";
-
+import AUSTRALIANMADE from "../../assets/ourval/ausmade.webp";
+import TEAMWORK from "../../assets/ourval/teamwork.webp";
+import QUALITYINNOVATION from "../../assets/ourval/badge.webp";
+import TOPNOTCHSUPPORT from "../../assets/ourval/technical-support.webp";
+import COMMUNITY from "../../assets/ourval/community.webp";
+import ECOFRIENDLYOPTIONS from "../../assets/ourval/ecology.webp";
 
 function About() {
   const [refCaravans, inViewCaravans] = useInView({
@@ -42,7 +47,7 @@ function About() {
             parts of the country and an active part of the caravan industry, we
             know what it takes to create top-of-the-line, bespoke caravans that
             meet your every expectation.
-            </p>
+          </p>
         </div>
       </div>
       <div className="component" ref={refCaravans}>
@@ -77,7 +82,7 @@ function About() {
             allowed us to adapt and create the ultimate OFF-ROAD caravans
             Australia has to offer. Our Eco-Friendly, Bespoke options give us
             the edge in the competitive market.
-            </p>
+          </p>
         </div>
       </div>
       <div className="component" ref={refValues}>
@@ -90,7 +95,7 @@ function About() {
             animate={inViewValues ? "animate" : "initial"}
           >
             <img
-              src="https://d2k5m0tntfs5ke.cloudfront.net/ourvalues/ausmade.webp"
+              src={AUSTRALIANMADE}
               alt="Bespokemodels"
               className="galleryoverlayimage"
               height="100px"
@@ -109,7 +114,7 @@ function About() {
             animate={inViewValues ? "animate" : "initial"}
           >
             <img
-              src="https://d2k5m0tntfs5ke.cloudfront.net/ourvalues/teamwork.webp"
+              src={TEAMWORK}
               alt="Ecofriendly"
               className="galleryoverlayimage"
               height="100px"
@@ -128,7 +133,7 @@ function About() {
             animate={inViewValues ? "animate" : "initial"}
           >
             <img
-              src="https://d2k5m0tntfs5ke.cloudfront.net/ourvalues/badge.webp"
+              src={QUALITYINNOVATION}
               alt="Experience"
               className="galleryoverlayimage"
               height="100px"
@@ -147,7 +152,7 @@ function About() {
             animate={inViewValues ? "animate" : "initial"}
           >
             <img
-              src="https://d2k5m0tntfs5ke.cloudfront.net/ourvalues/technical-support.webp"
+              src={TOPNOTCHSUPPORT}
               alt="Ratings"
               className="galleryoverlayimage"
               height="100px"
@@ -166,7 +171,7 @@ function About() {
             animate={inViewValues ? "animate" : "initial"}
           >
             <img
-              src="https://d2k5m0tntfs5ke.cloudfront.net/ourvalues/community.webp"
+              src={COMMUNITY}
               alt="Ratings"
               className="galleryoverlayimage"
               height="100px"
@@ -185,7 +190,7 @@ function About() {
             animate={inViewValues ? "animate" : "initial"}
           >
             <img
-              src="https://d2k5m0tntfs5ke.cloudfront.net/ourvalues/ecology.webp"
+              src={ECOFRIENDLYOPTIONS}
               alt="Ratings"
               className="galleryoverlayimage"
               height="100px"
@@ -198,10 +203,11 @@ function About() {
             </p>
           </motion.div>
         </div>
-        </div>
-      <GoToTop />
+      </div>
+      <GoToTop/>
     </div>
+
   );
 }
 
-export default React.memo(About);
+export default About;

@@ -1,17 +1,21 @@
-import React, { useState, useCallback } from 'react';
+import React, { Component } from 'react';
 import './Specsmenu.css';
 
-const Specs21 = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+class Specs21 extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeIndex: null,
+    };
+  }
 
-  const toggleAccordion = useCallback(
-    (index) => {
-      setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
-    },
-    [setActiveIndex]
-  );
+  toggleAccordion(index) {
+    this.setState((prevState) => ({
+      activeIndex: prevState.activeIndex === index ? null : index,
+    }));
+  }
 
-
+  render() {
     const data = [
       {
         title: 'INTERIOR',
@@ -144,41 +148,46 @@ const Specs21 = () => {
       ];
       
 
-   return (
-    <div className="specs_container">
-      <div className="accordion">
-        <dl>
-          {data.map((item, index) => (
-            <React.Fragment key={index}>
-              <dt>
-                <button
-                  className={`accordionTitle ${
-                    activeIndex === index ? 'accordionTitleActive' : ''
-                  }`}
-                  onClick={() => toggleAccordion(index)}
-                >
-                  {item.title}
-                </button>
-              </dt>
-              <dd
-                className={`accordionItem ${
-                  activeIndex === index
-                    ? 'animateIn'
-                    : 'accordionItemCollapsed animateOut'
-                }`}
-              >
-                <ul className="list">
-                  {item.content.split('\n').map((listItem, subIndex) => (
-                    <li key={subIndex}>{listItem.trim()}</li>
-                  ))}
-                </ul>
-              </dd>
-            </React.Fragment>
-          ))}
-        </dl>
-      </div>
-    </div>
-  );
-};
-
-export default React.memo(Specs21);
+      return (
+        <div className="specs_container">
+          <div className="accordion">
+            <dl>
+              {data.map((item, index) => (
+                <React.Fragment key={index}>
+                  <dt>
+                    <button
+                      className={
+                        'accordionTitle' +
+                        (this.state.activeIndex === index
+                          ? ' accordionTitleActive'
+                          : '')
+                      }
+                      onClick={() => this.toggleAccordion(index)}
+                    >
+                      {item.title}
+                    </button>
+                  </dt>
+                  <dd
+                    className={
+                      'accordionItem' +
+                      (this.state.activeIndex === index
+                        ? ' animateIn'
+                        : ' accordionItemCollapsed animateOut')
+                    }
+                  >
+                    <ul className='list'>
+                      {item.content.split('\n').map((listItem, subIndex) => (
+                        <li key={subIndex}>{listItem.trim()}</li>
+                      ))}
+                    </ul>
+                  </dd>
+                </React.Fragment>
+              ))}
+            </dl>
+          </div>
+        </div>
+      );
+    }
+  }
+  
+  export default Specs21;

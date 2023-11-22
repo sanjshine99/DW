@@ -1,29 +1,48 @@
 import React, { useState, useEffect } from "react";
 import "./Stormbreaker21inside.css";
 
+//exterior
+import SB216Ext from "../../../assets/Product renders/SB216Exterior.webp";
+import SB216Extdes from "../../../assets/Product renders/21des.webp";
+import ex211 from "../../../assets/21/21 ex 1.webp";
+import ex212 from "../../../assets/21/21 ex 2.webp";
+import ex213 from "../../../assets/21/21 ex 3.webp";
+import ex214 from "../../../assets/21/21 ex 4.webp";
+import ex215 from "../../../assets/21/21 ex 5.webp";
+//layout
+import SB216layout from "../../../assets/Product renders/SB216 layout.webp";
+import SB216layoutdes from "../../../assets/Product renders/21laydes.webp";
+import SB216layout2 from "../../../assets/Product renders/21lay2.webp";
+//interior
+import in211 from "../../../assets/21/21 in 1.webp";
+import in212 from "../../../assets/21/21 in 2.webp";
+import in213 from "../../../assets/21/21 in 3.webp";
+import in214 from "../../../assets/21/21 in 4.webp";
+import in215 from "../../../assets/21/21 in 5.webp";
+
 import Strombreaker21insidecarousel from "../mobile-carousels/Strombreaker21insidecarousel";
 
 const sections = [
   {
     name: "Exterior",
-    images: ["https://d2k5m0tntfs5ke.cloudfront.net/productrenders/21des.webp", "https://d2k5m0tntfs5ke.cloudfront.net/21/21 ex 1.webp", "https://d2k5m0tntfs5ke.cloudfront.net/21/21 ex 2.webp", "https://d2k5m0tntfs5ke.cloudfront.net/21/21 ex 3.webp","https://d2k5m0tntfs5ke.cloudfront.net/21/21 ex 4.webp", "https://d2k5m0tntfs5ke.cloudfront.net/21/21 ex 5.webp"],
+    images: [SB216Extdes, ex211, ex212, ex213, ex214, ex215],
     description: "",
   },
   {
     name: "Layout",
     images: [
-      "https://d2k5m0tntfs5ke.cloudfront.net/productrenders/SB216 layout.webp",
-      "https://d2k5m0tntfs5ke.cloudfront.net/productrenders/21laydes.webp",
-      "https://d2k5m0tntfs5ke.cloudfront.net/productrenders/21lay2.webp",
-      "https://d2k5m0tntfs5ke.cloudfront.net/productrenders/SB216 layout.webp",
-      "https://d2k5m0tntfs5ke.cloudfront.net/productrenders/21lay2.webp",
+      SB216layout,
+      SB216layoutdes,
+      SB216layout2,
+      SB216layout,
+      SB216layout2,
       
     ],
     description: "",
   },
   {
     name: "Inside",
-    images: ["https://d2k5m0tntfs5ke.cloudfront.net/21/21 in 1.webp", "https://d2k5m0tntfs5ke.cloudfront.net/21/21 in 2.webp", "https://d2k5m0tntfs5ke.cloudfront.net/21/21 in 3.webp", "https://d2k5m0tntfs5ke.cloudfront.net/21/21 in 4.webp", "https://d2k5m0tntfs5ke.cloudfront.net/21/21 in 5.webp", "https://d2k5m0tntfs5ke.cloudfront.net/21/21 in 6.webp"],
+    images: [in211, in212, in213, in214, in215, in211],
     description: "",
   },
 ];

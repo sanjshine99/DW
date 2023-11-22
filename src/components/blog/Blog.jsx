@@ -1,27 +1,25 @@
-import React, { useEffect, useMemo } from 'react';
+import React, { useEffect } from 'react';
 import '../home/Home.css';
 import './Blog.css';
 import GoToTop from "../functions/GoToTop";
 import { Helmet } from 'react-helmet';
 
 function Blog() {
-  const elfSightScript = useMemo(() => {
+  useEffect(() => {
+    // Load the ElfSight script when the component mounts
     const script = document.createElement('script');
     script.src = 'https://static.elfsight.com/platform/platform.js';
     script.setAttribute('data-use-service-core', '');
     script.async = true;
-    return script;
-  }, []);
 
-  useEffect(() => {
-    // Append the ElfSight script when the component mounts
-    document.body.appendChild(elfSightScript);
+    // Append the script to the body of the document
+    document.body.appendChild(script);
 
     return () => {
       // Remove the script when the component unmounts
-      document.body.removeChild(elfSightScript);
+      document.body.removeChild(script);
     };
-  }, [elfSightScript]);
+  }, []);
 
   return (
     <div className="container">
@@ -41,4 +39,4 @@ function Blog() {
   );
 }
 
-export default React.memo(Blog);
+export default Blog;

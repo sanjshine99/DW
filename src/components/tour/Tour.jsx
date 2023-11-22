@@ -1,13 +1,13 @@
 import React from 'react';
 import '../home/Home.css';
 import './Tour.css';
-import GoToTop from '../functions/GoToTop';
+import GoToTop from "../functions/GoToTop";
 
-const Tour = React.memo(() => {
+function Tour() {
   return (
     <div className="virtualcontainer">
       <h1>Virtual tours</h1>
-      <div className="virtualcomponent">
+      <div className='virtualcomponent'>
         <iframe
           frameBorder="0"
           allow="vr;fullscreen"
@@ -17,7 +17,7 @@ const Tour = React.memo(() => {
           title="Virtual Tour 1"
         ></iframe>
       </div>
-      <div className="virtualcomponent">
+      <div className='virtualcomponent'>
         <iframe
           frameBorder="0"
           allow="vr;fullscreen"
@@ -27,9 +27,9 @@ const Tour = React.memo(() => {
           title="Virtual Tour 2"
         ></iframe>
       </div>
-      <GoToTop />
+      <GoToTop/>
     </div>
   );
-});
+}
 
 export default Tour;

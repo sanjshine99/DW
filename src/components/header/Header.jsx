@@ -86,19 +86,18 @@ const Header = () => {
             //     alt="stormbreaker18"
             //   />
             // ),
-            //link: "/stormbreaker18",
+            // link: "/stormbreaker18",
             text: "ECLIPSE - 21`6FT",
             price: "( COMING SOON )",
           },
-
           {
             // label: (
             //   <img
-            //     src="https://d2k5m0tntfs5ke.cloudfront.net/stormbreaker216.webp"
-            //     alt="stormbreaker21"
+            //     src="https://d2k5m0tntfs5ke.cloudfront.net/stormbreaker196.webp"
+            //     alt="stormbreaker19"
             //   />
             // ),
-            //link: "/stormbreaker21",
+            // link: "/stormbreaker19",
             text: "ECLIPSE - 22FT",
             price: "( COMING SOON )",
           },

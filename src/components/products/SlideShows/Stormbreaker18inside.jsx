@@ -1,30 +1,53 @@
 import React, { useState, useEffect } from "react";
 import "./Stormbreaker21inside.css";
 
+//exterior
+import SB216Ext from "../../../assets/Product renders/SB186Exterior.webp";
+import SB216Extdes from "../../../assets/Product renders/18des.webp";
+import ex181 from "../../../assets/18/18 ex 1.webp";
+import ex182 from "../../../assets/18/18 ex 2.webp";
+import ex183 from "../../../assets/18/18 ex 3.webp";
+import ex184 from "../../../assets/18/18 ex 4.webp";
+import ex185 from "../../../assets/18/18 ex 5.webp";
+import ex186 from "../../../assets/18/18 ex 6.webp";
+import ex187 from "../../../assets/18/18 ex 7.webp";
+
+//layout
+import SB186layout from "../../../assets/Product renders/SB18 layout.webp";
+import SB186layoutdes from "../../../assets/Product renders/18laydes.webp";
+import SB186layout2 from "../../../assets/Product renders/18lay2.webp";
+//interior
+import in181 from "../../../assets/18/18 in 1.webp";
+import in182 from "../../../assets/18/18 in 2.webp";
+import in183 from "../../../assets/18/18 in 3.webp";
+import in184 from "../../../assets/18/18 in 4.webp";
+import in185 from "../../../assets/18/18 in 5.webp";
+import in216 from "../../../assets/18/18 in 6.webp";
+
 import Strombreaker18insidecarousel from "../mobile-carousels/Strombreaker18insidecarousel";
 
 const sections = [
   {
     name: "Exterior",
-    images: ["https://d2k5m0tntfs5ke.cloudfront.net/productrenders/18des.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 ex 1.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 ex 2.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 ex 3.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 ex 4.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 ex 5.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 ex 6.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 ex 7.webp"],
+    images: [SB216Extdes, ex181, ex182, ex183, ex184, ex185, ex186, ex187],
     description: "",
   },
   {
     name: "Layout",
     images: [
-      "https://d2k5m0tntfs5ke.cloudfront.net/productrenders/SB18 layout.webp",
-      "https://d2k5m0tntfs5ke.cloudfront.net/productrenders/18laydes.webp",
-      "https://d2k5m0tntfs5ke.cloudfront.net/productrenders/18lay2.webp",
-      "https://d2k5m0tntfs5ke.cloudfront.net/productrenders/SB18 layout.webp",
-      "https://d2k5m0tntfs5ke.cloudfront.net/productrenders/18lay2.webp",
-      "https://d2k5m0tntfs5ke.cloudfront.net/productrenders/SB18 layout.webp",
-      "https://d2k5m0tntfs5ke.cloudfront.net/productrenders/18lay2.webp",
+      SB186layout,
+      SB186layoutdes,
+      SB186layout2,
+      SB186layout,
+      SB186layout2,
+      SB186layout,
+      SB186layout2
     ],
     description: "",
   },
   {
     name: "Inside",
-    images: ["https://d2k5m0tntfs5ke.cloudfront.net/18/18 in 1.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 in 2.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 in 3.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 in 4.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 in 5.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 in 6.webp"],
+    images: [in181, in182, in183, in184, in185, in216],
     description: "",
   },
 ];
