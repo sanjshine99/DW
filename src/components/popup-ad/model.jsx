@@ -40,7 +40,7 @@ const Model = ({ isOpen, onClose }) => {
               </button>
             </div>
             <div className="model-title">
-              <h1>IN STOCK IN 3 to 4 WEEKS!</h1>
+              <h1>1 Sold, 1 Stock Caravan Left. Hurry,Don't Miss Out❗️❗️</h1>
               <p className="model-disc2">
                 OUR CHRISTMAS GIFT TO YOU <b>19'6</b> AND{" "}
                 <b>21'6 STORMBREAKER</b>
