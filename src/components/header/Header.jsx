@@ -44,7 +44,7 @@ const Header = () => {
           {
             label: (
               <img
-                src="https://d2k5m0tntfs5ke.cloudfront.net/stormbreaker186.webp"
+                src="https://deluxcaravan.b-cdn.net/assets/stormbreaker186.webp"
                 alt="stormbreaker18"
               />
             ),
@@ -55,7 +55,7 @@ const Header = () => {
           {
             label: (
               <img
-                src="https://d2k5m0tntfs5ke.cloudfront.net/stormbreaker196.webp"
+                src="https://deluxcaravan.b-cdn.net/assets/stormbreaker196.webp"
                 alt="stormbreaker19"
               />
             ),
@@ -66,7 +66,7 @@ const Header = () => {
           {
             label: (
               <img
-                src="https://d2k5m0tntfs5ke.cloudfront.net/stormbreaker216.webp"
+                src="https://deluxcaravan.b-cdn.net/assets/stormbreaker216.webp"
                 alt="stormbreaker21"
               />
             ),
@@ -124,7 +124,7 @@ const Header = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="https://d2k5m0tntfs5ke.cloudfront.net/icons/instagramh.webp"
+                  src="https://deluxcaravan.b-cdn.net/assets/icons/instagramh.webp"
                   alt="Instagram"
                   className="iconh"
                 />
@@ -140,7 +140,7 @@ const Header = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="https://d2k5m0tntfs5ke.cloudfront.net/icons/facebookh.webp"
+                  src="https://deluxcaravan.b-cdn.net/assets/icons/facebookh.webp"
                   alt="Facebook"
                   className="iconh"
                 />
@@ -156,7 +156,7 @@ const Header = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="https://d2k5m0tntfs5ke.cloudfront.net/icons/twitterh.webp"
+                  src="https://deluxcaravan.b-cdn.net/assets/icons/twitterh.webp"
                   alt="Twitter"
                   className="iconh"
                 />
@@ -172,7 +172,7 @@ const Header = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="https://d2k5m0tntfs5ke.cloudfront.net/icons/tik-tokh.webp"
+                  src="https://deluxcaravan.b-cdn.net/assets/icons/tik-tokh.webp"
                   alt="TikTok"
                   className="iconh"
                 />
@@ -188,7 +188,7 @@ const Header = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="https://d2k5m0tntfs5ke.cloudfront.net/icons/youtubeh.webp"
+                  src="https://deluxcaravan.b-cdn.net/assets/icons/youtubeh.webp"
                   alt="YouTube"
                   className="iconh"
                 />
@@ -221,7 +221,7 @@ const Header = () => {
           <div className="header-logo">
             <Link to="/">
               <img
-                src="https://d2k5m0tntfs5ke.cloudfront.net/Logo.webp"
+                src="https://deluxcaravan.b-cdn.net/assets/Logo.webp"
                 alt=""
                 height={50}
               />

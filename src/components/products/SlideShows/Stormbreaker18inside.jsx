@@ -6,25 +6,25 @@ import Strombreaker18insidecarousel from "../mobile-carousels/Strombreaker18insi
 const sections = [
   {
     name: "Exterior",
-    images: ["https://d2k5m0tntfs5ke.cloudfront.net/productrenders/18des.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 ex 1.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 ex 2.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 ex 3.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 ex 4.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 ex 5.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 ex 6.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 ex 7.webp"],
+    images: ["https://deluxcaravan.b-cdn.net/assets/Product%20renders/18des.webp", "https://deluxcaravan.b-cdn.net/assets/18/18%20ex%201.webp", "https://deluxcaravan.b-cdn.net/assets/18/18%20ex%202.webp", "https://deluxcaravan.b-cdn.net/assets/18/18%20ex%203.webp", "https://deluxcaravan.b-cdn.net/assets/18/18%20ex%204.webp", "https://deluxcaravan.b-cdn.net/assets/18/18%20ex%205.webp", "https://deluxcaravan.b-cdn.net/assets/18/18%20ex%206.webp", "https://deluxcaravan.b-cdn.net/assets/18/18%20ex%207.webp"],
     description: "",
   },
   {
     name: "Layout",
     images: [
-      "https://d2k5m0tntfs5ke.cloudfront.net/productrenders/SB18 layout.webp",
-      "https://d2k5m0tntfs5ke.cloudfront.net/productrenders/18laydes.webp",
-      "https://d2k5m0tntfs5ke.cloudfront.net/productrenders/18lay2.webp",
-      "https://d2k5m0tntfs5ke.cloudfront.net/productrenders/SB18 layout.webp",
-      "https://d2k5m0tntfs5ke.cloudfront.net/productrenders/18lay2.webp",
-      "https://d2k5m0tntfs5ke.cloudfront.net/productrenders/SB18 layout.webp",
-      "https://d2k5m0tntfs5ke.cloudfront.net/productrenders/18lay2.webp",
+      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB18%20layout.webp",
+      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/18laydes.webp",
+      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/18lay2.webp",
+      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB18%20layout.webp",
+      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/18lay2.webp",
+      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB18%20layout.webp",
+      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/18lay2.webp",
     ],
     description: "",
   },
   {
     name: "Inside",
-    images: ["https://d2k5m0tntfs5ke.cloudfront.net/18/18 in 1.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 in 2.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 in 3.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 in 4.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 in 5.webp", "https://d2k5m0tntfs5ke.cloudfront.net/18/18 in 6.webp"],
+    images: ["https://deluxcaravan.b-cdn.net/assets/18/18%20in%201.webp", "https://deluxcaravan.b-cdn.net/assets/18/18%20in%202.webp", "https://deluxcaravan.b-cdn.net/assets/18/18%20in%203.webp", "https://deluxcaravan.b-cdn.net/assets/18/18%20in%204.webp", "https://deluxcaravan.b-cdn.net/assets/18/18%20in%205.webp", "https://deluxcaravan.b-cdn.net/assets/18/18%20in%206.webp"],
     description: "",
   },
 ];

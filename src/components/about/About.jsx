@@ -90,7 +90,7 @@ function About() {
             animate={inViewValues ? "animate" : "initial"}
           >
             <img
-              src="https://d2k5m0tntfs5ke.cloudfront.net/ourvalues/ausmade.webp"
+              src="https://deluxcaravan.b-cdn.net/assets/ourval/ausmade.webp"
               alt="Bespokemodels"
               className="galleryoverlayimage"
               height="100px"
@@ -109,7 +109,7 @@ function About() {
             animate={inViewValues ? "animate" : "initial"}
           >
             <img
-              src="https://d2k5m0tntfs5ke.cloudfront.net/ourvalues/teamwork.webp"
+              src="https://deluxcaravan.b-cdn.net/assets/ourval/teamwork.webp"
               alt="Ecofriendly"
               className="galleryoverlayimage"
               height="100px"
@@ -128,7 +128,7 @@ function About() {
             animate={inViewValues ? "animate" : "initial"}
           >
             <img
-              src="https://d2k5m0tntfs5ke.cloudfront.net/ourvalues/badge.webp"
+              src="https://deluxcaravan.b-cdn.net/assets/ourval/badge.webp"
               alt="Experience"
               className="galleryoverlayimage"
               height="100px"
@@ -147,7 +147,7 @@ function About() {
             animate={inViewValues ? "animate" : "initial"}
           >
             <img
-              src="https://d2k5m0tntfs5ke.cloudfront.net/ourvalues/technical-support.webp"
+              src="https://deluxcaravan.b-cdn.net/assets/ourval/technical-support.webp"
               alt="Ratings"
               className="galleryoverlayimage"
               height="100px"
@@ -166,7 +166,7 @@ function About() {
             animate={inViewValues ? "animate" : "initial"}
           >
             <img
-              src="https://d2k5m0tntfs5ke.cloudfront.net/ourvalues/community.webp"
+              src="https://deluxcaravan.b-cdn.net/assets/ourval/community.webp"
               alt="Ratings"
               className="galleryoverlayimage"
               height="100px"
@@ -185,7 +185,7 @@ function About() {
             animate={inViewValues ? "animate" : "initial"}
           >
             <img
-              src="https://d2k5m0tntfs5ke.cloudfront.net/ourvalues/ecology.webp"
+              src="https://deluxcaravan.b-cdn.net/assets/ourval/ecology.webp"
               alt="Ratings"
               className="galleryoverlayimage"
               height="100px"

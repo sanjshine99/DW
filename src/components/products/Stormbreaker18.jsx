@@ -62,7 +62,7 @@ const Stormbreaker18 = () => {
     <div className="container">
       <div className="component">
         <div className="background-image">
-          <img src="https://d2k5m0tntfs5ke.cloudfront.net/productrenders/SB186Exterior.webp"alt="" />
+          <img src="https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB186Exterior.webp"alt="" />
           <div className="image-overlay">
             <div className="button-container">
               <h1 className="Product-header revealUp">Stormbreaker18`6</h1>

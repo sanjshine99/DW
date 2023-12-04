@@ -9,7 +9,7 @@ const Footer = React.memo(() => {
         <div className="logo">
           <Link to="/" className="footer-link">
             <img
-              src="https://d2k5m0tntfs5ke.cloudfront.net/Logo.webp"
+              src="https://deluxcaravan.b-cdn.net/assets/Logo.webp"
               alt="Logo"
               className="footer-logo"
               height="100px"
@@ -77,21 +77,21 @@ const Footer = React.memo(() => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/instagram.webp" alt="Instagram" className="icon" />
+              <img src="https://deluxcaravan.b-cdn.net/assets/icons/instagram.webp" alt="Instagram" className="icon" />
             </a>
             <a
               href="https://www.facebook.com/deluxecaravansaustralia"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/facebook.webp" alt="Facebook" className="icon" />
+              <img src="https://deluxcaravan.b-cdn.net/assets/icons/facebook.webp" alt="Facebook" className="icon" />
             </a>
             <a
               href="https://twitter.com/CaravansDeluxe"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/twitter.webp" alt="Twitter" className="icon" />
+              <img src="https://deluxcaravan.b-cdn.net/assets/icons/twitter.webp" alt="Twitter" className="icon" />
             </a>
             <a
               href="https://www.tiktok.com/@deluxecaravansaustralia"
@@ -105,7 +105,7 @@ const Footer = React.memo(() => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/youtube.webp" alt="YouTube" className="icon" />
+              <img src="https://deluxcaravan.b-cdn.net/assets/icons/youtube.webp" alt="YouTube" className="icon" />
             </a>
           </div>
         </div>

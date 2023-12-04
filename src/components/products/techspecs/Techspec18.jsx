@@ -40,12 +40,12 @@ const Techspec18 = () => {
 
   const images = useMemo(() => {
     return [
-      animatedImage("https://d2k5m0tntfs5ke.cloudfront.net/techspec/kilogram.webp", 'Bespokemodels', 'Tare Approx: 2400kg'),
-      animatedImage("https://d2k5m0tntfs5ke.cloudfront.net/techspec/chain.webp", 'Ecofriendly', 'ATM: 3000kg'),
-      animatedImage("https://d2k5m0tntfs5ke.cloudfront.net/techspec/height.webp", 'Experience', 'Internal Height: 2000mm'),
-      animatedImage("https://d2k5m0tntfs5ke.cloudfront.net/techspec/length.webp", 'Ratings', 'External Length: 8100mm'),
-      animatedImage("https://d2k5m0tntfs5ke.cloudfront.net/techspec/aim (1).webp", 'Ratings', 'Ball Approx: 200kg'),
-      animatedImage("https://d2k5m0tntfs5ke.cloudfront.net/techspec/exheight.webp", 'Ratings', 'External Height: 3200mm'),
+      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/kilogram.webp", 'Bespokemodels', 'Tare Approx: 2400kg'),
+      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/chain.webp", 'Ecofriendly', 'ATM: 3000kg'),
+      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/height.webp", 'Experience', 'Internal Height: 2000mm'),
+      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/length.webp", 'Ratings', 'External Length: 8100mm'),
+      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/aim%20(1).webp", 'Ratings', 'Ball Approx: 200kg'),
+      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/exheight.webp", 'Ratings', 'External Height: 3200mm'),
     ];
   }, [animatedImage]);
 

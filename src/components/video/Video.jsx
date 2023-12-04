@@ -5,6 +5,12 @@ import GoToTop from '../functions/GoToTop';
 const Video = React.memo(() => {
   const videos = [
     {
+      title: "GORV TV REVIEW I 18.6 FT Deluxe Caravans Stormbreaker",
+      description:
+        "Don't forget to also like, subscribe and follow Deluxe Caravans ",
+      videoId: "5P6fmJuoTjU?si=nKhV6QA8maLXZWQU",
+    },
+    {
       title: "We Built A $120,000 CARAVAN - Storm breaker.. Launch Video!!",
       description:
         "Our first look at the most eco-friendly optioned caravan in the market. We offer more than just a great-looking caravan. Peak Performance and Efficiency.",

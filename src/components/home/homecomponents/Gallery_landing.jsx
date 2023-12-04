@@ -12,7 +12,7 @@ const Gallery_landing = () => {
       <div className="image-container_landing">
         <div className="image-item" onClick={() => handleImageClick("Bespoke Models")}>
           <img
-            src="https://d2k5m0tntfs5ke.cloudfront.net/whychooseus/customer-support.webp"
+            src="https://deluxcaravan.b-cdn.net/assets/why%20choose%20us/customer-support.webp"
             alt="Bespokemodels"
             className="galleryoverlayimage"
             height="100px"
@@ -22,7 +22,7 @@ const Gallery_landing = () => {
         </div>
           <div className="image-item">
             <img
-              src="https://d2k5m0tntfs5ke.cloudfront.net/whychooseus/ecology.webp"
+              src="https://deluxcaravan.b-cdn.net/assets/why%20choose%20us/ecology.webp"
               alt="Ecofriendly"
               className="galleryoverlayimage"
               height="100px"
@@ -32,7 +32,7 @@ const Gallery_landing = () => {
           </div>
           <div className="image-item">
             <img
-              src="https://d2k5m0tntfs5ke.cloudfront.net/whychooseus/certification.webp"
+              src="https://deluxcaravan.b-cdn.net/assets/why%20choose%20us/certification.webp"
               alt="Experience"
               className="galleryoverlayimage"
               height="100px"
@@ -42,7 +42,7 @@ const Gallery_landing = () => {
           </div>
           <div className="image-item">
             <img
-              src="https://d2k5m0tntfs5ke.cloudfront.net/whychooseus/customer-review.webp"
+              src="https://deluxcaravan.b-cdn.net/assets/why%20choose%20us/customer-review.webp"
               alt="Ratings"
               className="galleryoverlayimage"
               height="100px"
@@ -52,7 +52,7 @@ const Gallery_landing = () => {
           </div>
           <div className="image-item">
             <img
-              src="https://d2k5m0tntfs5ke.cloudfront.net/whychooseus/warranty.webp"
+              src="https://deluxcaravan.b-cdn.net/assets/why%20choose%20us/warranty.webp"
               alt="Ratings"
               className="galleryoverlayimage"
               height="100px"
@@ -62,7 +62,7 @@ const Gallery_landing = () => {
           </div>
           <div className="image-item">
             <img
-              src="https://d2k5m0tntfs5ke.cloudfront.net/whychooseus/technical-support.webp"
+              src="https://deluxcaravan.b-cdn.net/assets/why%20choose%20us/technical-support.webp"
               alt="Ratings"
               className="galleryoverlayimage"
               height="100px"

@@ -1,47 +1,30 @@
 import React, { useState } from "react";
 import "./Strombreaker18insidecarousel.css";
 
-//exterior
-import SB196Ext from "../../../assets/Product renders/SB196Exterior.webp";
-import SB196Extdes from "../../../assets/Product renders/19des.webp";
-import ex191 from "../../../assets/19/19 ex 1.webp";
-import ex192 from "../../../assets/19/19 ex 2.webp";
-import ex193 from "../../../assets/19/19 ex 3.webp";
-import ex194 from "../../../assets/19/19 ex 4.webp";
-import ex195 from "../../../assets/19/19 ex 5.webp";
-import ex196 from "../../../assets/19/19 ex 6.webp";
-//layout
-import SB196layout from "../../../assets/Product renders/SB196 layout.webp";
-import SB196layoutdes from "../../../assets/Product renders/19laydes.webp";
-import SB196layout2 from "../../../assets/Product renders/19lay2.webp";
 
-//interior
-import in191 from "../../../assets/19/19 in 1.webp";
-import in192 from "../../../assets/19/19 in 2.webp";
-import in193 from "../../../assets/19/19 in 3.webp";
 
 const sections = [
   {
     name: "Exterior",
-    images: [SB196Extdes, ex191, ex192, ex193, ex194, ex195, ex196],
+    images: ["https://deluxcaravan.b-cdn.net/assets/Product%20renders/19des.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20ex%201.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20ex%202.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20ex%203.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20ex%204.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20ex%205.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20ex%206.webp"],
     description: "",
   },
   {
     name: "Layout",
     images: [
-      SB196layout,
-      SB196layoutdes,
-      SB196layout2,
-      SB196layout,
-      SB196layout2,
-      SB196layout,
-      SB196layout2,
+      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB196%20layout.webp",
+      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/19laydes.webp",
+      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/19lay2.webp",
+      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB196%20layout.webp",
+      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/19lay2.webp",
+      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB196%20layout.webp",
+      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/19lay2.webp",
     ],
     description: "",
   },
   {
     name: "Inside",
-    images: [in191, in192, in193, in191, in192, in193, in191],
+    images: ["https://deluxcaravan.b-cdn.net/assets/19/19%20in%201.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20in%202.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20in%203.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20in%201.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20in%202.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20in%203.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20in%201.webp"],
     description: "",
   },
 ];

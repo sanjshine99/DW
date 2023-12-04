@@ -44,7 +44,7 @@ function VideoLanding() {
             
           >
             <source
-              src="https://d2k5m0tntfs5ke.cloudfront.net/landingVideo.mp4"
+              src="https://deluxcaravan.b-cdn.net/assets/landingVideo.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.

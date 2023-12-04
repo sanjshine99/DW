@@ -54,25 +54,25 @@ const Partners = () => {
         <div className="slide-track">
           {/* Your slide items */}
           <div className="slide">
-            <img src="https://d2k5m0tntfs5ke.cloudfront.net/partners/2022_bmpro-logo-hp.webp" width="500" height="200" alt="" />
+            <img src="https://deluxcaravan.b-cdn.net/assets/partners/2022_bmpro-logo-hp.webp" width="500" height="200" alt="" />
           </div>
           <div className="slide">
-            <img src="https://d2k5m0tntfs5ke.cloudfront.net/partners/Enerdrive-logo.webp" width="500" height="200" alt="" />
+            <img src="https://deluxcaravan.b-cdn.net/assets/partners/Enerdrive-logo.webp" width="500" height="200" alt="" />
           </div>
           <div className="slide">
-            <img src="https://d2k5m0tntfs5ke.cloudfront.net/partners/logo.webp" width="500" height="200" alt="" />
+            <img src="https://deluxcaravan.b-cdn.net/assets/partners/logo.webp" width="500" height="200" alt="" />
           </div>
           <div className="slide">
-            <img src="https://d2k5m0tntfs5ke.cloudfront.net/partners/dometic.webp" width="500" height="auto" alt="" />
+            <img src="hhttps://deluxcaravan.b-cdn.net/assets/partners/dometic.webp" width="500" height="auto" alt="" />
           </div>
           <div className="slide">
-            <img src="https://d2k5m0tntfs5ke.cloudfront.net/partners/cruisemaster.webp" width="500" height="auto" alt="" />
+            <img src="https://deluxcaravan.b-cdn.net/assets/partners/cruisemaster.webp" width="500" height="auto" alt="" />
           </div>
           <div className="slide">
-            <img src="https://d2k5m0tntfs5ke.cloudfront.net/partners/atrv-min.webp" width="500" height="200" alt="" />
+            <img src="https://deluxcaravan.b-cdn.net/assets/partners/atrv-min.webp" width="500" height="200" alt="" />
           </div>
           <div className="slide">
-            <img src="https://d2k5m0tntfs5ke.cloudfront.net/partners/camec-min.webp" width="500" height="200" alt="" />
+            <img src="https://deluxcaravan.b-cdn.net/assets/partners/camec-min.webp" width="500" height="200" alt="" />
           </div>
         </div>
       </div>
