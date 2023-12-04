@@ -98,7 +98,7 @@ const Footer = React.memo(() => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="https://d2k5m0tntfs5ke.cloudfront.net/icons/tik-tok.webp" alt="TikTok" className="icon" />
+              <img src="https://deluxcaravan.b-cdn.net/assets/icons/tik-tok.webp" alt="TikTok" className="icon" />
             </a>
             <a
               href="https://www.youtube.com/watch?v=a_KE1CVPT48"

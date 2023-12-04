@@ -63,7 +63,7 @@ const Partners = () => {
             <img src="https://deluxcaravan.b-cdn.net/assets/partners/logo.webp" width="500" height="200" alt="" />
           </div>
           <div className="slide">
-            <img src="hhttps://deluxcaravan.b-cdn.net/assets/partners/dometic.webp" width="500" height="auto" alt="" />
+            <img src="https://deluxcaravan.b-cdn.net/assets/partners/dometic.webp" width="500" height="auto" alt="" />
           </div>
           <div className="slide">
             <img src="https://deluxcaravan.b-cdn.net/assets/partners/cruisemaster.webp" width="500" height="auto" alt="" />
