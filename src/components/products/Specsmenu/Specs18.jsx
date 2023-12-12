@@ -59,19 +59,19 @@ const Specs21 = () => {
             Plug Car - 12 Pin 
             Power - 12V Weather Proof Cig Socket 
             Power - 240V Weather Proof Outlet (Single) 
-            Solar - 2 x 170 watt Panel 
+            Solar - 3 X 170W SOLAR PANELS 
             3 x Water Tank Level Probes 
             Reverse Camera & Display 
             Antenna - (Reads Horizontal & Vertical Signals) 
-            Battery - 2 x 100 amp Deep Cycle 
+            Battery - 12 X 100AH LITHIUM BATTERIES 
             Side Markers `,
          },
           {
             title: 'APPLIANCES',
-            content: `Air Conditioning – Belair 3400 Slim Line Reverse Cycle Roof Mounted 
+            content: `Air Conditioning – DOMETIC FRESH JET AIRCON 
             Mini Grill - 3 Gas / 1 Electric Burner & Grill 
             Range hood - 12v LED with Twin Fans 
-            Fridge / Freezer – 188 Ltr 3-Way Automatic Absorption (Dometic) 
+            Fridge / Freezer – 188L DOMETIC COMPRESSOR FRIDGE 
             Hot Water Service - 28ltr Gas/Electric 
             25L Microwave 
             Stereo CD/DVD/MP3/Radio System 

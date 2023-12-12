@@ -44,7 +44,7 @@ const Header = () => {
           {
             label: (
               <img
-                src="https://deluxcaravan.b-cdn.net/assets/stormbreaker186.webp"
+                src="https://deluxcaravan.b-cdn.net/assets/header/186.webp"
                 alt="stormbreaker18"
               />
             ),
@@ -55,7 +55,7 @@ const Header = () => {
           {
             label: (
               <img
-                src="https://deluxcaravan.b-cdn.net/assets/stormbreaker196.webp"
+                src="https://deluxcaravan.b-cdn.net/assets/header/196.webp"
                 alt="stormbreaker19"
               />
             ),
@@ -66,7 +66,7 @@ const Header = () => {
           {
             label: (
               <img
-                src="https://deluxcaravan.b-cdn.net/assets/stormbreaker216.webp"
+                src="https://deluxcaravan.b-cdn.net/assets/header/216.webp"
                 alt="stormbreaker21"
               />
             ),
@@ -74,6 +74,17 @@ const Header = () => {
             text: "Stormbreaker 21`6",
             price: "FULL OFF-ROAD: $94,900",
           },
+           {
+             label: (
+               <img
+              src="https://deluxcaravan.b-cdn.net/assets/header/2311.webp"
+             alt="stormbreaker23"
+               />
+             ),
+            link: "/stormbreaker23",
+            text: "Stormbreaker 23`11",
+             price: "FULL OFF-ROAD: $xx,xxx",
+           },
         ],
       },
       {

@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import './Specsmenu.css';
 
-const Specs21 = () => {
+const Specs23 = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAccordion = useCallback(
@@ -15,41 +15,41 @@ const Specs21 = () => {
     const data = [
       {
         title: 'INTERIOR',
-        content: `Bed - Queen Island with Lift-Up Storage 
+        content: `Bed - Queen Island with Lift-Up Storage
         Niche - Bedside - Both Sides
-        Bunks - 2 Bunks (Length: Top Bunk - 2.1m, Middle Bunk 2.1m )
-        Mattress - Innerspring with Pillow-Top 
+        Bunks – 4 to 6 Bunks (Length: Bunk – 1.9m)
+        Mattress - Innerspring with Pillow-Top
         L - Shape Lounge - with Drop Down Table with TIC Cushion
-        Storage - Drawers 
-        Windows - Double-Glazed 
-        Door - Triple Lock with Separate Security Screen 
-        Drawers - On Rollers 
-        Floor Vinyl - Durable Modern Design 
-        Hatch Roof - 700mm x 500mm 
-        Hatch Roof - 450mm x 400mm 
-        TV - Bracket 
-        Hinges - Piano 
-        Pantry - Half (Slide-Out) 
-        Frame – Meranti/ CNC `,
+        Storage - Drawers
+        Windows - Double-Glazed
+        Door - Triple Lock with Separate Security Screen
+        Drawers - On Rollers
+        Floor Vinyl - Durable Modern Design
+        Hatch Roof - 700mm x 500mm
+        Hatch Roof - 450mm x 400mm
+        TV - Bracket
+        Hinges
+        Pantry - Half (Slide-Out)
+        Frame – Meranti `,
       },
         {
           title: 'SPLASHBACK, BENCHTOP, CUPBOARD DOORS AND UPHOLSTERY',
-          content: `Bench Top - Premium Laminate 
-          Bench Top Lid - Over Stove 
-          Splashback Kitchen - Full Height 
-          Cupboard Doors - Premium Laminate ( Scratch & UV Resistant ) 
+          content: `Bench Top - Premium Laminate
+          Bench Top Lid - Over Stove
+          Splashback Kitchen - Full Height
+          Cupboard Doors - Premium Laminate (Scratch &amp; UV Resistant )
           Upholstery - Faux Leather Vinyl `,
       },
         {
           title: 'ELECTRICAL - INTERNAL',
-          content: `BM PRO BATTERYPLUS35-II-HA ( Lithium Ready Charger ) 
-          TREK Display 
-          Lighting - LED Down lights 
-          TV - Co-Ax Point 
-          TV - Aerial Point 
-          Speakers - 2 x Internal 
-          USB Ports - 1 x in Each Bunk (2), 2 x Bedside & 1 x Lounge 
-          Reading Lights 
+          content: `BM PRO BATTERYPLUS35-II-HA ( Lithium Ready Charger )
+          TREK Display
+          Lighting - LED Down lights
+          TV - Co-Ax Point
+          TV - Aerial Point
+          Speakers - 2 x Internal
+          USB Ports - 1 x in Each Bunk (2), 2 x Bedside &amp; 1 x Lounge
+          Reading Lights
           Sirocco Fan – Main bed `,
       },
         {
@@ -58,28 +58,29 @@ const Specs21 = () => {
             1 x LED Annexe Light over Tunnel Boot
             LED Tunnel Boot Light
             Blue LED Door Handle Light
-            Blue LED Light Bar ( Front & Back)
+            Blue LED Light Bar ( Front &amp; Back)
             12-Pin Car Plug
             12V Weatherproof Cig Socket
             240V Weatherproof Outlet
-            3 X 170W SOLAR PANELS
+            3 x 170-Watt Solar Panels
             3 x water Tank Level Probes
-            Reverse Camera & Display
+            Reverse Camera &amp; Display
             An Antenna
-            2 X 100AH LITHIUM BATTERIES
-            Side Markers with Reflector`,
+            2 x 100 Lithium Battieris
+            Side Markers with Reflector
+            `,
          },
           {
             title: 'APPLIANCES',
-            content: `Air Conditioning - DOMETIC FRESH JET AIRCON
-            Front Load Washing Machine
+            content: `Air Conditioning Dometic Fresh Jet
+            3Kg Wall Mount Washing Machine
             Hot water – 28-litre Gas/Electric Heating
             Rangehood: 12V LED with Twin Fans
             Oven (3 x Gas | 1 x Electric Burner and Grill)
-            Fridge and Freezer: 188L DOMETIC COMPRESSOR FRIDGE
+            Fridge and Freezer: Dometic 188-Litre Compressor Fridge
             25L Microwave
             Stereo/Speaker System
-            24” TV`,
+            24” Smart TV`,
           },
           {
             title: 'PLUMBING',
@@ -97,8 +98,8 @@ const Specs21 = () => {
           },
           {
             title: 'EXTERIOR',
-            content: `17Ft Roll-Out Awning
-            Storage Compartment Hatch (Rear, Off-Side)
+            content: `18Ft Roll-Out Awning
+            Storage Compartment Hatch ( Under Bunk )
             Foldable Picnic Table
             Tunnel Boot – Front ( Dual Access )
             2 x 9KG Gas Bottles
@@ -126,7 +127,7 @@ const Specs21 = () => {
             Wheels: 16″ Alloy
             Heavy-Duty Off-Road Tires
             1 x Spare Wheel (Mounted On Rear Bumper)
-            2 x  Jerry Can Holders (Rear Bumper)
+            2 x Jerry Can Holders (Rear Bumper)
             Jack: CNR Supports (Drop-Down)
             A-Frame Jockey Wheel
             Storage Mesh Plate`,
@@ -134,7 +135,7 @@ const Specs21 = () => {
           {
             title: 'OVERALL',
             content: `Ball Weight: 200 kg
-            Tare Weight: 2850 kg
+            Tare Weight: 2900 kg
             ATM: 3500 kg`,
           },
           {
@@ -181,4 +182,4 @@ const Specs21 = () => {
   );
 };
 
-export default React.memo(Specs21);
+export default React.memo(Specs23);

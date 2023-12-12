@@ -60,21 +60,21 @@ const Specs19 = () => {
             12-Pin Car Plug
             12V Weatherproof Cig Socket
             240V Weatherproof Outlet
-            2 x 170-Watt Solar Panels
+            3 X 170W SOLAR PANELS
             3 x water Tank Level Probes
             Reverse Camera & Displayn
             An Antenna
-            2 x 100 Amp Deep Cycle Batteries
+            2 X 100AH LITHIUM BATTERIES
             Side Markers with Reflector  `,
          },
           {
             title: 'APPLIANCES',
-            content: ` Air Conditioning (Belair 3400 | slimline | Reverse-Cycle | Roof-Mounted)
+            content: ` Air Conditioning - DOMETIC FRESH JET AIRCON
             Front Load Washing Machine
             Hot water – 28-litre Gas/Electric Heating
             Rangehood: 12V LED with Twin Fans
             Oven (3 x Gas | 1 x Electric Burner and Grill)
-            Fridge and Freezer: 188-Litre 3 Way Automatic Absorption
+            Fridge and Freezer: 188L DOMETIC COMPRESSOR FRIDGE
             25L Microwave
             Stereo/Speaker System
             24” TV `,

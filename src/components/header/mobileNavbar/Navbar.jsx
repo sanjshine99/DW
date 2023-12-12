@@ -136,6 +136,21 @@ const Navbar = () => {
                                   ( FULL OFF-ROAD: $94,900 )
                                 </p>
                               </li>
+                              <li
+                                style={{
+                                  marginBottom: "0px",
+                                }}
+                              >
+                                <a href="/stormbreaker21">STORMBREAKER 23`11</a>
+                                <p
+                                  style={{
+                                    color: "black",
+                                    fontSize: "15px",
+                                  }}
+                                >
+                                  ( FULL OFF-ROAD: $xx,xxx)
+                                </p>
+                              </li>
                             </ul>
                           </div>
                         </motion.div>
