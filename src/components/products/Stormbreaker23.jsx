@@ -23,7 +23,7 @@ const scrollToLayout = () => {
   }
 };
 
-const Stormbreaker21 = () => {
+const Stormbreaker23 = () => {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -152,4 +152,4 @@ roomy layout, complete with all the amenities you&#39;d expect from a luxury RV.
    );
   };
   
-  export default React.memo(Stormbreaker21);
+  export default React.memo(Stormbreaker23);

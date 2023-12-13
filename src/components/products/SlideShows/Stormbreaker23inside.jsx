@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Stormbreaker23inside.css";
 
-import Strombreaker21insidecarousel from "../mobile-carousels/Strombreaker21insidecarousel";
+import Strombreaker23insidecarousel from "../mobile-carousels/Strombreaker23insidecarousel";
 
 const sections = [
   {
@@ -135,7 +135,7 @@ function Strombreaker23inside() {
         </div>
       </div>
       <div className="mobile-div">
-        <Strombreaker21insidecarousel />
+        <Strombreaker23insidecarousel />
       </div>
     </>
   );

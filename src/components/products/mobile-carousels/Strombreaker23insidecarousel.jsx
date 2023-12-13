@@ -25,7 +25,7 @@ const sections = [
 ];
 
 
-const Slider21 = () => {
+const Slider23 = () => {
   const [activeImageIndices, setActiveImageIndices] = useState(
     Array(sections.length).fill(0)
   );
@@ -111,4 +111,4 @@ const Slider21 = () => {
   );
 };
 
-export default Slider21;
+export default Slider23;
