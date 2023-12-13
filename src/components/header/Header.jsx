@@ -83,7 +83,7 @@ const Header = () => {
              ),
             link: "/stormbreaker23",
             text: "Stormbreaker 23`11",
-             price: "FULL OFF-ROAD: $xx,xxx",
+             price: "FULL OFF-ROAD: $96,900",
            },
         ],
       },

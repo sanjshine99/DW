@@ -141,14 +141,14 @@ const Navbar = () => {
                                   marginBottom: "0px",
                                 }}
                               >
-                                <a href="/stormbreaker21">STORMBREAKER 23`11</a>
+                                <a href="/stormbreaker23">STORMBREAKER 23`11</a>
                                 <p
                                   style={{
                                     color: "black",
                                     fontSize: "15px",
                                   }}
                                 >
-                                  ( FULL OFF-ROAD: $xx,xxx)
+                                  ( FULL OFF-ROAD: $96,900)
                                 </p>
                               </li>
                             </ul>

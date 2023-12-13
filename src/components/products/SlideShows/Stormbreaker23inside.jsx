@@ -6,24 +6,21 @@ import Strombreaker21insidecarousel from "../mobile-carousels/Strombreaker21insi
 const sections = [
   {
     name: "Exterior",
-    images: ["https://deluxcaravan.b-cdn.net/assets/Product%20renders/23des.webp", "https://deluxcaravan.b-cdn.net/assets/21/21%20ex%201.webp", "https://deluxcaravan.b-cdn.net/assets/21/21%20ex%202.webp", "https://deluxcaravan.b-cdn.net/assets/21/21%20ex%203.webp","https://deluxcaravan.b-cdn.net/assets/21/21%20ex%204.webp", "https://deluxcaravan.b-cdn.net/assets/21/21%20ex%205.webp"],
+    images: ["https://deluxcaravan.b-cdn.net/assets/Product%20renders/23des.webp"],
     description: "",
   },
   {
     name: "Layout",
     images: [
       "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB2311layout.webp",
-      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB2311layout.webp",
-      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB2311layout.webp",
-      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB2311layout.webp",
-      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB2311layout.webp",
+
       
     ],
     description: "",
   },
   {
     name: "Inside",
-    images: ["https://deluxcaravan.b-cdn.net/assets/21/21%20in%201.webp", "https://deluxcaravan.b-cdn.net/assets/21/21%20in%202.webp", "https://deluxcaravan.b-cdn.net/assets/21/21%20in%203.webp", "https://deluxcaravan.b-cdn.net/assets/21/21%20in%204.webp", "https://deluxcaravan.b-cdn.net/assets/21/21%20in%205.webp", "https://deluxcaravan.b-cdn.net/assets/21/21%20in%206.webp"],
+    images: ["https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp"],
     description: "",
   },
 ];
