@@ -6,15 +6,15 @@ import Strombreaker23insidecarousel from "../mobile-carousels/Strombreaker23insi
 const sections = [
   {
     name: "Exterior",
-    images: ["https://deluxcaravan.b-cdn.net/assets/Product%20renders/23des.webp"],
+    images: [
+      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/23des.webp",
+    ],
     description: "",
   },
   {
     name: "Layout",
     images: [
       "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB2311layout.webp",
-
-      
     ],
     description: "",
   },
@@ -125,7 +125,9 @@ function Strombreaker23inside() {
                         Next &#10095;
                       </button>
                       <div className="el__text_19_i">{section.description}</div>
-                      <div className="el__close-btn_19_i"></div>
+                      <div className="el__close-btn_19_i">
+                        <h3>Close</h3>
+                      </div>
                     </div>
                   </div>
                 </div>
