@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { motion, AnimatePresence } from "framer-motion";
 
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navbarRef = useRef();
@@ -59,13 +58,21 @@ const Navbar = () => {
                 <ul className="navbar-nav">
                   <li className="nav-item" onClick={toggleMenu}>
                     <Link to="/" className="nav-link">
-                      <img src="https://deluxcaravan.b-cdn.net/assets/Logo.webp" alt="" height={50} />
+                      <img
+                        src="https://deluxcaravan.b-cdn.net/assets/Logo.webp"
+                        alt=""
+                        height={50}
+                      />
                     </Link>
                   </li>
                   <li className="nav-item">
                     <p className="social" onClick={showOurRange}>
                       FAMILY{" "}
-                      <img src="https://deluxcaravan.b-cdn.net/assets/icons/greater.webp" alt="" className="greatericon" />
+                      <img
+                        src="https://deluxcaravan.b-cdn.net/assets/icons/greater.webp"
+                        alt=""
+                        className="greatericon"
+                      />
                     </p>
                     <AnimatePresence>
                       {ourRangeVisible && (
@@ -87,13 +94,18 @@ const Navbar = () => {
                               onClick={hideOurRange}
                               className="back-button"
                             >
-                              <img src="https://deluxcaravan.b-cdn.net/assets/icons/lesser.webp" alt="" className="lessericon" />{" "}
+                              <img
+                                src="https://deluxcaravan.b-cdn.net/assets/icons/lesser.webp"
+                                alt=""
+                                className="lessericon"
+                              />{" "}
                               Back
                             </button>
                             <ul className="range-list">
                               <li
                                 style={{
                                   marginBottom: "0px",
+                                  marginTop: "50px",
                                 }}
                               >
                                 <a href="/stormbreaker18">STORMBREAKER 18`6</a>
@@ -160,7 +172,11 @@ const Navbar = () => {
                   <li className="nav-item">
                     <p className="social" onClick={showOurRangeCouples}>
                       COUPLES{" "}
-                      <img src="https://deluxcaravan.b-cdn.net/assets/icons/greater.webp" alt="" className="greatericon" />
+                      <img
+                        src="https://deluxcaravan.b-cdn.net/assets/icons/greater.webp"
+                        alt=""
+                        className="greatericon"
+                      />
                     </p>
                     <AnimatePresence>
                       {ourRangeCouplesVisible && (
@@ -182,7 +198,11 @@ const Navbar = () => {
                               onClick={hideOurRangeCouples}
                               className="back-button"
                             >
-                              <img src="https://deluxcaravan.b-cdn.net/assets/icons/lesser.webp" alt="" className="lessericon" />{" "}
+                              <img
+                                src="https://deluxcaravan.b-cdn.net/assets/icons/lesser.webp"
+                                alt=""
+                                className="lessericon"
+                              />{" "}
                               Back
                             </button>
                             <ul className="range-list">
@@ -225,7 +245,11 @@ const Navbar = () => {
                   <li className="nav-item">
                     <p className="social" onClick={showResources}>
                       RESOURCES{" "}
-                      <img src="https://deluxcaravan.b-cdn.net/assets/icons/greater.webp" alt="" className="greatericon" />
+                      <img
+                        src="https://deluxcaravan.b-cdn.net/assets/icons/greater.webp"
+                        alt=""
+                        className="greatericon"
+                      />
                     </p>
                     <AnimatePresence>
                       {resourcesVisible && (
@@ -242,7 +266,11 @@ const Navbar = () => {
                             onClick={hideResources}
                             className="back-button"
                           >
-                            <img src="https://deluxcaravan.b-cdn.net/assets/icons/lesser.webp" alt="" className="lessericon" />{" "}
+                            <img
+                              src="https://deluxcaravan.b-cdn.net/assets/icons/lesser.webp"
+                              alt=""
+                              className="lessericon"
+                            />{" "}
                             Back
                           </button>
                           <ul className="resources-list">
@@ -285,7 +313,10 @@ const Navbar = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <img  src="https://deluxcaravan.b-cdn.net/assets/icons/instagramh.webp" alt="Instagram" />
+                          <img
+                            src="https://deluxcaravan.b-cdn.net/assets/icons/instagramh.webp"
+                            alt="Instagram"
+                          />
                         </a>
                       </li>
                       <li>
@@ -294,7 +325,10 @@ const Navbar = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <img  src="https://deluxcaravan.b-cdn.net/assets/icons/facebookh.webp" alt="Facebook" />
+                          <img
+                            src="https://deluxcaravan.b-cdn.net/assets/icons/facebookh.webp"
+                            alt="Facebook"
+                          />
                         </a>
                       </li>
                       <li>
@@ -303,7 +337,10 @@ const Navbar = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <img src="https://deluxcaravan.b-cdn.net/assets/icons/twitterh.webp" alt="Twitter" />
+                          <img
+                            src="https://deluxcaravan.b-cdn.net/assets/icons/twitterh.webp"
+                            alt="Twitter"
+                          />
                         </a>
                       </li>
                       <li>
@@ -312,7 +349,10 @@ const Navbar = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <img  src="https://deluxcaravan.b-cdn.net/assets/icons/tik-tokh.webp" alt="TikTok" />
+                          <img
+                            src="https://deluxcaravan.b-cdn.net/assets/icons/tik-tokh.webp"
+                            alt="TikTok"
+                          />
                         </a>
                       </li>
                       <li>
@@ -321,7 +361,10 @@ const Navbar = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <img   src="https://deluxcaravan.b-cdn.net/assets/icons/youtubeh.webp" alt="YouTube" />
+                          <img
+                            src="https://deluxcaravan.b-cdn.net/assets/icons/youtubeh.webp"
+                            alt="YouTube"
+                          />
                         </a>
                       </li>
                     </ul>

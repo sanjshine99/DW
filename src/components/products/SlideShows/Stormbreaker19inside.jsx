@@ -6,7 +6,15 @@ import Strombreaker19insidecarousel from "../mobile-carousels/Strombreaker19insi
 const sections = [
   {
     name: "Exterior",
-    images: ["https://deluxcaravan.b-cdn.net/assets/Product%20renders/19des.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20ex%201.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20ex%202.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20ex%203.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20ex%204.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20ex%205.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20ex%206.webp"],
+    images: [
+      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/19des.webp",
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20ex%201.webp",
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20ex%202.webp",
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20ex%203.webp",
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20ex%204.webp",
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20ex%205.webp",
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20ex%206.webp",
+    ],
     description: "",
   },
   {
@@ -24,7 +32,15 @@ const sections = [
   },
   {
     name: "Inside",
-    images: ["https://deluxcaravan.b-cdn.net/assets/19/19%20in%201.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20in%202.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20in%203.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20in%201.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20in%202.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20in%203.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20in%201.webp"],
+    images: [
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20in%201.webp",
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20in%202.webp",
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20in%203.webp",
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20in%201.webp",
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20in%202.webp",
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20in%203.webp",
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20in%201.webp",
+    ],
     description: "",
   },
 ];
@@ -129,7 +145,9 @@ function Strombreaker19inside() {
                         Next &#10095;
                       </button>
                       <div className="el__text_19_i">{section.description}</div>
-                      <div className="el__close-btn_19_i"></div>
+                      <div className="el__close-btn_19_i">
+                        <h3>Close</h3>
+                      </div>
                     </div>
                   </div>
                 </div>
