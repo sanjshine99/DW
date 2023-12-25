@@ -7,20 +7,20 @@ const sections = [
   {
     name: "Exterior",
     images: [
-      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/23des.webp",
+      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/23des.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20ex%201.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20ex%202.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20ex%203.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20ex%204.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20ex%205.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20ex%206.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20ex%207.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20ex%201.webp",
     ],
     description: "",
   },
   {
     name: "Layout",
     images: [
-      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB2311layout.webp",
+      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB2311layout.webp","https://deluxcaravan.b-cdn.net/assets/Product%20renders/23lay2.webp","https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB2311layout.webp","https://deluxcaravan.b-cdn.net/assets/Product%20renders/23lay2.webp","https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB2311layout.webp","https://deluxcaravan.b-cdn.net/assets/Product%20renders/23lay2.webp","https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB2311layout.webp",
     ],
     description: "",
   },
   {
     name: "Inside",
-    images: ["https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp"],
+    images: ["https://deluxcaravan.b-cdn.net/assets/23/23%20in%201.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%202.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%203.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%204.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%205.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%206.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%207.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%208.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%209.webp"],
     description: "",
   },
 ];
