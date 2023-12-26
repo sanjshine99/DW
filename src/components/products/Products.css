@@ -29,7 +29,7 @@
   align-items: center;
   justify-content: center;
   max-width: 100vw;
-  text-align: justify;
+  text-align: left;
 }
 
 .slideshowcomopnent {
@@ -199,5 +199,4 @@
   .slideshowcomopnent {
     scroll-snap-align: none !important;
   }
-
 }
