@@ -97,9 +97,9 @@ const Header = () => {
             //     alt="stormbreaker18"
             //   />
             // ),
-            //link: "/stormbreaker18",
+            link: "/eclipse21",
             text: "ECLIPSE - 21`6FT",
-            price: "( COMING SOON )",
+            price: "$92,900",
           },
 
           {

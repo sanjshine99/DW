@@ -211,14 +211,14 @@ const Navbar = () => {
                                   marginBottom: "0px",
                                 }}
                               >
-                                <a href="/">ECLIPSE - 21`6FT</a>
+                                <a href="/eclipse21">ECLIPSE - 21`6FT</a>
                                 <p
                                   style={{
                                     color: "black",
                                     fontSize: "15px",
                                   }}
                                 >
-                                  ( COMING SOON )
+                                  ( $92,900 )
                                 </p>
                               </li>
                               <li

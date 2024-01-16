@@ -12,6 +12,7 @@ const Stormbreaker19 = lazy(() => import('./components/products/Stormbreaker19')
 const Stormbreaker21 = lazy(() => import('./components/products/Stormbreaker21'));
 const Stormbreaker18 = lazy(() => import('./components/products/Stormbreaker18'));
 const Stormbreaker23 = lazy(() => import('./components/products/Stormbreaker23'));
+const Eclipse21 = lazy(() => import('./components/products/Eclipse21'));
 const Contact = lazy(() => import('./components/contact/Contact'));
 const Appointment = lazy(() => import('./components/bookus/Appointment'));
 const Tour = lazy(() => import('./components/tour/Tour'));
@@ -35,6 +36,7 @@ function App() {
             <Route path="/stormbreaker21" element={<Stormbreaker21 />} />
             <Route path="/stormbreaker18" element={<Stormbreaker18 />} />
             <Route path="/stormbreaker23" element={<Stormbreaker23 />} />
+            <Route path="/eclipse21" element={<Eclipse21 />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/appointment" element={<Appointment />} />
             <Route path="/tour" element={<Tour />} />
