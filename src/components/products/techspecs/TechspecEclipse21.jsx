@@ -43,7 +43,7 @@ const TechspecEclipse21 = () => {
       animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/kilogram.webp", 'Bespokemodels', 'Tare Approx: 2800kg'),
       animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/chain.webp", 'Ecofriendly', 'ATM: 3500kg'),
       animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/height.webp", 'Experience', 'Internal Height: 2000mm'),
-      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/length.webp", 'Ratings', 'External Length: 9800mm'),
+      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/length.webp", 'Ratings', 'External Length: 9150mm'),
       animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/aim%20(1).webp", 'Ratings', 'Ball Approx: 200kg'),
       animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/exheight.webp", 'Ratings', 'External Height: 3200mm'),
     ];

@@ -39,15 +39,16 @@ const Model = ({ isOpen, onClose }) => {
                 Close
               </button>
             </div>
-            <div className="model-title">
+            {/* <div className="model-title">
               <h1>1 Sold, 1 Stock Caravan Left. Hurry,Don't Miss Out❗️❗️</h1>
               <p className="model-disc2">
                 OUR CHRISTMAS GIFT TO YOU <b>19'6</b> AND{" "}
                 <b>21'6 STORMBREAKER</b>
               </p>
-            </div>
+            </div> */}
             <div className="model-content">
-              <p className="model-disc3">
+              <img src="https://deluxcaravan.b-cdn.net/assets/Ads/popup2.webp" className="model-ad-image"></img>
+              {/* <p className="model-disc3">
                 <b>
                   <u>WITH OFF-GRID KIT</u>
                 </b>
@@ -63,7 +64,7 @@ const Model = ({ isOpen, onClose }) => {
               </p>
               <p className="model-disc3">
                 <b>DOMETIC FRESHJET AIRCON</b>
-              </p>
+              </p> */}
             </div>
             <button className="model-button model-inqurie">
               <a href="/contact">&#128073; INQUIRE NOW</a>

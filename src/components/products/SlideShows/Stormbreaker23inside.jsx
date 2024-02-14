@@ -20,7 +20,7 @@ const sections = [
   },
   {
     name: "Inside",
-    images: ["https://deluxcaravan.b-cdn.net/assets/23/23%20in%201.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%202.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%203.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%204.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%205.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%206.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%207.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%208.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%209.webp"],
+    images: ["https://deluxcaravan.b-cdn.net/assets/23/23%20in%201-min.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%202-min.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%203-min.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%204-min.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%205-min.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%206-min.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%207-min.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%208-min.webp","https://deluxcaravan.b-cdn.net/assets/23/23%20in%209-min.webp"],
     description: "",
   },
 ];

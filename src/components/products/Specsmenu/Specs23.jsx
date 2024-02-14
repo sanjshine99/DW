@@ -37,7 +37,7 @@ const Specs23 = () => {
           content: `Bench Top - Premium Laminate
           Bench Top Lid - Over Stove
           Splashback Kitchen - Full Height
-          Cupboard Doors - Premium Laminate (Scratch &amp; UV Resistant )
+          Cupboard Doors - Premium Laminate (Scratch & UV Resistant )
           Upholstery - Faux Leather Vinyl `,
       },
         {
@@ -48,7 +48,7 @@ const Specs23 = () => {
           TV - Co-Ax Point
           TV - Aerial Point
           Speakers - 2 x Internal
-          USB Ports - 1 x in Each Bunk (2), 2 x Bedside &amp; 1 x Lounge
+          USB Ports - 1 x in Each Bunk (2), 2 x Bedside & 1 x Lounge
           Reading Lights
           Sirocco Fan – Main bed `,
       },
@@ -58,17 +58,16 @@ const Specs23 = () => {
             1 x LED Annexe Light over Tunnel Boot
             LED Tunnel Boot Light
             Blue LED Door Handle Light
-            Blue LED Light Bar ( Front &amp; Back)
+            Blue LED Light Bar ( Front & Back)
             12-Pin Car Plug
             12V Weatherproof Cig Socket
             240V Weatherproof Outlet
             3 x 170-Watt Solar Panels
             3 x water Tank Level Probes
-            Reverse Camera &amp; Display
+            Reverse Camera & Display
             An Antenna
             2 x 100 Lithium Battieris
-            Side Markers with Reflector
-            `,
+            Side Markers with Reflector`,
          },
           {
             title: 'APPLIANCES',

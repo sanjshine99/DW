@@ -14,13 +14,13 @@ const sections = [
   {
     name: "Layout",
     images: [
-      "https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp","https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp","https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp","https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp","https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp","https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp","https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp","https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp","https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp"
+      "https://deluxcaravan.b-cdn.net/assets/E21/E21%20lay.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20lay.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20lay.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20lay.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20lay.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20lay.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20lay.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20lay.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20lay.webp",
     ],
     description: "",
   },
   {
     name: "Inside",
-    images: ["https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%201.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%202.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%203.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%204.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%205.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%206.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%207.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%208.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%209.webp",],
+    images: ["https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%201.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%202.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%203.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%204.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%205.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%206n.webp",],
     description: "",
   },
 ];

@@ -5,6 +5,12 @@ import GoToTop from '../functions/GoToTop';
 const Video = React.memo(() => {
   const videos = [
     {
+      title: "Deluxe Caravans - Stormbreaker",
+      description:
+        "Hitting the road for a cross-country adventure or a quick escape from suburbia should be an experience you enjoy.",
+      videoId: "ISuFS0leNzA?si=b2q9NWYR6FnnMDCM",
+    },
+    {
       title: "GORV TV REVIEW I 18.6 FT Deluxe Caravans Stormbreaker",
       description:
         "Don't forget to also like, subscribe and follow Deluxe Caravans ",

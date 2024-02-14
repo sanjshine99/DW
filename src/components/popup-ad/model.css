@@ -100,4 +100,15 @@ p {
     color: black;
     font-size: 15px;
   }
+
+  .model-ad-image{
+    height: 60vh;
+    width: auto;
+  }
+}
+
+
+.model-ad-image{
+  height: 65vh;
+  width: auto;
 }
