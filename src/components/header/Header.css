@@ -11,7 +11,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  transition: background-color 0.3s, color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
   overflow: visible; /* Show overflow content */
   height: auto; /* Auto height for the header */
   scroll-snap-align: start;
@@ -23,13 +23,19 @@
   height: auto; /* Auto height on hover */
 }
 
+.header.hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease, visibility 0.3s ease;
+}
+
 .header img {
   align-items: center;
   max-width: 17vw;
   margin-right: 4vw;
 }
 
-.header h3,h5 {
+.header h3,
+h5 {
   text-align: left;
 }
 
@@ -142,7 +148,7 @@
 @media (max-width: 768px) {
   .header {
     padding: 10px;
-    scroll-snap-align: none !important; 
+    scroll-snap-align: none !important;
   }
 
   .header-nav {

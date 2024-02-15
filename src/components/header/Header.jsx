@@ -11,6 +11,8 @@ const Header = () => {
     useMemo(() => window.innerWidth <= 768, [])
   );
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+  const [visible, setVisible] = useState(true);
 
   const handleResize = useCallback(
     _.debounce(() => {
@@ -34,6 +36,35 @@ const Header = () => {
 
   const handleMenuLeave = useCallback(() => {
     setActiveMenu(null);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = _.debounce(() => {
+      const currentScrollPos = window.pageYOffset;
+      setVisible(
+        (prevScrollPos > currentScrollPos &&
+          prevScrollPos - currentScrollPos > 70) ||
+          currentScrollPos < 10
+      );
+      setPrevScrollPos(currentScrollPos);
+    }, 200); // Adjust the debounce time as needed
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos]);
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      // Check if the mouse is within 50 pixels of the top of the page
+      if (e.clientY < 80) {
+        setVisible(true);
+      }
+    };
+    document.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+    };
   }, []);
 
   const menuData = useMemo(
@@ -74,17 +105,17 @@ const Header = () => {
             text: "Stormbreaker 21`6",
             price: "FULL OFF-ROAD: $94,900",
           },
-           {
-             label: (
-               <img
-              src="https://deluxcaravan.b-cdn.net/assets/header/2311.webp"
-             alt="stormbreaker23"
-               />
-             ),
+          {
+            label: (
+              <img
+                src="https://deluxcaravan.b-cdn.net/assets/header/2311.webp"
+                alt="stormbreaker23"
+              />
+            ),
             link: "/stormbreaker23",
             text: "Stormbreaker 23`11",
-             price: "FULL OFF-ROAD: $96,900",
-           },
+            price: "FULL OFF-ROAD: $96,900",
+          },
         ],
       },
       {
@@ -219,7 +250,7 @@ const Header = () => {
         <Navbar />
       ) : (
         <motion.header
-          className="header"
+          className={`header ${visible ? "" : "hidden"}`}
           initial={{ backgroundColor: "transparent" }}
           whileHover={{ backgroundColor: "white", color: "black" }}
           animate={

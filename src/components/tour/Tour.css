@@ -50,18 +50,20 @@
   }
 }
 
-
-
 @media (max-width: 768px) {
-  .virtualcomponent  {
-    scroll-snap-align: none !important; 
-
+  .virtualcomponent {
+    scroll-snap-align: none !important;
   }
 }
 
+@media (max-width: 1600px) {
+  .virtualcomponent {
+    padding-top: 15vh;
+  }
+}
 
 @media (min-width: 769px) and (max-width: 1200px) {
   .virtualcomponent {
-    scroll-snap-align: none !important; 
+    scroll-snap-align: none !important;
   }
 }
