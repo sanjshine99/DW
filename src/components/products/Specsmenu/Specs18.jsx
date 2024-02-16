@@ -63,7 +63,7 @@ const Specs21 = () => {
             3 x Water Tank Level Probes 
             Reverse Camera & Display 
             Antenna - (Reads Horizontal & Vertical Signals) 
-            Battery - 12 X 100AH LITHIUM BATTERIES 
+            Battery - 2 X 100AH LITHIUM BATTERIES 
             Side Markers `,
          },
           {

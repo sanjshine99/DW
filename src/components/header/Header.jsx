@@ -122,12 +122,12 @@ const Header = () => {
         label: "COUPLES",
         submenu: [
           {
-            // label: (
-            //   <img
-            //     src="https://d2k5m0tntfs5ke.cloudfront.net/stormbreaker186.webp"
-            //     alt="stormbreaker18"
-            //   />
-            // ),
+            label: (
+              <img
+                src="https://deluxcaravan.b-cdn.net/assets/header/ec216header.webp"
+                alt="Eclipse 216"
+              />
+            ),
             link: "/eclipse21",
             text: "ECLIPSE - 21`6FT",
             price: "$92,900",
