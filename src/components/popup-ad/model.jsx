@@ -47,7 +47,7 @@ const Model = ({ isOpen, onClose }) => {
               </p>
             </div> */}
             <div className="model-content">
-              <img src="https://deluxcaravan.b-cdn.net/assets/Ads/popup2.webp" className="model-ad-image"></img>
+              {/* <img src="https://deluxcaravan.b-cdn.net/assets/Ads/popup2.webp" className="model-ad-image"></img> */}
               {/* <p className="model-disc3">
                 <b>
                   <u>WITH OFF-GRID KIT</u>
@@ -65,6 +65,7 @@ const Model = ({ isOpen, onClose }) => {
               <p className="model-disc3">
                 <b>DOMETIC FRESHJET AIRCON</b>
               </p> */}
+              <h2>"Riptide 22FT Information Will Be Updated Shortly"</h2>
             </div>
             <button className="model-button model-inqurie">
               <a href="/contact">&#128073; INQUIRE NOW</a>
