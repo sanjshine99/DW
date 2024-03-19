@@ -15,7 +15,7 @@ const Specs19 = () => {
         title: 'INTERIOR',
         content: `Bed - Queen East - West
          Niche - Bedside - Both Sides
-         Bunks - 2 or 3 x with Windows ( Length: Top Bunk – 1.9m,, Middle Bunk 2.1m)
+         Bunks - 2 or 3 x with Windows ( Length: Top Bunk – 1.9m,, Middle Bunk 1.9m)
            Mattress - Innerspring with Pillow-Top
            L - Shape Lounge - with Drop Down Table with TIC Cushion
            Storage - Drawers
