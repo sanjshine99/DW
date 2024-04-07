@@ -13,6 +13,16 @@ const Tour = React.memo(() => {
           allow="vr;fullscreen"
           mozAllowFullScreen
           webkitAllowFullScreen
+          src="https://sh.smartviewmedia.com.au/m/kyd7182/?v=kyd7182"
+          title="Virtual Tour 1"
+        ></iframe>
+      </div>
+      <div className="virtualcomponent">
+        <iframe
+          frameBorder="0"
+          allow="vr;fullscreen"
+          mozAllowFullScreen
+          webkitAllowFullScreen
           src="https://sh.smartviewmedia.com.au/m/ghk6493/?v=ghk6493"
           title="Virtual Tour 1"
         ></iframe>
