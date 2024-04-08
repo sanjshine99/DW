@@ -140,6 +140,55 @@ h5 {
   transition-delay: 0.5s ease;
 }
 
+.nested-submenu {
+  background-color: #ffffff;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: opacity 0.2s, visibility 0.2s, transform 0.3s ease;
+  width: 100%; /* Set width to 100% to fill the viewport */
+  position: fixed;
+  top: 160px; /* Position nested submenu below the parent submenu */
+  left: 0;
+  right: 0;
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Auto-fit columns */
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-decoration: none;
+  color: #000000 !important;
+}
+
+/* Nested Submenu items */
+.nested-submenu-item {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.5s, transform 0.3s ease;
+  margin-right: 30px;
+  flex: 0 0 auto; /* Ensure items don't grow or shrink */
+}
+
+/* Active state for nested submenu */
+.menu-item:hover .nested-submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+  transition: opacity 0.5s, visibility 0.3s, transform 0.3s ease;
+}
+
+/* Active state for nested submenu items */
+.menu-item.active .nested-submenu-item {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s ease;
+}
+
 .iconh {
   height: 27px;
 }

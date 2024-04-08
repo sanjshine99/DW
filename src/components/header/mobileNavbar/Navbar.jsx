@@ -10,6 +10,8 @@ const Navbar = () => {
   const [ourRangeVisible, setOurRangeVisible] = useState(false);
   const [ourRangeCouplesVisible, setOurRangeCouplesVisible] = useState(false);
   const [resourcesVisible, setResourcesVisible] = useState(false);
+  const [showStormbreaker, setShowStormbreaker] = useState(false);
+  const [showRiptide, setShowRiptide] = useState(false);
 
   const showResources = () => {
     setResourcesVisible(true);
@@ -37,6 +39,14 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const toggleStormbreaker = () => {
+    setShowStormbreaker(!showStormbreaker);
+  };
+
+  const toggleRiptide = () => {
+    setShowRiptide(!showRiptide);
   };
 
   return (
@@ -101,7 +111,7 @@ const Navbar = () => {
                               />{" "}
                               Back
                             </button>
-                            <ul className="range-list">
+                            {/* <ul className="range-list">
                               <li
                                 style={{
                                   marginBottom: "0px",
@@ -162,6 +172,122 @@ const Navbar = () => {
                                 >
                                   ( FULL OFF-ROAD: $96,900)
                                 </p>
+                              </li>
+                            </ul> */}
+                            <ul className="range-list">
+                              <li className="nav-item">
+                                <p
+                                  className="social"
+                                  onClick={toggleStormbreaker}
+                                >
+                                  STORMBREAKER{" "}
+                                  <img
+                                    src="https://deluxcaravan.b-cdn.net/assets/icons/greater.webp"
+                                    alt=""
+                                    className="greatericon"
+                                  />
+                                </p>
+                                <AnimatePresence>
+                                  {showStormbreaker && (
+                                    <motion.div
+                                      className="submenu"
+                                      initial={{ opacity: 0, y: 20 }}
+                                      animate={{ opacity: 1, y: 0 }}
+                                      exit={{ opacity: 0, y: 20 }}
+                                      transition={{ duration: 0.2 }}
+                                    >
+                                      <ul className="submenu-list">
+                                        <li>
+                                          <a href="/stormbreaker18">
+                                            STORMBREAKER 18`6
+                                          </a>
+                                          <p
+                                            style={{
+                                              color: "black",
+                                              fontSize: "15px",
+                                            }}
+                                          >
+                                            ( FULL OFF-ROAD: $89,900 )
+                                          </p>
+                                        </li>
+                                        <li>
+                                          <a href="/stormbreaker19">
+                                            STORMBREAKER 19`6
+                                          </a>
+                                          <p
+                                            style={{
+                                              color: "black",
+                                              fontSize: "15px",
+                                            }}
+                                          >
+                                            ( FULL OFF-ROAD: $92,900 )
+                                          </p>
+                                        </li>
+                                        <li>
+                                          <a href="/stormbreaker21">
+                                            STORMBREAKER 21`6
+                                          </a>
+                                          <p
+                                            style={{
+                                              color: "black",
+                                              fontSize: "15px",
+                                            }}
+                                          >
+                                            ( FULL OFF-ROAD: $94,900 )
+                                          </p>
+                                        </li>
+                                        <li>
+                                          <a href="/stormbreaker23">
+                                            STORMBREAKER 23`11
+                                          </a>
+                                          <p
+                                            style={{
+                                              color: "black",
+                                              fontSize: "15px",
+                                            }}
+                                          >
+                                            ( FULL OFF-ROAD: $96,900)
+                                          </p>
+                                        </li>
+                                      </ul>
+                                    </motion.div>
+                                  )}
+                                </AnimatePresence>
+                              </li>
+                              <li className="nav-item">
+                                <p className="social" onClick={toggleRiptide}>
+                                  RIPTIDE{" "}
+                                  <img
+                                    src="https://deluxcaravan.b-cdn.net/assets/icons/greater.webp"
+                                    alt=""
+                                    className="greatericon"
+                                  />
+                                </p>
+                                <AnimatePresence>
+                                  {showRiptide && (
+                                    <motion.div
+                                      className="submenu"
+                                      initial={{ opacity: 0, y: -20 }}
+                                      animate={{ opacity: 1, y: 0 }}
+                                      exit={{ opacity: 0, y: -20 }}
+                                      transition={{ duration: 0.2 }}
+                                    >
+                                      <ul className="submenu-list">
+                                        <li>
+                                          <a href="/riptide22">Riptide 22</a>
+                                          <p
+                                            style={{
+                                              color: "black",
+                                              fontSize: "15px",
+                                            }}
+                                          >
+                                            ( FULL OFF-ROAD: $89,900 )
+                                          </p>
+                                        </li>
+                                      </ul>
+                                    </motion.div>
+                                  )}
+                                </AnimatePresence>
                               </li>
                             </ul>
                           </div>
