@@ -13,6 +13,7 @@ const Header = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
+  const [hoveredSubMenu, setHoveredSubMenu] = useState(null);
 
   const handleResize = useCallback(
     _.debounce(() => {
@@ -37,6 +38,14 @@ const Header = () => {
   const handleMenuLeave = useCallback(() => {
     setActiveMenu(null);
   }, []);
+
+  const handleSubMenuHover = (submenuLabel) => {
+    setHoveredSubMenu(submenuLabel);
+  };
+
+  const handleSubMenuLeave = () => {
+    setHoveredSubMenu(null);
+  };
 
   useEffect(() => {
     const handleScroll = _.debounce(() => {
@@ -73,48 +82,71 @@ const Header = () => {
         label: "FAMILY",
         submenu: [
           {
-            label: (
-              <img
-                src="https://deluxcaravan.b-cdn.net/assets/header/186.webp"
-                alt="stormbreaker18"
-              />
-            ),
-            link: "/stormbreaker18",
-            text: "Stormbreaker 18`6",
-            price: "FULL OFF-ROAD: $89,900",
+            label: "Stormbreaker",
+            link: "",
+            submenu: [
+              {
+                label: (
+                  <img
+                    src="https://deluxcaravan.b-cdn.net/assets/header/186.webp"
+                    alt="stormbreaker18"
+                  />
+                ),
+                link: "/stormbreaker18",
+                text: "Stormbreaker 18`6",
+                price: "FULL OFF-ROAD: $89,900",
+              },
+              {
+                label: (
+                  <img
+                    src="https://deluxcaravan.b-cdn.net/assets/header/196.webp"
+                    alt="stormbreaker19"
+                  />
+                ),
+                link: "/stormbreaker19",
+                text: "Stormbreaker 19`6",
+                price: "FULL OFF-ROAD: $92,900",
+              },
+              {
+                label: (
+                  <img
+                    src="https://deluxcaravan.b-cdn.net/assets/header/216.webp"
+                    alt="stormbreaker21"
+                  />
+                ),
+                link: "/stormbreaker21",
+                text: "Stormbreaker 21`6",
+                price: "FULL OFF-ROAD: $94,900",
+              },
+              {
+                label: (
+                  <img
+                    src="https://deluxcaravan.b-cdn.net/assets/header/2311.webp"
+                    alt="stormbreaker23"
+                  />
+                ),
+                link: "/stormbreaker23",
+                text: "Stormbreaker 23`11",
+                price: "FULL OFF-ROAD: $96,900",
+              },
+            ],
           },
           {
-            label: (
-              <img
-                src="https://deluxcaravan.b-cdn.net/assets/header/196.webp"
-                alt="stormbreaker19"
-              />
-            ),
-            link: "/stormbreaker19",
-            text: "Stormbreaker 19`6",
-            price: "FULL OFF-ROAD: $92,900",
-          },
-          {
-            label: (
-              <img
-                src="https://deluxcaravan.b-cdn.net/assets/header/216.webp"
-                alt="stormbreaker21"
-              />
-            ),
-            link: "/stormbreaker21",
-            text: "Stormbreaker 21`6",
-            price: "FULL OFF-ROAD: $94,900",
-          },
-          {
-            label: (
-              <img
-                src="https://deluxcaravan.b-cdn.net/assets/header/2311.webp"
-                alt="stormbreaker23"
-              />
-            ),
-            link: "/stormbreaker23",
-            text: "Stormbreaker 23`11",
-            price: "FULL OFF-ROAD: $96,900",
+            label: "Riptide",
+            link: "",
+            submenu: [
+              {
+                label: (
+                  <img
+                    src="https://deluxcaravan.b-cdn.net/assets/header/186.webp"
+                    alt="stormbreaker18"
+                  />
+                ),
+                link: "/riptide22",
+                text: "Riptide 22",
+                price: "FULL OFF-ROAD: $89,900",
+              },
+            ],
           },
         ],
       },
@@ -298,7 +330,15 @@ const Header = () => {
                         {menu.submenu.map((subitem, subIndex) => (
                           <Link key={subIndex} to={subitem.link}>
                             <motion.div
-                              className="sub-menu-item"
+                              className={`sub-menu-item ${
+                                hoveredSubMenu === subitem.label
+                                  ? "active-submenu"
+                                  : ""
+                              }`}
+                              onMouseEnter={() =>
+                                handleSubMenuHover(subitem.label)
+                              }
+                              onMouseLeave={handleSubMenuLeave}
                               initial={{ opacity: 0, y: -10 }}
                               animate={{ opacity: 1, y: 0 }}
                               exit={{ opacity: 0, y: -10 }}
@@ -310,6 +350,42 @@ const Header = () => {
                               {subitem.label}
                               <h3>{subitem.text}</h3>
                               <h5>{subitem.price}</h5>
+
+                              {/* Nested Submenu */}
+                              {hoveredSubMenu === subitem.label &&
+                                subitem.submenu && (
+                                  <motion.div
+                                    className="nested-submenu"
+                                    initial={{ opacity: 1, scaleY: 0 }}
+                                    animate={{ opacity: 1, scaleY: 1 }}
+                                    exit={{ opacity: 0, scaleY: 0 }}
+                                    transition={{ duration: 0.3 }}
+                                  >
+                                    {subitem.submenu.map(
+                                      (nestedSubitem, nestedIndex) => (
+                                        <Link
+                                          key={nestedIndex}
+                                          to={nestedSubitem.link}
+                                        >
+                                          <motion.div
+                                            className="nested-submenu-item"
+                                            initial={{ opacity: 0, y: -10 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            exit={{ opacity: 0, y: -10 }}
+                                            transition={{
+                                              duration: 0.3,
+                                              delay: subIndex * 0.1,
+                                            }}
+                                          >
+                                            {nestedSubitem.label}
+                                            <h4>{nestedSubitem.text}</h4>
+                                            <h6>{nestedSubitem.price}</h6>
+                                          </motion.div>
+                                        </Link>
+                                      )
+                                    )}
+                                  </motion.div>
+                                )}
                             </motion.div>
                           </Link>
                         ))}
