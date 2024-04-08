@@ -82,7 +82,7 @@ const Header = () => {
         label: "FAMILY",
         submenu: [
           {
-            label: "Stormbreaker",
+            label: "STORMBREAKER",
             link: "",
             submenu: [
               {
@@ -132,7 +132,7 @@ const Header = () => {
             ],
           },
           {
-            label: "Riptide",
+            label: "RIPTIDE",
             link: "",
             submenu: [
               {

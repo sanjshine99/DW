@@ -36,7 +36,15 @@ const sections = [
   },
   {
     name: "Inside",
-    images: ["https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%201n.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%202n.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%203n.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%204n.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%205n.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%206n.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%207n.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%208n.webp","https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%209n.webp",],
+    images: ["https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(1).webp",
+      "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(2).webp",
+      "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(4).webp",
+      "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(5).webp",
+      "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(6).webp",
+      "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(7).webp",
+      "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(8).webp",
+      "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(9).webp",
+],
     description: "",
   },
 ];
