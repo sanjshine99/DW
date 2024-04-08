@@ -347,7 +347,13 @@ const Header = () => {
                                 delay: subIndex * 0.1,
                               }}
                             >
-                              {subitem.label}
+                              <span
+                                className={`submenu-label ${String(
+                                  subitem.label
+                                ).toLowerCase()}`}
+                              >
+                                {subitem.label}
+                              </span>
                               <h3>{subitem.text}</h3>
                               <h5>{subitem.price}</h5>
 
