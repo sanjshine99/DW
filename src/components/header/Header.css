@@ -115,6 +115,7 @@ h5 {
   padding: 30px;
   text-decoration: none;
   color: #000000 !important;
+  pointer-events: auto;
 }
 
 /* Submenu items */
@@ -143,21 +144,17 @@ h5 {
 .nested-submenu {
   background-color: #ffffff;
   z-index: 999;
-  opacity: 0;
-  visibility: hidden;
-  transform: scaleY(0);
+  opacity: 0; /* Set initial opacity to 0 */
+  visibility: hidden; /* Set initial visibility to hidden */
+  transform: scaleY(0); /* Set initial scale to 0 */
   transform-origin: top;
-  transition: opacity 0.2s, visibility 0.2s, transform 0.3s ease;
-  width: 100%; /* Set width to 100% to fill the viewport */
+  width: 100%;
+  top: 160px;
   position: fixed;
-  top: 160px; /* Position nested submenu below the parent submenu */
+  height: 60%;
   left: 0;
   right: 0;
-  display: grid; /* Use grid layout */
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(200px, 1fr)
-  ); /* Auto-fit columns */
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px;
@@ -168,18 +165,17 @@ h5 {
 /* Nested Submenu items */
 .nested-submenu-item {
   opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.5s, transform 0.3s ease;
   margin-right: 30px;
   flex: 0 0 auto; /* Ensure items don't grow or shrink */
 }
 
 /* Active state for nested submenu */
 .menu-item:hover .nested-submenu {
-  opacity: 1;
-  visibility: visible;
-  transform: scaleY(1);
+  opacity: 1; /* Change opacity to 1 when hovered */
+  visibility: visible; /* Change visibility to visible when hovered */
+  transform: scaleY(1); /* Scale up when hovered */
   transition: opacity 0.5s, visibility 0.3s, transform 0.3s ease;
+  transition-delay: 0.2s; /* Add a delay before transitioning out */
 }
 
 /* Active state for nested submenu items */
@@ -187,6 +183,16 @@ h5 {
   opacity: 1;
   transform: translateY(0);
   transition-delay: 0.5s ease;
+}
+
+.sub-menu-item .submenu-label.stormbreaker {
+  font-weight: 700;
+  margin-right: 50px;
+}
+
+.sub-menu-item .submenu-label.riptide {
+  font-weight: 700;
+  margin-left: 50px;
 }
 
 .iconh {
