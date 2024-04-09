@@ -28,7 +28,7 @@ const SpecsRiptide22 = () => {
         Hatch Roof - 700mm x 500mm 
         Hatch Roof - 450mm x 400mm 
         TV - Bracket 
-        Hinges - Piano 
+        Hinges  
         Pantry - Half (Slide-Out) 
         Frame – Meranti`,
       },
