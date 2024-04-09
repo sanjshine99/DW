@@ -135,3 +135,20 @@
   color: black;
   list-style: none;
 }
+
+.submenu {
+  position: absolute;
+
+  left: 0;
+  background-color: white;
+  z-index: 1000;
+}
+
+.nav-item {
+  position: relative;
+}
+
+ul.submenu-list {
+  width: 100%;
+  padding: 0;
+}

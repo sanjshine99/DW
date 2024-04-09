@@ -43,10 +43,12 @@ const Navbar = () => {
 
   const toggleStormbreaker = () => {
     setShowStormbreaker(!showStormbreaker);
+    setShowRiptide(false);
   };
 
   const toggleRiptide = () => {
     setShowRiptide(!showRiptide);
+    setShowStormbreaker(false);
   };
 
   return (
@@ -111,71 +113,9 @@ const Navbar = () => {
                               />{" "}
                               Back
                             </button>
-                            {/* <ul className="range-list">
-                              <li
-                                style={{
-                                  marginBottom: "0px",
-                                  marginTop: "50px",
-                                }}
-                              >
-                                <a href="/stormbreaker18">STORMBREAKER 18`6</a>
-                                <p
-                                  style={{
-                                    color: "black",
-                                    fontSize: "15px",
-                                  }}
-                                >
-                                  ( FULL OFF-ROAD: $89,900 )
-                                </p>
-                              </li>
-                              <li
-                                style={{
-                                  marginBottom: "0px",
-                                }}
-                              >
-                                <a href="/stormbreaker19">STORMBREAKER 19`6</a>
-                                <p
-                                  style={{
-                                    color: "black",
-                                    fontSize: "15px",
-                                  }}
-                                >
-                                  ( FULL OFF-ROAD: $92,900 )
-                                </p>
-                              </li>
-                              <li
-                                style={{
-                                  marginBottom: "0px",
-                                }}
-                              >
-                                <a href="/stormbreaker21">STORMBREAKER 21`6</a>
-                                <p
-                                  style={{
-                                    color: "black",
-                                    fontSize: "15px",
-                                  }}
-                                >
-                                  ( FULL OFF-ROAD: $94,900 )
-                                </p>
-                              </li>
-                              <li
-                                style={{
-                                  marginBottom: "0px",
-                                }}
-                              >
-                                <a href="/stormbreaker23">STORMBREAKER 23`11</a>
-                                <p
-                                  style={{
-                                    color: "black",
-                                    fontSize: "15px",
-                                  }}
-                                >
-                                  ( FULL OFF-ROAD: $96,900)
-                                </p>
-                              </li>
-                            </ul> */}
+
                             <ul className="range-list">
-                              <li className="nav-item">
+                              <li className="nav-item stormbreaker">
                                 <p
                                   className="social"
                                   onClick={toggleStormbreaker}
@@ -190,15 +130,20 @@ const Navbar = () => {
                                 <AnimatePresence>
                                   {showStormbreaker && (
                                     <motion.div
-                                      className="submenu"
+                                      className="submenu stombreaker"
                                       initial={{ opacity: 0, y: 20 }}
                                       animate={{ opacity: 1, y: 0 }}
                                       exit={{ opacity: 0, y: 20 }}
                                       transition={{ duration: 0.2 }}
                                     >
-                                      <ul className="submenu-list">
+                                      <ul className="submenu-list stormbreaker">
                                         <li>
-                                          <a href="/stormbreaker18">
+                                          <a
+                                            href="/stormbreaker18"
+                                            style={{
+                                              fontSize: "18px",
+                                            }}
+                                          >
                                             STORMBREAKER 18`6
                                           </a>
                                           <p
@@ -211,7 +156,12 @@ const Navbar = () => {
                                           </p>
                                         </li>
                                         <li>
-                                          <a href="/stormbreaker19">
+                                          <a
+                                            href="/stormbreaker19"
+                                            style={{
+                                              fontSize: "18px",
+                                            }}
+                                          >
                                             STORMBREAKER 19`6
                                           </a>
                                           <p
@@ -224,7 +174,12 @@ const Navbar = () => {
                                           </p>
                                         </li>
                                         <li>
-                                          <a href="/stormbreaker21">
+                                          <a
+                                            href="/stormbreaker21"
+                                            style={{
+                                              fontSize: "18px",
+                                            }}
+                                          >
                                             STORMBREAKER 21`6
                                           </a>
                                           <p
@@ -237,7 +192,12 @@ const Navbar = () => {
                                           </p>
                                         </li>
                                         <li>
-                                          <a href="/stormbreaker23">
+                                          <a
+                                            href="/stormbreaker23"
+                                            style={{
+                                              fontSize: "18px",
+                                            }}
+                                          >
                                             STORMBREAKER 23`11
                                           </a>
                                           <p
@@ -254,7 +214,7 @@ const Navbar = () => {
                                   )}
                                 </AnimatePresence>
                               </li>
-                              <li className="nav-item">
+                              <li className="nav-item riptide">
                                 <p className="social" onClick={toggleRiptide}>
                                   RIPTIDE{" "}
                                   <img
@@ -267,14 +227,25 @@ const Navbar = () => {
                                   {showRiptide && (
                                     <motion.div
                                       className="submenu"
-                                      initial={{ opacity: 0, y: -20 }}
+                                      initial={{
+                                        opacity: 0,
+                                        y: showStormbreaker ? 350 : -20,
+                                      }}
                                       animate={{ opacity: 1, y: 0 }}
-                                      exit={{ opacity: 0, y: -20 }}
+                                      exit={{
+                                        opacity: 0,
+                                        y: showStormbreaker ? 350 : -20,
+                                      }}
                                       transition={{ duration: 0.2 }}
                                     >
-                                      <ul className="submenu-list">
+                                      <ul className="submenu-list riptide">
                                         <li>
-                                          <a href="/riptide22">Riptide 22</a>
+                                          <a
+                                            href="/riptide22"
+                                            style={{ fontSize: "18px" }}
+                                          >
+                                            Riptide 22
+                                          </a>
                                           <p
                                             style={{
                                               color: "black",

@@ -105,7 +105,7 @@ h5 {
   transition: opacity 0.2s, visibility 0.2s, transform 0.3s ease;
   width: 100%; /* Set width to 100% to fill the viewport */
   position: fixed;
-  top: 111px; /* Position submenu below the menu item */
+  top: 75px; /* Position submenu below the menu item */
   left: 0;
   right: 0;
   display: flex;
@@ -151,7 +151,6 @@ h5 {
   width: 100%;
   top: 160px;
   position: fixed;
-  height: 60%;
   left: 0;
   right: 0;
   display: flex;
