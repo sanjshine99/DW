@@ -149,14 +149,14 @@ h5 {
   transform: scaleY(0); /* Set initial scale to 0 */
   transform-origin: top;
   width: 100%;
-  top: 160px;
+  top: 128px;
   position: fixed;
   left: 0;
   right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 0 30px;
   text-decoration: none;
   color: #000000 !important;
 }
