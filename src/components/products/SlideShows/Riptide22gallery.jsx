@@ -1,36 +1,36 @@
 import React, { useState, useEffect } from "react";
 import "./Stormbreaker21inside.css";
 
-import Strombreaker21insidecarousel from "../mobile-carousels/Strombreaker21insidecarousel";
+import Rip22carousel from "../mobile-carousels/Riptide22insidecarousel";
 
 const sections = [
   {
     name: "Exterior",
     images: [
-      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/21des.webp",
-      "https://deluxcaravan.b-cdn.net/assets/21/21%20ex%201.webp",
-      "https://deluxcaravan.b-cdn.net/assets/21/21%20ex%202.webp",
-      "https://deluxcaravan.b-cdn.net/assets/21/21%20ex%203.webp",
-      "https://deluxcaravan.b-cdn.net/assets/21/21%20ex%204.webp",
-      "https://deluxcaravan.b-cdn.net/assets/21/21%20ex%205.webp",
-      "https://deluxcaravan.b-cdn.net/assets/21/21%20ex%203.webp",
-      "https://deluxcaravan.b-cdn.net/assets/21/21%20ex%202.webp",
-      "https://deluxcaravan.b-cdn.net/assets/21/21%20ex%201.webp",
+      "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webp",
+      "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webp",
+      "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webp",
+      "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webp",
+      "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webp",
+      "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webp",
+      "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webp",
+      "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webp",
+      "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webp",
     ],
     description: "",
   },
   {
     name: "Layout",
     images: [
-      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB216%20layout.webp",
-      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/21laydes.webp",
-      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/21lay2.webp",
-      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB216%20layout.webp",
-      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/21lay2.webp",
-      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB216%20layout.webp",
-      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/21lay2.webp",
-      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB216%20layout.webp",
-      "https://deluxcaravan.b-cdn.net/assets/Product%20renders/21lay2.webp",
+      "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webp",
+      "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webp",
+      "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webp",
+      "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webp",
+      "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webpp",
+      "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webp",
+      "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webp",
+      "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webp",
+      "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webp",
     ],
     description: "",
   },
@@ -43,13 +43,13 @@ const sections = [
       "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(6).webp",
       "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(7).webp",
       "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(8).webp",
-      "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(9).webp",
+      "https://deluxcaravan.b-cdn.net/assets/Rip22/Ripin9.webp",
 ],
     description: "",
   },
 ];
 
-function Strombreaker21inside() {
+function Rip22gallery() {
   const [activeSection, setActiveSection] = useState(null);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
@@ -161,10 +161,10 @@ function Strombreaker21inside() {
         </div>
       </div>
       <div className="mobile-div">
-        <Strombreaker21insidecarousel />
+        <Rip22carousel />
       </div>
     </>
   );
 }
 
-export default Strombreaker21inside;
+export default Rip22gallery;
