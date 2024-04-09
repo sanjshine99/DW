@@ -12,29 +12,57 @@ const Navbar = () => {
   const [resourcesVisible, setResourcesVisible] = useState(false);
   const [showStormbreaker, setShowStormbreaker] = useState(false);
   const [showRiptide, setShowRiptide] = useState(false);
+  const [resourcesIconRotation, setResourcesIconRotation] =
+    useState("rotate(0deg)");
+  const [ourRangeCouplesIconRotation, setOurRangeCouplesIconRotation] =
+    useState("rotate(0deg)");
+  const [ourRangeIconRotation, setOurRangeIconRotation] =
+    useState("rotate(0deg)");
+  const [stormbreakerIconRotation, setStormbreakerIconRotation] =
+    useState("rotate(0deg)");
+  const [riptideIconRotation, setRiptideIconRotation] =
+    useState("rotate(0deg)");
 
   const showResources = () => {
     setResourcesVisible(true);
+    setResourcesIconRotation("rotate(90deg)");
+    setOurRangeIconRotation("rotate(0deg)");
+    setOurRangeCouplesIconRotation("rotate(0deg)");
+    setStormbreakerIconRotation("rotate(0deg)");
+    setRiptideIconRotation("rotate(0deg)");
   };
 
   const hideResources = () => {
     setResourcesVisible(false);
+    setResourcesIconRotation("rotate(0deg)");
   };
 
   const showOurRange = () => {
     setOurRangeVisible(true);
+    setOurRangeIconRotation("rotate(90deg)");
+    setResourcesIconRotation("rotate(0deg)");
+    setOurRangeCouplesIconRotation("rotate(0deg)");
+    setStormbreakerIconRotation("rotate(0deg)");
+    setRiptideIconRotation("rotate(0deg)");
   };
 
   const hideOurRange = () => {
     setOurRangeVisible(false);
+    setOurRangeIconRotation("rotate(0deg)");
   };
 
   const showOurRangeCouples = () => {
     setOurRangeCouplesVisible(true);
+    setOurRangeCouplesIconRotation("rotate(90deg)");
+    setOurRangeIconRotation("rotate(0deg)");
+    setResourcesIconRotation("rotate(0deg)");
+    setStormbreakerIconRotation("rotate(0deg)");
+    setRiptideIconRotation("rotate(0deg)");
   };
 
   const hideOurRangeCouples = () => {
     setOurRangeCouplesVisible(false);
+    setOurRangeCouplesIconRotation("rotate(0deg)");
   };
 
   const toggleMenu = () => {
@@ -44,11 +72,17 @@ const Navbar = () => {
   const toggleStormbreaker = () => {
     setShowStormbreaker(!showStormbreaker);
     setShowRiptide(false);
+    setStormbreakerIconRotation(
+      showStormbreaker ? "rotate(0deg)" : "rotate(90deg)"
+    );
+    setRiptideIconRotation("rotate(0deg)");
   };
 
   const toggleRiptide = () => {
     setShowRiptide(!showRiptide);
     setShowStormbreaker(false);
+    setRiptideIconRotation(showRiptide ? "rotate(0deg)" : "rotate(90deg)");
+    setStormbreakerIconRotation("rotate(0deg)");
   };
 
   return (
@@ -84,6 +118,7 @@ const Navbar = () => {
                         src="https://deluxcaravan.b-cdn.net/assets/icons/greater.webp"
                         alt=""
                         className="greatericon"
+                        style={{ transform: ourRangeIconRotation }}
                       />
                     </p>
                     <AnimatePresence>
@@ -125,6 +160,9 @@ const Navbar = () => {
                                     src="https://deluxcaravan.b-cdn.net/assets/icons/greater.webp"
                                     alt=""
                                     className="greatericon"
+                                    style={{
+                                      transform: stormbreakerIconRotation,
+                                    }}
                                   />
                                 </p>
                                 <AnimatePresence>
@@ -221,6 +259,7 @@ const Navbar = () => {
                                     src="https://deluxcaravan.b-cdn.net/assets/icons/greater.webp"
                                     alt=""
                                     className="greatericon"
+                                    style={{ transform: riptideIconRotation }}
                                   />
                                 </p>
                                 <AnimatePresence>
@@ -273,6 +312,7 @@ const Navbar = () => {
                         src="https://deluxcaravan.b-cdn.net/assets/icons/greater.webp"
                         alt=""
                         className="greatericon"
+                        style={{ transform: ourRangeCouplesIconRotation }}
                       />
                     </p>
                     <AnimatePresence>
@@ -346,6 +386,7 @@ const Navbar = () => {
                         src="https://deluxcaravan.b-cdn.net/assets/icons/greater.webp"
                         alt=""
                         className="greatericon"
+                        style={{ transform: resourcesIconRotation }}
                       />
                     </p>
                     <AnimatePresence>
