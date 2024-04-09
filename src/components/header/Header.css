@@ -149,7 +149,7 @@ h5 {
   transform: scaleY(0); /* Set initial scale to 0 */
   transform-origin: top;
   width: 100%;
-  top: 128px;
+  top: 122px;
   position: fixed;
   left: 0;
   right: 0;
