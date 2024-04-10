@@ -138,13 +138,13 @@ const Header = () => {
               {
                 label: (
                   <img
-                    src="https://deluxcaravan.b-cdn.net/assets/header/186.webp"
+                    src="https://deluxcaravan.b-cdn.net/assets/header/216.webp"
                     alt="stormbreaker18"
                   />
                 ),
                 link: "/riptide22",
                 text: "Riptide 22",
-                price: "FULL OFF-ROAD: $89,900",
+                price: "FULL OFF-ROAD: $98,900",
               },
             ],
           },
@@ -156,7 +156,7 @@ const Header = () => {
           {
             label: (
               <img
-                src="https://deluxcaravan.b-cdn.net/assets/header/ec216header.webp"
+                src="https://deluxcaravan.b-cdn.net/assets/header/216.webp"
                 alt="Eclipse 216"
               />
             ),

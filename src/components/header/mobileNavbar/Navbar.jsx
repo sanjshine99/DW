@@ -291,7 +291,7 @@ const Navbar = () => {
                                               fontSize: "15px",
                                             }}
                                           >
-                                            ( FULL OFF-ROAD: $89,900 )
+                                            ( FULL OFF-ROAD: $98,900 )
                                           </p>
                                         </li>
                                       </ul>

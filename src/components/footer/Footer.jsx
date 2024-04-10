@@ -31,6 +31,9 @@ const Footer = React.memo(() => {
            <Link to="/stormbreaker23" className="footer-link">
             Stormbreaker 23`11
           </Link> 
+          <Link to="/riptide22" className="footer-link">
+            Riptide 22`
+          </Link> 
           <Link to="/eclipse21" className="footer-link">
             eclipse 21` 6`
           </Link> 
