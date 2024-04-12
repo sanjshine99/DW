@@ -16,12 +16,14 @@ const sections = [
       "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webp",
       "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webp",
       "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webp",
+      "https://deluxcaravan.b-cdn.net/assets/maintanance-min.webp",
     ],
     description: "",
   },
   {
     name: "Layout",
     images: [
+      "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide22layout.webp",
       "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide22layout.webp",
       "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide22layout.webp",
       "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide22layout.webp",
@@ -45,6 +47,7 @@ const sections = [
       "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(7).webp",
       "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(8).webp",
       "https://deluxcaravan.b-cdn.net/assets/Rip22/Ripin9.webp",
+      "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20(10).webp",
 ],
     description: "",
   },

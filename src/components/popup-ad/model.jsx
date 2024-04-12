@@ -65,10 +65,10 @@ const Model = ({ isOpen, onClose }) => {
               <p className="model-disc3">
                 <b>DOMETIC FRESHJET AIRCON</b>
               </p> */}
-              <h2>"Riptide 22FT Information Will Be Updated Shortly"</h2>
+              <h2>"Riptide 22FT Specifications and Floor plan Updated"</h2>
             </div>
             <button className="model-button model-inqurie">
-              <a href="/contact">&#128073; INQUIRE NOW</a>
+              <a href="/riptide22">&#128073; View details</a>
             </button>
           </motion.div>
         </div>
