@@ -24,7 +24,17 @@ const sections = [
   },
   {
     name: "Inside",
-    images: ["https://deluxcaravan.b-cdn.net/assets/19/19%20in%201.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20in%202.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20in%203.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20in%201.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20in%202.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20in%203.webp", "https://deluxcaravan.b-cdn.net/assets/19/19%20in%201.webp"],
+    images: [
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20in%201-1.webp",
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20in%201-2.webp",
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20in%201-3.webp",
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20in%204.webp",
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20in%205.webp",
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20in%206.webp",
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20in%207.webp",
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20in%208.webp",
+      "https://deluxcaravan.b-cdn.net/assets/19/19%20in%209.webp",
+    ],
     description: "",
   },
 ];
