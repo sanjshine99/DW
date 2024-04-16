@@ -17,7 +17,7 @@ const SpecsRiptide22 = () => {
         title: 'INTERIOR',
         content: `Bed - Queen Island with Lift-Up Storage 
         Niche - Bedside - Both Sides
-        Bunks - 2 Bunks (Length: Top Bunk - 2.1m, Middle Bunk 2.1m )
+        Bunks - 2 Bunks (Length: Top Bunk - 2.0m, Middle Bunk 2.0m )
         Mattress - Innerspring with Pillow-Top 
         L - Shape Lounge - with Drop Down Table with TIC Cushion
         Storage - Drawers 
@@ -42,8 +42,8 @@ const SpecsRiptide22 = () => {
       },
         {
           title: 'ELECTRICAL - INTERNAL',
-          content: `BM PRO BATTERYPLUS35-II-HA ( Lithium Ready Charger ) 
-          TREK Display 
+          content: `Projecta 30A charger + 30A MPPT
+          Projecta Display w Bluetooth 
           Lighting - LED Down lights 
           TV - Co-Ax Point 
           TV - Aerial Point 

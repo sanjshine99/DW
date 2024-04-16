@@ -42,8 +42,8 @@ const Specs23 = () => {
       },
         {
           title: 'ELECTRICAL - INTERNAL',
-          content: `BM PRO BATTERYPLUS35-II-HA ( Lithium Ready Charger )
-          TREK Display
+          content: `Projecta 30A charger + 30A MPPT
+          Projecta Display w Bluetooth 
           Lighting - LED Down lights
           TV - Co-Ax Point
           TV - Aerial Point
