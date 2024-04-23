@@ -1,21 +1,51 @@
-import React from 'react';
-import '../home/Home.css';
-import './Tour.css';
-import GoToTop from '../functions/GoToTop';
+import React, { useState } from "react";
+import "../home/Home.css";
+import "./Tour.css";
+import GoToTop from "../functions/GoToTop";
 
 const Tour = React.memo(() => {
+  const initialTour = "Storm Breaker Off-Road 21’6";
+  const [selectedTour, setSelectedTour] = useState("");
+  const [initialLoad, setInitialLoad] = useState(true);
+
+  const tourData = [
+    {
+      name: "Riptide 22’ Off-Road",
+      url: "https://sh.smartviewmedia.com.au/m/kyd7182/?v=kyd7182",
+    },
+    {
+      name: "Storm Breaker Off-Road 21’6",
+      url: "https://sh.smartviewmedia.com.au/m/ghk6493/?v=ghk6493",
+    },
+    {
+      name: "Storm Breaker Off Grid 19’6",
+      url: "https://sh.smartviewmedia.com.au/m/xre6796/?v=xre6796",
+    },
+    {
+      name: "Storm Breaker 18’6 Off-Road",
+      url: "https://sh.smartviewmedia.com.au/m/yni6491/?v=yni6491",
+    },
+  ];
+
+  const handleTourChange = (event) => {
+    setSelectedTour(event.target.value);
+    setInitialLoad(false);
+  };
+
   return (
     <div className="virtualcontainer">
       <h1>Virtual tours</h1>
-      <div className="virtualcomponent">
-        <iframe
-          frameBorder="0"
-          allow="vr;fullscreen"
-          mozAllowFullScreen
-          webkitAllowFullScreen
-          src="https://sh.smartviewmedia.com.au/m/kyd7182/?v=kyd7182"
-          title="Virtual Tour 1"
-        ></iframe>
+      <div className="dropdown-container">
+        <select value={selectedTour} onChange={handleTourChange}>
+          <option value="" disabled>
+            Select virtual tour
+          </option>
+          {tourData.map((tour) => (
+            <option key={tour.name} value={tour.name}>
+              {tour.name}
+            </option>
+          ))}
+        </select>
       </div>
       <div className="virtualcomponent">
         <iframe
@@ -23,28 +53,14 @@ const Tour = React.memo(() => {
           allow="vr;fullscreen"
           mozAllowFullScreen
           webkitAllowFullScreen
-          src="https://sh.smartviewmedia.com.au/m/ghk6493/?v=ghk6493"
-          title="Virtual Tour 1"
-        ></iframe>
-      </div>
-      <div className="virtualcomponent">
-        <iframe
-          frameBorder="0"
-          allow="vr;fullscreen"
-          mozAllowFullScreen
-          webkitAllowFullScreen
-          src="https://sh.smartviewmedia.com.au/m/xre6796/?v=xre6796"
-          title="Virtual Tour 2"
-        ></iframe>
-      </div>
-      <div className="virtualcomponent">
-        <iframe
-          frameBorder="0"
-          allow="vr;fullscreen"
-          mozAllowFullScreen
-          webkitAllowFullScreen
-          src="https://sh.smartviewmedia.com.au/m/yni6491/?v=yni6491"
-          title="Virtual Tour 3"
+          src={
+            initialLoad
+              ? tourData.find((tour) => tour.name === initialTour)?.url
+              : selectedTour
+              ? tourData.find((tour) => tour.name === selectedTour)?.url
+              : ""
+          }
+          title={`Virtual Tour - ${initialLoad ? initialTour : selectedTour}`}
         ></iframe>
       </div>
       <GoToTop />
