@@ -19,17 +19,17 @@ const Navbar = () => {
   const [ourRangeIconRotation, setOurRangeIconRotation] =
     useState("rotate(0deg)");
   const [stormbreakerIconRotation, setStormbreakerIconRotation] =
-    useState("rotate(0deg)");
+    useState("rotate(90deg)");
   const [riptideIconRotation, setRiptideIconRotation] =
-    useState("rotate(0deg)");
+    useState("rotate(90deg)");
 
   const showResources = () => {
     setResourcesVisible(true);
     setResourcesIconRotation("rotate(90deg)");
     setOurRangeIconRotation("rotate(0deg)");
     setOurRangeCouplesIconRotation("rotate(0deg)");
-    setStormbreakerIconRotation("rotate(0deg)");
-    setRiptideIconRotation("rotate(0deg)");
+    setStormbreakerIconRotation("rotate(90deg)");
+    setRiptideIconRotation("rotate(90deg)");
   };
 
   const hideResources = () => {
@@ -42,8 +42,8 @@ const Navbar = () => {
     setOurRangeIconRotation("rotate(90deg)");
     setResourcesIconRotation("rotate(0deg)");
     setOurRangeCouplesIconRotation("rotate(0deg)");
-    setStormbreakerIconRotation("rotate(0deg)");
-    setRiptideIconRotation("rotate(0deg)");
+    setStormbreakerIconRotation("rotate(90deg)");
+    setRiptideIconRotation("rotate(90deg)");
   };
 
   const hideOurRange = () => {
@@ -56,8 +56,8 @@ const Navbar = () => {
     setOurRangeCouplesIconRotation("rotate(90deg)");
     setOurRangeIconRotation("rotate(0deg)");
     setResourcesIconRotation("rotate(0deg)");
-    setStormbreakerIconRotation("rotate(0deg)");
-    setRiptideIconRotation("rotate(0deg)");
+    setStormbreakerIconRotation("rotate(90deg)");
+    setRiptideIconRotation("rotate(90deg)");
   };
 
   const hideOurRangeCouples = () => {
@@ -73,16 +73,16 @@ const Navbar = () => {
     setShowStormbreaker(!showStormbreaker);
     setShowRiptide(false);
     setStormbreakerIconRotation(
-      showStormbreaker ? "rotate(0deg)" : "rotate(90deg)"
+      showStormbreaker ? "rotate(90deg)" : "rotate(270deg)"
     );
-    setRiptideIconRotation("rotate(0deg)");
+    setRiptideIconRotation("rotate(90deg)");
   };
 
   const toggleRiptide = () => {
     setShowRiptide(!showRiptide);
     setShowStormbreaker(false);
-    setRiptideIconRotation(showRiptide ? "rotate(0deg)" : "rotate(90deg)");
-    setStormbreakerIconRotation("rotate(0deg)");
+    setRiptideIconRotation(showRiptide ? "rotate(90deg)" : "rotate(270deg)");
+    setStormbreakerIconRotation("rotate(90deg)");
   };
 
   return (
