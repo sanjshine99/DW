@@ -10,19 +10,19 @@ const Tour = React.memo(() => {
 
   const tourData = [
     {
-      name: "Riptide 22’ Off-Road",
+      name: "Riptide 22’ FT",
       url: "https://sh.smartviewmedia.com.au/m/kyd7182/?v=kyd7182",
     },
     {
-      name: "Storm Breaker Off-Road 21’6",
+      name: "Storm Breaker 21’6 FT",
       url: "https://sh.smartviewmedia.com.au/m/ghk6493/?v=ghk6493",
     },
     {
-      name: "Storm Breaker Off Grid 19’6",
+      name: "Storm Breaker 19’6 FT",
       url: "https://sh.smartviewmedia.com.au/m/xre6796/?v=xre6796",
     },
     {
-      name: "Storm Breaker 18’6 Off-Road",
+      name: "Storm Breaker 18’6 FT",
       url: "https://sh.smartviewmedia.com.au/m/yni6491/?v=yni6491",
     },
   ];

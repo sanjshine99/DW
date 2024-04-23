@@ -118,9 +118,9 @@ const Stormbreaker19 = () => {
 
             </div>
             <p>
-              {/* <button className="virtual-btn">
-                <a href="/tour">Have a look at STORMBREAKER 18`6</a>
-              </button> */}
+              <button className="virtual-btn">
+                <a href="/tour">Have a look at STORMBREAKER 19`6</a>
+              </button>
             </p>
             <button
               className="btn hover-border-1 revealUp"
