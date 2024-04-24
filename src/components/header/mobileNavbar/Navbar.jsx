@@ -432,7 +432,7 @@ const Navbar = () => {
                   <li className="nav-item" onClick={toggleMenu}>
                     <p className="social">
                       <Link to="/tour" className="nav-link">
-                        VIRTUAL TOUR
+                        VIRTUAL TOURS
                       </Link>
                     </p>
                   </li>

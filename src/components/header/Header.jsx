@@ -402,7 +402,7 @@ const Header = () => {
               ))}
               <li className="menu-item">
                 <Link to="/tour">
-                  <button>VIRTUAL TOUR</button>
+                  <button>VIRTUAL TOURS</button>
                 </Link>
               </li>
               <li className="menu-item">
