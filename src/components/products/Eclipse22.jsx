@@ -2,11 +2,11 @@ import React, { useRef, useEffect, useState, useCallback } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
-import Eclipse21gallery from "../products/SlideShows/Eclipse21gallery";
+import Eclipse22gallery from "../products/SlideShows/Eclipse22gallery";
 import { gsap } from "gsap";
 import GoToTop from "../functions/GoToTop";
-import SpecsEclipse21 from "./Specsmenu/SpecsEclipse21";
-import TechspecEclipse21 from "./techspecs/TechspecEclipse21";
+import SpecsEclipse22 from "./Specsmenu/SpecsEclipse22";
+import TechspecEclipse22 from "./techspecs/TechspecEclipse22";
 import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
 
 const scrollToSpecs = () => {
@@ -23,7 +23,7 @@ const scrollToLayout = () => {
   }
 };
 
-const Eclipse21 = () => {
+const Eclipse22 = () => {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -62,12 +62,12 @@ const Eclipse21 = () => {
       <div className="component">
         <div className="background-image">
           <img
-            src="https://deluxcaravan.b-cdn.net/assets/Product%20renders/Eclipse216.webp"
+            src="https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp"
             alt=""
           />
           <div className="image-overlay">
             <div className="button-container">
-              <h1 className="Product-header revealUp">Eclipse 21`6</h1>
+              <h1 className="Product-header revealUp">Eclipse 22`</h1>
               <button
                 onClick={scrollToLayout}
                 className="btn hover-border-1 revealUp"
@@ -86,7 +86,7 @@ const Eclipse21 = () => {
       </div>
 
       <div className="slideshowcomopnent">
-        <Eclipse21gallery />
+        <Eclipse22gallery />
       </div>
       {/* <div className='slideshowcomopnent'>
     </div> */}
@@ -100,11 +100,9 @@ const Eclipse21 = () => {
         >
           <div className="description">
             <p>
-            Introducing our first 2 Berth Caravan and we can tell you it’s a special one. The most notable feature
-is the massive rear ensuite. Ideal for a couple who loves to travel for extended periods of time. Then
-again this an ideal setup for anyone who likes life on the road.Built with premium interior, exterior,
-and mechanical features when you embark on the open road with your loved ones, you&#39;ll be treated
-to an exceptionally roomy layout, complete with all the amenities you&#39;d expect from a luxury RV.
+            Introducing our biggest ans most spacious 2 Berth Caravan.An impressive feature is the seperate main bed and the rear lounge area that extends the width of the caravan. Ideal for a couple who like to enjoy time with fellow caravaners or just like the extra space. 
+This model is equppied with the same luxuries of the other models with even more storage. 
+Built with premium interior, exterior, and mechanical features when you embark on the open road. Trust us, you'll be treated to an exceptionally roomy layout, complete with all the amenities you'd expect from a luxury RV.
             </p>
             <button
               className="btn hover-border-1 revealUp"
@@ -133,15 +131,15 @@ to an exceptionally roomy layout, complete with all the amenities you&#39;d expe
         </div>
       </div>
       <div className="component" id="specs">
-        <TechspecEclipse21 />
+        <TechspecEclipse22 />
       </div>
       <div className="component" id="specs">
         <h1>Specs Menu</h1>
-        <SpecsEclipse21 />
+        <SpecsEclipse22 />
       </div>
       <GoToTop />
     </div>
   );
 };
 
-export default React.memo(Eclipse21);
+export default React.memo(Eclipse22);

@@ -172,7 +172,7 @@ const Header = () => {
             //     alt="stormbreaker21"
             //   />
             // ),
-            //link: "/stormbreaker21",
+            link: "/eclipse22",
             text: "ECLIPSE - 22FT",
             price: "( COMING SOON )",
           },

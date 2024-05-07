@@ -10,6 +10,10 @@ const Tour = React.memo(() => {
 
   const tourData = [
     {
+      name: "Eclipse 22` FT",
+      url: "https://sh.smartviewmedia.com.au/m/prb7275/?v=prb7275 ",
+    },
+    {
       name: "Riptide 22’ FT",
       url: "https://sh.smartviewmedia.com.au/m/kyd7182/?v=kyd7182",
     },

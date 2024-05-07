@@ -363,7 +363,7 @@ const Navbar = () => {
                                   marginBottom: "0px",
                                 }}
                               >
-                                <a href="/">ECLIPSE - 22FT</a>
+                                <a href="/eclipse22">ECLIPSE - 22FT</a>
                                 <p
                                   style={{
                                     color: "black",
