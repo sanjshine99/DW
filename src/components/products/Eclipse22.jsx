@@ -62,7 +62,7 @@ const Eclipse22 = () => {
       <div className="component">
         <div className="background-image">
           <img
-            src="https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp"
+            src="https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_6-min.webp"
             alt=""
           />
           <div className="image-overlay">

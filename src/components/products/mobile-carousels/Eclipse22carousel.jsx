@@ -5,20 +5,20 @@ const sections = [
   {
     name: "Exterior",
     images: [
-      "https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp"
+      "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_1-min.webp","https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_2-min.webp","https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_3-min.webp","https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_4-min.webp","https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_5-min.webp","https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_6-min.webp","https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_7-min.webp",
     ],
     description: "",
   },
   {
     name: "Layout",
     images: [
-      "https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp",
+      "https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp", "https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp", "https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp", "https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp", "https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp", "https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp", "https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp",
     ],
     description: "",
   },
   {
     name: "Inside",
-    images: ["https://deluxcaravan.b-cdn.net/assets/coming%20soon.webp"],
+    images: ["https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_in_1-min.webp","https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_in_2-min.webp","https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_in_3-min.webp","https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_in_4-min.webp","https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_in_5-min.webp","https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_in_6-min.webp","https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_in_7-min.webp",],
     description: "",
   },
 ];
