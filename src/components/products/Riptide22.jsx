@@ -61,7 +61,7 @@ const Stormbreaker21 = () => {
     <div className="container">
       <div className="component">
         <div className="background-image">
-          <img src="https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB216Exterior.webp" alt="" />
+          <img src="https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20Exterior-min.webp" alt="" />
           <div className="image-overlay">
             <div className="button-container">
               <h1 className="Product-header revealUp">RIPTIDE 22`</h1>

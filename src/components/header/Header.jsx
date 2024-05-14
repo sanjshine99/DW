@@ -138,8 +138,8 @@ const Header = () => {
               {
                 label: (
                   <img
-                    src="https://deluxcaravan.b-cdn.net/assets/header/216.webp"
-                    alt="stormbreaker18"
+                    src="https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp"
+                    alt="Riptide22"
                   />
                 ),
                 link: "/riptide22",
