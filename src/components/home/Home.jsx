@@ -7,6 +7,7 @@ import Reviews from "./homecomponents/CustomerReviews";
 import Partners from "./homecomponents/Partners";
 import HomeDesc from "./homecomponents/HomeDescription";
 import Model from "../popup-ad/model";
+import Promovid from "./homecomponents/Promovid"
 
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,6 +40,9 @@ function Home() {
       )}
       <div className="videocomponent">
         <Video />
+      </div>
+      <div className="component">
+        <Promovid />
       </div>
       <div className="component">
         <HomeDesc />
